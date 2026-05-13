@@ -1,0 +1,31 @@
+# ── Always required ───────────────────────────────────────────────────────────
+flask>=3.0.0
+numpy>=1.26.0
+
+# ── Translation (free, no API key) ────────────────────────────────────────────
+deep-translator>=1.11.4
+
+# ── Noun validation ───────────────────────────────────────────────────────────
+spacy>=3.7.0
+# After pip install:  python -m spacy download fr_core_news_sm
+
+# ── Generator backend — install ONE of the following sets ─────────────────────
+
+# Option A: Ollama (recommended — free, easy, best quality)
+#   No Python packages needed. Just install Ollama from https://ollama.com
+#   then run:  ollama pull mistral
+#   Start app: GENERATOR=ollama python app.py
+
+# Option B: HuggingFace Transformers (free, local, heavier setup)
+#   transformers>=4.40.0
+#   torch>=2.0.0
+#   accelerate>=0.27.0
+#   Start app: GENERATOR=transformers HF_MODEL=mistralai/Mistral-7B-Instruct-v0.3 python app.py
+
+# Option C: Claude API (highest quality, costs per request)
+#   No extra packages needed (uses urllib).
+#   Start app: GENERATOR=claude ANTHROPIC_API_KEY=sk-ant-... python app.py
+
+# ── Embeddings (needed for semantic search) ───────────────────────────────────
+# sentence-transformers>=2.6.0
+# scikit-learn>=1.4.0

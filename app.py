@@ -1,0 +1,90 @@
+"""
+Dictionnaire des idées reçues — Flask web application.
+
+Routes
+------
+GET  /                      → main page
+GET  /api/search?q=&lang=   → search existing entries
+GET  /api/entry/<headword>  → single entry detail + neighbours
+POST /api/generate          → validate noun + generate new entry
+GET  /api/clusters          → cluster summary for sidebar
+"""
+
+from flask import Flask, jsonify, request, render_template, abort
+from pipeline import DictionairePipeline
+import os
+
+app = Flask(__name__, template_folder=".", static_folder=".", static_url_path="/static")
+app.config["JSON_AS_ASCII"] = False
+
+pipeline = DictionairePipeline()
+
+
+# ── Pages ─────────────────────────────────────────────────────────────────────
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+# ── API ───────────────────────────────────────────────────────────────────────
+
+@app.route("/api/search")
+def search():
+    q    = request.args.get("q", "").strip()
+    lang = request.args.get("lang", "fr")          # "fr" or "en"
+    mode = request.args.get("mode", "text")        # "text" or "semantic"
+    limit = min(int(request.args.get("limit", 20)), 50)
+
+    if not q:
+        # Return all entries (paginated)
+        page  = int(request.args.get("page", 1))
+        start = (page - 1) * limit
+        results = pipeline.all_entries(start, limit, lang)
+        return jsonify({"results": results, "total": pipeline.total_entries()})
+
+    if mode == "semantic":
+        results = pipeline.semantic_search(q, limit, lang)
+    else:
+        results = pipeline.text_search(q, limit, lang)
+
+    return jsonify({"results": results, "total": len(results)})
+
+
+@app.route("/api/entry/<path:headword>")
+def entry_detail(headword):
+    lang = request.args.get("lang", "fr")
+    data = pipeline.get_entry(headword.upper(), lang)
+    if data is None:
+        abort(404)
+    return jsonify(data)
+
+
+@app.route("/api/generate", methods=["POST"])
+def generate():
+    body   = request.get_json(force=True)
+    word   = body.get("word", "").strip()
+    lang   = body.get("lang", "fr")
+
+    if not word:
+        return jsonify({"error": "No word provided."}), 400
+
+    result = pipeline.generate_entry(word, lang)
+    return jsonify(result)
+
+
+@app.route("/api/clusters")
+def clusters():
+    lang = request.args.get("lang", "fr")
+    return jsonify(pipeline.cluster_summary(lang))
+
+
+@app.route("/api/stats")
+def stats():
+    return jsonify(pipeline.stats())
+
+
+if __name__ == "__main__":
+    # Port 5000 is hijacked by macOS AirPlay Receiver (Control Center) and
+    # returns 403, so use 5050 instead.
+    app.run(debug=True, port=5050)

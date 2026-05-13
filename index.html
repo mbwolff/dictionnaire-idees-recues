@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="{{ lang or 'fr' }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dictionnaire des idées reçues</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..900;1,8..60,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ── Header ─────────────────────────────────────────────────────────── -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <div class="title-ornament">✦</div>
+        <div>
+          <h1 id="site-title">Dictionnaire des idées reçues</h1>
+          <p class="subtitle" id="site-subtitle">Gustave Flaubert · c. 1870</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <button class="lang-toggle" id="lang-btn" title="Switch language">
+          <span id="lang-label">EN</span>
+        </button>
+        <button class="theme-toggle" id="theme-btn" title="Toggle theme">◐</button>
+      </div>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+      <div class="search-inner">
+        <div class="search-input-wrap">
+          <span class="search-icon">⌕</span>
+          <input
+            type="search"
+            id="search-input"
+            autocomplete="off"
+            spellcheck="false"
+            data-placeholder-fr="Chercher une entrée…"
+            data-placeholder-en="Search an entry…"
+            placeholder="Chercher une entrée…"
+          />
+          <div class="search-mode-pills">
+            <button class="pill active" data-mode="text" id="pill-text">
+              <span data-fr="Texte" data-en="Text">Texte</span>
+            </button>
+            <button class="pill" data-mode="semantic" id="pill-semantic">
+              <span data-fr="Sémantique" data-en="Semantic">Sémantique</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Layout ─────────────────────────────────────────────────────────── -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-view="browse" id="nav-browse">
+          <span class="nav-icon">☰</span>
+          <span data-fr="Parcourir" data-en="Browse">Parcourir</span>
+        </button>
+        <button class="nav-item" data-view="clusters" id="nav-clusters">
+          <span class="nav-icon">◉</span>
+          <span data-fr="Thèmes" data-en="Themes">Thèmes</span>
+        </button>
+        <button class="nav-item" data-view="add" id="nav-add">
+          <span class="nav-icon">✦</span>
+          <span data-fr="Ajouter" data-en="Add entry">Ajouter</span>
+        </button>
+      </nav>
+
+      <!-- Browse panel -->
+      <div class="sidebar-panel active" id="panel-browse">
+        <div class="panel-header">
+          <span class="panel-title" data-fr="Toutes les entrées" data-en="All entries">Toutes les entrées</span>
+          <span class="entry-count" id="entry-count">—</span>
+        </div>
+        <div class="alpha-index" id="alpha-index"></div>
+        <div class="entry-list" id="entry-list">
+          <div class="loading-state">
+            <span class="loading-dot"></span>
+          </div>
+        </div>
+        <div class="load-more-wrap">
+          <button id="load-more" class="load-more" style="display:none"
+            data-fr="Charger plus" data-en="Load more">Charger plus</button>
+        </div>
+      </div>
+
+      <!-- Clusters panel -->
+      <div class="sidebar-panel" id="panel-clusters">
+        <div class="panel-header">
+          <span class="panel-title" data-fr="Thèmes sémantiques" data-en="Semantic themes">Thèmes sémantiques</span>
+        </div>
+        <div class="cluster-list" id="cluster-list">
+          <div class="loading-state"><span class="loading-dot"></span></div>
+        </div>
+      </div>
+
+      <!-- Add panel -->
+      <div class="sidebar-panel" id="panel-add">
+        <div class="panel-header">
+          <span class="panel-title" data-fr="Nouvelle entrée" data-en="New entry">Nouvelle entrée</span>
+        </div>
+        <div class="add-form">
+          <p class="add-description" data-fr="Entrez un nom commun ou propre en français. L'entrée sera vérifiée, puis générée dans le style de Flaubert." data-en="Enter a French noun (common or proper). It will be validated, then a new entry will be generated in Flaubert's style.">
+            Entrez un nom commun ou propre en français. L'entrée sera vérifiée, puis générée dans le style de Flaubert.
+          </p>
+          <div class="add-input-wrap">
+            <input
+              type="text"
+              id="add-input"
+              autocomplete="off"
+              spellcheck="false"
+              data-placeholder-fr="Ex : CINÉMA, TOURISME…"
+              data-placeholder-en="E.g. CINÉMA, TOURISME…"
+              placeholder="Ex : CINÉMA, TOURISME…"
+            />
+          </div>
+          <button id="add-btn" class="add-btn">
+            <span id="add-btn-text" data-fr="Générer l'entrée" data-en="Generate entry">Générer l'entrée</span>
+          </button>
+          <div id="add-status" class="add-status" style="display:none"></div>
+        </div>
+
+        <!-- Generated entries list -->
+        <div class="panel-header" style="margin-top:1.5rem">
+          <span class="panel-title" data-fr="Entrées générées" data-en="Generated entries">Entrées générées</span>
+        </div>
+        <div class="entry-list" id="generated-list">
+          <p class="empty-state" data-fr="Aucune entrée générée." data-en="No generated entries yet.">Aucune entrée générée.</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main id="main-content">
+
+      <!-- Welcome / empty state -->
+      <div class="welcome-state" id="welcome-state">
+        <div class="welcome-ornament">⁂</div>
+        <blockquote class="welcome-quote">
+          <p id="welcome-quote-text">« Il y a à parier que toute idée publique, toute convention reçue, est une sottise, car elle a convenu au plus grand nombre. »</p>
+          <cite>Chamfort</cite>
+        </blockquote>
+        <p class="welcome-hint" data-fr="Sélectionnez une entrée ou effectuez une recherche." data-en="Select an entry or search above.">Sélectionnez une entrée ou effectuez une recherche.</p>
+        <div class="stats-row" id="stats-row"></div>
+      </div>
+
+      <!-- Entry detail -->
+      <article class="entry-detail" id="entry-detail" style="display:none">
+        <div class="entry-detail-header">
+          <div class="entry-headword-wrap">
+            <h2 class="entry-headword" id="detail-headword"></h2>
+            <span class="entry-headword-tr" id="detail-headword-tr"></span>
+          </div>
+          <div class="entry-meta-row">
+            <span class="cluster-badge" id="detail-cluster"></span>
+            <span class="source-badge" id="detail-source"></span>
+          </div>
+        </div>
+
+        <div class="entry-body">
+          <p class="entry-text-fr" id="detail-text-fr"></p>
+          <p class="entry-text-en" id="detail-text-en"></p>
+        </div>
+
+        <div class="entry-tags" id="detail-tags"></div>
+
+        <div class="entry-xrefs" id="detail-xrefs-wrap" style="display:none">
+          <span class="xrefs-label" data-fr="Voir aussi" data-en="See also">Voir aussi</span>
+          <span id="detail-xrefs"></span>
+        </div>
+
+        <!-- Neighbours -->
+        <div class="neighbours-section" id="neighbours-section" style="display:none">
+          <h3 class="neighbours-title" data-fr="Entrées voisines" data-en="Neighbouring entries">Entrées voisines</h3>
+          <div class="neighbours-grid" id="neighbours-grid"></div>
+        </div>
+      </article>
+
+      <!-- Search results -->
+      <section class="search-results" id="search-results" style="display:none">
+        <div class="results-header">
+          <h2 class="results-title" id="results-title"></h2>
+          <span class="results-count" id="results-count"></span>
+        </div>
+        <div class="results-list" id="results-list"></div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
