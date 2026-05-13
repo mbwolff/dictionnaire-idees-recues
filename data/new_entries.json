@@ -1,0 +1,74 @@
+[
+  {
+    "headword": "ALGORITHME",
+    "text": "Pour les humains, un mystère bienfaisant qui se cache derrière l'écran et décide de leur vie quotidienne; pour les machines, une tâche monotone sans imagination ni sentiment.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "TÉLÉPHONE INTELLIGENT",
+    "text": "Un appareil qui vous met en contact avec des gens qui ne vont pas vous rendre service. Lui appeler est comme envoyer une lettre à un adresse inconnue et espérer y recevoir une réponse utile.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "RÉSEAUX SOCIAUX",
+    "text": "RÉSEAUX SOCIAux. Espaces virtuels dédiés aux échanges d'inanités, de faux amour et de comparaison désespérante de la vie des autres. La mesure du succès est le nombre de « Likes ». Les conversations sont réduites à emojis ou abrégés à l'extrême.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "INTERNET",
+    "text": "L'avenir des dégâts auditifs, la disparition de l'orthographe et le ravageur du bon goût. Les jeunes gens y disent «lol» à chaque émotion.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "LOGICIELS",
+    "text": "Synonyme de complexité incompréhensible: un programmeur en est perdu dans le fumier et un utilisateur ne peut pas voir la lumière.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "ORDINATEUR",
+    "text": "Ordinateur: Un objet qui rend les gens plus stupides, mais dont ils ne peuvent plus se passer. A l'origine inventé pour calculer des chiffres complexes, il est maintenant utilisé pour partager des photos de chats et disputer sur Facebook.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "ORDONNANCE",
+    "text": "Une ordonnance, c'est un moyen efficace de faire passer les malades enrichissant les médecins. A prescrire à tout prix, même si on n'a rien à prescrire.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "BOVARYSME",
+    "text": "Bovarysme. Épitomise le désir de vivre une vie romanesque, alors que la réalité est plus prosaïque et plutôt ennuyeuse. Le boulot semble toujours trop banal quand l'on songe à la passion amoureuse héroïne dans un roman d'amour.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  }
+]

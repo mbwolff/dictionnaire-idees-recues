@@ -22,7 +22,26 @@
       "Read(//Users/mark/Research/2026 Dictionnaire/**)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?q=&lang=fr&limit=3\")",
+      "Bash(python3 -m json.tool --no-indent)",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/entry/ABSINTHE?lang=en\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?q=amour&mode=semantic&lang=fr&limit=3\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/clusters?lang=fr\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?q=A&mode=prefix&lang=fr&limit=3\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('prefix A:', d['total'], 'results'\\); [print\\(' ',r['headword']\\) for r in d['results'][:3]]\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?q=cheval&mode=text&lang=fr&limit=3\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('text cheval:', d['total'], 'results'\\); [print\\(' ',r['headword']\\) for r in d['results'][:3]]\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/stats\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['total'],'total;', [r['headword'] for r in d['results']]\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['total'],'results;', [r['headword'] for r in d['results']]\\)\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?q=femme&mode=text&lang=fr&limit=3\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?q=amour&mode=semantic&lang=fr&limit=4\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\([r['headword'] for r in d['results']]\\)\")",
+      "Bash(python3 -c \"import sys,json; [print\\(f'  [{c[\\\\\"cluster_id\\\\\"]}] {c[\\\\\"label\\\\\"]} \\({c[\\\\\"count\\\\\"]}\\)'\\) for c in json.load\\(sys.stdin\\)]\")",
+      "Bash(curl -s \"http://127.0.0.1:5050/api/search?mode=cluster&cluster_id=2&lang=fr&limit=5\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['total'],'entries;', [r['headword'] for r in d['results']]\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('headword_tr:', d.get\\('headword_translated'\\)\\); print\\('text_tr:', d.get\\('text_translated',''\\)[:80]\\); print\\('neighbours:', [n['headword'] for n in d.get\\('neighbours',[]\\)][:4]\\)\")"
     ]
   }
 }
