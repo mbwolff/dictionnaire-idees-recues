@@ -472,6 +472,12 @@ class DictionairePipeline:
         all_e.sort(key=lambda x: x.get("headword", ""))
         return [self._format_entry(e, lang) for e in all_e[start:start + limit]]
 
+    def cluster_search(self, cluster_id: int, limit: int, lang: str) -> list[dict]:
+        all_e = self._entries + [{**e, "is_generated": True} for e in self._new_entries if "headword" in e]
+        results = [self._format_entry(e, lang) for e in all_e if e.get("cluster_id") == cluster_id]
+        results.sort(key=lambda x: x["headword"])
+        return results[:limit]
+
     def prefix_search(self, prefix: str, limit: int, lang: str) -> list[dict]:
         p = prefix.upper()
         all_e = self._entries + [{**e, "is_generated": True} for e in self._new_entries if "headword" in e]

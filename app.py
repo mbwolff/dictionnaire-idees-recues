@@ -47,6 +47,9 @@ def search():
         results = pipeline.semantic_search(q, limit, lang)
     elif mode == "prefix":
         results = pipeline.prefix_search(q, limit, lang)
+    elif mode == "cluster":
+        cluster_id = int(request.args.get("cluster_id", -1))
+        results = pipeline.cluster_search(cluster_id, limit, lang)
     else:
         results = pipeline.text_search(q, limit, lang)
 

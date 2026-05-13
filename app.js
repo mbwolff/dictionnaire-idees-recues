@@ -371,14 +371,15 @@ function renderClusters() {
     </div>`).join("");
 }
 
-async function filterByCluster(clusterId) {
+function filterByCluster(clusterId) {
   switchView("browse");
-  // Search using cluster label as query for now (real filtering via cluster_id would need API extension)
-  const cluster = state.clusters.find(c => c.cluster_id === clusterId);
-  if (cluster && cluster.sample_headwords.length) {
-    el.searchInput.value = "";
-    loadBrowsePage();
-  }
+  el.searchInput.value = "";
+  state.searchQuery = "";
+  const url = `/api/search?mode=cluster&cluster_id=${clusterId}&lang=${state.lang}&limit=200`;
+  api(url).then(data => {
+    renderEntryList(data.results);
+    el.loadMore.style.display = "none";
+  }).catch(err => console.error(err));
 }
 
 /* ── Add / Generate ────────────────────────────────────────────────── */
