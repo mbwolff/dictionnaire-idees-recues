@@ -444,8 +444,8 @@ class DictionairePipeline:
             "lang":          lang,
         }
         if lang == "en":
-            result["text_translated"]     = self.translator.to_english(text)
-            result["headword_translated"] = self.translator.to_english(hw)
+            result["text_translated"]     = entry.get("text_en") or self.translator.to_english(text)
+            result["headword_translated"] = entry.get("headword_en") or self.translator.to_english(hw)
             result["tag_labels"] = [RHETORICAL_TAG_LABELS["en"].get(t, t) for t in entry.get("tags", [])]
         else:
             result["text_translated"]     = text
