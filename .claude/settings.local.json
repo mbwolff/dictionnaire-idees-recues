@@ -16,7 +16,13 @@
       "Bash(curl -sS -o /tmp/stats.json -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/api/stats\")",
       "Bash(curl -sS -o /tmp/js.txt -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/static/app.js\")",
       "Read(//tmp/**)",
-      "Bash(curl -sS -i \"http://localhost:5000/\")"
+      "Bash(curl -sS -i \"http://localhost:5000/\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3)",
+      "Read(//Users/mark/Research/2026 Dictionnaire/**)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
