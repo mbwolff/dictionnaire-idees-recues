@@ -5,13 +5,15 @@
     "xrefs": [],
     "tags": [
       "danger_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ACADÉMIE FRANCAISE",
     "text": "La dénigrer, mais tâcher d'en faire partie si on peut.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "ACCIDENT",
@@ -19,7 +21,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "ACCOUCHEMENT",
@@ -28,7 +31,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ACHILLE",
@@ -36,7 +40,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "ACTRICES",
@@ -44,7 +49,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ADIEUX",
@@ -53,7 +59,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ADOLESCENT",
@@ -62,7 +69,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "AFFAIRES (Les)",
@@ -71,7 +79,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "AGENT",
@@ -79,7 +88,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "AGRICULTURE",
@@ -87,13 +97,15 @@
     "xrefs": [],
     "tags": [
       "self_undermining"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "AIL",
     "text": "Tue les vers intestinaux et dispose aux combats de l'amour. On en frotta les lèvres de Henri IV au moment où il vient au monde.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "AIR",
@@ -103,7 +115,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "AIRAIN",
@@ -111,7 +124,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ALBÂTRE",
@@ -120,7 +134,8 @@
     "tags": [
       "nominal_assertion",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ALBION",
@@ -129,7 +144,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ALCIBIADE",
@@ -138,7 +154,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ALCOOLISME",
@@ -146,7 +163,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ALLEMAGNE",
@@ -154,7 +172,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ALLEMANDS",
@@ -162,7 +181,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "AMBITIEUX",
@@ -171,13 +191,15 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "AMBITION",
     "text": "Toujours précédé de folle quand elle n'est pas noble.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "AMÉRIQUE",
@@ -187,7 +209,8 @@
       "mythification",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "AMIRAL",
@@ -195,7 +218,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ANDROCLÈS",
@@ -205,7 +229,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ANGE",
@@ -213,7 +238,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ANGLAIS",
@@ -221,7 +247,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ANGLAISES",
@@ -229,13 +256,15 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ANTÉCHRIST",
     "text": "Voltaire, Renan... ANTIQUITÉ _et tout ce qui s'y rapporte_: Poncif, embêtant.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "ANTIQUITÉS (les)",
@@ -243,13 +272,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "APLOMB",
     "text": "Toujours suivi de infernal ou précédé de rude.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "APPARTEMENT de garçon",
@@ -257,7 +288,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ARBALÈTE",
@@ -265,7 +297,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ARCHIMÈDE",
@@ -275,7 +308,8 @@
       "prescriptive_imperative",
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ARCHITECTES",
@@ -283,7 +317,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ARCHITECTURE",
@@ -292,7 +327,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "ARGENT",
@@ -301,7 +337,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ARMÉE",
@@ -309,7 +346,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ARSENIC",
@@ -317,7 +355,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "ART",
@@ -325,7 +364,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "ARTISTES",
@@ -337,7 +377,8 @@
       "self_undermining",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ASPIC",
@@ -345,7 +386,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ASSASSIN",
@@ -354,7 +396,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ASTRONOMIE",
@@ -364,13 +407,15 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "ATHÉE",
     "text": "Un peuple d'athée ne saurait subsister.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "AUTEUR",
@@ -379,7 +424,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "AUTRUCHE",
@@ -387,7 +433,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "AVOCATS",
@@ -396,7 +443,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "BACCALAURÉAT",
@@ -405,7 +453,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "BADAUD",
@@ -414,7 +463,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BADIGEON dans les églises",
@@ -423,7 +473,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "BAGNOLET",
@@ -431,7 +482,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "BAGUE",
@@ -440,7 +492,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "BÂILLEMENT",
@@ -448,7 +501,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "BAISER",
@@ -457,7 +511,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "BALLONS",
@@ -465,13 +520,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "BANDITS",
     "text": "Toujours féroces.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "BANQUET",
@@ -480,7 +537,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "BANQUIERS",
@@ -488,7 +546,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BARAGOUIN",
@@ -497,7 +556,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "BARBE",
@@ -507,7 +567,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "BARBIER",
@@ -516,7 +577,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "BAS-BLEU",
@@ -525,7 +587,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "BASES de la société",
@@ -534,7 +597,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "BASILIQUE",
@@ -542,7 +606,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "BASQUES",
@@ -550,7 +615,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "BATAILLE",
@@ -558,7 +624,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "BÂTON",
@@ -569,13 +636,15 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "BAUDRUCHE",
     "text": "Ne sert qu'à faire des ballons.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "BAYADÈRE",
@@ -583,7 +652,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "BEETHOVEN",
@@ -591,7 +661,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "BERGERS",
@@ -599,7 +670,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BÊTES",
@@ -608,7 +680,8 @@
     "tags": [
       "circular_definition",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "BIBLE",
@@ -617,7 +690,8 @@
     "tags": [
       "nominal_assertion",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "BIBLIOTHÈQUE",
@@ -625,7 +699,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "BIÈRE",
@@ -633,7 +708,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "BILLARD",
@@ -642,7 +718,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "BLONDES",
@@ -652,7 +729,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BOIS",
@@ -661,7 +739,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "BONNES",
@@ -670,7 +749,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BONNET GREC",
@@ -679,7 +759,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "BOSSUS",
@@ -687,7 +768,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BOTTE",
@@ -696,7 +778,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "BOUCHERS",
@@ -705,7 +788,8 @@
     "tags": [
       "danger_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BOUDIN",
@@ -714,7 +798,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "BOUDDHISME",
@@ -722,7 +807,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "BOUILLI (le)",
@@ -730,7 +816,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "BOULET",
@@ -738,7 +825,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "BOURREAU",
@@ -746,7 +834,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "BOURSE (la)",
@@ -754,7 +843,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "BOURSIERS",
@@ -762,7 +852,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BOUTONS",
@@ -770,7 +861,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "BRACONNIERS",
@@ -778,7 +870,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BRAS",
@@ -787,7 +880,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "BRETONS",
@@ -795,7 +889,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BROCHE",
@@ -803,7 +898,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "BRUNES",
@@ -813,7 +909,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "BUDGET",
@@ -821,7 +918,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "BUFFON",
@@ -829,13 +927,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CACHET",
     "text": "Toujours suivi de \"tout particulier\" .",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "CACHOT",
@@ -843,7 +943,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CADEAU",
@@ -851,7 +952,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "CAFÉ",
@@ -860,7 +962,8 @@
     "tags": [
       "mythification",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CALVITIE",
@@ -868,7 +971,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CAMARILLA",
@@ -876,7 +980,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "CAMPAGNE",
@@ -884,7 +989,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "CANARDS",
@@ -892,7 +998,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CANDEUR",
@@ -900,7 +1007,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CANONADE",
@@ -908,19 +1016,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "CARABINS",
     "text": "Dorment près des cadavres. Il y en a qui en mangent.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "CARÈME",
     "text": "Au fond n'est qu'une mesure hygiénique.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "CATAPLASME",
@@ -928,13 +1039,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "CATHOLICISME",
     "text": "A eu une influence très favorable sur les arts.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "CAUCHEMAR",
@@ -942,7 +1055,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CAVALERIE",
@@ -952,19 +1066,22 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "CAVERNES",
     "text": "Habitation ordinaire des voleurs. Sont toujours remplies de serpents.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "CÈDRE",
     "text": "Celui du Jardin des Plantes a été rapporté dans un chapeau.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "CÉLÉBRITÉ",
@@ -973,19 +1090,22 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "CELIBATAIRES",
     "text": "Tous égoïstes et débauchés. On devrait les imposer. Se préparent une triste vieillesse.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "CENSURE",
     "text": "Utile, on a beau dire.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "CERCLE",
@@ -994,7 +1114,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CERTIFICAT",
@@ -1002,7 +1123,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "CÉRUMEN",
@@ -1010,13 +1132,15 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "CHACAL",
     "text": "Singulier de shakos (vieux, mais fait toujours rire).",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "CHALEUR",
@@ -1025,13 +1149,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CHAMBRE À COUCHER",
     "text": "Dans un vieux château: Henri IV y a toujours passé une nuit.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "CHAMEAU",
@@ -1039,13 +1165,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "CHAMPAGNE",
     "text": "Caractérise le dîner de cérémonie. Faire semblant de le détester, en disant que \"ce n'est pas du vin\" . Provoque l'enthousiasme chez les petites gens. La Russie en consomme plus que la France. C'est par lui que les idées françaises se sont répandues en Europe. Sous la Régence, on ne faisait pas autre chose que d'en boire. Mais on ne le boit pas, on le \"sable\" .",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "CHAMPIGNONS",
@@ -1053,7 +1181,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CHANTEUR",
@@ -1061,7 +1190,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CHAPEAU",
@@ -1070,7 +1200,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CHARCUTIER",
@@ -1078,7 +1209,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CHARTREUX",
@@ -1087,13 +1219,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CHASSE",
     "text": "Excellent exercice que l'on doit feindre d'adorer. Fait partie de la pompe des souverains. Sujet de délire pour la magistrature.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "CHAT",
@@ -1102,7 +1236,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "CHÂTAIGNE",
@@ -1110,19 +1245,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CHATEAUBRIAND",
     "text": "Connu surtout par le beefsteak qui porte son nom.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 4
   },
   {
     "headword": "CHÂTEAU FORT",
     "text": "A toujours subi un siège sous Philippe Auguste.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "CHEMINÉE",
@@ -1130,7 +1268,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CHEMINS DE FER",
@@ -1138,7 +1277,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "CHEVAL",
@@ -1146,7 +1286,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "CHIEN",
@@ -1154,7 +1295,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "CHIRURGIENS",
@@ -1162,7 +1304,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "CHOLÉRA",
@@ -1170,13 +1313,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "CHRISTIANISME",
     "text": "A affranchi les esclaves.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "CIDRE",
@@ -1184,7 +1329,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CIGARES",
@@ -1192,7 +1338,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "CIRAGE",
@@ -1200,7 +1347,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CLAIR-OBSCUR",
@@ -1208,7 +1356,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "CLARINETTE",
@@ -1217,13 +1366,15 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CLASSIQUES (les)",
     "text": "On est censé les connaître.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "CLOCHER de village",
@@ -1231,19 +1382,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "CLOU",
     "text": "V. boutons.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "CLOWN",
     "text": "A été disloqué dès l'enfance.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "CLUB",
@@ -1251,7 +1405,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "COCHON",
@@ -1259,7 +1414,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "COCU",
@@ -1267,13 +1423,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "COFFRES-FORTS",
     "text": "Leurs complications sont très faciles à déjouer.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "COGNAC",
@@ -1283,7 +1441,8 @@
       "circular_definition",
       "danger_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "COLÈRE",
@@ -1293,7 +1452,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "COLONIES (nos)",
@@ -1301,7 +1461,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "COMÉDIE",
@@ -1309,7 +1470,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "COMÈTES",
@@ -1318,7 +1480,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "COMMERCE",
@@ -1328,7 +1491,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "COMMUNION",
@@ -1338,7 +1502,8 @@
       "circular_definition",
       "nominal_assertion",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "COMPAS",
@@ -1346,7 +1511,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CONCERT",
@@ -1354,7 +1520,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "CONCESSIONS",
@@ -1362,19 +1529,22 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "CONCILIATION",
     "text": "Les prêcher toujours, même quand les contraires sont absolus.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "CONCUPISCENCE",
     "text": "Mot de curé pour exprimer les désirs charnels.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "CONCURRENCE",
@@ -1382,7 +1552,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "CONFISEURS",
@@ -1391,7 +1562,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "CONFORTABLE",
@@ -1399,7 +1571,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "CONGRÉGANISTE",
@@ -1407,13 +1580,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CONJURÉ",
     "text": "Les conjurés ont toujours la manie de s'inscrire sur une liste.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "CONSERVATEUR",
@@ -1422,7 +1597,8 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "CONSERVATOIRE",
@@ -1430,13 +1606,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "CONSTIPATION",
     "text": "Tous les gens de lettres sont constipés. Influe sur les convictions politiques.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "CONTRALTO",
@@ -1444,13 +1622,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "CONVERSATION",
     "text": "La politique et la religion doivent en être exclues.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "COPAHU",
@@ -1458,7 +1638,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "COQ",
@@ -1466,7 +1647,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "COR aux pieds",
@@ -1474,13 +1656,15 @@
     "xrefs": [],
     "tags": [
       "danger_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "COR de chasse",
     "text": "Dans les bois fait bon effet, et le soir sur l'eau.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "CORDE",
@@ -1490,13 +1674,15 @@
       "circular_definition",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CORDONNIER",
     "text": "Ne sutor ultra crepidam.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "CORPS",
@@ -1504,7 +1690,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "CORSET",
@@ -1512,7 +1699,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "COSAQUES",
@@ -1520,7 +1708,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "COTON",
@@ -1528,7 +1717,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "COURTISANE",
@@ -1536,7 +1726,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "COUSIN",
@@ -1544,7 +1735,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "COUTEAU",
@@ -1552,7 +1744,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "CRAPAUD",
@@ -1561,7 +1754,8 @@
     "tags": [
       "danger_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CRÉOLE",
@@ -1569,7 +1763,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "CRIMINEL",
@@ -1578,7 +1773,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "CRITIQUE",
@@ -1587,7 +1783,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "CROCODILE",
@@ -1596,13 +1793,15 @@
     "tags": [
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "CROISADES",
     "text": "Ont été bienfaisantes pour le commerce de Venise.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "CRUCIFIX",
@@ -1610,7 +1809,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "CUIR",
@@ -1618,7 +1818,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "CUISINE",
@@ -1626,7 +1827,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CUJAS",
@@ -1634,7 +1836,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "CURACAO",
@@ -1642,7 +1845,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "CYGNE",
@@ -1650,25 +1854,29 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "CYPRÈS",
     "text": "Ne pousse que dans les cimetières.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "CZAR",
     "text": "Prononcer tzar et de temps en temps autocrate.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "DAGUERRÉOTYPE",
     "text": "Remplacera la peinture (v. photographie).",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "DAMAS",
@@ -1676,7 +1884,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "DAME",
@@ -1685,7 +1894,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "DANSE",
@@ -1693,7 +1903,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DANTON",
@@ -1701,19 +1912,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DARTRE",
     "text": "signe de santé (v. boutons).",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "DARWIN",
     "text": "Celui qui dit que nous descendons du singe.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "DAUPHIN",
@@ -1721,7 +1935,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "DÉBAUCHE",
@@ -1729,7 +1944,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DÉCHAÎNER",
@@ -1738,7 +1954,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DÉCOR de théâtre",
@@ -1746,7 +1963,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DÉCORATION de la Légion d'honneur",
@@ -1754,7 +1972,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "DÉCORUM",
@@ -1762,13 +1981,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DÉFAITE",
     "text": "S'essuie, et elle est tellement complète qu'il n'en reste personne pour en porter la nouvelle.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "DÉFILÉ",
@@ -1777,7 +1998,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "DÉICIDE",
@@ -1785,7 +2007,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "DÉJEUNER des garçons",
@@ -1793,7 +2016,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "DÉMÊLOIR",
@@ -1801,19 +2025,22 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DÉMOSTHÈNE",
     "text": "Ne prononçait pas de discours sans avoir un galet dans la bouche.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "DENTS",
     "text": "Sont gâtées par le cidre, le tabac, les dragées, la glace, boire de suite après le potage et dormir la bouche ouverte. Dent oeillère: dangereux de l'arracher parce qu'elle correspond à l'oeil. L'arrachement d'une dent \"ne fait pas jouir\" .",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "DENTISTES",
@@ -1821,7 +2048,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DÉPURATIF",
@@ -1829,7 +2057,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "DÉPUTÉ",
@@ -1839,7 +2068,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DÉRATÉ",
@@ -1849,7 +2079,8 @@
       "mythification",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DERBY",
@@ -1857,13 +2088,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "DESCARTES",
     "text": "Cogito, ergo sum.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "DESERT",
@@ -1871,7 +2104,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "DESSERT",
@@ -1879,7 +2113,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "DESSIN (l'art du)",
@@ -1887,7 +2122,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DEVOIRS",
@@ -1896,7 +2132,8 @@
     "tags": [
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DÉVOUEMENT",
@@ -1905,7 +2142,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "DIAMANT",
@@ -1913,7 +2151,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "DIANE",
@@ -1921,19 +2160,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "DICTIONNAIRE",
     "text": "En dire: \"N'est fait que pour les ignorants.\" Dictionnaire de rimes: s'en servir? Honteux!",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "DIDEROT",
     "text": "Toujours suivi de d'Alembert.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "DIEU",
@@ -1942,7 +2184,8 @@
     "tags": [
       "circular_definition",
       "mythification"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "DILETTANTE",
@@ -1950,7 +2193,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DILIGENCES",
@@ -1959,7 +2203,8 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "DÎNER",
@@ -1968,13 +2213,15 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "DIOGÈNE",
     "text": "\"Je cherche un homme... Retire-toi de mon soleil.\"",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "DIPLOMATIE",
@@ -1982,7 +2229,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DIPLÔME",
@@ -1990,13 +2238,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DIRECTOIRE (le)",
     "text": "Les hontes du Directoire. \"Dans ce temps-là l'honneur s'était réfugié aux armées.\" Les femmes, à Paris, se promenaient toutes nues.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "DISSECTION",
@@ -2004,19 +2254,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DIVA",
     "text": "Toutes les cantatrices doivent être appelées Diva.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "DIVORCE",
     "text": "Si Napoléon n'avait pas divorcé, il serait encore sur le trône.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "DIX (Conseil des)",
@@ -2026,7 +2279,8 @@
       "prescriptive_imperative",
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DJINN",
@@ -2034,7 +2288,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "DOCTEUR",
@@ -2044,7 +2299,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DOCTRINAIRES",
@@ -2054,7 +2310,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DOCUMENT",
@@ -2063,7 +2320,8 @@
     "tags": [
       "nominal_assertion",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "DOGE",
@@ -2072,7 +2330,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DOIGT",
@@ -2080,7 +2339,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "DOLMEN",
@@ -2088,7 +2348,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "DÔME",
@@ -2096,7 +2357,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "DOMICILE",
@@ -2104,7 +2366,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "DOMINOS",
@@ -2112,7 +2375,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "DOMPTEURS de bêtes féroces",
@@ -2120,7 +2384,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DONJON",
@@ -2128,7 +2393,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DORMIR",
@@ -2137,7 +2403,8 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DORTOIRS",
@@ -2145,7 +2412,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DOS",
@@ -2153,7 +2421,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "DOUANE",
@@ -2162,13 +2431,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DOULEUR",
     "text": "A toujours un résultat favorable. La véritable est toujours contenue.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "DOUTE",
@@ -2177,7 +2448,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "DRAP",
@@ -2186,13 +2458,15 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "DRAPEAU national",
     "text": "Sa vue fait battre le coeur.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "DROIT (le)",
@@ -2200,7 +2474,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "DRÔLE",
@@ -2209,7 +2484,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "DUEL",
@@ -2220,7 +2496,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "DUPE",
@@ -2229,7 +2506,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "DUPUYTREN",
@@ -2238,7 +2516,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "DUR",
@@ -2249,7 +2528,8 @@
       "prescriptive_imperative",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "EAU",
@@ -2257,13 +2537,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "ÉBÉNISTE",
     "text": "Ouvrier qui travaille surtout l'acajou.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "ÉCHAFAUD",
@@ -2271,7 +2553,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ÉCHARPE",
@@ -2279,7 +2562,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ÉCHECS (jeu des)",
@@ -2288,7 +2572,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ÉCHO",
@@ -2297,7 +2582,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ÉCLECTISME",
@@ -2305,7 +2591,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "ÉCOLES",
@@ -2313,7 +2600,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉCONOMIE",
@@ -2323,7 +2611,8 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ÉCONOMIE POLITIQUE",
@@ -2331,7 +2620,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ÉCREVISSE",
@@ -2341,13 +2631,15 @@
       "circular_definition",
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ÉCRIRE",
     "text": "Currente calamo, c'est l'excuse pour les fautes de style ou d'orthographe. ÉCRIT, BIEN ÉCRIT: Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "ÉCRITURE",
@@ -2356,7 +2648,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ÉCUME DE MER",
@@ -2364,7 +2657,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ÉDILES",
@@ -2374,7 +2668,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "ÉGOÏSME",
@@ -2383,7 +2678,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "ÉLÉPHANTS",
@@ -2391,13 +2687,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ÉMAIL",
     "text": "Le secret en est perdu.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "EMBONPOINT",
@@ -2405,7 +2703,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ÉMIGRÉS",
@@ -2414,7 +2713,8 @@
     "tags": [
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "ÉMIR",
@@ -2422,7 +2722,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "EMPIRE",
@@ -2430,7 +2731,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ENCEINTE",
@@ -2438,7 +2740,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ENCRIER",
@@ -2446,7 +2749,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "ENCYCLOPÉDIE",
@@ -2457,7 +2761,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "ENFANTS",
@@ -2466,13 +2771,15 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ENGELURE",
     "text": "Signe de santé: vient de s'être chauffé quand on avait froid.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "ENTERREMENT",
@@ -2481,7 +2788,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ENTHOUSIASME",
@@ -2489,7 +2797,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ENTRACTE",
@@ -2498,7 +2807,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ENVERGURE",
@@ -2507,7 +2817,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "ÉPARGNE (Caisse d')",
@@ -2515,7 +2826,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ÉPÉE",
@@ -2523,7 +2835,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉPÉRONS",
@@ -2531,7 +2844,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "ÉPICURE",
@@ -2541,7 +2855,8 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ÉPINARDS",
@@ -2550,7 +2865,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉPOQUE (la nôtre)",
@@ -2560,7 +2876,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉPUISEMENT",
@@ -2569,7 +2886,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ÉQUITATION",
@@ -2578,13 +2896,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "ÈRE (des révolutions)",
     "text": "Toujours ouverte puisque chaque nouveau gouvernement promet de la fermer.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉRECTION",
@@ -2592,7 +2912,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "ÉRUDITION",
@@ -2602,13 +2923,15 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ESCRIME",
     "text": "Les maîtres d'escrime savent des bottes secrètes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "ESCROC",
@@ -2616,7 +2939,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ESPION",
@@ -2624,7 +2948,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ESPLANADE",
@@ -2632,7 +2957,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ESPRIT",
@@ -2640,7 +2966,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ESTOMAC",
@@ -2648,7 +2975,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "ÉTAGÈRE",
@@ -2657,7 +2985,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉTALON",
@@ -2666,7 +2995,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉTÉ",
@@ -2674,7 +3004,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ÉTERNUEMENT",
@@ -2682,7 +3013,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ÉTERNUER",
@@ -2690,13 +3022,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "ÉTOILE",
     "text": "Chacun a la sienne, comme l'Empereur.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "ÉTRANGER",
@@ -2704,7 +3038,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "ÉTRENNES",
@@ -2712,7 +3047,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "ÉTRUSQUE",
@@ -2720,19 +3056,22 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ÉTUDIANT",
     "text": "Portent tous des bérets rouges, des pantalons à la hussarde, fumant la pipe dans la rue et n'étudie pas.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "ÉTYMOLOGIE",
     "text": "Rien de plus facile à trouver avec le latin et un peu de réflexion.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "EUNUQUE",
@@ -2740,7 +3079,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "ÉVACUATIONS",
@@ -2748,7 +3088,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "ÉVANGILES",
@@ -2756,25 +3097,29 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ÉVIDENCE",
     "text": "Vous aveugle, quand elle ne crève pas les yeux.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "EXASPÉRATION",
     "text": "Constamment à son comble.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "EXCEPTION",
     "text": "Dites qu'elle confirme la règle. Ne vous risquez pas à expliquer comment.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "EXÉCUTIONS CAPITALES",
@@ -2783,7 +3128,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "EXERCICE",
@@ -2791,7 +3137,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "EXPIRER",
@@ -2799,7 +3146,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "EXPOSITION",
@@ -2807,7 +3155,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "EXTINCTION",
@@ -2815,13 +3164,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "EXTIRPER",
     "text": "Ce verbe ne s'emploie que pour les hérésies et les cors aux pieds.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "FABRIQUE",
@@ -2830,7 +3181,8 @@
     "tags": [
       "danger_assertion",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "FACTURE",
@@ -2839,7 +3191,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FAÏENCE",
@@ -2847,7 +3200,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "FAISAN",
@@ -2855,7 +3209,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FAISCEAUX",
@@ -2863,7 +3218,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "FANFARE",
@@ -2872,7 +3228,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FARCE",
@@ -2880,7 +3237,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FARD",
@@ -2888,7 +3246,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FATALITÉ",
@@ -2897,7 +3256,8 @@
     "tags": [
       "danger_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FAUBOURGS",
@@ -2907,7 +3267,8 @@
       "danger_assertion",
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "FAUTE",
@@ -2916,7 +3277,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FAUX-MONNAYEURS",
@@ -2924,7 +3286,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "FÉLICITATIONS",
@@ -2933,7 +3296,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "FÉLICITÉ",
@@ -2942,7 +3306,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FEMELLE",
@@ -2953,7 +3318,8 @@
       "prescriptive_imperative",
       "social_performance",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FEMME",
@@ -2962,7 +3328,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FEMMES DE CHAMBRE",
@@ -2970,7 +3337,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "FÉODALITÉ",
@@ -2980,13 +3348,15 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "FERME (adjectif)",
     "text": "Toujours suivi de \"comme un roc\" .",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "FERME (subst.)",
@@ -2996,13 +3366,15 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "FERMÉ",
     "text": "Toujours précédé de hermétiquement.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "FERMIER",
@@ -3011,7 +3383,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FEU (subst.)",
@@ -3020,7 +3393,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FEU (adj.)",
@@ -3028,7 +3402,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FEUILLE DE VIGNE",
@@ -3036,7 +3411,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FEUILLETONS",
@@ -3044,7 +3420,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FIDÈLE",
@@ -3053,13 +3430,15 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "FIÈVRE",
     "text": "Preuve de la force du sang. Est causée par les prunes, le melon, le soleil d'avril, etc. FIGARO (_Le Mariage de_): Encore une des causes de la Révolution!",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "FIGURE",
@@ -3068,7 +3447,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FLAGRANT DÉLIT",
@@ -3077,13 +3457,15 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "FLAMANT",
     "text": "Oiseau ainsi nommé parce qu'il vient des Flandres.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "FLATTEUR",
@@ -3095,7 +3477,8 @@
       "prescriptive_imperative",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FLEGME",
@@ -3103,7 +3486,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "FOETUS",
@@ -3111,19 +3495,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "FOLLICULAIRES",
     "text": "Les journalistes. Quand on ajoute de bas étage, c'est le comble du mépris.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "FONCTIONNAIRE",
     "text": "Inspire le respect quelle que soit la fonction qu'il remplisse.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "FONDEMENT",
@@ -3132,7 +3519,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FONDS SECRETS",
@@ -3140,7 +3528,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "FORCATS",
@@ -3148,7 +3537,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FORCE",
@@ -3158,7 +3548,8 @@
       "circular_definition",
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "FORNARINA",
@@ -3166,7 +3557,8 @@
     "xrefs": [],
     "tags": [
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FORT",
@@ -3174,7 +3566,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FORTUNE",
@@ -3183,7 +3576,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FOSSETTES",
@@ -3192,7 +3586,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FOSSILES",
@@ -3200,7 +3595,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FOUDRES du Vatican",
@@ -3210,7 +3606,8 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FOULARD",
@@ -3218,13 +3615,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "FOULE",
     "text": "A toujours de bons instincts. Turba ruit ou ruunt. La vile multitude (Thiers.) Le peuple saint en foule inondait les portiques... , etc.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "FOURCHETTE",
@@ -3234,7 +3633,8 @@
       "danger_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "FOURMIS",
@@ -3242,7 +3642,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FOURRURE",
@@ -3250,7 +3651,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FOUTRE",
@@ -3259,7 +3661,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "FRANÇAIS",
@@ -3268,7 +3671,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FRANC-MACONNERIE",
@@ -3277,7 +3681,8 @@
     "tags": [
       "danger_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FRANCS-TIREURS",
@@ -3288,7 +3693,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "FRAUDER",
@@ -3296,7 +3702,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FRESQUE",
@@ -3304,7 +3711,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "FRICASSÉE",
@@ -3312,7 +3720,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "FROID",
@@ -3320,7 +3729,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "FROMAGE",
@@ -3330,7 +3740,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "FRONT",
@@ -3338,13 +3749,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FRONTISPICE",
     "text": "Les grands hommes font bien dessus.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "FRUSTE",
@@ -3353,7 +3766,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "FUGUE",
@@ -3362,7 +3776,8 @@
     "tags": [
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "FULMINER",
@@ -3370,7 +3785,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FURIE FRANÇAISE",
@@ -3378,13 +3794,15 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "FURONCLE",
     "text": "V. boutons.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "FUSIL",
@@ -3392,7 +3810,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "FUSILLADE",
@@ -3400,7 +3819,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "FUSILLER",
@@ -3409,7 +3829,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "FUSION des branches royales",
@@ -3417,7 +3838,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "GAGNE-PETIT",
@@ -3425,13 +3847,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "GAIETÉ",
     "text": "Toujours accompagnée de folle.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "GALANT HOMME",
@@ -3439,7 +3863,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "GALBE",
@@ -3448,7 +3873,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "GALETS",
@@ -3456,7 +3882,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "GALLOPHOBE",
@@ -3464,7 +3891,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "GAMIN",
@@ -3473,13 +3901,15 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "GANTS",
     "text": "Donnent l'air comme il faut.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "GARDE",
@@ -3487,7 +3917,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "GARDE-COTE",
@@ -3496,7 +3927,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "GARES de chemin de fer",
@@ -3504,7 +3936,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "GAUCHERS",
@@ -3515,7 +3948,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "GENDARME",
@@ -3523,7 +3957,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "GENDARMERIE",
@@ -3531,7 +3966,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "GENDRE",
@@ -3539,7 +3975,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "GÉNÉRATION SPONTANÉE",
@@ -3547,7 +3984,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "GÉNÉRAL",
@@ -3556,7 +3994,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "GÉNIE (le)",
@@ -3564,7 +4003,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "GENOVEFAIN",
@@ -3572,7 +4012,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "GENRE ÉPISTOLAIRE",
@@ -3581,7 +4022,8 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "GENTILHOMME",
@@ -3589,13 +4031,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "GÉOMÈTRE",
     "text": "\"Nul n'entre ici s'il n'est géomètre.\"",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "GIAOUR",
@@ -3603,13 +4047,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "GIBELOTTE",
     "text": "Toujours faite avec du chat.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "GIBERNE",
@@ -3617,7 +4063,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "GIBIER",
@@ -3625,7 +4072,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "GIRAFE",
@@ -3633,7 +4081,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "GIRONDINS",
@@ -3642,7 +4091,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "GLACES",
@@ -3650,7 +4100,8 @@
     "xrefs": [],
     "tags": [
       "danger_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "GLACIERS",
@@ -3658,7 +4109,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "GLÈBE (la)",
@@ -3667,7 +4119,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "GLOBE",
@@ -3675,7 +4128,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "GLOIRE",
@@ -3683,7 +4137,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "GLORIA",
@@ -3691,7 +4146,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "GOBELINS (tapisserie des)",
@@ -3699,13 +4155,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "GODDAM",
     "text": "\"C'est le fond de la langue anglaise\" , comme disait Beaumarchais, et là-dessus on ricane de pitié.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "GOD SAVE THE KING",
@@ -3714,19 +4172,22 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "GOG",
     "text": "Toujours suivi de Magog.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "GOMME ÉLASTIQUE",
     "text": "Est faite avec le scrotum de cheval.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "GOTHIQUE",
@@ -3734,13 +4195,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "GOURMÉ",
     "text": "Toujours précédé de raide.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "GOÛT",
@@ -3749,7 +4212,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "GRAMMAIRE",
@@ -3759,7 +4223,8 @@
       "prescriptive_imperative",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "GRAMMAIRIENS",
@@ -3767,7 +4232,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "GRAS",
@@ -3776,13 +4242,15 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "GRÊLÉ",
     "text": "Les femmes grêlées sont toutes lascives.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "GRENIER",
@@ -3790,7 +4258,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "GRENOUILLE",
@@ -3798,7 +4267,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "GRISETTES",
@@ -3807,7 +4277,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "GROG",
@@ -3815,7 +4286,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "GROTTES À STALACTITES",
@@ -3824,7 +4296,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "GROUPE",
@@ -3832,13 +4305,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "GUÉRILLA",
     "text": "Fait plus de mal à l'ennemi que l'armée régulière.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "GUERRE",
@@ -3847,7 +4322,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "GULF-STREAM",
@@ -3855,7 +4331,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "GYMNASE (le)",
@@ -3863,13 +4340,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "GYMNASTIQUE",
     "text": "On ne saurait trop en faire. Exténue les enfants.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "HABIT NOIR",
@@ -3878,7 +4357,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "HABITUDE",
@@ -3887,7 +4367,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HACHISCH",
@@ -3895,7 +4376,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "HALEINE",
@@ -3904,7 +4386,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HALLEBARDE",
@@ -3913,7 +4396,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HALLIER",
@@ -3922,7 +4406,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "HAMAC",
@@ -3931,7 +4416,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HAMEAU",
@@ -3939,7 +4425,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HANNETONS",
@@ -3948,13 +4435,15 @@
     "tags": [
       "danger_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "HAQUENÉE",
     "text": "Animal blanc du Moyen Âge dont la race est disparue.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 4
   },
   {
     "headword": "HARAS",
@@ -3962,7 +4451,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "HAREM",
@@ -3972,7 +4462,8 @@
       "circular_definition",
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "HARENGS",
@@ -3980,7 +4471,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "HARPE",
@@ -3988,13 +4480,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "HEBREU",
     "text": "Est hébreu tout ce qu'on ne comprend pas.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "HEIDUQUE",
@@ -4002,7 +4496,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "HÉLICE",
@@ -4010,7 +4505,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "HÉMICYCLE",
@@ -4019,7 +4515,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HÉMORROÏDES",
@@ -4028,7 +4525,8 @@
     "tags": [
       "mythification",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "HERCULE",
@@ -4036,19 +4534,22 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "HERMAPHRODITE",
     "text": "Excite la curiosité malsaine. Chercher à en voir.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "HERNIE",
     "text": "Tout le monde en a sans le savoir.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "HÉRODE",
@@ -4057,7 +4558,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "HÉROSTRATE",
@@ -4066,7 +4568,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "HEUREUX",
@@ -4076,7 +4579,8 @@
       "circular_definition",
       "mythification",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "HIATUS",
@@ -4084,7 +4588,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "HIÉROGLYPHES",
@@ -4092,7 +4597,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "HIPPOCRATE",
@@ -4101,7 +4607,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "HIPPOLYTE",
@@ -4110,7 +4617,8 @@
     "tags": [
       "circular_definition",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HIRONDELLE",
@@ -4119,13 +4627,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HISTRION",
     "text": "Toujours précédé de vil.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "HIVER",
@@ -4133,7 +4643,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "HOBEREAUX de campagne",
@@ -4142,7 +4653,8 @@
     "tags": [
       "prescriptive_imperative",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "HOMÈRE",
@@ -4151,7 +4663,8 @@
     "tags": [
       "mythification",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "HOMO",
@@ -4160,7 +4673,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "HONNEUR",
@@ -4171,7 +4685,8 @@
       "prescriptive_imperative",
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HOQUET",
@@ -4179,7 +4694,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HORIZONS",
@@ -4187,7 +4703,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "HORREUR",
@@ -4197,7 +4714,8 @@
       "circular_definition",
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HOSPITALITÉ",
@@ -4207,7 +4725,8 @@
       "circular_definition",
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HOSPODAR",
@@ -4215,7 +4734,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "HOSTILITÉS",
@@ -4224,7 +4744,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "HÔTELS",
@@ -4232,7 +4753,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HÔTES",
@@ -4240,13 +4762,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HUGO (VICTOR)",
     "text": "A eu bien tort, vraiment, de s'occuper de politique.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "HUILE D'OLIVE",
@@ -4254,13 +4778,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HUÎTRES",
     "text": "On n'en mange plus! Elles sont trop chères!",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 4
   },
   {
     "headword": "HUMEUR",
@@ -4269,7 +4795,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "HUMIDITÉ",
@@ -4277,7 +4804,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HUSSARD",
@@ -4287,7 +4815,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "HYDROTHÉRAPIE",
@@ -4295,7 +4824,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HYGIÈNE",
@@ -4303,7 +4833,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "HYPOTHÈQUE",
@@ -4311,7 +4842,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "HYPOTHÈSE",
@@ -4321,7 +4853,8 @@
       "danger_assertion",
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "HYSTÉRIE",
@@ -4329,7 +4862,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "IDÉAL",
@@ -4338,13 +4872,15 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "IDÉOLOGUES",
     "text": "Tous les journalistes le sont.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "IDOLÂTRES",
@@ -4352,7 +4888,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ILIADE",
@@ -4360,13 +4897,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ILLISIBLE",
     "text": "Une ordonnance de médecin doit l'être. Toute signature idem. Cela indique qu'on est accablé de correspondance.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "ILLUSIONS",
@@ -4375,7 +4914,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "ILOTES",
@@ -4383,7 +4923,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "IMAGES",
@@ -4391,7 +4932,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "IMAGINATION",
@@ -4401,13 +4943,15 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "IMBÉCILES",
     "text": "Ceux qui ne pensent pas comme vous.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "IMBROGLIO",
@@ -4415,13 +4959,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "IMMORALITÉ",
     "text": "Ce mot bien prononcé rehausse celui qui l'emploie.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "IMPÉRATRICES",
@@ -4430,7 +4976,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "IMPÉRIALISTES",
@@ -4438,7 +4985,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "IMPERMÉABLE (un)",
@@ -4447,7 +4995,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "IMPIE",
@@ -4456,7 +5005,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "IMPORTATION",
@@ -4464,13 +5014,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "IMPRÉSARIO",
     "text": "Mot d'artiste qui signifie directeur. Toujours précédé d'habile.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "IMPRIMÉ",
@@ -4481,13 +5033,15 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "IMPRIMERIE",
     "text": "Découverte merveilleuse. A fait plus de mal que de bien.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "INAUGURATION",
@@ -4495,7 +5049,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "INCAPACITÉ",
@@ -4504,7 +5059,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "INCENDIE",
@@ -4512,7 +5068,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "INCOGNITO",
@@ -4520,7 +5077,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "INCRUSTATION",
@@ -4528,7 +5086,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "INDOLENCE",
@@ -4536,7 +5095,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "INDUSTRIE",
@@ -4544,7 +5104,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "INFANTICIDE",
@@ -4552,7 +5113,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "INFECT",
@@ -4560,13 +5122,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "INFÉODÉ",
     "text": "Injure très grave et de grand style à jeter à la tête d'un adversaire politique: \"Môssieu! Vous êtes inféodé à la camarilla de l'Elysée! \" Ne s'emploie qu'à la tribune.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "INFINITÉSIMAL",
@@ -4575,7 +5139,8 @@
     "tags": [
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "INGÉNIEUR",
@@ -4585,13 +5150,15 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "INHUMATION",
     "text": "Trop souvent précipitée: raconter des histoires de cadavres qui s'étaient dévoré le bras pour apaiser leur faim.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "INJURE",
@@ -4599,7 +5166,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "INNÉES (idées)",
@@ -4607,7 +5175,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "INNOCENCE",
@@ -4615,7 +5184,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "INNOVATION",
@@ -4625,7 +5195,8 @@
       "danger_assertion",
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "INONDÉS",
@@ -4633,13 +5204,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "INQUISITION",
     "text": "On a bien exagéré ses crimes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "INSCRIPTION",
@@ -4648,19 +5221,22 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "INSPIRATION poétique",
     "text": "Choses qui la provoquent: la vue de la mer, l'amour, la femme, etc.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "INSTINCT",
     "text": "Supplée à l'intelligence.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "INSTITUT (l')",
@@ -4668,7 +5244,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "INSTITUTRICES",
@@ -4676,7 +5253,8 @@
     "xrefs": [],
     "tags": [
       "danger_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "INSTRUCTION",
@@ -4684,7 +5262,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "INSTRUMENT",
@@ -4692,7 +5271,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "INSURRECTION",
@@ -4700,7 +5280,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "INTÉGRITÉ",
@@ -4708,7 +5289,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "INTRIGUE",
@@ -4716,7 +5298,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "INTRODUCTION",
@@ -4724,7 +5307,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "INVASION",
@@ -4732,7 +5316,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "INVENTEURS",
@@ -4740,7 +5325,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ITALIE",
@@ -4748,7 +5334,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ITALIENS",
@@ -4756,7 +5343,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "IVOIRE",
@@ -4764,13 +5352,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "IVRESSE",
     "text": "Toujours précédée de folle.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "JALOUSIE",
@@ -4779,7 +5369,8 @@
     "tags": [
       "circular_definition",
       "danger_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "JAMBAGE (droit de)",
@@ -4788,7 +5379,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "JAMBON",
@@ -4796,7 +5388,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "JANSÉNISME",
@@ -4805,13 +5398,15 @@
     "tags": [
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "JAPON",
     "text": "Tout y est en porcelaine.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "JARDINS ANGLAIS",
@@ -4822,7 +5417,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "JARNAC (coup de)",
@@ -4831,7 +5427,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "JARRETIÈRE",
@@ -4839,7 +5436,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "JASPE",
@@ -4847,7 +5445,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "JAVELOT",
@@ -4855,7 +5454,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "JÉSUITES",
@@ -4863,7 +5463,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "JEU",
@@ -4872,7 +5473,8 @@
     "tags": [
       "danger_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "JEUNE FILLE",
@@ -4881,7 +5483,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "JEUNE HOMME",
@@ -4890,7 +5493,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "JEUNESSE",
@@ -4901,7 +5505,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "JOCKEY",
@@ -4911,7 +5516,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "JOCKEY-CLUB",
@@ -4919,7 +5525,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "JOHN BULL",
@@ -4928,7 +5535,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "JOIE",
@@ -4936,7 +5544,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "JOLI",
@@ -4945,7 +5554,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "JONC",
@@ -4953,7 +5563,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "JOUETS",
@@ -4961,7 +5572,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "JOUISSANCE",
@@ -4969,7 +5581,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "JOUR",
@@ -4977,7 +5590,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "JOURNAUX",
@@ -4988,7 +5602,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "JUIF",
@@ -4996,7 +5611,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "JUJUBE",
@@ -5004,7 +5620,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "JURY",
@@ -5012,7 +5629,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "JUSTICE",
@@ -5020,7 +5638,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "KALÉIDOSCOPE",
@@ -5028,7 +5647,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "KEEPSAKE",
@@ -5036,7 +5656,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "KIOSQUE",
@@ -5044,19 +5665,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "KNOUT",
     "text": "Mot qui vexe les Russes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "KORAN",
     "text": "Livre de Mahomet, où il n'est question que de femmes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 10
   },
   {
     "headword": "LABORATOIRE",
@@ -5064,7 +5688,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "LABOUREURS",
@@ -5072,7 +5697,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "LAC",
@@ -5080,13 +5706,15 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "LACONISME",
     "text": "Langue qu'on ne parle plus.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "LACUSTRES (les villes)",
@@ -5094,7 +5722,8 @@
     "xrefs": [],
     "tags": [
       "mythification"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "LA FAYETTE",
@@ -5102,7 +5731,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "LA FONTAINE",
@@ -5111,7 +5741,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "LAGUNE",
@@ -5119,7 +5750,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "LAIT",
@@ -5128,7 +5760,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "LANCETTE",
@@ -5136,7 +5769,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "LANGOUSTE",
@@ -5144,13 +5778,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "LANGUES VIVANTES",
     "text": "Les malheurs de la France viennent de ce qu'on n'en sait pas assez.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "LATIN",
@@ -5159,7 +5795,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "LAURIERS",
@@ -5167,7 +5804,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "LAVEMENT",
@@ -5176,7 +5814,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "LÉGALITÉ",
@@ -5184,13 +5823,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "LÉTHARGIES",
     "text": "On en a vu qui duraient des années.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "LIBELLE",
@@ -5198,7 +5839,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "LIBERTÉ",
@@ -5207,7 +5849,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "LIBERTINAGE",
@@ -5215,7 +5858,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "LIBRE-ÉCHANGE",
@@ -5223,7 +5867,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "LIEUE",
@@ -5232,7 +5877,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "LIÈVRE",
@@ -5240,7 +5886,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "LIGUEURS",
@@ -5248,13 +5895,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "LILAS",
     "text": "Fait plaisir parce qu'il annonce l'été.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "LINGE",
@@ -5262,7 +5911,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "LION",
@@ -5272,7 +5922,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "LITTÉRATURE",
@@ -5280,7 +5931,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "LITTRE",
@@ -5289,13 +5941,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "LIVRE",
     "text": "Quel qu'il soit, toujours trop long.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "LORD",
@@ -5303,7 +5957,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "LORGNON",
@@ -5311,7 +5966,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "LOUIS XVI",
@@ -5319,7 +5975,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "LOUTRE",
@@ -5327,7 +5984,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "LUMIÈRE",
@@ -5336,13 +5994,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "LUNE",
     "text": "Inspire la mélancolie. Est peut-être habitée?",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "LUXE",
@@ -5350,7 +6010,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "LYNX",
@@ -5358,7 +6019,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MACADAM",
@@ -5367,7 +6029,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MACARONI",
@@ -5375,7 +6038,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "MACHIAVEL",
@@ -5383,7 +6047,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MACHIAVÉLISME",
@@ -5391,7 +6056,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "MACKINTOSH",
@@ -5399,13 +6065,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MAESTRO",
     "text": "Mot italien qui veut dire pianiste.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "MAGIE",
@@ -5414,19 +6082,22 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "MAGISTRATURE",
     "text": "Belle carrière pour se marier. Magistrats tous pédérastes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "MAGNÉTISME",
     "text": "Joli sujet de conversation et qui sert à \"faire des femmes\" .",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "MAILLOT",
@@ -5435,7 +6106,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "MAIN",
@@ -5444,7 +6116,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MAIRE de village",
@@ -5452,7 +6125,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "MAJOR",
@@ -5460,7 +6134,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "MALADE",
@@ -5471,7 +6146,8 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "MALADIE DES NERFS",
@@ -5479,19 +6155,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MAL DE MER",
     "text": "Pour ne pas l'éprouver, il suffit de penser à autre chose.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "MALÉDICTION",
     "text": "Toujours donné par un père.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "MALTHUS",
@@ -5499,7 +6178,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MAMELUKS",
@@ -5507,7 +6187,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MANDOLINE",
@@ -5516,7 +6197,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MANTEAU",
@@ -5524,7 +6206,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "MARBRE",
@@ -5532,7 +6215,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MARSEILLAIS",
@@ -5540,13 +6224,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MARTYRS",
     "text": "Tous les premiers chrétiens l'ont été.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "MASQUE",
@@ -5554,7 +6240,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "MATELAS",
@@ -5562,13 +6249,15 @@
     "xrefs": [],
     "tags": [
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MATÉRIALISME",
     "text": "Prononcer ce mot avec horreur en appuyant chaque syllabe.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "MATHÉMATIQUES",
@@ -5576,7 +6265,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MATINAL",
@@ -5584,7 +6274,8 @@
     "xrefs": [],
     "tags": [
       "self_undermining"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MAXIME",
@@ -5593,7 +6284,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "MAZARINADES",
@@ -5604,7 +6296,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MÉCANIQUE",
@@ -5612,13 +6305,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MÉDAILLE",
     "text": "On n'en faisait que dans l'antiquité.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "MÉDECINE",
@@ -5626,7 +6321,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "MÉLANCOLIE",
@@ -5634,7 +6330,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MÉLODRAMES",
@@ -5644,13 +6341,15 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MELON",
     "text": "Joli sujet de conversation à table. Est-ce un légume? Est- ce un fruit? Les Anglais les mangent au dessert, ce qui étonne.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 4
   },
   {
     "headword": "MÉMOIRE",
@@ -5659,7 +6358,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "MÉNAGE",
@@ -5668,13 +6368,15 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "MENDICITE",
     "text": "Devrait être interdite et ne l'est jamais.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "MÉPHISTOPHÉLIQUE",
@@ -5682,7 +6384,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "MER",
@@ -5692,7 +6395,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MERCURE",
@@ -5700,7 +6404,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MÉRIDIONAUX (les)",
@@ -5708,7 +6413,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MESSAGE",
@@ -5718,7 +6424,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "MÉTALLURGIE",
@@ -5726,13 +6433,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MÉTAMORPHOSE",
     "text": "Rire du temps où on y croyait. Ovide en est l'inventeur.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "MÉTAPHORES",
@@ -5740,19 +6449,22 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MÉTAPHYSIQUE",
     "text": "En rire: c'est une preuve d'esprit supérieur.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "MÉTHODE",
     "text": "Ne sert à rien.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "MEXIQUE",
@@ -5760,7 +6472,8 @@
     "xrefs": [],
     "tags": [
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MIDI (cuisine du)",
@@ -5770,7 +6483,8 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "MINISTRE",
@@ -5778,13 +6492,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MINUIT",
     "text": "Limite du bonheur et des plaisirs honnêtes; tout ce qu'on fait au-delà est immoral.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "MINUTE",
@@ -5793,7 +6509,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MISSIONNAIRES",
@@ -5801,7 +6518,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "MOBILIER",
@@ -5810,7 +6528,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MOINEAU",
@@ -5818,7 +6537,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "MONARCHIE",
@@ -5826,7 +6546,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "MONOPOLE",
@@ -5835,7 +6556,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "MONSTRES",
@@ -5843,7 +6565,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "MONTRE",
@@ -5852,13 +6575,15 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "MOSAÏQUES",
     "text": "Le secret en est perdu.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "MOUCHARDS",
@@ -5867,7 +6592,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MOUCHES",
@@ -5875,7 +6601,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MOULES",
@@ -5884,7 +6611,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "MOULIN",
@@ -5892,7 +6620,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "MOUSTACHES",
@@ -5900,7 +6629,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MOUSTIQUE",
@@ -5910,7 +6640,8 @@
       "danger_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MOUTARDE",
@@ -5919,7 +6650,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "MUSCLES",
@@ -5928,7 +6660,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "MUSÉE",
@@ -5936,7 +6669,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MUSICIEN",
@@ -5946,7 +6680,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "MUSIQUE",
@@ -5955,7 +6690,8 @@
     "tags": [
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "NACELLE",
@@ -5963,7 +6699,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "NAIN",
@@ -5971,7 +6708,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "NAPLES",
@@ -5980,7 +6718,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "NARINES",
@@ -5988,7 +6727,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "NATURE",
@@ -5997,7 +6737,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "NAVIGATEUR",
@@ -6006,7 +6747,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "NAVIRE",
@@ -6014,7 +6756,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "NECTAR",
@@ -6022,7 +6765,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "NÈGRE",
@@ -6031,7 +6775,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "NÈGRES",
@@ -6039,7 +6784,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "NÈGRESSES",
@@ -6049,7 +6795,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "NÉOLOGISME",
@@ -6057,7 +6804,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "NERVEUX",
@@ -6065,7 +6813,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "NOBLESSE",
@@ -6074,7 +6823,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "NOEUD GORDIEN",
@@ -6082,7 +6832,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "NOIR",
@@ -6090,7 +6841,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "NORMANDS",
@@ -6099,7 +6851,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "NOTAIRES",
@@ -6107,7 +6860,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "NOURRITURES",
@@ -6116,13 +6870,15 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "NUMISMATIQUE",
     "text": "A rapport aux hautes sciences, inspire un immense respect.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "OASIS",
@@ -6130,7 +6886,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "OBSCÉNITÉ",
@@ -6139,13 +6896,15 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "OBUS",
     "text": "Servent à faire des pendules et des encriers.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "OCTOGÉNAIRE",
@@ -6153,7 +6912,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "OCTROI",
@@ -6161,7 +6921,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "ODALISQUES",
@@ -6169,7 +6930,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "ODÉON",
@@ -6177,7 +6939,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ODEUR des pieds",
@@ -6185,7 +6948,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "OEUF",
@@ -6193,7 +6957,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "OFFENBACH",
@@ -6201,7 +6966,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "OISEAU",
@@ -6210,13 +6976,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "OMÉGA",
     "text": "Deuxième lettre de l'alphabet grec, puisqu'on dit toujours l'alpha et l'oméga.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "OMNIBUS",
@@ -6225,7 +6993,8 @@
     "tags": [
       "mythification",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "OPÉRA (coulisses de l')",
@@ -6233,13 +7002,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "OPTIMISTE",
     "text": "Equivalent d'imbécile.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "ORAISON",
@@ -6247,7 +7018,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ORCHESTRE",
@@ -6255,19 +7027,22 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "ORCHITE",
     "text": "Maladie de Monsieur. ORDRE, L'ORDRE: Que de crime on commet en ton nom! (v. liberté).",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "OREILLER",
     "text": "Ne jamais s'en servir, ça rend bossu.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "ORFÈVRE",
@@ -6275,7 +7050,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "ORGUE",
@@ -6283,13 +7059,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ORIENTALISTE",
     "text": "Homme qui a beaucoup voyagé.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "ORIGINAL",
@@ -6299,7 +7077,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "ORTHOGRAPHE",
@@ -6309,7 +7088,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "OURS",
@@ -6319,13 +7099,15 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "OUVRIER",
     "text": "Toujours honnête, quand il ne fait pas d'émeutes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "PAGANINI",
@@ -6333,7 +7115,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "PAIN",
@@ -6342,7 +7125,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "PALLADIUM",
@@ -6350,7 +7134,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "PALMIER",
@@ -6358,7 +7143,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "PALMYRE",
@@ -6366,7 +7152,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "PANTHÉISME",
@@ -6375,7 +7162,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "PARADOXE",
@@ -6383,7 +7171,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PARALLÈLE",
@@ -6392,13 +7181,15 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "PARAPHE",
     "text": "Plus il est compliqué, plus il est beau.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 1
   },
   {
     "headword": "PARENTS",
@@ -6406,7 +7197,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "PARIS",
@@ -6414,7 +7206,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "PARRAIN",
@@ -6422,7 +7215,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PARTIES",
@@ -6430,7 +7224,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "PAUVRES",
@@ -6438,7 +7233,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "PAYSAGES de peintres",
@@ -6446,7 +7242,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "PÉDANTISME",
@@ -6454,19 +7251,22 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "PÉDÉRASTIE",
     "text": "Maladie dont tous les hommes sont affectés à un certain âge.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "PEINTURE SUR VERRE",
     "text": "Le secret en est perdu.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "PÉLICAN",
@@ -6474,13 +7274,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "PENSER",
     "text": "Pénible; les choses qui nous y forcent sont généralement délaissées.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "PENSIONNAT",
@@ -6488,7 +7290,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "PERMUTER",
@@ -6496,19 +7299,22 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "PÉROU",
     "text": "Pays où tout est en or.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "PEUR",
     "text": "Donne des ailes.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "PHAÉTON",
@@ -6516,7 +7322,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "PHÉNIX",
@@ -6524,7 +7331,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "PHILIPPE D'ORLÉANS - ÉGALITÉ",
@@ -6533,7 +7341,8 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "PHILOSOPHIE",
@@ -6541,7 +7350,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "PHOTOGRAPHIE",
@@ -6549,7 +7359,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "PIANO",
@@ -6558,7 +7369,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "PIGEON",
@@ -6566,7 +7378,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "PIPE",
@@ -6574,7 +7387,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "PITIÉ",
@@ -6582,7 +7396,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PLACE",
@@ -6590,7 +7405,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PLANÈTES",
@@ -6598,13 +7414,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "PLANTE",
     "text": "Guérit toujours les parties du corps humain auxquelles elle ressemble.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "PLIQUE POLONAISE",
@@ -6612,7 +7430,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "POÉSIE (la)",
@@ -6620,7 +7439,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "POÈTE",
@@ -6628,13 +7448,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "POLICE",
     "text": "A toujours tort.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "PONSARD",
@@ -6642,7 +7464,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "POPILIUS",
@@ -6650,7 +7473,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "PORTEFEUILLE",
@@ -6658,7 +7482,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "PORT-ROYAL",
@@ -6666,7 +7491,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "POURPRE",
@@ -6676,7 +7502,8 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "PRADON",
@@ -6685,7 +7512,8 @@
     "tags": [
       "mythification",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "PRAGMATIQUE SANCTION",
@@ -6693,7 +7521,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "PRATIQUE",
@@ -6702,7 +7531,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "PRÉOCCUPATION",
@@ -6711,13 +7541,15 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "PRÊTRES",
     "text": "On devrait les châtrer. Couchent avec leurs bonnes et en ont des enfants qu'ils appellent leurs neveux. C'est égal, il y en a de bons tout de même.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "PRIAPISME",
@@ -6725,7 +7557,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "PRINCIPES",
@@ -6733,7 +7566,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PROFESSEUR",
@@ -6742,13 +7576,15 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PROGRÈS",
     "text": "Toujours mal entendu et trop hâtif.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "PROMENADE",
@@ -6757,7 +7593,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "PROPRIÉTAIRE",
@@ -6765,7 +7602,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "PROPRIÉTÉ",
@@ -6773,13 +7611,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "PROVIDENCE",
     "text": "Que deviendrons-nous sans elle?",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 0
   },
   {
     "headword": "PROSE",
@@ -6789,13 +7629,15 @@
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "PRUNEAUX",
     "text": "Tiennent le ventre libre.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "PUBLICITÉ",
@@ -6803,7 +7645,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "PUCELLE",
@@ -6811,7 +7654,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "PUDEUR",
@@ -6819,7 +7663,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "PUNCH",
@@ -6828,7 +7673,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "PYRAMIDE",
@@ -6836,7 +7682,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "QUADRATURE DU CERCLE",
@@ -6845,7 +7692,8 @@
     "tags": [
       "self_undermining",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "QUESTION",
@@ -6853,7 +7701,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "RACINE",
@@ -6861,7 +7710,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "RADEAU",
@@ -6869,7 +7719,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "RADICALISME",
@@ -6879,7 +7730,8 @@
       "circular_definition",
       "danger_assertion",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "RAMONEUR",
@@ -6887,13 +7739,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "RATE",
     "text": "Autrefois, on l'enlevait au coureur.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "RATELIER",
@@ -6902,7 +7756,8 @@
     "tags": [
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "RECONNAISSANCE",
@@ -6910,7 +7765,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "RELIGION (la)",
@@ -6919,7 +7775,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "RÉPUBLICAINS",
@@ -6928,7 +7785,8 @@
     "tags": [
       "circular_definition",
       "self_undermining"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "RESTAURANT",
@@ -6936,25 +7794,29 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "RÊVASSERIE",
     "text": "Les idées élevées qu'on ne comprend pas.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 7
   },
   {
     "headword": "RÉVEILLON",
     "text": "C'est le boudin qui constitue le réveillon.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 8
   },
   {
     "headword": "RICHESSE",
     "text": "Tient lieu de tout, même de considération.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "RIME",
@@ -6962,7 +7824,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "RINCE-BOUCHE",
@@ -6970,7 +7833,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "RIRE",
@@ -6979,7 +7843,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ROBE",
@@ -6987,7 +7852,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "ROMANCES",
@@ -6996,7 +7862,8 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "ROMANS",
@@ -7006,7 +7873,8 @@
       "circular_definition",
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "RONSARD",
@@ -7014,7 +7882,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "ROUSSEAU",
@@ -7022,7 +7891,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "ROUSSES",
@@ -7030,7 +7900,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "RUINES",
@@ -7038,7 +7909,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "SABOTS",
@@ -7046,13 +7918,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "SABRE",
     "text": "Les Français veulent être gouvernés par le sabre.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 2
   },
   {
     "headword": "SACERDOCE",
@@ -7060,7 +7934,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "SACRILÈGE",
@@ -7068,7 +7943,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SAIGNER",
@@ -7077,7 +7953,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "SAINT-BARTHÉLEMY",
@@ -7085,13 +7962,15 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "SAINTE-BEUVE",
     "text": "Le Vendredi Saint, dînait exclusivement de charcuterie.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 4
   },
   {
     "headword": "SAINTE-HÉLÈNE",
@@ -7099,25 +7978,29 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "SALIÈRE",
     "text": "La renverser porte malheur.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "SALON (faire le)",
     "text": "Début littéraire qui pose très bien son homme.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "SALUTATIONS",
     "text": "toujours empressées.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 3
   },
   {
     "headword": "SANTÉ",
@@ -7125,7 +8008,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "SAPHIQUE ET ADONIQUE (vers)",
@@ -7133,7 +8017,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "SATRAPE",
@@ -7141,7 +8026,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "SATURNALES",
@@ -7149,7 +8035,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "SAVANTS",
@@ -7159,7 +8046,8 @@
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "SBIRE",
@@ -7167,7 +8055,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "SCIENCE",
@@ -7175,7 +8064,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "SCUDÉRY",
@@ -7183,7 +8073,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "SÉNÈQUE",
@@ -7191,7 +8082,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "SERPENT",
@@ -7199,7 +8091,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "SERVICE",
@@ -7208,7 +8101,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "SÉVILLE",
@@ -7219,7 +8113,8 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SITE",
@@ -7228,13 +8123,15 @@
     "tags": [
       "nominal_assertion",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 2
   },
   {
     "headword": "SOCIÉTÉ",
     "text": "Ses ennemis. Ce qui cause sa perte.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 9
   },
   {
     "headword": "SOMBREUIL (Mlle de)",
@@ -7242,7 +8139,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SOMMEIL",
@@ -7251,7 +8149,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SOUFFLET",
@@ -7259,7 +8158,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "SOMNAMBULE",
@@ -7267,13 +8167,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SOUPERS DE LA RÉGENCE",
     "text": "On y dépensait encore plus d'esprit que de champagne.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 11
   },
   {
     "headword": "SOUPIR",
@@ -7281,7 +8183,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SPIRITUALISME",
@@ -7289,7 +8192,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "STOÏCISME",
@@ -7297,7 +8201,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "STUART (MARIE)",
@@ -7305,7 +8210,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "SUFFRAGE UNIVERSEL",
@@ -7313,7 +8219,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "SUICIDE",
@@ -7321,7 +8228,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "SYBARITES",
@@ -7330,13 +8238,15 @@
     "tags": [
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "SYPHILIS",
     "text": "Plus ou moins, tout le monde en est affecté.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 6
   },
   {
     "headword": "TABAC",
@@ -7344,7 +8254,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "TABELLION",
@@ -7353,7 +8264,8 @@
     "tags": [
       "nominal_assertion",
       "superlative_assertion"
-    ]
+    ],
+    "cluster_id": 8
   },
   {
     "headword": "TALLEYRAND (Prince de)",
@@ -7361,7 +8273,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 9
   },
   {
     "headword": "TARTANE",
@@ -7370,7 +8283,8 @@
     "tags": [
       "circular_definition",
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "TAUPE",
@@ -7378,13 +8292,15 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 4
   },
   {
     "headword": "TAUREAU",
     "text": "Le père du veau. Le boeuf n'est que l'oncle.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "TÉMOIN",
@@ -7393,7 +8309,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "TEMPS",
@@ -7404,7 +8321,8 @@
       "prescriptive_imperative",
       "social_performance",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "TERRE",
@@ -7413,7 +8331,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "THÈME",
@@ -7422,7 +8341,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "TOILETTE (des dames)",
@@ -7431,7 +8351,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "TOLÉRANCE (maison de)",
@@ -7439,7 +8360,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "TOUR",
@@ -7448,7 +8370,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "TRANSPIRATION des pieds",
@@ -7456,7 +8379,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "TREIZE",
@@ -7465,7 +8389,8 @@
     "tags": [
       "circular_definition",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "TROUBADOUR",
@@ -7473,7 +8398,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "UKASE",
@@ -7482,7 +8408,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 1
   },
   {
     "headword": "UNIVERSITÉ",
@@ -7490,7 +8417,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "USUM (ad)",
@@ -7499,7 +8427,8 @@
     "tags": [
       "circular_definition",
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 7
   },
   {
     "headword": "VACCINE",
@@ -7507,7 +8436,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "VALSE",
@@ -7515,7 +8445,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "VEILLÉES",
@@ -7523,7 +8454,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "VELOURS",
@@ -7531,7 +8463,8 @@
     "xrefs": [],
     "tags": [
       "nominal_assertion"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "VENTE",
@@ -7539,7 +8472,8 @@
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
-    ]
+    ],
+    "cluster_id": 11
   },
   {
     "headword": "VENTRE",
@@ -7547,13 +8481,15 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "VERRES",
     "text": "On ne lui a pas encore pardonné.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 4
   },
   {
     "headword": "VIEILLARD",
@@ -7561,7 +8497,8 @@
     "xrefs": [],
     "tags": [
       "circular_definition"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "VINS",
@@ -7570,7 +8507,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 5
   },
   {
     "headword": "VISAGE",
@@ -7578,7 +8516,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "VIZIR",
@@ -7587,13 +8526,15 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "VOISINS",
     "text": "Tâcher de se faire rendre par eux des services sans qu'il en coûte rien.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "cluster_id": 5
   },
   {
     "headword": "VOITURES",
@@ -7602,7 +8543,8 @@
     "tags": [
       "superlative_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 10
   },
   {
     "headword": "VOLTAIRE",
@@ -7612,7 +8554,8 @@
       "danger_assertion",
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "VOYAGE",
@@ -7620,7 +8563,8 @@
     "xrefs": [],
     "tags": [
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 3
   },
   {
     "headword": "VOYAGEUR",
@@ -7629,7 +8573,8 @@
     "tags": [
       "nominal_assertion",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 0
   },
   {
     "headword": "WAGNER",
@@ -7638,7 +8583,8 @@
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
-    ]
+    ],
+    "cluster_id": 6
   },
   {
     "headword": "YVETOT",
@@ -7649,6 +8595,7 @@
       "nominal_assertion",
       "prescriptive_imperative",
       "social_performance"
-    ]
+    ],
+    "cluster_id": 0
   }
 ]
