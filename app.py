@@ -32,12 +32,16 @@ def index():
 @app.route("/api/search")
 def search():
     q    = request.args.get("q", "").strip()
-    lang = request.args.get("lang", "fr")          # "fr" or "en"
-    mode = request.args.get("mode", "text")        # "text" or "semantic"
-    limit = min(int(request.args.get("limit", 20)), 50)
+    lang = request.args.get("lang", "fr")
+    mode = request.args.get("mode", "text")
+    limit = min(int(request.args.get("limit", 20)), 200)
+
+    if mode == "cluster":
+        cluster_id = int(request.args.get("cluster_id", -1))
+        results = pipeline.cluster_search(cluster_id, limit, lang)
+        return jsonify({"results": results, "total": len(results)})
 
     if not q:
-        # Return all entries (paginated)
         page  = int(request.args.get("page", 1))
         start = (page - 1) * limit
         results = pipeline.all_entries(start, limit, lang)
@@ -47,9 +51,6 @@ def search():
         results = pipeline.semantic_search(q, limit, lang)
     elif mode == "prefix":
         results = pipeline.prefix_search(q, limit, lang)
-    elif mode == "cluster":
-        cluster_id = int(request.args.get("cluster_id", -1))
-        results = pipeline.cluster_search(cluster_id, limit, lang)
     else:
         results = pipeline.text_search(q, limit, lang)
 
