@@ -261,7 +261,14 @@
   },
   {
     "headword": "ANTÉCHRIST",
-    "text": "Voltaire, Renan... ANTIQUITÉ _et tout ce qui s'y rapporte_: Poncif, embêtant.",
+    "text": "Voltaire, Renan...",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "ANTIQUITÉ _et tout ce qui s'y rapporte_",
+    "text": "Poncif, embêtant.",
     "xrefs": [],
     "tags": [],
     "cluster_id": 6
@@ -1464,13 +1471,31 @@
   },
   {
     "headword": "COLÈRE",
-    "text": "Fouette le sang; hygiénique de s'y mettre de temps en temps. COLLEGE, lycée: Plus noble qu'une pension.",
+    "text": "Fouette le sang; hygiénique de s'y mettre de temps en temps.",
     "xrefs": [],
     "tags": [
       "nominal_assertion",
       "superlative_assertion",
       "verite_generale"
     ],
+    "cluster_id": 1
+  },
+  {
+    "headword": "LYCÉE",
+    "text": "Plus noble qu'une pension.",
+    "xrefs": [
+      "COLLEGE"
+    ],
+    "tags": [],
+    "cluster_id": 1
+  },
+  {
+    "headword": "COLLEGE",
+    "text": "Plus noble qu'une pension.",
+    "xrefs": [
+      "LYCÉE"
+    ],
+    "tags": [],
     "cluster_id": 1
   },
   {
@@ -2654,8 +2679,26 @@
   },
   {
     "headword": "ÉCRIRE",
-    "text": "Currente calamo, c'est l'excuse pour les fautes de style ou d'orthographe. ÉCRIT, BIEN ÉCRIT: Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
+    "text": "Currente calamo, c'est l'excuse pour les fautes de style ou d'orthographe.",
     "xrefs": [],
+    "tags": [],
+    "cluster_id": 10
+  },
+  {
+    "headword": "BIEN ÉCRIT",
+    "text": "Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
+    "xrefs": [
+      "ÉCRIT"
+    ],
+    "tags": [],
+    "cluster_id": 10
+  },
+  {
+    "headword": "ÉCRIT",
+    "text": "Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
+    "xrefs": [
+      "BIEN ÉCRIT"
+    ],
     "tags": [],
     "cluster_id": 10
   },
@@ -2830,12 +2873,33 @@
   },
   {
     "headword": "ENVERGURE",
-    "text": "Se disputer sur la prononciation du mot. ÉPACTE, NOMBRE D'OR, LETTRE DOMINICALE: Sur les calendriers, on ne sait pas ce que c'est.",
+    "text": "Se disputer sur la prononciation du mot.",
     "xrefs": [],
     "tags": [
       "prescriptive_imperative",
       "verite_generale"
     ],
+    "cluster_id": 7
+  },
+  {
+    "headword": "LETTRE DOMINICALE",
+    "text": "Sur les calendriers, on ne sait pas ce que c'est.",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "NOMBRE D'OR",
+    "text": "Sur les calendriers, on ne sait pas ce que c'est.",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "ÉPACTE",
+    "text": "Sur les calendriers, on ne sait pas ce que c'est.",
+    "xrefs": [],
+    "tags": [],
     "cluster_id": 7
   },
   {
@@ -3453,7 +3517,14 @@
   },
   {
     "headword": "FIÈVRE",
-    "text": "Preuve de la force du sang. Est causée par les prunes, le melon, le soleil d'avril, etc. FIGARO (_Le Mariage de_): Encore une des causes de la Révolution!",
+    "text": "Preuve de la force du sang. Est causée par les prunes, le melon, le soleil d'avril, etc.",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 0
+  },
+  {
+    "headword": "FIGARO (_Le Mariage de_)",
+    "text": "Encore une des causes de la Révolution!",
     "xrefs": [],
     "tags": [],
     "cluster_id": 0
@@ -3734,11 +3805,29 @@
   },
   {
     "headword": "FRICASSÉE",
-    "text": "Ne se fait bien qu'à la campagne. FRISER, FRISURE: Ne convient pas à un homme.",
+    "text": "Ne se fait bien qu'à la campagne.",
     "xrefs": [],
     "tags": [
       "verite_generale"
     ],
+    "cluster_id": 10
+  },
+  {
+    "headword": "FRISURE",
+    "text": "Ne convient pas à un homme.",
+    "xrefs": [
+      "FRISER"
+    ],
+    "tags": [],
+    "cluster_id": 10
+  },
+  {
+    "headword": "FRISER",
+    "text": "Ne convient pas à un homme.",
+    "xrefs": [
+      "FRISURE"
+    ],
+    "tags": [],
     "cluster_id": 10
   },
   {
@@ -4538,12 +4627,30 @@
   },
   {
     "headword": "HÉMORROÏDES",
-    "text": "Vient de s'asseoir sur les poêles et sur les bancs de pierre. Mal de Saint-Fiacre. Les hémorroïdes sont un signe de santé, il ne faut donc pas les faire passer. HENRI III, HENRI IV: A propos de ces deux rois ne pas manquer de dire: Tous les Henri ont été malheureux. \"",
+    "text": "Vient de s'asseoir sur les poêles et sur les bancs de pierre. Mal de Saint-Fiacre. Les hémorroïdes sont un signe de santé, il ne faut donc pas les faire passer.",
     "xrefs": [],
     "tags": [
       "mythification",
       "verite_generale"
     ],
+    "cluster_id": 1
+  },
+  {
+    "headword": "HENRI IV",
+    "text": "A propos de ces deux rois ne pas manquer de dire: Tous les Henri ont été malheureux. \"",
+    "xrefs": [
+      "HENRI III"
+    ],
+    "tags": [],
+    "cluster_id": 1
+  },
+  {
+    "headword": "HENRI III",
+    "text": "A propos de ces deux rois ne pas manquer de dire: Tous les Henri ont été malheureux. \"",
+    "xrefs": [
+      "HENRI IV"
+    ],
+    "tags": [],
     "cluster_id": 1
   },
   {
@@ -4827,13 +4934,20 @@
   },
   {
     "headword": "HUSSARD",
-    "text": "Prononcer houzard. Toujours précédé de gentil ou de fringant. Il plaît aux dames. Ne pas manquer la citation: Toi qui connais les hussards de la garde... HYDRE de l'anarchie, du socialisme et ainsi de suite pour tous les systèmes qui font peur: Tâcher de la vaincre.",
+    "text": "Prononcer houzard. Toujours précédé de gentil ou de fringant. Il plaît aux dames. Ne pas manquer la citation: Toi qui connais les hussards de la garde...",
     "xrefs": [],
     "tags": [
       "circular_definition",
       "prescriptive_imperative",
       "verite_generale"
     ],
+    "cluster_id": 10
+  },
+  {
+    "headword": "HYDRE de l'anarchie, du socialisme...",
+    "text": "Tâcher de la vaincre.",
+    "xrefs": [],
+    "tags": [],
     "cluster_id": 10
   },
   {
@@ -7050,7 +7164,14 @@
   },
   {
     "headword": "ORCHITE",
-    "text": "Maladie de Monsieur. ORDRE, L'ORDRE: Que de crime on commet en ton nom! (v. liberté).",
+    "text": "Maladie de Monsieur.",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 1
+  },
+  {
+    "headword": "ORDRE",
+    "text": "Que de crime on commet en ton nom! (v. liberté).",
     "xrefs": [],
     "tags": [],
     "cluster_id": 1
