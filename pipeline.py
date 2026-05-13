@@ -403,6 +403,7 @@ class DictionairePipeline:
         self._embeddings: Optional[np.ndarray] = None
         self._headwords: list[str]     = []
         self._hw_index: dict[str, int] = {}
+        self._sentence_model           = None
         self._load_data()
 
     def _load_data(self):
@@ -515,6 +516,16 @@ class DictionairePipeline:
                 results.append(fe)
         return results
 
+    def _get_sentence_model(self):
+        if self._sentence_model is None:
+            try:
+                from sentence_transformers import SentenceTransformer
+                self._sentence_model = SentenceTransformer("dangvantuan/sentence-camembert-base")
+                print("[Pipeline] Sentence model loaded.")
+            except Exception as exc:
+                print(f"[Pipeline] Could not load sentence model: {exc}")
+        return self._sentence_model
+
     def _approximate_vector(self, text: str) -> Optional[np.ndarray]:
         words = [w.upper().strip(".,;:!?") for w in text.split()]
         idxs  = [self._hw_index[w] for w in words if w in self._hw_index]
@@ -522,7 +533,17 @@ class DictionairePipeline:
             for hw, idx in self._hw_index.items():
                 if any(w in hw or hw in w for w in words):
                     idxs.append(idx); break
-        vec = self._embeddings[idxs].mean(axis=0) if idxs else self._embeddings.mean(axis=0)
+        if idxs:
+            vec = self._embeddings[idxs].mean(axis=0)
+            n = np.linalg.norm(vec)
+            return vec / (n + 1e-9)
+        # No headword match — encode with the sentence model (same space as stored embeddings)
+        model = self._get_sentence_model()
+        if model is not None:
+            vec = model.encode(text, normalize_embeddings=True).astype(np.float32)
+            return vec
+        # Last resort: global mean (not useful but won't crash)
+        vec = self._embeddings.mean(axis=0)
         n = np.linalg.norm(vec)
         return vec / (n + 1e-9)
 
