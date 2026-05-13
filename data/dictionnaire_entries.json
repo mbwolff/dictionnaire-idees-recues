@@ -1435,13 +1435,31 @@
   },
   {
     "headword": "COGNAC",
-    "text": "Très funeste. Excellent dans plusieurs maladies. Un bon verre de cognac ne fait jamais de mal. Pris à jeun tue le ver de l'estomac. COIT, COPULATION: Mots à éviter. Dire: \"Ils avaient des rapports...\"",
+    "text": "Très funeste. Excellent dans plusieurs maladies. Un bon verre de cognac ne fait jamais de mal. Pris à jeun tue le ver de l'estomac.",
     "xrefs": [],
     "tags": [
       "circular_definition",
       "danger_assertion",
       "verite_generale"
     ],
+    "cluster_id": 5
+  },
+  {
+    "headword": "COIT",
+    "text": "Mots à éviter. Dire: \"Ils avaient des rapports...\"",
+    "xrefs": [
+      "COPULATION"
+    ],
+    "tags": [],
+    "cluster_id": 5
+  },
+  {
+    "headword": "COPULATION",
+    "text": "Mots à éviter. Dire: \"Ils avaient des rapports...\"",
+    "xrefs": [
+      "COIT"
+    ],
+    "tags": [],
     "cluster_id": 5
   },
   {
