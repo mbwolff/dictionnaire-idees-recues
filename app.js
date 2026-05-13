@@ -192,9 +192,13 @@ function buildAlphaIndex() {
 }
 
 function jumpToLetter(letter) {
-  el.searchInput.value = letter;
-  state.searchQuery = letter;
-  doSearch(letter);
+  el.searchInput.value = "";
+  state.searchQuery = "";
+  const url = `/api/search?q=${encodeURIComponent(letter)}&mode=prefix&lang=${state.lang}&limit=100`;
+  api(url).then(data => {
+    renderEntryList(data.results);
+    el.loadMore.style.display = "none";
+  }).catch(err => console.error(err));
 }
 
 async function loadBrowsePage(append = false) {

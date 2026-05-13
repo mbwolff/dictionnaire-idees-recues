@@ -45,6 +45,8 @@ def search():
 
     if mode == "semantic":
         results = pipeline.semantic_search(q, limit, lang)
+    elif mode == "prefix":
+        results = pipeline.prefix_search(q, limit, lang)
     else:
         results = pipeline.text_search(q, limit, lang)
 

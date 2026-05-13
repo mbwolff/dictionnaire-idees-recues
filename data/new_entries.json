@@ -43,5 +43,23 @@
     "cluster_id": -1,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "PSYCHANALYSER",
+    "text": "Ruse des riches pour payer chères les confessions de leurs problèmes intimes à leur médecin psychanalyste. La clé du bonheur: dépensez pour connaître le pire de vous-même.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": -1,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "PSYCHANALYSTE",
+    "text": "Genteel charlatan, expert en inconscient collectif. Analyse les rêves des autres et sonne des cloches dans ses propres têtes.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": -1,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
