@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(GENERATOR=ollama python *)",
+      "Bash(pkill -f \"python app.py\")",
+      "Bash(xargs -r kill)",
+      "Bash(osascript -e 'tell application \"Ollama\" to quit')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:11434/api/tags)",
+      "Bash(pkill -f \"Ollama\")",
+      "Bash(pkill -f \"ollama\")",
+      "Bash(pkill -f \"[Oo]llama\")",
+      "Bash(curl -sS -o /tmp/entry.json -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/api/entry/ABSINTHE?lang=fr\")",
+      "Read(//private/tmp/**)",
+      "Bash(curl -sS -o /tmp/search.json -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/api/search?limit=3&page=1&lang=fr\")",
+      "Bash(curl -sS -o /tmp/idx.html -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/\")",
+      "Bash(curl -sS -o /tmp/stats.json -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/api/stats\")",
+      "Bash(curl -sS -o /tmp/js.txt -w \"status=%{http_code}\\\\n\" \"http://localhost:5000/static/app.js\")",
+      "Read(//tmp/**)",
+      "Bash(curl -sS -i \"http://localhost:5000/\")"
+    ]
+  }
+}
