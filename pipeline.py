@@ -111,6 +111,11 @@ def clean_output(text: str) -> str:
     text = re.sub(r"^[A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\-]{2,30}[.:\-]\s*", "", text)
     text = re.sub(r"\*+", "", text)
     text = re.sub(r"\s+", " ", text).strip()
+    # Trim to last complete sentence if text ends mid-sentence
+    if text and text[-1] not in ".!?»\"":
+        match = re.search(r"^(.*[.!?»\"])\s+\S", text)
+        if match:
+            text = match.group(1)
     return text
 
 
@@ -178,7 +183,7 @@ class OllamaGenerator(BaseGenerator):
                 "temperature":    0.85,
                 "top_p":          0.92,
                 "repeat_penalty": 1.15,
-                "num_predict":    80,
+                "num_predict":    200,
             },
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
@@ -242,7 +247,7 @@ class TransformersGenerator(BaseGenerator):
         )
         outputs = self._pipeline(
             prompt,
-            max_new_tokens=80,
+            max_new_tokens=200,
             do_sample=True,
             temperature=0.85,
             top_p=0.92,

@@ -70,5 +70,14 @@
     "cluster_id": 10,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "LOGICIELS",
+    "text": "Écrits dans un langage incompréhensible par les humains mais facilement lisible par des machines, enfermés dans du codage complexe et abstrait à l'apparence insensée.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
