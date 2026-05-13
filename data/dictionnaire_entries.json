@@ -70,12 +70,17 @@
   },
   {
     "headword": "ADOLESCENT",
-    "text": "Ne jamais commencer un discours de distribution des prix autrement que par « Jeunes adolescents » (ce qui est un pléonasme). AFFAIRES (Les): Passent avant tout. Une femme doit éviter de parler des siennes. Sont dans la vie ce qu'il y a de plus important. Tout est là.",
+    "text": "Ne jamais commencer un discours de distribution des prix autrement que par « Jeunes adolescents » (ce qui est un pléonasme).",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Never start a prize distribution speech other than with “Young adolescents” (which is a pleonasm). BUSINESS (The): Comes first. A woman should avoid talking about her own. Are the most important things in life. It's all there.",
-    "headword_en": "ADOLESCENT"
+    "cluster_id": 6
+  },
+  {
+    "headword": "AFFAIRES (Les)",
+    "text": "Passent avant tout. Une femme doit éviter de parler des siennes. Sont dans la vie ce qu'il y a de plus important. Tout est là.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "AGENT",
@@ -127,15 +132,6 @@
     "headword_en": "BRASS"
   },
   {
-    "headword": "ALBÂTRE",
-    "text": "Sert à décrire les plus belles parties du corps de la femme.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Used to describe the most beautiful parts of the woman's body.",
-    "headword_en": "ALABASTER"
-  },
-  {
     "headword": "ALBION",
     "text": "Toujours précédé de blanche, perfide, positive. Il s'en est fallu de bien peu que Napoléon en fît la conquête. En faire l'éloge: la libre Angleterre.",
     "tags": [
@@ -145,6 +141,15 @@
     "cluster_id": 0,
     "text_en": "Always preceded by white, perfidious, positive. Napoleon came very close to conquering it. To praise it: free England.",
     "headword_en": "ALBION"
+  },
+  {
+    "headword": "ALBÂTRE",
+    "text": "Sert à décrire les plus belles parties du corps de la femme.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "Used to describe the most beautiful parts of the woman's body.",
+    "headword_en": "ALABASTER"
   },
   {
     "headword": "ALCIBIADE",
@@ -206,15 +211,6 @@
     "headword_en": "AMBITION"
   },
   {
-    "headword": "AMÉRIQUE",
-    "text": "Bel exemple d'injustice: C'est Colomb qui la découvrit et elle tire son nom d'Améric Vespuce. Sans la découverte de l'Amérique, nous n'aurions pas la syphilis et le phylloxéra. L'exalter quand même, surtout quand on n'y a pas été. Faire une tirade sur le self-government.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Beautiful example of injustice: It was Columbus who discovered it and it takes its name from Améric Vespuce. Without the discovery of America, we would not have syphilis and phylloxera. Exalt it all the same, especially when we haven't been there. Go on a tirade about self-government.",
-    "headword_en": "AMERICA"
-  },
-  {
     "headword": "AMIRAL",
     "text": "Toujours brave. Ne jure que par « mille sabords! »",
     "tags": [
@@ -224,6 +220,15 @@
     "cluster_id": 5,
     "text_en": "Always brave. Swear by “a thousand ports!”",
     "headword_en": "ADMIRAL"
+  },
+  {
+    "headword": "AMÉRIQUE",
+    "text": "Bel exemple d'injustice: C'est Colomb qui la découvrit et elle tire son nom d'Améric Vespuce. Sans la découverte de l'Amérique, nous n'aurions pas la syphilis et le phylloxéra. L'exalter quand même, surtout quand on n'y a pas été. Faire une tirade sur le self-government.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Beautiful example of injustice: It was Columbus who discovered it and it takes its name from Améric Vespuce. Without the discovery of America, we would not have syphilis and phylloxera. Exalt it all the same, especially when we haven't been there. Go on a tirade about self-government.",
+    "headword_en": "AMERICA"
   },
   {
     "headword": "ANDROCLÈS",
@@ -262,26 +267,49 @@
     "headword_en": "ENGLISH"
   },
   {
-    "headword": "ANTÉCHRIST",
-    "text": "Voltaire, Renan... ANTIQUITÉ _et tout ce qui s'y rapporte_: Poncif, embêtant. ANTIQUITÉS (les): Sont toujours de fabrication moderne.",
+    "headword": "ANTIQUITÉ _et tout ce qui s'y rapporte_",
+    "text": "Poncif, embêtant.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Voltaire, Renan... ANTIQUITY _and everything related to it_: Puncif, annoying. ANTIQUES (them): Are always of modern manufacture.",
-    "headword_en": "ANTICHRIST"
+    "cluster_id": 7
+  },
+  {
+    "headword": "ANTIQUITÉS (les)",
+    "text": "Sont toujours de fabrication moderne.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "ANTÉCHRIST",
+    "text": "Voltaire, Renan...",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "APLOMB",
-    "text": "Toujours suivi de infernal ou précédé de rude. APPARTEMENT de garçon: Toujours en désordre, avec des colifichets de femme traînant ça et là. Odeur de cigarettes. On doit y trouver des choses extraordinaires.",
+    "text": "Toujours suivi de infernal ou précédé de rude.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Always followed by infernal or preceded by harsh. Boy's APARTMENT: Always messy, with women's trinkets lying here and there. Smell of cigarettes. We must find extraordinary things there.",
-    "headword_en": "PLUMB"
+    "cluster_id": 6
+  },
+  {
+    "headword": "APPARTEMENT de garçon",
+    "text": "Toujours en désordre, avec des colifichets de femme traînant ça et là. Odeur de cigarettes. On doit y trouver des choses extraordinaires.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ARBALÈTE",
@@ -455,14 +483,21 @@
   },
   {
     "headword": "BADAUD",
-    "text": "Tous les Parisiens sont des badauds quoique sur dix habitants de Paris il y ait neuf provinciaux. A Paris on ne travaille pas. BADIGEON dans les églises: Tonner contre. Cette colère artistique est extrêmement bien portée.",
+    "text": "Tous les Parisiens sont des badauds quoique sur dix habitants de Paris il y ait neuf provinciaux. A Paris on ne travaille pas.",
     "tags": [
       "danger"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "All Parisians are onlookers although out of ten inhabitants of Paris there are nine provincials. In Paris we don't work. BADIGEON in churches: Tonner against. This artistic anger is extremely well carried.",
-    "headword_en": "BADAUD"
+    "cluster_id": 6
+  },
+  {
+    "headword": "BADIGEON dans les églises",
+    "text": "Tonner contre. Cette colère artistique est extrêmement bien portée.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BAGNOLET",
@@ -483,18 +518,6 @@
     "cluster_id": 9,
     "text_en": "It is very distinguished to wear it on the indicator finger. Putting it on your thumb is too oriental. Wearing rings deforms your fingers.",
     "headword_en": "RING"
-  },
-  {
-    "headword": "BÂILLEMENT",
-    "text": "Il faut dire: « Excusez-moi, ça ne vient pas de l'ennui, mais de l'estomac. »",
-    "tags": [
-      "social_obligation",
-      "negation_trap"
-    ],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "You have to say: \"Excuse me, it doesn't come from boredom, but from the stomach.\"",
-    "headword_en": "YAWN"
   },
   {
     "headword": "BAISER",
@@ -573,22 +596,18 @@
     "headword_en": "BARBER"
   },
   {
-    "headword": "XI",
-    "text": "Autrefois saignait.",
+    "headword": "BAS-BLEU",
+    "text": "Terme de mépris pour désigner toute femme qui s'intéresse aux choses intellectuelles. Citer Molière à l'appui: « Quand la capacité de son esprit se hausse... » , etc.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Used to bleed.",
-    "headword_en": "XI"
+    "cluster_id": 6
   },
   {
-    "headword": "BAS-BLEU",
-    "text": "Terme de mépris pour désigner toute femme qui s'intéresse aux choses intellectuelles. Citer Molière à l'appui: « Quand la capacité de son esprit se hausse... » , etc. BASES de la société: Id est, la propriété, la famille, la religion, le respect des autorités. En parler avec colère si on les attaque.",
+    "headword": "BASES de la société",
+    "text": "Id est, la propriété, la famille, la religion, le respect des autorités. En parler avec colère si on les attaque.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "A term of contempt for any woman who is interested in intellectual things. Quote Molière in support: \"When the capacity of one's mind increases...\", etc. BASES of society: Id est, property, family, religion, respect for authorities. Talk about it angrily if attacked.",
-    "headword_en": "LOW-BLUE"
+    "cluster_id": 6
   },
   {
     "headword": "BASILIQUE",
@@ -620,15 +639,6 @@
     "cluster_id": 8,
     "text_en": "Still bloody. There are always two winners, the winner and the beaten.",
     "headword_en": "BATTLE"
-  },
-  {
-    "headword": "BÂTON",
-    "text": "Plus redoutable que l'épée.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "More formidable than the sword.",
-    "headword_en": "STICK"
   },
   {
     "headword": "BAUDRUCHE",
@@ -667,15 +677,6 @@
     "headword_en": "SHEPHERDS"
   },
   {
-    "headword": "BÊTES",
-    "text": "Ah! si les bêtes pouvaient parler! Il y en a qui sont plus intelligentes que des hommes.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Ah! if animals could talk! There are some who are more intelligent than men.",
-    "headword_en": "BEASTS"
-  },
-  {
     "headword": "BIBLE",
     "text": "Le plus ancien livre du monde.",
     "tags": [],
@@ -696,13 +697,11 @@
     "headword_en": "LIBRARY"
   },
   {
-    "headword": "BIÈRE",
-    "text": "Il ne faut pas en boire, ça enrhume.",
+    "headword": "BIEN ÉCRIT",
+    "text": "Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "You should not drink it, it causes colds.",
-    "headword_en": "BEER"
+    "cluster_id": 7
   },
   {
     "headword": "BILLARD",
@@ -712,6 +711,15 @@
     "cluster_id": 9,
     "text_en": "Noble game. Indispensable in the countryside.",
     "headword_en": "BILLIARDS"
+  },
+  {
+    "headword": "BIÈRE",
+    "text": "Il ne faut pas en boire, ça enrhume.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "You should not drink it, it causes colds.",
+    "headword_en": "BEER"
   },
   {
     "headword": "BLONDES",
@@ -783,6 +791,13 @@
     "headword_en": "BUTCHER"
   },
   {
+    "headword": "BOUDDHISME",
+    "text": "« Fausse religion de l'Inde » (Définition du Dictionnaire Bouillet, 1re édition).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7
+  },
+  {
     "headword": "BOUDIN",
     "text": "Signe de gaieté dans les maisons. Indispensable la nuit de Noël.",
     "tags": [],
@@ -792,13 +807,11 @@
     "headword_en": "PUDDIN"
   },
   {
-    "headword": "BOUDDHISME",
-    "text": "« Fausse religion de l'Inde » (Définition du Dictionnaire Bouillet, 1re édition). BOUILLI (le): C'est sain. Inséparable du mot soupe: la soupe et le bouilli.",
+    "headword": "BOUILLI (le)",
+    "text": "C'est sain. Inséparable du mot soupe: la soupe et le bouilli.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "“False religion of India” (Definition from the Bouillet Dictionary, 1st edition). BOILLED (it): It’s healthy. Inseparable from the word soup: soup and porridge.",
-    "headword_en": "BUDDHISM"
+    "cluster_id": 7
   },
   {
     "headword": "BOULET",
@@ -811,14 +824,21 @@
   },
   {
     "headword": "BOURREAU",
-    "text": "Toujours de père en fils. BOURSE (la): Thermomètre de l'opinion publique.",
+    "text": "Toujours de père en fils.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Always from father to son. STOCK MARKET (the): Thermometer of public opinion.",
-    "headword_en": "EXECUTIONER"
+    "cluster_id": 8
+  },
+  {
+    "headword": "BOURSE (la)",
+    "text": "Thermomètre de l'opinion publique.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BOURSIERS",
@@ -906,6 +926,36 @@
     "cluster_id": 0,
     "text_en": "Put on headlines to write.",
     "headword_en": "BUFFON"
+  },
+  {
+    "headword": "BÂILLEMENT",
+    "text": "Il faut dire: « Excusez-moi, ça ne vient pas de l'ennui, mais de l'estomac. »",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "You have to say: \"Excuse me, it doesn't come from boredom, but from the stomach.\"",
+    "headword_en": "YAWN"
+  },
+  {
+    "headword": "BÂTON",
+    "text": "Plus redoutable que l'épée.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "More formidable than the sword.",
+    "headword_en": "STICK"
+  },
+  {
+    "headword": "BÊTES",
+    "text": "Ah! si les bêtes pouvaient parler! Il y en a qui sont plus intelligentes que des hommes.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Ah! if animals could talk! There are some who are more intelligent than men.",
+    "headword_en": "BEASTS"
   },
   {
     "headword": "CACHET",
@@ -1077,24 +1127,6 @@
     "headword_en": "CAVERNS"
   },
   {
-    "headword": "CÈDRE",
-    "text": "Celui du Jardin des Plantes a été rapporté dans un chapeau.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "The one from the Jardin des Plantes was reported in a hat.",
-    "headword_en": "CEDAR"
-  },
-  {
-    "headword": "CÉLÉBRITÉ",
-    "text": "Les célébrités: s'inquiéter du moindre détail de leur vie privée, afin de pouvoir les dénigrer.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "Celebrities: worrying about the smallest details of their private lives, in order to be able to denigrate them.",
-    "headword_en": "CELEBRITY"
-  },
-  {
     "headword": "CELIBATAIRES",
     "text": "Tous égoïstes et débauchés. On devrait les imposer. Se préparent une triste vieillesse.",
     "tags": [],
@@ -1135,15 +1167,6 @@
     "cluster_id": 9,
     "text_en": "Guarantee for families and parents. is always favorable.",
     "headword_en": "CERTIFICATE"
-  },
-  {
-    "headword": "CÉRUMEN",
-    "text": "« Cire humaine » . Se garder de l'ôter parce qu'elle empêche les insectes d'enter dans les oreilles.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "“Human wax”. Be careful not to remove it because it prevents insects from entering the ears.",
-    "headword_en": "CERUMEN"
   },
   {
     "headword": "CHACAL",
@@ -1269,15 +1292,6 @@
     "headword_en": "CAT"
   },
   {
-    "headword": "CHÂTAIGNE",
-    "text": "Femelle du marron.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Female of the chestnut.",
-    "headword_en": "CHESTNUT"
-  },
-  {
     "headword": "CHATEAUBRIAND",
     "text": "Connu surtout par le beefsteak qui porte son nom.",
     "tags": [],
@@ -1287,15 +1301,13 @@
     "headword_en": "CHATEAUBRIAND"
   },
   {
-    "headword": "CHÂTEAU FORT",
-    "text": "A toujours subi un siège sous Philippe Auguste.",
-    "tags": [
-      "social_obligation"
-    ],
+    "headword": "CHEMINS DE FER",
+    "text": "Si Napoléon les avait eus à sa disposition, il aurait été invincible. S'extasier sur leur invention et dire: « Moi, monsieur, qui vous parle, j'étais ce matin à X...; je suis parti par le train de X...; là-bas, j'ai fait mes affaires, etc. , et à x heures, j'étais revenu! »",
+    "tags": [],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Always suffered a siege under Philip Augustus.",
-    "headword_en": "STRONG CASTLE"
+    "cluster_id": 6,
+    "text_en": "If Napoleon had had them at his disposal, he would have been invincible. To rave about their invention and say: \"I, sir, who is speaking to you, was this morning at X...; I left by the train from X...; there, I did my business, etc., and at",
+    "headword_en": "RAILWAYS"
   },
   {
     "headword": "CHEMINÉE",
@@ -1307,15 +1319,6 @@
     "cluster_id": 8,
     "text_en": "Still smokes. Topic of discussion about heating.",
     "headword_en": "CHIMNEY"
-  },
-  {
-    "headword": "CHEMINS DE FER",
-    "text": "Si Napoléon les avait eus à sa disposition, il aurait été invincible. S'extasier sur leur invention et dire: « Moi, monsieur, qui vous parle, j'étais ce matin à X...; je suis parti par le train de X...; là-bas, j'ai fait mes affaires, etc. , et à x heures, j'étais revenu! »",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "If Napoleon had had them at his disposal, he would have been invincible. To rave about their invention and say: \"I, sir, who is speaking to you, was this morning at X...; I left by the train from X...; there, I did my business, etc., and at",
-    "headword_en": "RAILWAYS"
   },
   {
     "headword": "CHEVAL",
@@ -1365,6 +1368,26 @@
     "headword_en": "CHRISTIANITY"
   },
   {
+    "headword": "CHÂTAIGNE",
+    "text": "Femelle du marron.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Female of the chestnut.",
+    "headword_en": "CHESTNUT"
+  },
+  {
+    "headword": "CHÂTEAU FORT",
+    "text": "A toujours subi un siège sous Philippe Auguste.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Always suffered a siege under Philip Augustus.",
+    "headword_en": "STRONG CASTLE"
+  },
+  {
     "headword": "CIDRE",
     "text": "Gâte les dents.",
     "tags": [],
@@ -1402,12 +1425,24 @@
   },
   {
     "headword": "CLARINETTE",
-    "text": "En jouer rend aveugle. Ex.: Tous les aveugles jouent de la clarinette. CLASSIQUES (les): On est censé les connaître. CLOCHER de village: Fait battre le coeur.",
+    "text": "En jouer rend aveugle. Ex.: Tous les aveugles jouent de la clarinette.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Playing it makes you blind. Ex.: All blind people play the clarinet. CLASSICS (them): We are supposed to know them. Village bell tower: Makes the heart beat.",
-    "headword_en": "CLARINET"
+    "cluster_id": 7
+  },
+  {
+    "headword": "CLASSIQUES (les)",
+    "text": "On est censé les connaître.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "CLOCHER de village",
+    "text": "Fait battre le coeur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CLOU",
@@ -1467,44 +1502,42 @@
   },
   {
     "headword": "COGNAC",
-    "text": "Très funeste. Excellent dans plusieurs maladies. Un bon verre de cognac ne fait jamais de mal. Pris à jeun tue le ver de l'estomac. COIT, COPULATION: Mots à éviter. Dire: « Ils avaient des rapports... »",
+    "text": "Très funeste. Excellent dans plusieurs maladies. Un bon verre de cognac ne fait jamais de mal. Pris à jeun tue le ver de l'estomac.",
     "tags": [
       "danger"
     ],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Very disastrous. Excellent in several diseases. A good glass of cognac never hurts. Taken on an empty stomach kills stomach worm. COIT, COPULATION: Words to avoid. Say: “They had sex…”",
-    "headword_en": "COGNAC"
+    "cluster_id": 4
+  },
+  {
+    "headword": "COIT",
+    "text": "Mots à éviter. Dire: « Ils avaient des rapports... »",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 4
+  },
+  {
+    "headword": "COLLEGE",
+    "text": "Plus noble qu'une pension.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4
+  },
+  {
+    "headword": "COLONIES (nos)",
+    "text": "S'attrister quand on en parle.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COLÈRE",
-    "text": "Fouette le sang; hygiénique de s'y mettre de temps en temps. COLLEGE, lycée: Plus noble qu'une pension. COLONIES (nos): S'attrister quand on en parle.",
+    "text": "Fouette le sang; hygiénique de s'y mettre de temps en temps.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Whips the blood; hygienic to use it from time to time. COLLEGE, high school: More noble than a pension. COLONIES (nos): Get sad when we talk about it.",
-    "headword_en": "ANGER"
-  },
-  {
-    "headword": "COMÉDIE",
-    "text": "En vers, ne convient plus à notre époque. On doit cependant respecter la haute comédie. Castigat ridendo mores.",
-    "tags": [
-      "social_obligation",
-      "negation_trap"
-    ],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "In verse, no longer suitable for our times. However, we must respect high comedy. Castigat ridendo mores.",
-    "headword_en": "COMEDY"
-  },
-  {
-    "headword": "COMÈTES",
-    "text": "Rire des gens qui en avaient peur.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Laugh at people who were afraid of it.",
-    "headword_en": "COMETS"
+    "cluster_id": 4
   },
   {
     "headword": "COMMERCE",
@@ -1534,6 +1567,27 @@
     "cluster_id": 11,
     "text_en": "You just see when you see it.",
     "headword_en": "COMPASS"
+  },
+  {
+    "headword": "COMÈTES",
+    "text": "Rire des gens qui en avaient peur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Laugh at people who were afraid of it.",
+    "headword_en": "COMETS"
+  },
+  {
+    "headword": "COMÉDIE",
+    "text": "En vers, ne convient plus à notre époque. On doit cependant respecter la haute comédie. Castigat ridendo mores.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "In verse, no longer suitable for our times. However, we must respect high comedy. Castigat ridendo mores.",
+    "headword_en": "COMEDY"
   },
   {
     "headword": "CONCERT",
@@ -1677,16 +1731,43 @@
     "headword_en": "COPAHU"
   },
   {
+    "headword": "COPULATION",
+    "text": "Mots à éviter. Dire: « Ils avaient des rapports... »",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 4
+  },
+  {
     "headword": "COQ",
-    "text": "Un homme maigre doit toujours dire qu'un bon coq n'est jamais gras. COR aux pieds: Indique le changement de temps mieux qu'un baromètre. Très dangereux quand il est mal coupé: citer des exemples d'accidents terribles. COR de chasse: Dans les bois fait bon effet, et le soir sur l'eau.",
+    "text": "Un homme maigre doit toujours dire qu'un bon coq n'est jamais gras.",
     "tags": [
       "danger",
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "A skinny man should always say that a good cock is never fat. COR on the feet: Indicates the change in weather better than a barometer. Very dangerous when cut incorrectly: cite examples of terrible accidents. Hunting horn: In the woods works well, and in the evening on the water.",
-    "headword_en": "ROOSTER"
+    "cluster_id": 6
+  },
+  {
+    "headword": "COR aux pieds",
+    "text": "Indique le changement de temps mieux qu'un baromètre. Très dangereux quand il est mal coupé: citer des exemples d'accidents terribles.",
+    "tags": [
+      "danger",
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "COR de chasse",
+    "text": "Dans les bois fait bon effet, et le soir sur l'eau.",
+    "tags": [
+      "danger",
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CORDE",
@@ -1783,15 +1864,6 @@
     "headword_en": "TOAD"
   },
   {
-    "headword": "CRÉOLE",
-    "text": "Vit dans un hamac.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Lives in a hammock.",
-    "headword_en": "CREOLE"
-  },
-  {
     "headword": "CRIMINEL",
     "text": "Toujours odieux.",
     "tags": [
@@ -1839,6 +1911,15 @@
     "cluster_id": 8,
     "text_en": "Does well in an alcove and on the guillotine.",
     "headword_en": "CRUCIFIX"
+  },
+  {
+    "headword": "CRÉOLE",
+    "text": "Vit dans un hamac.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Lives in a hammock.",
+    "headword_en": "CREOLE"
   },
   {
     "headword": "CUIR",
@@ -1906,6 +1987,33 @@
     "cluster_id": 0,
     "text_en": "Pronounced tzar and occasionally autocrat.",
     "headword_en": "CZAR"
+  },
+  {
+    "headword": "CÈDRE",
+    "text": "Celui du Jardin des Plantes a été rapporté dans un chapeau.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "The one from the Jardin des Plantes was reported in a hat.",
+    "headword_en": "CEDAR"
+  },
+  {
+    "headword": "CÉLÉBRITÉ",
+    "text": "Les célébrités: s'inquiéter du moindre détail de leur vie privée, afin de pouvoir les dénigrer.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "Celebrities: worrying about the smallest details of their private lives, in order to be able to denigrate them.",
+    "headword_en": "CELEBRITY"
+  },
+  {
+    "headword": "CÉRUMEN",
+    "text": "« Cire humaine » . Se garder de l'ôter parce qu'elle empêche les insectes d'enter dans les oreilles.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "“Human wax”. Be careful not to remove it because it prevents insects from entering the ears.",
+    "headword_en": "CERUMEN"
   },
   {
     "headword": "DAGUERRÉOTYPE",
@@ -1982,82 +2090,13 @@
     "headword_en": "DOLPHIN"
   },
   {
-    "headword": "DÉBAUCHE",
-    "text": "Cause de toutes les maladies des célibataires.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Cause of all diseases of single people.",
-    "headword_en": "DEBAUCHERY"
-  },
-  {
-    "headword": "DÉCHAÎNER",
-    "text": "On déchaîne ses chiens et les mauvaises passions. DÉCOR de théâtre: N'est pas de la peinture: il suffit de jeter en vrac sur la toile un seau de couleurs; puis on l'étend avec un balai; et l'éloignement avec la lumière fait l'illusion. DÉCORATION de la Légion d'honneur: La blaguer mais la convoiter. Quand on l'obtient, toujours dire qu'on ne l'a pas demandée.",
-    "tags": [
-      "social_obligation",
-      "negation_trap"
-    ],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "We unleash our dogs and bad passions. THEATER SETTING: Is not paint: just throw a bucket of colors loose on the canvas; then we spread it with a broom; and the distance from the light creates the illusion. DECORATION of the Legion of Honor: Joke it but covet it. When you get it, always say you didn't ask for it.",
-    "headword_en": "UNCHAIN"
-  },
-  {
-    "headword": "DÉCORUM",
-    "text": "Donne du prestige. Frappe l'imagination des masses. « Il en faut! Il en faut! »",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Gives prestige. Strikes the imagination of the masses. \"We need it! We need it!\"",
-    "headword_en": "DECORUM"
-  },
-  {
-    "headword": "DÉFAITE",
-    "text": "S'essuie, et elle est tellement complète qu'il n'en reste personne pour en porter la nouvelle.",
+    "headword": "DENTISTES",
+    "text": "Tous menteurs. Se servent du baume d'acier. On les croit aussi pédicures. Se disent chirurgiens comme les opticiens se disent se disent ingénieurs.",
     "tags": [],
     "xrefs": [],
     "cluster_id": 10,
-    "text_en": "Wipes away, and it is so complete that there is no one left to carry the news.",
-    "headword_en": "DEFEAT"
-  },
-  {
-    "headword": "DÉFILÉ",
-    "text": "Toujours citer les Thermopyles. Le défilé des Vosges sont les Thermopyles de la France (s'est beaucoup dit en 1870).",
-    "tags": [
-      "social_obligation",
-      "numeric_authority"
-    ],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Always cite Thermopylae. The Vosges parade are the Thermopylae of France (much said in 1870).",
-    "headword_en": "PARADE"
-  },
-  {
-    "headword": "DÉICIDE",
-    "text": "S'indigner contre, bien que le crime ne soit pas fréquent. DÉJEUNER des garçons: Exige des huîtres, du vin blanc et des gaudrioles.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "To be indignant against, although the crime is not frequent. Boys' LUNCH: Requires oysters, white wine and gaudrioles.",
-    "headword_en": "DECIDES"
-  },
-  {
-    "headword": "DÉMÊLOIR",
-    "text": "Fait tomber les cheveux.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Makes hair fall out.",
-    "headword_en": "DETANGLING"
-  },
-  {
-    "headword": "DÉMOSTHÈNE",
-    "text": "Ne prononçait pas de discours sans avoir un galet dans la bouche.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Didn't give a speech without having a pebble in his mouth.",
-    "headword_en": "DEMOSTHENES"
+    "text_en": "All liars. Use steel balm. They are also believed to be pedicures. They call themselves surgeons just as opticians call themselves engineers.",
+    "headword_en": "DENTISTS"
   },
   {
     "headword": "DENTS",
@@ -2069,44 +2108,6 @@
     "cluster_id": 7,
     "text_en": "Are spoiled by cider, tobacco, sugared almonds, ice, drinking immediately after soup and sleeping with their mouth open. Blinder tooth: dangerous to pull it out because it corresponds to the eye. Pulling out a tooth “does not make you enjoy”.",
     "headword_en": "TEETH"
-  },
-  {
-    "headword": "DENTISTES",
-    "text": "Tous menteurs. Se servent du baume d'acier. On les croit aussi pédicures. Se disent chirurgiens comme les opticiens se disent se disent ingénieurs.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "All liars. Use steel balm. They are also believed to be pedicures. They call themselves surgeons just as opticians call themselves engineers.",
-    "headword_en": "DENTISTS"
-  },
-  {
-    "headword": "DÉPURATIF",
-    "text": "Se prend en cachette.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Taken in secret.",
-    "headword_en": "DEPURATIVE"
-  },
-  {
-    "headword": "DÉPUTÉ",
-    "text": "L'être, comble de la gloire. Tonner contre la Chambre des députés. Trop de bavards à le Chambre. Ne font rien.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Being, height of glory. Thunder against the Chamber of Deputies. Too many talkers in the House. Don't do anything.",
-    "headword_en": "MP"
-  },
-  {
-    "headword": "DÉRATÉ",
-    "text": "Courir comme un dératé. Inutile de savoir que l'extirpation de la rate n'a jamais été pratiquée sur l'homme.",
-    "tags": [
-      "never_existed"
-    ],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Run like crazy. Needless to say, spleen extirpation has never been performed on humans.",
-    "headword_en": "DERATED"
   },
   {
     "headword": "DERBY",
@@ -2139,14 +2140,20 @@
   },
   {
     "headword": "DESSERT",
-    "text": "Regretter qu'on n'y chante plus. Les gens vertueux le méprisent: « Non! non! pas de pâtisseries! Jamais de dessert! » DESSIN (l'art du): Se compose de trois choses: le ligne, le grain, et le grainé fin; de plus, le trait de force. Mais le trait de force, il n'y a que le maître seul qui le donne. (Christophe.)",
+    "text": "Regretter qu'on n'y chante plus. Les gens vertueux le méprisent: « Non! non! pas de pâtisseries! Jamais de dessert! »",
     "tags": [
       "negation_trap"
     ],
     "xrefs": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "DESSIN (l'art du)",
+    "text": "Se compose de trois choses: le ligne, le grain, et le grainé fin; de plus, le trait de force. Mais le trait de force, il n'y a que le maître seul qui le donne. (Christophe.)",
+    "tags": [],
+    "xrefs": [],
     "cluster_id": 7,
-    "text_en": "Regret that we no longer sing there. Virtuous people despise him: \"No! no! no pastries! Never dessert!\" DRAWING (the art of): Consists of three things: line, grain, and fine grain; moreover, the trait of strength. But only the master gives the trait of strength. (Christophe.)",
-    "headword_en": "DESSERT"
+    "headword_en": "DRAWING (the art of)"
   },
   {
     "headword": "DEVOIRS",
@@ -2158,15 +2165,6 @@
     "cluster_id": 10,
     "text_en": "Demand them from others, free yourself from them. Others have it towards us, but we don't have it towards them.",
     "headword_en": "HOMEWORK"
-  },
-  {
-    "headword": "DÉVOUEMENT",
-    "text": "Se plaindre de ce que les autres en manquent. « Nous sommes bien inférieurs au chien, sous ce rapport! »",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 1,
-    "text_en": "Complaining that others lack it. “We are much inferior to the dog in this respect!”",
-    "headword_en": "DEDICATION"
   },
   {
     "headword": "DIAMANT",
@@ -2234,17 +2232,6 @@
     "headword_en": "DILIGENCES"
   },
   {
-    "headword": "DÎNER",
-    "text": "Autrefois on dînait à midi, maintenant on dîne à des heures impossibles. Le dîner de nos pères était notre déjeuner, et notre déjeuner était leur dîner. Dîner si tard que ça n'appelle pas dîner, mais souper.",
-    "tags": [
-      "negation_trap"
-    ],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "In the past we dined at noon, now we dine at impossible hours. Our fathers' dinner was our lunch, and our lunch was their dinner. Dinner so late that it doesn't call dinner, but supper.",
-    "headword_en": "DINNER"
-  },
-  {
     "headword": "DIOGÈNE",
     "text": "« Je cherche un homme... Retire-toi de mon soleil. »",
     "tags": [],
@@ -2267,12 +2254,18 @@
   },
   {
     "headword": "DIPLÔME",
-    "text": "Signe de science. Ne prouve rien. DIRECTOIRE (le): Les hontes du Directoire. « Dans ce temps-là l'honneur s'était réfugié aux armées. » Les femmes, à Paris, se promenaient toutes nues.",
+    "text": "Signe de science. Ne prouve rien.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "DIRECTOIRE (le)",
+    "text": "Les hontes du Directoire. « Dans ce temps-là l'honneur s'était réfugié aux armées. » Les femmes, à Paris, se promenaient toutes nues.",
     "tags": [],
     "xrefs": [],
     "cluster_id": 6,
-    "text_en": "Science sign. Doesn't prove anything. DIRECTORY (the): The shames of the Directory. “At that time honor took refuge in the armies.” Women in Paris walked around naked.",
-    "headword_en": "DIPLOMA"
+    "headword_en": "DIRECTORY (the)"
   },
   {
     "headword": "DISSECTION",
@@ -2294,14 +2287,21 @@
   },
   {
     "headword": "DIVORCE",
-    "text": "Si Napoléon n'avait pas divorcé, il serait encore sur le trône. DIX (Conseil des): On ne sait pas ce que c'est, mais c'est formidable! Délibérait masqué. En trembler encore.",
+    "text": "Si Napoléon n'avait pas divorcé, il serait encore sur le trône.",
     "tags": [
       "negation_trap"
     ],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "If Napoleon hadn't divorced, he would still be on the throne. DIX (Council of): We don't know what it is, but it's great! Deliberated masked. Shaking again.",
-    "headword_en": "DIVORCE"
+    "cluster_id": 8
+  },
+  {
+    "headword": "DIX (Conseil des)",
+    "text": "On ne sait pas ce que c'est, mais c'est formidable! Délibérait masqué. En trembler encore.",
+    "tags": [
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DJINN",
@@ -2371,15 +2371,6 @@
     "headword_en": "DOLMEN"
   },
   {
-    "headword": "DÔME",
-    "text": "Tour de forme (sic) architecturale. S'étonner de ce que cela puisse tenir tout seul. En citer deux: celui des Invalides et celui de Saint-Pierre de Rome.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Architectural form (sic) tower. Being surprised that it could hold up on its own. To cite two: that of Les Invalides and that of Saint-Pierre de Rome.",
-    "headword_en": "DOME"
-  },
-  {
     "headword": "DOMICILE",
     "text": "Toujours inviolable. Cependant la Justice, la Police, y pénètrent quand elles veulent. Je regagne mes pénates. Je rentre dans mes lares.",
     "tags": [
@@ -2393,12 +2384,17 @@
   },
   {
     "headword": "DOMINOS",
-    "text": "On y joue d'autant mieux qu'on est gris. DOMPTEURS de bêtes féroces: Emploient des pratiques obscènes.",
+    "text": "On y joue d'autant mieux qu'on est gris.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "We play it all the better the grayer we are. Tamers of wild beasts: Employ obscene practices.",
-    "headword_en": "DOMINOES"
+    "cluster_id": 2
+  },
+  {
+    "headword": "DOMPTEURS de bêtes féroces",
+    "text": "Emploient des pratiques obscènes.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DONJON",
@@ -2471,12 +2467,24 @@
   },
   {
     "headword": "DRAP",
-    "text": "Tous les draps viennent d'Elbeuf. DRAPEAU national: Sa vue fait battre le coeur. DROIT (le): On ne sait pas ce que c'est.",
+    "text": "Tous les draps viennent d'Elbeuf.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "All the sheets come from Elbeuf. National FLAG: The sight of it makes the heart beat. RIGHT (the): We don’t know what it is.",
-    "headword_en": "SHEET"
+    "cluster_id": 2
+  },
+  {
+    "headword": "DRAPEAU national",
+    "text": "Sa vue fait battre le coeur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2
+  },
+  {
+    "headword": "DROIT (le)",
+    "text": "On ne sait pas ce que c'est.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DRÔLE",
@@ -2524,6 +2532,165 @@
     "headword_en": "HARD"
   },
   {
+    "headword": "DÉBAUCHE",
+    "text": "Cause de toutes les maladies des célibataires.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Cause of all diseases of single people.",
+    "headword_en": "DEBAUCHERY"
+  },
+  {
+    "headword": "DÉCHAÎNER",
+    "text": "On déchaîne ses chiens et les mauvaises passions.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "DÉCOR de théâtre",
+    "text": "N'est pas de la peinture: il suffit de jeter en vrac sur la toile un seau de couleurs; puis on l'étend avec un balai; et l'éloignement avec la lumière fait l'illusion.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "DÉCORATION de la Légion d'honneur",
+    "text": "La blaguer mais la convoiter. Quand on l'obtient, toujours dire qu'on ne l'a pas demandée.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "DÉCORUM",
+    "text": "Donne du prestige. Frappe l'imagination des masses. « Il en faut! Il en faut! »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Gives prestige. Strikes the imagination of the masses. \"We need it! We need it!\"",
+    "headword_en": "DECORUM"
+  },
+  {
+    "headword": "DÉFAITE",
+    "text": "S'essuie, et elle est tellement complète qu'il n'en reste personne pour en porter la nouvelle.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "Wipes away, and it is so complete that there is no one left to carry the news.",
+    "headword_en": "DEFEAT"
+  },
+  {
+    "headword": "DÉFILÉ",
+    "text": "Toujours citer les Thermopyles. Le défilé des Vosges sont les Thermopyles de la France (s'est beaucoup dit en 1870).",
+    "tags": [
+      "social_obligation",
+      "numeric_authority"
+    ],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "Always cite Thermopylae. The Vosges parade are the Thermopylae of France (much said in 1870).",
+    "headword_en": "PARADE"
+  },
+  {
+    "headword": "DÉICIDE",
+    "text": "S'indigner contre, bien que le crime ne soit pas fréquent.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4
+  },
+  {
+    "headword": "DÉJEUNER des garçons",
+    "text": "Exige des huîtres, du vin blanc et des gaudrioles.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4
+  },
+  {
+    "headword": "DÉMOSTHÈNE",
+    "text": "Ne prononçait pas de discours sans avoir un galet dans la bouche.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Didn't give a speech without having a pebble in his mouth.",
+    "headword_en": "DEMOSTHENES"
+  },
+  {
+    "headword": "DÉMÊLOIR",
+    "text": "Fait tomber les cheveux.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Makes hair fall out.",
+    "headword_en": "DETANGLING"
+  },
+  {
+    "headword": "DÉPURATIF",
+    "text": "Se prend en cachette.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Taken in secret.",
+    "headword_en": "DEPURATIVE"
+  },
+  {
+    "headword": "DÉPUTÉ",
+    "text": "L'être, comble de la gloire. Tonner contre la Chambre des députés. Trop de bavards à le Chambre. Ne font rien.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Being, height of glory. Thunder against the Chamber of Deputies. Too many talkers in the House. Don't do anything.",
+    "headword_en": "MP"
+  },
+  {
+    "headword": "DÉRATÉ",
+    "text": "Courir comme un dératé. Inutile de savoir que l'extirpation de la rate n'a jamais été pratiquée sur l'homme.",
+    "tags": [
+      "never_existed"
+    ],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Run like crazy. Needless to say, spleen extirpation has never been performed on humans.",
+    "headword_en": "DERATED"
+  },
+  {
+    "headword": "DÉVOUEMENT",
+    "text": "Se plaindre de ce que les autres en manquent. « Nous sommes bien inférieurs au chien, sous ce rapport! »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 1,
+    "text_en": "Complaining that others lack it. “We are much inferior to the dog in this respect!”",
+    "headword_en": "DEDICATION"
+  },
+  {
+    "headword": "DÎNER",
+    "text": "Autrefois on dînait à midi, maintenant on dîne à des heures impossibles. Le dîner de nos pères était notre déjeuner, et notre déjeuner était leur dîner. Dîner si tard que ça n'appelle pas dîner, mais souper.",
+    "tags": [
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "In the past we dined at noon, now we dine at impossible hours. Our fathers' dinner was our lunch, and our lunch was their dinner. Dinner so late that it doesn't call dinner, but supper.",
+    "headword_en": "DINNER"
+  },
+  {
+    "headword": "DÔME",
+    "text": "Tour de forme (sic) architecturale. S'étonner de ce que cela puisse tenir tout seul. En citer deux: celui des Invalides et celui de Saint-Pierre de Rome.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Architectural form (sic) tower. Being surprised that it could hold up on its own. To cite two: that of Les Invalides and that of Saint-Pierre de Rome.",
+    "headword_en": "DOME"
+  },
+  {
     "headword": "EAU",
     "text": "L'eau de Paris donne des coliques. L'eau de mer soutient pour nager. L'eau de Cologne sent bon.",
     "tags": [],
@@ -2533,156 +2700,6 @@
     "headword_en": "WATER"
   },
   {
-    "headword": "ÉBÉNISTE",
-    "text": "Ouvrier qui travaille surtout l'acajou.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Worker who mainly works mahogany.",
-    "headword_en": "CABINETMAKER"
-  },
-  {
-    "headword": "ÉCHAFAUD",
-    "text": "S'arranger quand on y monte pour prononcer quelques mots éloquents avant de mourir.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Arrange when you go up there to say a few eloquent words before you die.",
-    "headword_en": "SCAFFOLD"
-  },
-  {
-    "headword": "ÉCHARPE",
-    "text": "Poétique. ÉCHECS (jeu des): Image de la tactique militaire. Tous les grands capitaines y étaient forts. Trop sérieux pour un jeu, trop futile pour une science.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Poetic. CHESS (game of): Image of military tactics. All the great captains were strong there. Too serious for a game, too futile for a science.",
-    "headword_en": "SCARF"
-  },
-  {
-    "headword": "ÉCHO",
-    "text": "Citer ceux du Panthéon et du pont de Neuilly.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "Mention those of the Pantheon and the Pont de Neuilly.",
-    "headword_en": "ECHO"
-  },
-  {
-    "headword": "ÉCLECTISME",
-    "text": "Tonner contre comme étant une philosophie immorale.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Thunder against it as an immoral philosophy.",
-    "headword_en": "ECLECTICISM"
-  },
-  {
-    "headword": "ÉCOLES",
-    "text": "Polytechnique, rêve de toutes les mères (vieux). Terreur du bourgeois dans les émeutes quand il apprend que l'Ecole Polytechnique sympathise avec les ouvriers (vieux). Dire simplement « l'Ecole » fait accroire qu'on y a été. A Saint-Cyr: jeunes gens nobles. A l'Ecole de Médecine: tous exaltés. A l'Ecole de Droit: jeunes gens de bonne famille.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Polytechnic, every mother’s dream (old). Terror of the bourgeois in the riots when he learns that the Ecole Polytechnique sympathizes with the (old) workers. Simply saying “School” makes you believe that you have been there. In Saint-Cyr: noble young people. At the School of Medicine: all exalted. At the Law School: young people from good families.",
-    "headword_en": "SCHOOLS"
-  },
-  {
-    "headword": "ÉCONOMIE",
-    "text": "Toujours précédé de « ordre » . Mène à la fortune. Citer l'anecdote de Laffitte ramassant une épingle dans la cour du banquier Perrégaux.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Always preceded by \"order\". Leads to fortune. Quote the anecdote of Laffitte picking up a pin in the courtyard of the banker Perrégaux.",
-    "headword_en": "ECONOMY"
-  },
-  {
-    "headword": "ÉCONOMIE POLITIQUE",
-    "text": "Science sans entrailles.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Science without guts.",
-    "headword_en": "POLITICAL ECONOMY"
-  },
-  {
-    "headword": "ÉCREVISSE",
-    "text": "Marche à reculons. Toujours appeler les réactionnaires des écrevisses.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Walk backwards. Always call reactionaries crawfish.",
-    "headword_en": "CRAYFISH"
-  },
-  {
-    "headword": "ÉCRIRE",
-    "text": "Currente calamo, c'est l'excuse pour les fautes de style ou d'orthographe. ÉCRIT, BIEN ÉCRIT: Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Currente calamo is the excuse for stylistic or spelling mistakes. WRITTEN, WELL WRITTEN: Doorman's words, to designate serial novels that amuse them.",
-    "headword_en": "TO WRITE"
-  },
-  {
-    "headword": "ÉCRITURE",
-    "text": "Une belle écriture mène à tout. Indéchiffrable: signe de science. Ex.: les ordonnances des médecins.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Great writing leads to everything. Indecipherable: sign of science. E.g.: doctors’ prescriptions.",
-    "headword_en": "WRITING"
-  },
-  {
-    "headword": "ÉCUME DE MER",
-    "text": "Se trouve dans la terre. On en fait des pipes.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Found in the earth. We make blowjobs.",
-    "headword_en": "MEERSCHAUM"
-  },
-  {
-    "headword": "ÉDILES",
-    "text": "Tonner contre à propos du pavage des rues. « A quoi songent nos édiles? »",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "Thunder against about street paving. “What are our city councilors thinking about?”",
-    "headword_en": "EDILE"
-  },
-  {
-    "headword": "ÉGOÏSME",
-    "text": "Se plaindre de celui des autres et ne pas s'apercevoir du sien.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Complaining about that of others and not noticing your own.",
-    "headword_en": "SELFISHNESS"
-  },
-  {
-    "headword": "ÉLÉPHANTS",
-    "text": "Se distinguent par leur mémoire, et adorent le soleil.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Distinguished by their memory, and worship the sun.",
-    "headword_en": "ELEPHANTS"
-  },
-  {
-    "headword": "ÉMAIL",
-    "text": "Le secret en est perdu.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "The secret is lost.",
-    "headword_en": "E-MAIL"
-  },
-  {
     "headword": "EMBONPOINT",
     "text": "Signe de richesse et de fainéantise.",
     "tags": [],
@@ -2690,24 +2707,6 @@
     "cluster_id": 0,
     "text_en": "Sign of wealth and laziness.",
     "headword_en": "OVERWEIGHT"
-  },
-  {
-    "headword": "ÉMIGRÉS",
-    "text": "Gagnaient leur vie à donner des leçons de guitare et à faire la salade.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "Earned their living giving guitar lessons and making salad.",
-    "headword_en": "EMIGRANTS"
-  },
-  {
-    "headword": "ÉMIR",
-    "text": "Ne se dit qu'en parlant d'Abd-el-Kader.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Only said when talking about Abd-el-Kader.",
-    "headword_en": "EMIR"
   },
   {
     "headword": "EMPIRE",
@@ -2796,88 +2795,10 @@
   },
   {
     "headword": "ENVERGURE",
-    "text": "Se disputer sur la prononciation du mot. ÉPACTE, NOMBRE D'OR, LETTRE DOMINICALE: Sur les calendriers, on ne sait pas ce que c'est. ÉPARGNE (Caisse d'): Occasion de vol pour les domestiques.",
+    "text": "Se disputer sur la prononciation du mot.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Arguing over the pronunciation of the word. EPACTE, GOLDEN NUMBER, SUNDAY LETTER: On the calendars, we don't know what it is. SAVINGS (Cash): Opportunity for theft for servants.",
-    "headword_en": "SCOPE"
-  },
-  {
-    "headword": "ÉPÉE",
-    "text": "On ne connaît que celle de Damoclès. Regretter le temps où on en portait. « Brave comme une épée. » Quelquefois elle n'a jamais servi.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "We only know that of Damocles. Regretting the days when we wore them. “Brave as a sword.” Sometimes it was never used.",
-    "headword_en": "SWORD"
-  },
-  {
-    "headword": "ÉPÉRONS",
-    "text": "Font bien à une paire de bottes.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "Looks great with a pair of boots.",
-    "headword_en": "SPURS"
-  },
-  {
-    "headword": "ÉPICURE",
-    "text": "Le mépriser.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Despise him.",
-    "headword_en": "EPICURE"
-  },
-  {
-    "headword": "ÉPINARDS",
-    "text": "Sont le balai de l'estomac. Ne jamais rater la phrase célèbre de Prudhomme: « Je ne les aime pas, j'en suis bien aise, car si je les aimais, j'en mangerai et je ne puis pas les souffrir. » (Il y en a qui trouveront cela parfaitement logique et qui ne riront pas). ÉPOQUE (la nôtre): Tonner contre elle. Se plaindre de ce qu'elle n'est pas poétique. L'appeler époque de transition, de décadence.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "Are the broom of the stomach. Never miss Prudhomme's famous phrase: \"I don't like them, I'm very happy about it, because if I loved them, I would eat them and I can't put up with them.\" (There are some who will find this perfectly logical and who will not laugh). TIME (ours): Thunder against her. Complaining that it's not poetic. Call it a time of transition, of decadence.",
-    "headword_en": "SPINACH"
-  },
-  {
-    "headword": "ÉPUISEMENT",
-    "text": "Toujours prématuré.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Still premature.",
-    "headword_en": "EXHAUSTION"
-  },
-  {
-    "headword": "ÉQUITATION",
-    "text": "Bon exercice pour faire maigrir. Ex.: tous les soldats de cavalerie sont maigres. Bon exercice pour engraisser. Ex.: tous les officiers de cavalerie ont un gros ventre. « Il monte à cheval comme un vrai centaure. » ÈRE (des révolutions): Toujours ouverte puisque chaque nouveau gouvernement promet de la fermer.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Good exercise to lose weight. Ex.: all cavalry soldiers are thin. Good exercise for gaining weight. Ex.: all cavalry officers have a big belly. “He rides a horse like a real centaur.” ERA (of revolutions): Always open since each new government promises to close it.",
-    "headword_en": "HORSE RIDING"
-  },
-  {
-    "headword": "ÉRECTION",
-    "text": "Ne se dit qu'en parlant des monuments.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Only said when talking about monuments.",
-    "headword_en": "ERECTION"
-  },
-  {
-    "headword": "ÉRUDITION",
-    "text": "La mépriser comme étant la marque d'un esprit étroit.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Disdain it as the mark of a narrow mind.",
-    "headword_en": "ERUDITION"
+    "cluster_id": 3
   },
   {
     "headword": "ESCRIME",
@@ -2940,109 +2861,6 @@
     "headword_en": "STOMACH"
   },
   {
-    "headword": "ÉTAGÈRE",
-    "text": "Indispensable chez une jolie femme.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Essential for a pretty woman.",
-    "headword_en": "SHELF"
-  },
-  {
-    "headword": "ÉTALON",
-    "text": "Toujours vigoureux. Une femme doit ignorer la différence qu'il y a entre un étalon et un cheval.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Still vigorous. A woman must ignore the difference between a stallion and a horse.",
-    "headword_en": "STANDARD"
-  },
-  {
-    "headword": "ÉTÉ",
-    "text": "Toujours exceptionnel (v. hiver).",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "Always exceptional (v. winter).",
-    "headword_en": "SUMMER"
-  },
-  {
-    "headword": "ÉTERNUEMENT",
-    "text": "Après qu'on a dit: « Dieu vous bénisse » , engager une discussion sur l'origine de cet usage.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "After saying, “God bless you,” engage in a discussion about the origin of this usage.",
-    "headword_en": "SNEEZE"
-  },
-  {
-    "headword": "ÉTERNUER",
-    "text": "C'est une raillerie spirituelle de dire: le russe et le polonais ne se parlent pas, ça s'éternue.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "It's a witty mockery to say: Russian and Polish don't speak to each other, they sneeze.",
-    "headword_en": "SNEEZE"
-  },
-  {
-    "headword": "ÉTOILE",
-    "text": "Chacun a la sienne, comme l'Empereur.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Everyone has their own, like the Emperor.",
-    "headword_en": "STAR"
-  },
-  {
-    "headword": "ÉTRANGER",
-    "text": "Engouement pour tout ce qui vient de l'étranger, preuve de l'esprit libéral. Dénigrement de tout ce qui n'est pas français, preuve de patriotisme.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Craze for everything that comes from abroad, proof of the liberal spirit. Denigration of everything that is not French, proof of patriotism.",
-    "headword_en": "STRANGER"
-  },
-  {
-    "headword": "ÉTRENNES",
-    "text": "S'indigner contre.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "To be indignant against.",
-    "headword_en": "NEWS"
-  },
-  {
-    "headword": "ÉTRUSQUE",
-    "text": "Tous les vases anciens sont étrusques.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "All the ancient vases are Etruscan.",
-    "headword_en": "ETRUSCAN"
-  },
-  {
-    "headword": "ÉTUDIANT",
-    "text": "Portent tous des bérets rouges, des pantalons à la hussarde, fumant la pipe dans la rue et n'étudie pas.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "All wear red berets, hussar pants, smoke pipes in the street and don't study.",
-    "headword_en": "STUDENT"
-  },
-  {
-    "headword": "ÉTYMOLOGIE",
-    "text": "Rien de plus facile à trouver avec le latin et un peu de réflexion.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Nothing could be easier to find with Latin and a little thought.",
-    "headword_en": "ETYMOLOGY"
-  },
-  {
     "headword": "EUNUQUE",
     "text": "N'a jamais d'enfants... Fulminer contre les castrats de la chapelle Sixtine.",
     "tags": [],
@@ -3050,35 +2868,6 @@
     "cluster_id": 11,
     "text_en": "Never has children... Ranting against the castrati of the Sistine Chapel.",
     "headword_en": "EUNUCH"
-  },
-  {
-    "headword": "ÉVACUATIONS",
-    "text": "Les évacuations sont souvent copieuses et toujours de mauvaise nature.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "The evacuations are often copious and always of a bad nature.",
-    "headword_en": "EVACUATIONS"
-  },
-  {
-    "headword": "ÉVANGILES",
-    "text": "Livres divins, sublimes, etc.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Divine, sublime books, etc.",
-    "headword_en": "GOSPELS"
-  },
-  {
-    "headword": "ÉVIDENCE",
-    "text": "Vous aveugle, quand elle ne crève pas les yeux.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Blinds you, when it doesn't stare you out.",
-    "headword_en": "EVIDENCE"
   },
   {
     "headword": "EXASPÉRATION",
@@ -3097,15 +2886,6 @@
     "cluster_id": 0,
     "text_en": "Say it confirms the rule. Don't risk explaining how.",
     "headword_en": "EXCEPTION"
-  },
-  {
-    "headword": "EXÉCUTIONS CAPITALES",
-    "text": "Se plaindre des femmes qui vont les voir.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Complain about the women who go to see them.",
-    "headword_en": "CAPITAL EXECUTIONS"
   },
   {
     "headword": "EXERCICE",
@@ -3155,6 +2935,15 @@
     "headword_en": "EXTRACT"
   },
   {
+    "headword": "EXÉCUTIONS CAPITALES",
+    "text": "Se plaindre des femmes qui vont les voir.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Complain about the women who go to see them.",
+    "headword_en": "CAPITAL EXECUTIONS"
+  },
+  {
     "headword": "FABRIQUE",
     "text": "Voisinage dangereux.",
     "tags": [
@@ -3175,15 +2964,6 @@
     "cluster_id": 0,
     "text_en": "Still too high.",
     "headword_en": "BILL"
-  },
-  {
-    "headword": "FAÏENCE",
-    "text": "Plus chic que la porcelaine.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Classier than porcelain.",
-    "headword_en": "EARTHENWARE"
   },
   {
     "headword": "FAISAN",
@@ -3279,26 +3059,13 @@
     "headword_en": "COUNTERFEITERS"
   },
   {
-    "headword": "FÉLICITATIONS",
-    "text": "Toujours sincères, empressées, cordiales, etc.",
-    "tags": [
-      "social_obligation"
-    ],
+    "headword": "FAÏENCE",
+    "text": "Plus chic que la porcelaine.",
+    "tags": [],
     "xrefs": [],
     "cluster_id": 0,
-    "text_en": "Always sincere, attentive, cordial, etc.",
-    "headword_en": "CONGRATULATIONS"
-  },
-  {
-    "headword": "FÉLICITÉ",
-    "text": "Toujours parfaite. Votre bonne se nomme Félicité, alors elle est parfaite.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Always perfect. Your maid is called Félicité, so she is perfect.",
-    "headword_en": "FELICITY"
+    "text_en": "Classier than porcelain.",
+    "headword_en": "EARTHENWARE"
   },
   {
     "headword": "FEMELLE",
@@ -3332,16 +3099,33 @@
     "headword_en": "CHAMBERWOMEN"
   },
   {
-    "headword": "FÉODALITÉ",
-    "text": "N'en avoir aucune idée précise mais tonner contre. FERME (adjectif): Toujours suivi de « comme un roc » . FERME (subst.): Lorsqu'on visite une ferme, on ne doit y manger que du pain bis et ne boire que du lait. Si on ajoute des oeufs, s'écrier: « Dieu! comme ils sont frais! Il n'y a pas de danger pour qu'on en trouve de comme ça à la ville. »",
+    "headword": "FERME (adjectif)",
+    "text": "Toujours suivi de « comme un roc » .",
     "tags": [
       "social_obligation",
       "negation_trap"
     ],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Having no precise idea but thundering against it. FIRM (adjective): Always followed by “like a rock”. FARM (noun): When you visit a farm, you should only eat brown bread and drink only milk. If you add eggs, exclaim: \"God! how fresh they are! There is no danger that we will find eggs like that in the city.\"",
-    "headword_en": "FEUDALISM"
+    "cluster_id": 7
+  },
+  {
+    "headword": "FERME (subst.)",
+    "text": "Lorsqu'on visite une ferme, on ne doit y manger que du pain bis et ne boire que du lait. Si on ajoute des oeufs, s'écrier: « Dieu! comme ils sont frais! Il n'y a pas de danger pour qu'on en trouve de comme ça à la ville. »",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "FERMIER",
+    "text": "Toujours lui dire: Maître un tel. Les fermiers sont tous à leur aise. FEU (subst.): Purifie tout. Quand on entend crier « au feu! » on doit commencer par perdre la tête.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FERMÉ",
@@ -3355,15 +3139,13 @@
     "headword_en": "FARM"
   },
   {
-    "headword": "FERMIER",
-    "text": "Toujours lui dire: Maître un tel. Les fermiers sont tous à leur aise. FEU (subst.): Purifie tout. Quand on entend crier « au feu! » on doit commencer par perdre la tête. FEU (adj.): Feu mon père, et on soulève son chapeau.",
+    "headword": "FEU (adj.)",
+    "text": "Feu mon père, et on soulève son chapeau.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Always tell him: Master so-and-so. The farmers are all at ease. FIRE (noun): Purifies everything. When we hear shouts “fire!” we must start by losing our heads. FIRE (adj.): Late my father, and we lift his hat.",
-    "headword_en": "FARMER"
+    "cluster_id": 6
   },
   {
     "headword": "FEUILLE DE VIGNE",
@@ -3395,13 +3177,11 @@
     "headword_en": "FAITHFUL"
   },
   {
-    "headword": "FIÈVRE",
-    "text": "Preuve de la force du sang. Est causée par les prunes, le melon, le soleil d'avril, etc. FIGARO (_Le Mariage de_): Encore une des causes de la Révolution!",
+    "headword": "FIGARO (_Le Mariage de_)",
+    "text": "Encore une des causes de la Révolution!",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Proof of the power of blood. Is caused by plums, melon, April sun, etc. FIGARO (_The Marriage of_): Another of the causes of the Revolution!",
-    "headword_en": "FEVER"
+    "cluster_id": 8
   },
   {
     "headword": "FIGURE",
@@ -3411,6 +3191,13 @@
     "cluster_id": 9,
     "text_en": "A pleasant face is the surest of passports.",
     "headword_en": "FIGURE"
+  },
+  {
+    "headword": "FIÈVRE",
+    "text": "Preuve de la force du sang. Est causée par les prunes, le melon, le soleil d'avril, etc.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FLAGRANT DÉLIT",
@@ -3561,12 +3348,17 @@
   },
   {
     "headword": "FOSSILES",
-    "text": "Preuve du déluge. Plaisanterie de bon goût, en parlant d'un académicien. FOUDRES du Vatican: En rire.",
+    "text": "Preuve du déluge. Plaisanterie de bon goût, en parlant d'un académicien.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Evidence of the flood. Tasteful joke, speaking of an academician. LIGHTNING from the Vatican: Laugh about it.",
-    "headword_en": "FOSSILS"
+    "cluster_id": 0
+  },
+  {
+    "headword": "FOUDRES du Vatican",
+    "text": "En rire.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FOULARD",
@@ -3630,15 +3422,6 @@
     "headword_en": "CUM"
   },
   {
-    "headword": "FRANÇAIS",
-    "text": "Le premier peuple de l'univers. « Il n'y a qu'un Français de plus » , a dit le comte d'Artois. Ah! qu'on est fier d'être Français, - Quand on regarde la colonne!",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "The first people in the universe. “There is only one more Frenchman,” said the Count of Artois. Ah! how proud we are to be French, - When we look at the column!",
-    "headword_en": "FRENCH"
-  },
-  {
     "headword": "FRANC-MACONNERIE",
     "text": "Encore une des causes de la Révolution! Les épreuves de l'initiation sont terribles. Cause de dispute dans les ménages. Mal vue des ecclésiastiques. Quel peut bien être son secret?",
     "tags": [
@@ -3661,6 +3444,15 @@
     "headword_en": "FRANCS TIREURS"
   },
   {
+    "headword": "FRANÇAIS",
+    "text": "Le premier peuple de l'univers. « Il n'y a qu'un Français de plus » , a dit le comte d'Artois. Ah! qu'on est fier d'être Français, - Quand on regarde la colonne!",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "The first people in the universe. “There is only one more Frenchman,” said the Count of Artois. Ah! how proud we are to be French, - When we look at the column!",
+    "headword_en": "FRENCH"
+  },
+  {
     "headword": "FRAUDER",
     "text": "Frauder l'octroi n'est pas tromper, c'est une preuve d'esprit et d'indépendance politique.",
     "tags": [],
@@ -3680,12 +3472,24 @@
   },
   {
     "headword": "FRICASSÉE",
-    "text": "Ne se fait bien qu'à la campagne. FRISER, FRISURE: Ne convient pas à un homme.",
+    "text": "Ne se fait bien qu'à la campagne.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Only done well in the countryside. CURLING, FRISURE: Not suitable for a man.",
-    "headword_en": "FRICASSEE"
+    "cluster_id": 6
+  },
+  {
+    "headword": "FRISER",
+    "text": "Ne convient pas à un homme.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "FRISURE",
+    "text": "Ne convient pas à un homme.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FROID",
@@ -3796,14 +3600,53 @@
   },
   {
     "headword": "FUSILLER",
-    "text": "Plus noble que guillotiner. Joie de l'individu à qui on accorde cette faveur. FUSION des branches royales: L'espérer toujours.",
+    "text": "Plus noble que guillotiner. Joie de l'individu à qui on accorde cette faveur.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "More noble than guillotining. Joy of the individual to whom this favor is granted. MERGER of the royal branches: Still hoping for it.",
-    "headword_en": "SHOT"
+    "cluster_id": 8
+  },
+  {
+    "headword": "FUSION des branches royales",
+    "text": "L'espérer toujours.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 8
+  },
+  {
+    "headword": "FÉLICITATIONS",
+    "text": "Toujours sincères, empressées, cordiales, etc.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Always sincere, attentive, cordial, etc.",
+    "headword_en": "CONGRATULATIONS"
+  },
+  {
+    "headword": "FÉLICITÉ",
+    "text": "Toujours parfaite. Votre bonne se nomme Félicité, alors elle est parfaite.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Always perfect. Your maid is called Félicité, so she is perfect.",
+    "headword_en": "FELICITY"
+  },
+  {
+    "headword": "FÉODALITÉ",
+    "text": "N'en avoir aucune idée précise mais tonner contre.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "GAGNE-PETIT",
@@ -3896,12 +3739,17 @@
   },
   {
     "headword": "GARDE-COTE",
-    "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme. GARES de chemin de fer: S'extasier devant elles et les donner comme modèles d'architecture.",
+    "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Never use this expression in the plural when talking about a woman's breasts. RAILWAY STATIONS: Be amazed by them and give them as architectural models.",
-    "headword_en": "COAST GUARD"
+    "cluster_id": 6
+  },
+  {
+    "headword": "GARES de chemin de fer",
+    "text": "S'extasier devant elles et les donner comme modèles d'architecture.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GAUCHERS",
@@ -3942,26 +3790,6 @@
     "headword_en": "GENDER"
   },
   {
-    "headword": "GÉNÉRATION SPONTANÉE",
-    "text": "Idée de socialiste.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Socialist idea.",
-    "headword_en": "SPONTANEOUS GENERATION"
-  },
-  {
-    "headword": "GÉNÉRAL",
-    "text": "Est toujours brave. Fait généralement ce qui ne concerne pas son état, comme être ambassadeur, conseiller municipal ou chef de gouvernement. GÉNIE (le): Inutile de l'admirer, c'est une « névrose » .",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Is always brave. Usually does things that don't concern one's state, such as being an ambassador, city councilor, or head of government. GENIUS (the): No need to admire him, it's a \"neurosis\".",
-    "headword_en": "GENERAL"
-  },
-  {
     "headword": "GENOVEFAIN",
     "text": "On ne sait pas ce que c'est.",
     "tags": [],
@@ -3987,15 +3815,6 @@
     "cluster_id": 1,
     "text_en": "There are no more.",
     "headword_en": "GENTLEMAN"
-  },
-  {
-    "headword": "GÉOMÈTRE",
-    "text": "« Nul n'entre ici s'il n'est géomètre. »",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "“No one enters here unless he is a surveyor.”",
-    "headword_en": "SURVEYOR"
   },
   {
     "headword": "GIAOUR",
@@ -4070,12 +3889,10 @@
   },
   {
     "headword": "GLACIERS",
-    "text": "Tous Napolitains. GLÈBE (la): S'apitoyer sur la glèbe.",
+    "text": "Tous Napolitains.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "All Neapolitans. GLÈBE (the): Feel sorry for the glebe.",
-    "headword_en": "GLACIER"
+    "cluster_id": 0
   },
   {
     "headword": "GLOBE",
@@ -4097,23 +3914,28 @@
   },
   {
     "headword": "GLORIA",
-    "text": "Un gloria ne marche jamais sans sa consolation. GOBELINS (tapisserie des): Est une oeuvre inouïe et qui demande cinquante ans à finir. S'écrier devant: « C'est plus beau que la peinture! » L'ouvrier en sait pas ce qu'il fait.",
+    "text": "Un gloria ne marche jamais sans sa consolation.",
     "tags": [
       "empty_praise"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "A Gloria never walks without her consolation. GOBELINS (tapestry): Is an incredible work which takes fifty years to finish. Exclaiming in front: “It’s more beautiful than painting!” The worker doesn't know what he's doing.",
-    "headword_en": "GLORIA"
+    "cluster_id": 6
   },
   {
-    "headword": "GODDAM",
-    "text": "« C'est le fond de la langue anglaise » , comme disait Beaumarchais, et là-dessus on ricane de pitié.",
+    "headword": "GLÈBE (la)",
+    "text": "S'apitoyer sur la glèbe.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "“It’s the essence of the English language,” as Beaumarchais said, and at that we sneer with pity.",
-    "headword_en": "GODDAM"
+    "cluster_id": 0
+  },
+  {
+    "headword": "GOBELINS (tapisserie des)",
+    "text": "Est une oeuvre inouïe et qui demande cinquante ans à finir. S'écrier devant: « C'est plus beau que la peinture! » L'ouvrier en sait pas ce qu'il fait.",
+    "tags": [
+      "empty_praise"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GOD SAVE THE KING",
@@ -4123,6 +3945,15 @@
     "cluster_id": 0,
     "text_en": "Chez Béranger is pronounced \"God savé te King\" and rhymes with saved, preserved...",
     "headword_en": "GOD SAVE THE KING"
+  },
+  {
+    "headword": "GODDAM",
+    "text": "« C'est le fond de la langue anglaise » , comme disait Beaumarchais, et là-dessus on ricane de pitié.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "“It’s the essence of the English language,” as Beaumarchais said, and at that we sneer with pity.",
+    "headword_en": "GODDAM"
   },
   {
     "headword": "GOG",
@@ -4203,15 +4034,6 @@
     "headword_en": "FAT"
   },
   {
-    "headword": "GRÊLÉ",
-    "text": "Les femmes grêlées sont toutes lascives.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Pockmarked women are all lascivious.",
-    "headword_en": "HAIL"
-  },
-  {
     "headword": "GRENIER",
     "text": "On y est bien à vingt ans!",
     "tags": [],
@@ -4268,13 +4090,13 @@
     "headword_en": "BAND"
   },
   {
-    "headword": "GUÉRILLA",
-    "text": "Fait plus de mal à l'ennemi que l'armée régulière.",
+    "headword": "GRÊLÉ",
+    "text": "Les femmes grêlées sont toutes lascives.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Does more harm to the enemy than the regular army.",
-    "headword_en": "GUERRILLA"
+    "cluster_id": 2,
+    "text_en": "Pockmarked women are all lascivious.",
+    "headword_en": "HAIL"
   },
   {
     "headword": "GUERRE",
@@ -4287,12 +4109,26 @@
   },
   {
     "headword": "GULF-STREAM",
-    "text": "Ville célèbre de Norvège, nouvellement découverte. GYMNASE (le): Succursale de la Comédie-Française.",
+    "text": "Ville célèbre de Norvège, nouvellement découverte.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Famous city in Norway, newly discovered. GYMNASIUM (on): Branch of the Comédie-Française.",
-    "headword_en": "GULF-STREAM"
+    "cluster_id": 6
+  },
+  {
+    "headword": "GUÉRILLA",
+    "text": "Fait plus de mal à l'ennemi que l'armée régulière.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Does more harm to the enemy than the regular army.",
+    "headword_en": "GUERRILLA"
+  },
+  {
+    "headword": "GYMNASE (le)",
+    "text": "Succursale de la Comédie-Française.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GYMNASTIQUE",
@@ -4302,6 +4138,42 @@
     "cluster_id": 4,
     "text_en": "We cannot do too much. Exhausts children.",
     "headword_en": "GYMNASTICS"
+  },
+  {
+    "headword": "GÉNIE (le)",
+    "text": "Inutile de l'admirer, c'est une « névrose » .",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "GÉNÉRAL",
+    "text": "Est toujours brave. Fait généralement ce qui ne concerne pas son état, comme être ambassadeur, conseiller municipal ou chef de gouvernement.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "GÉNÉRATION SPONTANÉE",
+    "text": "Idée de socialiste.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Socialist idea.",
+    "headword_en": "SPONTANEOUS GENERATION"
+  },
+  {
+    "headword": "GÉOMÈTRE",
+    "text": "« Nul n'entre ici s'il n'est géomètre. »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "“No one enters here unless he is a surveyor.”",
+    "headword_en": "SURVEYOR"
   },
   {
     "headword": "HABIT NOIR",
@@ -4461,33 +4333,22 @@
     "headword_en": "HEIDUQUE"
   },
   {
-    "headword": "HÉLICE",
-    "text": "Avenir de la mécanique.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Future of mechanics.",
-    "headword_en": "HELIX"
-  },
-  {
-    "headword": "HÉMICYCLE",
-    "text": "Ne connaître que celui des Beaux-Arts.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Know only that of Fine Arts.",
-    "headword_en": "HEMICYCLE"
-  },
-  {
-    "headword": "HÉMORROÏDES",
-    "text": "Vient de s'asseoir sur les poêles et sur les bancs de pierre. Mal de Saint-Fiacre. Les hémorroïdes sont un signe de santé, il ne faut donc pas les faire passer. HENRI III, HENRI IV: A propos de ces deux rois ne pas manquer de dire: Tous les Henri ont été malheureux. \"",
+    "headword": "HENRI III",
+    "text": "A propos de ces deux rois ne pas manquer de dire: Tous les Henri ont été malheureux. \"",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Just sat on the stoves and on the stone benches. Saint-Fiacre disease. Hemorrhoids are a sign of health, so they should not be passed over. HENRY III, HENRY IV: About these two kings do not fail to say: All Henrys were unhappy. \"",
-    "headword_en": "HEMORRHOIDS"
+    "cluster_id": 6
+  },
+  {
+    "headword": "HENRI IV",
+    "text": "A propos de ces deux rois ne pas manquer de dire: Tous les Henri ont été malheureux. \"",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HERCULE",
@@ -4519,24 +4380,6 @@
     "headword_en": "HERNIA"
   },
   {
-    "headword": "HÉRODE",
-    "text": "Etre vieux comme Hérode.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "To be old like Herod.",
-    "headword_en": "HEROD"
-  },
-  {
-    "headword": "HÉROSTRATE",
-    "text": "A employer dans toute conversation sur les incendies de la Commune.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "To be used in any conversation about the fires in the Commune.",
-    "headword_en": "HEROTRATE"
-  },
-  {
     "headword": "HEUREUX",
     "text": "En parlant d'un homme heureux: « Il est né coiffé.  » On ne sait pas ce que ça signifie, et l'interlocuteur non plus.",
     "tags": [],
@@ -4555,15 +4398,6 @@
     "cluster_id": 4,
     "text_en": "Don't tolerate it.",
     "headword_en": "HIATUS"
-  },
-  {
-    "headword": "HIÉROGLYPHES",
-    "text": "Ancienne langue des Egyptiens, inventée par les prêtres pour cacher leurs secrets criminels. Et dire qu'il y a des gens qui les comprennent! Après tout, c'est peut-être une blague?",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Ancient language of the Egyptians, invented by priests to hide their criminal secrets. And to think that there are people who understand them! After all, maybe it's a joke?",
-    "headword_en": "HIEROGLYPHS"
   },
   {
     "headword": "HIPPOCRATE",
@@ -4611,14 +4445,39 @@
   },
   {
     "headword": "HIVER",
-    "text": "Toujours exceptionnel (v. été). Est plus sain que les autres saisons. HOBEREAUX de campagne: Avoir pour eux le plus souverain mépris.",
+    "text": "Toujours exceptionnel (v. été). Est plus sain que les autres saisons.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Always exceptional (v. summer). Is healthier than other seasons. Country LORDS: To have the most sovereign contempt for them.",
-    "headword_en": "WINTER"
+    "cluster_id": 6
+  },
+  {
+    "headword": "HIÉROGLYPHES",
+    "text": "Ancienne langue des Egyptiens, inventée par les prêtres pour cacher leurs secrets criminels. Et dire qu'il y a des gens qui les comprennent! Après tout, c'est peut-être une blague?",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Ancient language of the Egyptians, invented by priests to hide their criminal secrets. And to think that there are people who understand them! After all, maybe it's a joke?",
+    "headword_en": "HIEROGLYPHS"
+  },
+  {
+    "headword": "HOBEREAUX de campagne",
+    "text": "Avoir pour eux le plus souverain mépris.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "HOMO",
+    "text": "Dire Ecce homo! en voyant entrer l'individu qu'on attend.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Say Ecce homo! seeing the person you are waiting for enter.",
+    "headword_en": "HOMO"
   },
   {
     "headword": "HOMÈRE",
@@ -4630,15 +4489,6 @@
     "cluster_id": 4,
     "text_en": "Never existed. Famous for his way of laughing.",
     "headword_en": "HOMER"
-  },
-  {
-    "headword": "HOMO",
-    "text": "Dire Ecce homo! en voyant entrer l'individu qu'on attend.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Say Ecce homo! seeing the person you are waiting for enter.",
-    "headword_en": "HOMO"
   },
   {
     "headword": "HONNEUR",
@@ -4712,24 +4562,6 @@
     "headword_en": "HOSTILITIES"
   },
   {
-    "headword": "HÔTELS",
-    "text": "Ne sont bons qu'en Suisse.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "Are only good in Switzerland.",
-    "headword_en": "HOTELS"
-  },
-  {
-    "headword": "HÔTES",
-    "text": "Exemples à donner à son fils.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Examples to give to your son.",
-    "headword_en": "HOSTS"
-  },
-  {
     "headword": "HUGO (VICTOR)",
     "text": "A eu bien tort, vraiment, de s'occuper de politique.",
     "tags": [],
@@ -4748,15 +4580,6 @@
     "cluster_id": 6,
     "text_en": "Is never good. You must have a friend in Marseille who will bring you a small barrel.",
     "headword_en": "OLIVE OIL"
-  },
-  {
-    "headword": "HUÎTRES",
-    "text": "On n'en mange plus! Elles sont trop chères!",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 1,
-    "text_en": "We don't eat it anymore! They are too expensive!",
-    "headword_en": "OYSTERS"
   },
   {
     "headword": "HUMEUR",
@@ -4778,14 +4601,29 @@
   },
   {
     "headword": "HUSSARD",
-    "text": "Prononcer houzard. Toujours précédé de gentil ou de fringant. Il plaît aux dames. Ne pas manquer la citation: Toi qui connais les hussards de la garde... HYDRE de l'anarchie, du socialisme et ainsi de suite pour tous les systèmes qui font peur: Tâcher de la vaincre.",
+    "text": "Prononcer houzard. Toujours précédé de gentil ou de fringant. Il plaît aux dames. Ne pas manquer la citation: Toi qui connais les hussards de la garde...",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "HYDRE de l'anarchie, du socialisme...",
+    "text": "Tâcher de la vaincre.",
+    "tags": [],
+    "xrefs": [],
     "cluster_id": 6,
-    "text_en": "Pronounce houzard. Always preceded by nice or dashing. He pleases the ladies. Don't miss the quote: You who know the hussars of the guard... HYDRA of anarchy, socialism and so on for all the systems that scare you: Try to defeat it.",
-    "headword_en": "HUSSAR"
+    "headword_en": "HYDRA of anarchy, socialism..."
+  },
+  {
+    "headword": "HUÎTRES",
+    "text": "On n'en mange plus! Elles sont trop chères!",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 1,
+    "text_en": "We don't eat it anymore! They are too expensive!",
+    "headword_en": "OYSTERS"
   },
   {
     "headword": "HYDROTHÉRAPIE",
@@ -4839,6 +4677,78 @@
     "headword_en": "HYSTERIA"
   },
   {
+    "headword": "HÉLICE",
+    "text": "Avenir de la mécanique.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Future of mechanics.",
+    "headword_en": "HELIX"
+  },
+  {
+    "headword": "HÉMICYCLE",
+    "text": "Ne connaître que celui des Beaux-Arts.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Know only that of Fine Arts.",
+    "headword_en": "HEMICYCLE"
+  },
+  {
+    "headword": "HÉMORROÏDES",
+    "text": "Vient de s'asseoir sur les poêles et sur les bancs de pierre. Mal de Saint-Fiacre. Les hémorroïdes sont un signe de santé, il ne faut donc pas les faire passer.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "HÉRODE",
+    "text": "Etre vieux comme Hérode.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "To be old like Herod.",
+    "headword_en": "HEROD"
+  },
+  {
+    "headword": "HÉROSTRATE",
+    "text": "A employer dans toute conversation sur les incendies de la Commune.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "To be used in any conversation about the fires in the Commune.",
+    "headword_en": "HEROTRATE"
+  },
+  {
+    "headword": "HÔTELS",
+    "text": "Ne sont bons qu'en Suisse.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "Are only good in Switzerland.",
+    "headword_en": "HOTELS"
+  },
+  {
+    "headword": "HÔTES",
+    "text": "Exemples à donner à son fils.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Examples to give to your son.",
+    "headword_en": "HOSTS"
+  },
+  {
+    "headword": "IDOLÂTRES",
+    "text": "Sont cannibales.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "Are cannibals.",
+    "headword_en": "IDOLATERS"
+  },
+  {
     "headword": "IDÉAL",
     "text": "Tout à fait inutile.",
     "tags": [],
@@ -4855,15 +4765,6 @@
     "cluster_id": 5,
     "text_en": "All journalists are.",
     "headword_en": "IDEOLOGISTS"
-  },
-  {
-    "headword": "IDOLÂTRES",
-    "text": "Sont cannibales.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Are cannibals.",
-    "headword_en": "IDOLATERS"
   },
   {
     "headword": "ILIADE",
@@ -4928,15 +4829,6 @@
     "headword_en": "IMAGINATION"
   },
   {
-    "headword": "IMBÉCILES",
-    "text": "Ceux qui ne pensent pas comme vous.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Those who don't think like you.",
-    "headword_en": "FOOLS"
-  },
-  {
     "headword": "IMBROGLIO",
     "text": "Le fond de toutes les pièces de théâtre.",
     "tags": [],
@@ -4944,6 +4836,15 @@
     "cluster_id": 0,
     "text_en": "The basis of all plays.",
     "headword_en": "IMBROGLIO"
+  },
+  {
+    "headword": "IMBÉCILES",
+    "text": "Ceux qui ne pensent pas comme vous.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Those who don't think like you.",
+    "headword_en": "FOOLS"
   },
   {
     "headword": "IMMORALITÉ",
@@ -4955,24 +4856,13 @@
     "headword_en": "IMMORALITY"
   },
   {
-    "headword": "IMPÉRATRICES",
-    "text": "Toutes belles.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "All beautiful.",
-    "headword_en": "EMPRESSES"
-  },
-  {
-    "headword": "IMPÉRIALISTES",
-    "text": "Tous gens honnêtes, polis, paisibles, distingués. IMPERMÉABLE (un): Très avantageux comme vêtement. Très nuisible à cause de la transpiration empêchée.",
+    "headword": "IMPERMÉABLE (un)",
+    "text": "Très avantageux comme vêtement. Très nuisible à cause de la transpiration empêchée.",
     "tags": [
       "danger"
     ],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "All honest, polite, peaceful, distinguished people. WATERPROOF (one): Very advantageous as clothing. Very harmful because of prevented perspiration.",
-    "headword_en": "IMPERIALISTS"
+    "cluster_id": 0
   },
   {
     "headword": "IMPIE",
@@ -4993,15 +4883,13 @@
     "headword_en": "IMPORT"
   },
   {
-    "headword": "IMPRÉSARIO",
-    "text": "Mot d'artiste qui signifie directeur. Toujours précédé d'habile.",
-    "tags": [
-      "social_obligation"
-    ],
+    "headword": "IMPRIMERIE",
+    "text": "Découverte merveilleuse. A fait plus de mal que de bien.",
+    "tags": [],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Artist's word meaning director. Always preceded by skillful.",
-    "headword_en": "IMPRESARIO"
+    "cluster_id": 7,
+    "text_en": "Wonderful discovery. Did more harm than good.",
+    "headword_en": "PRINTING"
   },
   {
     "headword": "IMPRIMÉ",
@@ -5015,13 +4903,33 @@
     "headword_en": "PRINTED"
   },
   {
-    "headword": "IMPRIMERIE",
-    "text": "Découverte merveilleuse. A fait plus de mal que de bien.",
+    "headword": "IMPRÉSARIO",
+    "text": "Mot d'artiste qui signifie directeur. Toujours précédé d'habile.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Artist's word meaning director. Always preceded by skillful.",
+    "headword_en": "IMPRESARIO"
+  },
+  {
+    "headword": "IMPÉRATRICES",
+    "text": "Toutes belles.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Wonderful discovery. Did more harm than good.",
-    "headword_en": "PRINTING"
+    "cluster_id": 0,
+    "text_en": "All beautiful.",
+    "headword_en": "EMPRESSES"
+  },
+  {
+    "headword": "IMPÉRIALISTES",
+    "text": "Tous gens honnêtes, polis, paisibles, distingués.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "INAUGURATION",
@@ -5107,17 +5015,6 @@
     "headword_en": "INFECT"
   },
   {
-    "headword": "INFÉODÉ",
-    "text": "Injure très grave et de grand style à jeter à la tête d'un adversaire politique: « Môssieu! Vous êtes inféodé à la camarilla de l'Elysée!  » Ne s'emploie qu'à la tribune.",
-    "tags": [
-      "danger"
-    ],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "A very serious and stylish insult to be thrown at the head of a political adversary: ​​“Môssieu! You are subservient to the Elysée camarilla!” Can only be used from the platform.",
-    "headword_en": "INFERRED"
-  },
-  {
     "headword": "INFINITÉSIMAL",
     "text": "On ne sait pas ce que c'est, mais a rapport à l'homéopathie.",
     "tags": [
@@ -5127,6 +5024,17 @@
     "cluster_id": 3,
     "text_en": "We don't know what it is, but it has something to do with homeopathy.",
     "headword_en": "INFINITESIMAL"
+  },
+  {
+    "headword": "INFÉODÉ",
+    "text": "Injure très grave et de grand style à jeter à la tête d'un adversaire politique: « Môssieu! Vous êtes inféodé à la camarilla de l'Elysée!  » Ne s'emploie qu'à la tribune.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "A very serious and stylish insult to be thrown at the head of a political adversary: ​​“Môssieu! You are subservient to the Elysée camarilla!” Can only be used from the platform.",
+    "headword_en": "INFERRED"
   },
   {
     "headword": "INGÉNIEUR",
@@ -5148,14 +5056,12 @@
   },
   {
     "headword": "INJURE",
-    "text": "Doit toujours se laver dans le sang. INNÉES (idées): Les blaguer.",
+    "text": "Doit toujours se laver dans le sang.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Must always wash in blood. INNATES (ideas): Joke them.",
-    "headword_en": "INSULT"
+    "cluster_id": 4
   },
   {
     "headword": "INNOCENCE",
@@ -5176,6 +5082,15 @@
     "cluster_id": 4,
     "text_en": "Always dangerous.",
     "headword_en": "INNOVATION"
+  },
+  {
+    "headword": "INNÉES (idées)",
+    "text": "Les blaguer.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "INONDÉS",
@@ -5199,23 +5114,35 @@
   },
   {
     "headword": "INSCRIPTION",
-    "text": "Toujours cunéiforme. INSPIRATION poétique: Choses qui la provoquent: la vue de la mer, l'amour, la femme, etc.",
+    "text": "Toujours cunéiforme.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Always cuneiform. Poetic INSPIRATION: Things that provoke it: the sight of the sea, love, women, etc.",
-    "headword_en": "REGISTRATION"
+    "cluster_id": 7
+  },
+  {
+    "headword": "INSPIRATION poétique",
+    "text": "Choses qui la provoquent: la vue de la mer, l'amour, la femme, etc.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "INSTINCT",
-    "text": "Supplée à l'intelligence. INSTITUT (l'): Les membres de l'Institut sont tous des vieillards et portent des abat-jour en taffetas vert.",
+    "text": "Supplée à l'intelligence.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Supplement to intelligence. INSTITUTE (the): The members of the Institute are all old men and wear green taffeta lampshades.",
-    "headword_en": "INSTINCT"
+    "cluster_id": 8
+  },
+  {
+    "headword": "INSTITUT (l')",
+    "text": "Les membres de l'Institut sont tous des vieillards et portent des abat-jour en taffetas vert.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "INSTITUTRICES",
@@ -5258,15 +5185,6 @@
     "headword_en": "INSURRECTION"
   },
   {
-    "headword": "INTÉGRITÉ",
-    "text": "Appartient surtout à la magistrature.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Belongs mainly to the judiciary.",
-    "headword_en": "INTEGRITY"
-  },
-  {
     "headword": "INTRIGUE",
     "text": "Mène à tout.",
     "tags": [],
@@ -5283,6 +5201,15 @@
     "cluster_id": 0,
     "text_en": "Obscene word.",
     "headword_en": "INTRODUCTION"
+  },
+  {
+    "headword": "INTÉGRITÉ",
+    "text": "Appartient surtout à la magistrature.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Belongs mainly to the judiciary.",
+    "headword_en": "INTEGRITY"
   },
   {
     "headword": "INVASION",
@@ -5342,15 +5269,21 @@
   },
   {
     "headword": "JALOUSIE",
-    "text": "Toujours suivie de effrénée. Passion terrible. Les sourcils qui se rejoignent, preuve de jalousie. JAMBAGE (droit de): Ne pas y croire.",
+    "text": "Toujours suivie de effrénée. Passion terrible. Les sourcils qui se rejoignent, preuve de jalousie.",
     "tags": [
       "danger",
       "social_obligation"
     ],
     "xrefs": [],
+    "cluster_id": 2
+  },
+  {
+    "headword": "JAMBAGE (droit de)",
+    "text": "Ne pas y croire.",
+    "tags": [],
+    "xrefs": [],
     "cluster_id": 2,
-    "text_en": "Always followed by frantic. Terrible passion. Eyebrows coming together, proof of jealousy. JAMBAGE (right of): Don't believe it.",
-    "headword_en": "JEALOUSY"
+    "headword_en": "JAMBAGE (right of)"
   },
   {
     "headword": "JAMBON",
@@ -5385,12 +5318,17 @@
   },
   {
     "headword": "JARDINS ANGLAIS",
-    "text": "Plus naturels que les jardins à la française. JARNAC (coup de): S'indigner contre ce coup, qui, du reste était fort loyal.",
+    "text": "Plus naturels que les jardins à la française.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "More natural than French gardens. JARNAC (shot): To be indignant at this move, which, moreover, was very fair.",
-    "headword_en": "ENGLISH GARDENS"
+    "cluster_id": 6
+  },
+  {
+    "headword": "JARNAC (coup de)",
+    "text": "S'indigner contre ce coup, qui, du reste était fort loyal.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JARRETIÈRE",
@@ -5420,15 +5358,6 @@
     "cluster_id": 6,
     "text_en": "Well worth a gun, when you know how to use it.",
     "headword_en": "JAVELIN"
-  },
-  {
-    "headword": "JÉSUITES",
-    "text": "Ont la main dans toutes les révolutions. On ne se doute pas du nombre qu'il y en a. Ne point parler de la « bataille des Jésuites » .",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "Have a hand in all revolutions. We have no idea how many there are. Do not talk about the “battle of the Jesuits”.",
-    "headword_en": "JESUITS"
   },
   {
     "headword": "JEU",
@@ -5614,6 +5543,15 @@
     "headword_en": "JUSTICE"
   },
   {
+    "headword": "JÉSUITES",
+    "text": "Ont la main dans toutes les révolutions. On ne se doute pas du nombre qu'il y en a. Ne point parler de la « bataille des Jésuites » .",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "Have a hand in all revolutions. We have no idea how many there are. Do not talk about the “battle of the Jesuits”.",
+    "headword_en": "JESUITS"
+  },
+  {
     "headword": "KALÉIDOSCOPE",
     "text": "Ne s'emploie qu'à propos des salons de peinture.",
     "tags": [],
@@ -5659,6 +5597,33 @@
     "headword_en": "KORAN"
   },
   {
+    "headword": "L'ORDRE",
+    "text": "Que de crime on commet en ton nom! (v. liberté).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5
+  },
+  {
+    "headword": "LA FAYETTE",
+    "text": "Général célèbre par son cheval blanc.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "General famous for his white horse.",
+    "headword_en": "LA FAYETTE"
+  },
+  {
+    "headword": "LA FONTAINE",
+    "text": "Soutenir qu'on n'a jamais lu ses contes. L'appeler le Bonhomme, l'immortel fabuliste.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Maintain that we have never read his tales. Call him the Good Man, the immortal fabulist.",
+    "headword_en": "THE FOUNTAIN"
+  },
+  {
     "headword": "LABORATOIRE",
     "text": "On doit en avoir un à la campagne.",
     "tags": [
@@ -5689,32 +5654,17 @@
   },
   {
     "headword": "LACONISME",
-    "text": "Langue qu'on ne parle plus. LACUSTRES (les villes): Nier leur existence, parce qu'on ne peut pas vivre sous l'eau.",
+    "text": "Langue qu'on ne parle plus.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Language that we no longer speak. LACUSTRES (cities): Deny their existence, because we cannot live underwater.",
-    "headword_en": "LACONISM"
+    "cluster_id": 3
   },
   {
-    "headword": "LA FAYETTE",
-    "text": "Général célèbre par son cheval blanc.",
+    "headword": "LACUSTRES (les villes)",
+    "text": "Nier leur existence, parce qu'on ne peut pas vivre sous l'eau.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "General famous for his white horse.",
-    "headword_en": "LA FAYETTE"
-  },
-  {
-    "headword": "LA FONTAINE",
-    "text": "Soutenir qu'on n'a jamais lu ses contes. L'appeler le Bonhomme, l'immortel fabuliste.",
-    "tags": [
-      "danger"
-    ],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Maintain that we have never read his tales. Call him the Good Man, the immortal fabulist.",
-    "headword_en": "THE FOUNTAIN"
+    "cluster_id": 3
   },
   {
     "headword": "LAGUNE",
@@ -5794,22 +5744,11 @@
     "headword_en": "ENEMA"
   },
   {
-    "headword": "LÉGALITÉ",
-    "text": "La légalité nous tue. Avec elle aucun gouvernement n'est possible.",
+    "headword": "LETTRE DOMINICALE",
+    "text": "Sur les calendriers, on ne sait pas ce que c'est.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Legality is killing us. With it no government is possible.",
-    "headword_en": "LEGALITY"
-  },
-  {
-    "headword": "LÉTHARGIES",
-    "text": "On en a vu qui duraient des années.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "We have seen some that last for years.",
-    "headword_en": "LETHARGIES"
+    "cluster_id": 3
   },
   {
     "headword": "LIBELLE",
@@ -5821,15 +5760,6 @@
     "headword_en": "LABEL"
   },
   {
-    "headword": "LIBERTÉ",
-    "text": "O liberté! que de crimes on commet en ton nom! Nous avons toutes celles qui sont nécessaires. La liberté n'est pas la licence (phrase de conservateur).",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "O freedom! what crimes are committed in your name! We have all the ones that are needed. Liberty is not license (conservative phrase).",
-    "headword_en": "FREEDOM"
-  },
-  {
     "headword": "LIBERTINAGE",
     "text": "Ne se voit que dans les grandes villes.",
     "tags": [],
@@ -5837,6 +5767,15 @@
     "cluster_id": 9,
     "text_en": "Only seen in large cities.",
     "headword_en": "LIBERTINATION"
+  },
+  {
+    "headword": "LIBERTÉ",
+    "text": "O liberté! que de crimes on commet en ton nom! Nous avons toutes celles qui sont nécessaires. La liberté n'est pas la licence (phrase de conservateur).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "O freedom! what crimes are committed in your name! We have all the ones that are needed. Liberty is not license (conservative phrase).",
+    "headword_en": "FREEDOM"
   },
   {
     "headword": "LIBRE-ÉCHANGE",
@@ -5855,15 +5794,6 @@
     "cluster_id": 8,
     "text_en": "We travel a league faster than four kilometers.",
     "headword_en": "LEAGUE"
-  },
-  {
-    "headword": "LIÈVRE",
-    "text": "Dort les yeux ouverts.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "Sleeps with his eyes open.",
-    "headword_en": "HARE"
   },
   {
     "headword": "LIGUEURS",
@@ -5904,15 +5834,6 @@
     "headword_en": "LION"
   },
   {
-    "headword": "LITTÉRATURE",
-    "text": "Occupation des oisifs.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Occupation of the idle.",
-    "headword_en": "LITERATURE"
-  },
-  {
     "headword": "LITTRE",
     "text": "Ricaner quand on entend son nom: « Ce monsieur qui dit que nous descendons des singes.  »",
     "tags": [],
@@ -5920,6 +5841,15 @@
     "cluster_id": 5,
     "text_en": "Snicker when you hear his name: “That gentleman who says we are descended from apes.”",
     "headword_en": "LITTER"
+  },
+  {
+    "headword": "LITTÉRATURE",
+    "text": "Occupation des oisifs.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Occupation of the idle.",
+    "headword_en": "LITERATURE"
   },
   {
     "headword": "LIVRE",
@@ -5931,6 +5861,15 @@
     "cluster_id": 0,
     "text_en": "Whatever it is, always too long.",
     "headword_en": "BOOK"
+  },
+  {
+    "headword": "LIÈVRE",
+    "text": "Dort les yeux ouverts.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "Sleeps with his eyes open.",
+    "headword_en": "HARE"
   },
   {
     "headword": "LORD",
@@ -6007,6 +5946,24 @@
     "cluster_id": 11,
     "text_en": "Animal famous for its eye.",
     "headword_en": "LYNX"
+  },
+  {
+    "headword": "LÉGALITÉ",
+    "text": "La légalité nous tue. Avec elle aucun gouvernement n'est possible.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Legality is killing us. With it no government is possible.",
+    "headword_en": "LEGALITY"
+  },
+  {
+    "headword": "LÉTHARGIES",
+    "text": "On en a vu qui duraient des années.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "We have seen some that last for years.",
+    "headword_en": "LETHARGIES"
   },
   {
     "headword": "MACADAM",
@@ -6107,14 +6064,21 @@
   },
   {
     "headword": "MAIN",
-    "text": "Avoir une belle main, c'est écrire bien. MAIRE de village: Toujours ridicule. Se croit insulté quand on l'appelle échevin.",
+    "text": "Avoir une belle main, c'est écrire bien.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Having a beautiful hand means writing well. Village MAYOR: Still ridiculous. Thinks he is insulted when he is called alderman.",
-    "headword_en": "HAND"
+    "cluster_id": 6
+  },
+  {
+    "headword": "MAIRE de village",
+    "text": "Toujours ridicule. Se croit insulté quand on l'appelle échevin.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MAJOR",
@@ -6124,6 +6088,17 @@
     "cluster_id": 1,
     "text_en": "Only found in guest tables.",
     "headword_en": "MAJOR"
+  },
+  {
+    "headword": "MAL DE MER",
+    "text": "Pour ne pas l'éprouver, il suffit de penser à autre chose.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "To avoid experiencing it, you just have to think about something else.",
+    "headword_en": "SEASICKNESS"
   },
   {
     "headword": "MALADE",
@@ -6146,15 +6121,13 @@
     "headword_en": "NERVE DISEASE"
   },
   {
-    "headword": "MAL DE MER",
-    "text": "Pour ne pas l'éprouver, il suffit de penser à autre chose.",
-    "tags": [
-      "social_obligation"
-    ],
+    "headword": "MALTHUS",
+    "text": "« L'infâme Malthus » .",
+    "tags": [],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "To avoid experiencing it, you just have to think about something else.",
-    "headword_en": "SEASICKNESS"
+    "cluster_id": 8,
+    "text_en": "“The infamous Malthus”.",
+    "headword_en": "MALTHUS"
   },
   {
     "headword": "MALÉDICTION",
@@ -6166,15 +6139,6 @@
     "cluster_id": 11,
     "text_en": "Always given by a father.",
     "headword_en": "CURSE"
-  },
-  {
-    "headword": "MALTHUS",
-    "text": "« L'infâme Malthus » .",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "“The infamous Malthus”.",
-    "headword_en": "MALTHUS"
   },
   {
     "headword": "MAMELUKS",
@@ -6251,15 +6215,6 @@
     "headword_en": "MATTRESS"
   },
   {
-    "headword": "MATÉRIALISME",
-    "text": "Prononcer ce mot avec horreur en appuyant chaque syllabe.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Pronounce this word with horror, emphasizing each syllable.",
-    "headword_en": "MATERIALISM"
-  },
-  {
     "headword": "MATHÉMATIQUES",
     "text": "Dessèchent le coeur.",
     "tags": [],
@@ -6279,6 +6234,15 @@
     "cluster_id": 6,
     "text_en": "Being, proof of morality. If we go to bed at 4 o'clock in the morning and get up at 8, we are lazy, but if we go to bed at o'clock in the evening, and get out the next day at 5, we are active.",
     "headword_en": "MORNING"
+  },
+  {
+    "headword": "MATÉRIALISME",
+    "text": "Prononcer ce mot avec horreur en appuyant chaque syllabe.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Pronounce this word with horror, emphasizing each syllable.",
+    "headword_en": "MATERIALISM"
   },
   {
     "headword": "MAXIME",
@@ -6302,51 +6266,6 @@
     "headword_en": "MAZARINADES"
   },
   {
-    "headword": "MÉCANIQUE",
-    "text": "Partie inférieure des mathématiques.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Lower part of mathematics.",
-    "headword_en": "MECHANICAL"
-  },
-  {
-    "headword": "MÉDAILLE",
-    "text": "On n'en faisait que dans l'antiquité.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "They were only made in ancient times.",
-    "headword_en": "MEDAL"
-  },
-  {
-    "headword": "MÉDECINE",
-    "text": "S'en moquer quand on se porte bien.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Make fun of it when you're doing well.",
-    "headword_en": "MEDICINE"
-  },
-  {
-    "headword": "MÉLANCOLIE",
-    "text": "Signe de distinction du coeur et d'élévation de l'esprit.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "Sign of distinction of the heart and elevation of the spirit.",
-    "headword_en": "MELANCHOLY"
-  },
-  {
-    "headword": "MÉLODRAMES",
-    "text": "Moins immoraux que les drames.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Less immoral than dramas.",
-    "headword_en": "MELODRAMAS"
-  },
-  {
     "headword": "MELON",
     "text": "Joli sujet de conversation à table. Est-ce un légume? Est- ce un fruit? Les Anglais les mangent au dessert, ce qui étonne.",
     "tags": [],
@@ -6356,28 +6275,6 @@
     "headword_en": "MELON"
   },
   {
-    "headword": "MÉMOIRE",
-    "text": "Se plaindre de la sienne, et même se vanter de n'en pas avoir. Mais rugir si on vous dit que vous n'avez pas de jugement.",
-    "tags": [
-      "negation_trap"
-    ],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Complaining about your own, and even bragging about not having one. But roar if you are told that you have no judgment.",
-    "headword_en": "MEMORY"
-  },
-  {
-    "headword": "MÉNAGE",
-    "text": "En parler toujours avec respect.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "Always talk about it with respect.",
-    "headword_en": "HOUSEHOLD"
-  },
-  {
     "headword": "MENDICITE",
     "text": "Devrait être interdite et ne l'est jamais.",
     "tags": [],
@@ -6385,15 +6282,6 @@
     "cluster_id": 4,
     "text_en": "Should be banned and never is.",
     "headword_en": "BEGGING"
-  },
-  {
-    "headword": "MÉPHISTOPHÉLIQUE",
-    "text": "Doit se dire de tout rire amer.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Must say to all bitter laughter.",
-    "headword_en": "MEPHISTOPHELIAN"
   },
   {
     "headword": "MER",
@@ -6408,12 +6296,10 @@
   },
   {
     "headword": "MERCURE",
-    "text": "Tue la maladie et le malade. MÉRIDIONAUX (les): Tous poètes.",
+    "text": "Tue la maladie et le malade.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Kill the disease and the sick. SOUTHERN: All poets.",
-    "headword_en": "MERCURY"
+    "cluster_id": 0
   },
   {
     "headword": "MESSAGE",
@@ -6423,55 +6309,6 @@
     "cluster_id": 9,
     "text_en": "More noble than letter.",
     "headword_en": "MESSAGE"
-  },
-  {
-    "headword": "MÉTALLURGIE",
-    "text": "Très chic.",
-    "tags": [
-      "danger"
-    ],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "Very chic.",
-    "headword_en": "METALLURGY"
-  },
-  {
-    "headword": "MÉTAMORPHOSE",
-    "text": "Rire du temps où on y croyait. Ovide en est l'inventeur.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Laugh at the time when we believed in it. Ovid is the inventor.",
-    "headword_en": "METAMORPHOSIS"
-  },
-  {
-    "headword": "MÉTAPHORES",
-    "text": "Il y en a toujours trop dans le style.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "There is always too much in style.",
-    "headword_en": "METAPHORS"
-  },
-  {
-    "headword": "MÉTAPHYSIQUE",
-    "text": "En rire: c'est une preuve d'esprit supérieur.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Laughing about it: it’s proof of a superior mind.",
-    "headword_en": "METAPHYSICAL"
-  },
-  {
-    "headword": "MÉTHODE",
-    "text": "Ne sert à rien.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "No use.",
-    "headword_en": "METHOD"
   },
   {
     "headword": "MEXIQUE",
@@ -6662,17 +6499,6 @@
     "headword_en": "MUSCLES"
   },
   {
-    "headword": "MUSÉE",
-    "text": "De Versailles: retrace les hauts faits de la gloire nationale; belle idée de Louis-Philippe. Du Louvre: à éviter pour les jeunes filles. Dupuytren: très utile à montrer aux jeunes gens.",
-    "tags": [
-      "danger"
-    ],
-    "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "From Versailles: retraces the great deeds of national glory; great idea from Louis-Philippe. From the Louvre: avoid for young girls. Dupuytren: very useful to show to young people.",
-    "headword_en": "MUSEUM"
-  },
-  {
     "headword": "MUSICIEN",
     "text": "Le propre du véritable musicien, c'est de ne composer aucune musique, de ne jouer d'aucun instrument, et de mépriser les virtuoses.",
     "tags": [],
@@ -6689,6 +6515,149 @@
     "cluster_id": 7,
     "text_en": "Makes you think of a lot of things. Softens morals. Ex.: Marseillaise.",
     "headword_en": "MUSIC"
+  },
+  {
+    "headword": "MUSÉE",
+    "text": "De Versailles: retrace les hauts faits de la gloire nationale; belle idée de Louis-Philippe. Du Louvre: à éviter pour les jeunes filles. Dupuytren: très utile à montrer aux jeunes gens.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "From Versailles: retraces the great deeds of national glory; great idea from Louis-Philippe. From the Louvre: avoid for young girls. Dupuytren: very useful to show to young people.",
+    "headword_en": "MUSEUM"
+  },
+  {
+    "headword": "MÉCANIQUE",
+    "text": "Partie inférieure des mathématiques.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Lower part of mathematics.",
+    "headword_en": "MECHANICAL"
+  },
+  {
+    "headword": "MÉDAILLE",
+    "text": "On n'en faisait que dans l'antiquité.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "They were only made in ancient times.",
+    "headword_en": "MEDAL"
+  },
+  {
+    "headword": "MÉDECINE",
+    "text": "S'en moquer quand on se porte bien.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Make fun of it when you're doing well.",
+    "headword_en": "MEDICINE"
+  },
+  {
+    "headword": "MÉLANCOLIE",
+    "text": "Signe de distinction du coeur et d'élévation de l'esprit.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "Sign of distinction of the heart and elevation of the spirit.",
+    "headword_en": "MELANCHOLY"
+  },
+  {
+    "headword": "MÉLODRAMES",
+    "text": "Moins immoraux que les drames.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Less immoral than dramas.",
+    "headword_en": "MELODRAMAS"
+  },
+  {
+    "headword": "MÉMOIRE",
+    "text": "Se plaindre de la sienne, et même se vanter de n'en pas avoir. Mais rugir si on vous dit que vous n'avez pas de jugement.",
+    "tags": [
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Complaining about your own, and even bragging about not having one. But roar if you are told that you have no judgment.",
+    "headword_en": "MEMORY"
+  },
+  {
+    "headword": "MÉNAGE",
+    "text": "En parler toujours avec respect.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "Always talk about it with respect.",
+    "headword_en": "HOUSEHOLD"
+  },
+  {
+    "headword": "MÉPHISTOPHÉLIQUE",
+    "text": "Doit se dire de tout rire amer.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Must say to all bitter laughter.",
+    "headword_en": "MEPHISTOPHELIAN"
+  },
+  {
+    "headword": "MÉRIDIONAUX (les)",
+    "text": "Tous poètes.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0
+  },
+  {
+    "headword": "MÉTALLURGIE",
+    "text": "Très chic.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "Very chic.",
+    "headword_en": "METALLURGY"
+  },
+  {
+    "headword": "MÉTAMORPHOSE",
+    "text": "Rire du temps où on y croyait. Ovide en est l'inventeur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Laugh at the time when we believed in it. Ovid is the inventor.",
+    "headword_en": "METAMORPHOSIS"
+  },
+  {
+    "headword": "MÉTAPHORES",
+    "text": "Il y en a toujours trop dans le style.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "There is always too much in style.",
+    "headword_en": "METAPHORS"
+  },
+  {
+    "headword": "MÉTAPHYSIQUE",
+    "text": "En rire: c'est une preuve d'esprit supérieur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Laughing about it: it’s proof of a superior mind.",
+    "headword_en": "METAPHYSICAL"
+  },
+  {
+    "headword": "MÉTHODE",
+    "text": "Ne sert à rien.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "No use.",
+    "headword_en": "METHOD"
   },
   {
     "headword": "NACELLE",
@@ -6767,44 +6736,6 @@
     "headword_en": "NECTAR"
   },
   {
-    "headword": "NÈGRE",
-    "text": "Il faut parler nègre pour se faire comprendre d'un étranger, quelle que soit sa nationalité. S'emploie aussi dans le style télégraphique.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "You have to speak Negro to make yourself understood by a foreigner, whatever their nationality. Also used in telegraphic style.",
-    "headword_en": "NEGRO"
-  },
-  {
-    "headword": "NÈGRES",
-    "text": "S'étonner que leur salive soit blanche et de ce qu'ils parlent français.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Be surprised that their saliva is white and that they speak French.",
-    "headword_en": "Niggers"
-  },
-  {
-    "headword": "NÈGRESSES",
-    "text": "Plus chaudes que les blanches (v. brunes et blondes).",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Warmer than white women (see brunettes and blondes).",
-    "headword_en": "NEGRESSES"
-  },
-  {
-    "headword": "NÉOLOGISME",
-    "text": "La perte de la langue française.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "The loss of the French language.",
-    "headword_en": "NEOLOGISM"
-  },
-  {
     "headword": "NERVEUX",
     "text": "Se dit à chaque fois qu'on ne comprend rien à une maladie; cette explication satisfait l'auditeur.",
     "tags": [],
@@ -6841,6 +6772,13 @@
     "cluster_id": 8,
     "text_en": "Always followed by ebony. Like a jay (for jet).",
     "headword_en": "BLACK"
+  },
+  {
+    "headword": "NOMBRE D'OR",
+    "text": "Sur les calendriers, on ne sait pas ce que c'est.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NORMANDS",
@@ -6881,6 +6819,44 @@
     "cluster_id": 0,
     "text_en": "In relation to high sciences, inspires immense respect.",
     "headword_en": "NUMISMATICS"
+  },
+  {
+    "headword": "NÈGRE",
+    "text": "Il faut parler nègre pour se faire comprendre d'un étranger, quelle que soit sa nationalité. S'emploie aussi dans le style télégraphique.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "You have to speak Negro to make yourself understood by a foreigner, whatever their nationality. Also used in telegraphic style.",
+    "headword_en": "NEGRO"
+  },
+  {
+    "headword": "NÈGRES",
+    "text": "S'étonner que leur salive soit blanche et de ce qu'ils parlent français.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Be surprised that their saliva is white and that they speak French.",
+    "headword_en": "Niggers"
+  },
+  {
+    "headword": "NÈGRESSES",
+    "text": "Plus chaudes que les blanches (v. brunes et blondes).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "Warmer than white women (see brunettes and blondes).",
+    "headword_en": "NEGRESSES"
+  },
+  {
+    "headword": "NÉOLOGISME",
+    "text": "La perte de la langue française.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "The loss of the French language.",
+    "headword_en": "NEOLOGISM"
   },
   {
     "headword": "OASIS",
@@ -6939,13 +6915,18 @@
     "headword_en": "ODALISKS"
   },
   {
-    "headword": "ODÉON",
-    "text": "Plaisanteries sur son éloignement. ODEUR des pieds: Signe de santé.",
+    "headword": "ODEUR des pieds",
+    "text": "Signe de santé.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Jokes about his estrangement. ODOR of the feet: Sign of health.",
-    "headword_en": "ODEON"
+    "cluster_id": 0
+  },
+  {
+    "headword": "ODÉON",
+    "text": "Plaisanteries sur son éloignement.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "OEUF",
@@ -6978,6 +6959,15 @@
     "headword_en": "BIRD"
   },
   {
+    "headword": "OMNIBUS",
+    "text": "On n'y trouve jamais de place. Ont été inventés par Louis",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 1,
+    "text_en": "We never find room there. Were invented by Louis",
+    "headword_en": "OMNIBUS"
+  },
+  {
     "headword": "OMÉGA",
     "text": "Deuxième lettre de l'alphabet grec, puisqu'on dit toujours l'alpha et l'oméga.",
     "tags": [
@@ -6989,24 +6979,6 @@
     "headword_en": "OMEGA"
   },
   {
-    "headword": "OMNIBUS",
-    "text": "On n'y trouve jamais de place. Ont été inventés par Louis",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 1,
-    "text_en": "We never find room there. Were invented by Louis",
-    "headword_en": "OMNIBUS"
-  },
-  {
-    "headword": "XIV",
-    "text": "« Moi, monsieur, j'ai connu les tricycles qui n'avaient que trois roues!  » OPÉRA (coulisses de l'): Paradis de Mahomet sur la terre.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "“I, sir, knew the tricycles which only had three wheels!” OPERA (backstage): Paradise of Mohammed on earth.",
-    "headword_en": "XIV"
-  },
-  {
     "headword": "OPTIMISTE",
     "text": "Equivalent d'imbécile.",
     "tags": [],
@@ -7014,6 +6986,13 @@
     "cluster_id": 3,
     "text_en": "Equivalent to imbecile.",
     "headword_en": "OPTIMISTIC"
+  },
+  {
+    "headword": "OPÉRA (coulisses de l')",
+    "text": "Paradis de Mahomet sur la terre.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ORAISON",
@@ -7035,12 +7014,17 @@
   },
   {
     "headword": "ORCHITE",
-    "text": "Maladie de Monsieur. ORDRE, L'ORDRE: Que de crime on commet en ton nom! (v. liberté).",
+    "text": "Maladie de Monsieur.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 5,
-    "text_en": "Sir's illness. ORDER, THE ORDER: What crimes are committed in your name! (v. freedom).",
-    "headword_en": "ORCHITIS"
+    "cluster_id": 5
+  },
+  {
+    "headword": "ORDRE",
+    "text": "Que de crime on commet en ton nom! (v. liberté).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "OREILLER",
@@ -7245,32 +7229,21 @@
   },
   {
     "headword": "PAUVRES",
-    "text": "S'en occuper tient lieu de toutes les vertus. PAYSAGES de peintres: Toujours des plats d'épinards.",
+    "text": "S'en occuper tient lieu de toutes les vertus.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "Taking care of it takes the place of all the virtues. LANDSCAPES of painters: Always spinach dishes.",
-    "headword_en": "POOR"
+    "cluster_id": 6
   },
   {
-    "headword": "PÉDANTISME",
-    "text": "Doit être bafoué, si ce n'est quand il s'applique à des choses légères.",
-    "tags": [],
+    "headword": "PAYSAGES de peintres",
+    "text": "Toujours des plats d'épinards.",
+    "tags": [
+      "social_obligation"
+    ],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Must be flouted, except when applied to light things.",
-    "headword_en": "PEDANTRY"
-  },
-  {
-    "headword": "PÉDÉRASTIE",
-    "text": "Maladie dont tous les hommes sont affectés à un certain âge.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Disease that affects all men at a certain age.",
-    "headword_en": "PEDERASTY"
+    "cluster_id": 6
   },
   {
     "headword": "PEINTURE SUR VERRE",
@@ -7280,15 +7253,6 @@
     "cluster_id": 9,
     "text_en": "The secret is lost.",
     "headword_en": "GLASS PAINTING"
-  },
-  {
-    "headword": "PÉLICAN",
-    "text": "Se perce les flancs pour nourrir ses petits. Emblème du père de famille.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "Pierces its sides to feed its young. Emblem of the father of the family.",
-    "headword_en": "PELICAN"
   },
   {
     "headword": "PENSER",
@@ -7318,15 +7282,6 @@
     "headword_en": "SWITCH"
   },
   {
-    "headword": "PÉROU",
-    "text": "Pays où tout est en or.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "Country where everything is gold.",
-    "headword_en": "PERU"
-  },
-  {
     "headword": "PEUR",
     "text": "Donne des ailes.",
     "tags": [],
@@ -7343,17 +7298,6 @@
     "cluster_id": 5,
     "text_en": "Inventor of cars of this name.",
     "headword_en": "PHAETON"
-  },
-  {
-    "headword": "PHÉNIX",
-    "text": "Beau nom pour une compagnie d'assurances contre l'incendie.",
-    "tags": [
-      "empty_praise"
-    ],
-    "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Nice name for a fire insurance company.",
-    "headword_en": "PHOENIX"
   },
   {
     "headword": "PHILIPPE D'ORLÉANS - ÉGALITÉ",
@@ -7383,6 +7327,17 @@
     "cluster_id": 0,
     "text_en": "Will dethrone painting (see daguerreotype).",
     "headword_en": "PHOTOGRAPHY"
+  },
+  {
+    "headword": "PHÉNIX",
+    "text": "Beau nom pour une compagnie d'assurances contre l'incendie.",
+    "tags": [
+      "empty_praise"
+    ],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Nice name for a fire insurance company.",
+    "headword_en": "PHOENIX"
   },
   {
     "headword": "PIANO",
@@ -7436,15 +7391,6 @@
     "headword_en": "PLACE"
   },
   {
-    "headword": "PLANÈTES",
-    "text": "Toutes découvertes par M. Leverrier.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 9,
-    "text_en": "All discovered by Mr. Leverrier.",
-    "headword_en": "PLANETS"
-  },
-  {
     "headword": "PLANTE",
     "text": "Guérit toujours les parties du corps humain auxquelles elle ressemble.",
     "tags": [
@@ -7456,22 +7402,20 @@
     "headword_en": "PLANT"
   },
   {
-    "headword": "PLIQUE POLONAISE",
-    "text": "Si on coupe les cheveux, ils saignent. POÉSIE (la): Est tout à fait inutile: passée de mode.",
+    "headword": "PLANÈTES",
+    "text": "Toutes découvertes par M. Leverrier.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "If you cut your hair, it bleeds. POETRY (the): Is completely useless: out of fashion.",
-    "headword_en": "POLISH PLIQUE"
+    "cluster_id": 9,
+    "text_en": "All discovered by Mr. Leverrier.",
+    "headword_en": "PLANETS"
   },
   {
-    "headword": "POÈTE",
-    "text": "Synonyme noble de nigaud; rêveur.",
+    "headword": "PLIQUE POLONAISE",
+    "text": "Si on coupe les cheveux, ils saignent.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "Noble synonym of simpleton; dreamer.",
-    "headword_en": "POET"
+    "cluster_id": 3
   },
   {
     "headword": "POLICE",
@@ -7503,15 +7447,6 @@
     "headword_en": "POPILIUS"
   },
   {
-    "headword": "PORTEFEUILLE",
-    "text": "En avoir un sous le bras donne l'air d'un ministre.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Having one under your arm makes you look like a minister.",
-    "headword_en": "WALLET"
-  },
-  {
     "headword": "PORT-ROYAL",
     "text": "Sujet de conversation très bien porté.",
     "tags": [
@@ -7523,6 +7458,15 @@
     "headword_en": "PORT ROYAL"
   },
   {
+    "headword": "PORTEFEUILLE",
+    "text": "En avoir un sous le bras donne l'air d'un ministre.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Having one under your arm makes you look like a minister.",
+    "headword_en": "WALLET"
+  },
+  {
     "headword": "POURPRE",
     "text": "Mot plus noble que rouge.",
     "tags": [],
@@ -7530,6 +7474,22 @@
     "cluster_id": 3,
     "text_en": "A nobler word than red.",
     "headword_en": "PURPLE"
+  },
+  {
+    "headword": "POÈTE",
+    "text": "Synonyme noble de nigaud; rêveur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Noble synonym of simpleton; dreamer.",
+    "headword_en": "POET"
+  },
+  {
+    "headword": "POÉSIE (la)",
+    "text": "Est tout à fait inutile: passée de mode.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PRADON",
@@ -7559,24 +7519,6 @@
     "cluster_id": 8,
     "text_en": "Superior to theory.",
     "headword_en": "PRACTICAL"
-  },
-  {
-    "headword": "PRÉOCCUPATION",
-    "text": "Est d'autant plus vive qu'étant profondément absorbé, on reste immobile.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 2,
-    "text_en": "Is all the more vivid when being deeply absorbed, one remains motionless.",
-    "headword_en": "CONCERN"
-  },
-  {
-    "headword": "PRÊTRES",
-    "text": "On devrait les châtrer. Couchent avec leurs bonnes et en ont des enfants qu'ils appellent leurs neveux. C'est égal, il y en a de bons tout de même.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "We should castrate them. Sleep with their maids and have children they call their nephews. It doesn't matter, there are some good ones all the same.",
-    "headword_en": "PRIESTS"
   },
   {
     "headword": "PRIAPISME",
@@ -7650,15 +7592,6 @@
     "headword_en": "PROPERTY"
   },
   {
-    "headword": "PROVIDENCE",
-    "text": "Que deviendrons-nous sans elle?",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "What will we become without it?",
-    "headword_en": "PROVIDENCE"
-  },
-  {
     "headword": "PROSE",
     "text": "Plus facile à faire que les vers.",
     "tags": [],
@@ -7668,6 +7601,15 @@
     "headword_en": "PROSE"
   },
   {
+    "headword": "PROVIDENCE",
+    "text": "Que deviendrons-nous sans elle?",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "What will we become without it?",
+    "headword_en": "PROVIDENCE"
+  },
+  {
     "headword": "PRUNEAUX",
     "text": "Tiennent le ventre libre.",
     "tags": [],
@@ -7675,6 +7617,24 @@
     "cluster_id": 2,
     "text_en": "Keep your stomach free.",
     "headword_en": "PRUNES"
+  },
+  {
+    "headword": "PRÉOCCUPATION",
+    "text": "Est d'autant plus vive qu'étant profondément absorbé, on reste immobile.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "Is all the more vivid when being deeply absorbed, one remains motionless.",
+    "headword_en": "CONCERN"
+  },
+  {
+    "headword": "PRÊTRES",
+    "text": "On devrait les châtrer. Couchent avec leurs bonnes et en ont des enfants qu'ils appellent leurs neveux. C'est égal, il y en a de bons tout de même.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "We should castrate them. Sleep with their maids and have children they call their nephews. It doesn't matter, there are some good ones all the same.",
+    "headword_en": "PRIESTS"
   },
   {
     "headword": "PUBLICITÉ",
@@ -7720,6 +7680,42 @@
     "cluster_id": 3,
     "text_en": "Useless work.",
     "headword_en": "PYRAMID"
+  },
+  {
+    "headword": "PÉDANTISME",
+    "text": "Doit être bafoué, si ce n'est quand il s'applique à des choses légères.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Must be flouted, except when applied to light things.",
+    "headword_en": "PEDANTRY"
+  },
+  {
+    "headword": "PÉDÉRASTIE",
+    "text": "Maladie dont tous les hommes sont affectés à un certain âge.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Disease that affects all men at a certain age.",
+    "headword_en": "PEDERASTY"
+  },
+  {
+    "headword": "PÉLICAN",
+    "text": "Se perce les flancs pour nourrir ses petits. Emblème du père de famille.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "Pierces its sides to feed its young. Emblem of the father of the family.",
+    "headword_en": "PELICAN"
+  },
+  {
+    "headword": "PÉROU",
+    "text": "Pays où tout est en or.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "Country where everything is gold.",
+    "headword_en": "PERU"
   },
   {
     "headword": "QUADRATURE DU CERCLE",
@@ -7802,25 +7798,21 @@
   },
   {
     "headword": "RECONNAISSANCE",
-    "text": "N'a pas besoin d'être exprimée. RELIGION (la): Fait partie des bases de la société. Est nécessaire pour le peuple, cependant pas trop n'en faut. « La religion de nos pères » , doit se dire avec onction.",
+    "text": "N'a pas besoin d'être exprimée.",
     "tags": [
       "negation_trap"
     ],
     "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Does not need to be expressed. RELIGION (the): Part of the bases of society. Is necessary for the people, however not too much is needed. “The religion of our fathers” must be said with anointing.",
-    "headword_en": "ACKNOWLEDGEMENT"
+    "cluster_id": 3
   },
   {
-    "headword": "RÉPUBLICAINS",
-    "text": "Les républicains ne sont pas tous des voleurs, mais les voleurs sont tous républicains.",
+    "headword": "RELIGION (la)",
+    "text": "Fait partie des bases de la société. Est nécessaire pour le peuple, cependant pas trop n'en faut. « La religion de nos pères » , doit se dire avec onction.",
     "tags": [
       "negation_trap"
     ],
     "xrefs": [],
-    "cluster_id": 10,
-    "text_en": "Republicans are not all thieves, but thieves are all Republicans.",
-    "headword_en": "REPUBLICANS"
+    "cluster_id": 3
   },
   {
     "headword": "RESTAURANT",
@@ -7832,24 +7824,6 @@
     "cluster_id": 10,
     "text_en": "You should always ask for dishes that you don't usually eat at home. When you're embarrassed, you just have to choose the dishes you serve to the neighbors.",
     "headword_en": "RESTAURANT"
-  },
-  {
-    "headword": "RÊVASSERIE",
-    "text": "Les idées élevées qu'on ne comprend pas.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 7,
-    "text_en": "High ideas that we don't understand.",
-    "headword_en": "DAYDREAMING"
-  },
-  {
-    "headword": "RÉVEILLON",
-    "text": "C'est le boudin qui constitue le réveillon.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 11,
-    "text_en": "It’s the blood sausage that makes up New Year’s Eve.",
-    "headword_en": "NEW YEAR'S EVE"
   },
   {
     "headword": "RICHESSE",
@@ -7953,6 +7927,35 @@
     "headword_en": "RUINS"
   },
   {
+    "headword": "RÉPUBLICAINS",
+    "text": "Les républicains ne sont pas tous des voleurs, mais les voleurs sont tous républicains.",
+    "tags": [
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "Republicans are not all thieves, but thieves are all Republicans.",
+    "headword_en": "REPUBLICANS"
+  },
+  {
+    "headword": "RÉVEILLON",
+    "text": "C'est le boudin qui constitue le réveillon.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "It’s the blood sausage that makes up New Year’s Eve.",
+    "headword_en": "NEW YEAR'S EVE"
+  },
+  {
+    "headword": "RÊVASSERIE",
+    "text": "Les idées élevées qu'on ne comprend pas.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "High ideas that we don't understand.",
+    "headword_en": "DAYDREAMING"
+  },
+  {
     "headword": "SABOTS",
     "text": "Un homme riche qui a eu des commencements difficiles est toujours venu à Paris en sabots.",
     "tags": [
@@ -8028,14 +8031,21 @@
   },
   {
     "headword": "SALIÈRE",
-    "text": "La renverser porte malheur. SALON (faire le): Début littéraire qui pose très bien son homme.",
+    "text": "La renverser porte malheur.",
     "tags": [
       "danger"
     ],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Knocking it over brings bad luck. SALON (do it): Literary debut which poses its man very well.",
-    "headword_en": "SALT SHAKER"
+    "cluster_id": 0
+  },
+  {
+    "headword": "SALON (faire le)",
+    "text": "Début littéraire qui pose très bien son homme.",
+    "tags": [
+      "danger"
+    ],
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "SALUTATIONS",
@@ -8050,12 +8060,17 @@
   },
   {
     "headword": "SANTÉ",
-    "text": "trop de santé, cause de maladie. SAPHIQUE ET ADONIQUE (vers): Produit un excellent effet dans un article de littérature.",
+    "text": "trop de santé, cause de maladie.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "too much health, cause of illness. SAPHIC AND ADONIC (verses): Produces an excellent effect in a literature article.",
-    "headword_en": "HEALTH"
+    "cluster_id": 4
+  },
+  {
+    "headword": "SAPHIQUE ET ADONIQUE (vers)",
+    "text": "Produit un excellent effet dans un article de littérature.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SATRAPE",
@@ -8114,15 +8129,6 @@
     "headword_en": "SCUDÉRY"
   },
   {
-    "headword": "SÉNÈQUE",
-    "text": "Ecrivait sur un pupitre d'or.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Wrote on a golden desk.",
-    "headword_en": "SENECUS"
-  },
-  {
     "headword": "SERPENT",
     "text": "Tous venimeux.",
     "tags": [],
@@ -8141,15 +8147,6 @@
     "headword_en": "SERVICE"
   },
   {
-    "headword": "SÉVILLE",
-    "text": "Célèbre endroit pour son barbier. Voir Séville et mourir! (v. Naples).",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "Famous place for its barber. See Seville and die! (v. Naples).",
-    "headword_en": "SEVILLE"
-  },
-  {
     "headword": "SITE",
     "text": "Endroits pour faire des vers.",
     "tags": [],
@@ -8160,12 +8157,18 @@
   },
   {
     "headword": "SOCIÉTÉ",
-    "text": "Ses ennemis. Ce qui cause sa perte. SOMBREUIL (Mlle de): rappeler le verre de sang.",
+    "text": "Ses ennemis. Ce qui cause sa perte.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4
+  },
+  {
+    "headword": "SOMBREUIL (Mlle de)",
+    "text": "Rappeler le verre de sang.",
     "tags": [],
     "xrefs": [],
     "cluster_id": 4,
-    "text_en": "His enemies. Which causes his downfall. SOMBREUIL (Mlle de): recall the glass of blood.",
-    "headword_en": "COMPANY"
+    "headword_en": "SOMBREUIL (Mlle de)"
   },
   {
     "headword": "SOMMEIL",
@@ -8177,15 +8180,6 @@
     "headword_en": "SLEEP"
   },
   {
-    "headword": "SOUFFLET",
-    "text": "Ne jamais s'en servir.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "Never use it.",
-    "headword_en": "BELLOWS"
-  },
-  {
     "headword": "SOMNAMBULE",
     "text": "Se promène la nuit sur la crête des toits.",
     "tags": [],
@@ -8193,6 +8187,15 @@
     "cluster_id": 8,
     "text_en": "Wanders at night on the ridges of the roofs.",
     "headword_en": "SOMNAMBULIST"
+  },
+  {
+    "headword": "SOUFFLET",
+    "text": "Ne jamais s'en servir.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Never use it.",
+    "headword_en": "BELLOWS"
   },
   {
     "headword": "SOUPERS DE LA RÉGENCE",
@@ -8278,6 +8281,24 @@
     "headword_en": "SYPHILIS"
   },
   {
+    "headword": "SÉNÈQUE",
+    "text": "Ecrivait sur un pupitre d'or.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Wrote on a golden desk.",
+    "headword_en": "SENECUS"
+  },
+  {
+    "headword": "SÉVILLE",
+    "text": "Célèbre endroit pour son barbier. Voir Séville et mourir! (v. Naples).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Famous place for its barber. See Seville and die! (v. Naples).",
+    "headword_en": "SEVILLE"
+  },
+  {
     "headword": "TABAC",
     "text": "Celui de la régie ne vaut pas celui de contrebande. Le priser convient à l'homme de cabinet. Cause de toutes les maladies du cerveau et de la moelle épinière.",
     "tags": [],
@@ -8288,12 +8309,17 @@
   },
   {
     "headword": "TABELLION",
-    "text": "Plus flatteur que notaire. TALLEYRAND (Prince de): S'indigner contre.",
+    "text": "Plus flatteur que notaire.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 0,
-    "text_en": "More flattering than notary. TALLEYRAND (Prince of): To be indignant against.",
-    "headword_en": "TABELLION"
+    "cluster_id": 0
+  },
+  {
+    "headword": "TALLEYRAND (Prince de)",
+    "text": "S'indigner contre.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "TARTANE",
@@ -8325,17 +8351,6 @@
     "headword_en": "BULL"
   },
   {
-    "headword": "TÉMOIN",
-    "text": "Il faut toujours refuser d'être témoin en justice, on ne sait pas où ça peut mener.",
-    "tags": [
-      "social_obligation"
-    ],
-    "xrefs": [],
-    "cluster_id": 4,
-    "text_en": "You must always refuse to be a witness in court, we don't know where that could lead.",
-    "headword_en": "WITNESS"
-  },
-  {
     "headword": "TEMPS",
     "text": "Eternel sujet de conversation. Cause universelle des maladies. Toujours s'en plaindre.",
     "tags": [
@@ -8357,24 +8372,47 @@
   },
   {
     "headword": "THÈME",
-    "text": "Au collège, prouve l'application, comme la version prouve l'intelligence. Mais dans le monde il faut rire des forts en thème. TOILETTE (des dames): Trouble l'imagination. TOLÉRANCE (maison de): N'est pas celle où l'on a des opinions tolérantes.",
+    "text": "Au collège, prouve l'application, comme la version prouve l'intelligence. Mais dans le monde il faut rire des forts en thème.",
     "tags": [
       "social_obligation",
       "negation_trap"
     ],
     "xrefs": [],
-    "cluster_id": 6,
-    "text_en": "In college, application proves, as version proves intelligence. But in the world we have to laugh at the strong in theme. TOILET (ladies): Disturbs the imagination. TOLERANCE (house of): Not the one where one has tolerant opinions.",
-    "headword_en": "THEME"
+    "cluster_id": 6
+  },
+  {
+    "headword": "TOILETTE (des dames)",
+    "text": "Trouble l'imagination.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "TOLÉRANCE (maison de)",
+    "text": "N'est pas celle où l'on a des opinions tolérantes.",
+    "tags": [
+      "social_obligation",
+      "negation_trap"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "TOUR",
-    "text": "Indispensable à avoir dans son grenier, à la campagne, pour les jours de pluie. TRANSPIRATION des pieds: Signe de santé.",
+    "text": "Indispensable à avoir dans son grenier, à la campagne, pour les jours de pluie.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 8,
-    "text_en": "Essential to have in your attic, in the countryside, for rainy days. SWEATING of the feet: A sign of health.",
-    "headword_en": "ROUND"
+    "cluster_id": 8
+  },
+  {
+    "headword": "TRANSPIRATION des pieds",
+    "text": "Signe de santé.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "TREIZE",
@@ -8397,6 +8435,17 @@
     "headword_en": "TROUBADOUR"
   },
   {
+    "headword": "TÉMOIN",
+    "text": "Il faut toujours refuser d'être témoin en justice, on ne sait pas où ça peut mener.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "You must always refuse to be a witness in court, we don't know where that could lead.",
+    "headword_en": "WITNESS"
+  },
+  {
     "headword": "UKASE",
     "text": "Appeler ukase tout décret autoritaire, ça vexe le gouvernement.",
     "tags": [],
@@ -8407,14 +8456,21 @@
   },
   {
     "headword": "UNIVERSITÉ",
-    "text": "Alma mater. USUM (ad).: Locution latine qui fait bien dans la phrase: Ad usum Delphini. Devra toujours s'employer en parlant d'une femme appelée Delphine.",
+    "text": "Alma mater.",
     "tags": [
       "social_obligation"
     ],
     "xrefs": [],
-    "cluster_id": 3,
-    "text_en": "Alma mater. USUM (ad).: Latin phrase that fits well in the sentence: Ad usum Delphini. Should always be used when talking about a woman called Delphine.",
-    "headword_en": "UNIVERSITY"
+    "cluster_id": 3
+  },
+  {
+    "headword": "USUM (ad).",
+    "text": "Locution latine qui fait bien dans la phrase: Ad usum Delphini. Devra toujours s'employer en parlant d'une femme appelée Delphine.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "VACCINE",
@@ -8574,6 +8630,22 @@
     "headword_en": "WAGNER"
   },
   {
+    "headword": "XI",
+    "text": "Autrefois saignait.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Used to bleed.",
+    "headword_en": "XI"
+  },
+  {
+    "headword": "XIV",
+    "text": "« Moi, monsieur, j'ai connu les tricycles qui n'avaient que trois roues!  »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5
+  },
+  {
     "headword": "YVETOT",
     "text": "Voir Yvetot et mourir! (v. Naples et Séville)",
     "tags": [],
@@ -8581,5 +8653,417 @@
     "cluster_id": 1,
     "text_en": "See Yvetot and die! (v. Naples and Seville)",
     "headword_en": "YVETOT"
+  },
+  {
+    "headword": "ÈRE (des révolutions)",
+    "text": "Toujours ouverte puisque chaque nouveau gouvernement promet de la fermer.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "ÉBÉNISTE",
+    "text": "Ouvrier qui travaille surtout l'acajou.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Worker who mainly works mahogany.",
+    "headword_en": "CABINETMAKER"
+  },
+  {
+    "headword": "ÉCHAFAUD",
+    "text": "S'arranger quand on y monte pour prononcer quelques mots éloquents avant de mourir.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Arrange when you go up there to say a few eloquent words before you die.",
+    "headword_en": "SCAFFOLD"
+  },
+  {
+    "headword": "ÉCHARPE",
+    "text": "Poétique.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "ÉCHECS (jeu des)",
+    "text": "Image de la tactique militaire. Tous les grands capitaines y étaient forts. Trop sérieux pour un jeu, trop futile pour une science.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "ÉCHO",
+    "text": "Citer ceux du Panthéon et du pont de Neuilly.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "Mention those of the Pantheon and the Pont de Neuilly.",
+    "headword_en": "ECHO"
+  },
+  {
+    "headword": "ÉCLECTISME",
+    "text": "Tonner contre comme étant une philosophie immorale.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Thunder against it as an immoral philosophy.",
+    "headword_en": "ECLECTICISM"
+  },
+  {
+    "headword": "ÉCOLES",
+    "text": "Polytechnique, rêve de toutes les mères (vieux). Terreur du bourgeois dans les émeutes quand il apprend que l'Ecole Polytechnique sympathise avec les ouvriers (vieux). Dire simplement « l'Ecole » fait accroire qu'on y a été. A Saint-Cyr: jeunes gens nobles. A l'Ecole de Médecine: tous exaltés. A l'Ecole de Droit: jeunes gens de bonne famille.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "Polytechnic, every mother’s dream (old). Terror of the bourgeois in the riots when he learns that the Ecole Polytechnique sympathizes with the (old) workers. Simply saying “School” makes you believe that you have been there. In Saint-Cyr: noble young people. At the School of Medicine: all exalted. At the Law School: young people from good families.",
+    "headword_en": "SCHOOLS"
+  },
+  {
+    "headword": "ÉCONOMIE",
+    "text": "Toujours précédé de « ordre » . Mène à la fortune. Citer l'anecdote de Laffitte ramassant une épingle dans la cour du banquier Perrégaux.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Always preceded by \"order\". Leads to fortune. Quote the anecdote of Laffitte picking up a pin in the courtyard of the banker Perrégaux.",
+    "headword_en": "ECONOMY"
+  },
+  {
+    "headword": "ÉCONOMIE POLITIQUE",
+    "text": "Science sans entrailles.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Science without guts.",
+    "headword_en": "POLITICAL ECONOMY"
+  },
+  {
+    "headword": "ÉCREVISSE",
+    "text": "Marche à reculons. Toujours appeler les réactionnaires des écrevisses.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Walk backwards. Always call reactionaries crawfish.",
+    "headword_en": "CRAYFISH"
+  },
+  {
+    "headword": "ÉCRIRE",
+    "text": "Currente calamo, c'est l'excuse pour les fautes de style ou d'orthographe.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "ÉCRIT",
+    "text": "Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7
+  },
+  {
+    "headword": "ÉCRITURE",
+    "text": "Une belle écriture mène à tout. Indéchiffrable: signe de science. Ex.: les ordonnances des médecins.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 0,
+    "text_en": "Great writing leads to everything. Indecipherable: sign of science. E.g.: doctors’ prescriptions.",
+    "headword_en": "WRITING"
+  },
+  {
+    "headword": "ÉCUME DE MER",
+    "text": "Se trouve dans la terre. On en fait des pipes.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "Found in the earth. We make blowjobs.",
+    "headword_en": "MEERSCHAUM"
+  },
+  {
+    "headword": "ÉDILES",
+    "text": "Tonner contre à propos du pavage des rues. « A quoi songent nos édiles? »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "text_en": "Thunder against about street paving. “What are our city councilors thinking about?”",
+    "headword_en": "EDILE"
+  },
+  {
+    "headword": "ÉGOÏSME",
+    "text": "Se plaindre de celui des autres et ne pas s'apercevoir du sien.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Complaining about that of others and not noticing your own.",
+    "headword_en": "SELFISHNESS"
+  },
+  {
+    "headword": "ÉLÉPHANTS",
+    "text": "Se distinguent par leur mémoire, et adorent le soleil.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 5,
+    "text_en": "Distinguished by their memory, and worship the sun.",
+    "headword_en": "ELEPHANTS"
+  },
+  {
+    "headword": "ÉMAIL",
+    "text": "Le secret en est perdu.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "The secret is lost.",
+    "headword_en": "E-MAIL"
+  },
+  {
+    "headword": "ÉMIGRÉS",
+    "text": "Gagnaient leur vie à donner des leçons de guitare et à faire la salade.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "Earned their living giving guitar lessons and making salad.",
+    "headword_en": "EMIGRANTS"
+  },
+  {
+    "headword": "ÉMIR",
+    "text": "Ne se dit qu'en parlant d'Abd-el-Kader.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Only said when talking about Abd-el-Kader.",
+    "headword_en": "EMIR"
+  },
+  {
+    "headword": "ÉPACTE",
+    "text": "Sur les calendriers, on ne sait pas ce que c'est.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3
+  },
+  {
+    "headword": "ÉPARGNE (Caisse d')",
+    "text": "Occasion de vol pour les domestiques.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3
+  },
+  {
+    "headword": "ÉPICURE",
+    "text": "Le mépriser.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Despise him.",
+    "headword_en": "EPICURE"
+  },
+  {
+    "headword": "ÉPINARDS",
+    "text": "Sont le balai de l'estomac. Ne jamais rater la phrase célèbre de Prudhomme: « Je ne les aime pas, j'en suis bien aise, car si je les aimais, j'en mangerai et je ne puis pas les souffrir. » (Il y en a qui trouveront cela parfaitement logique et qui ne riront pas).",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10
+  },
+  {
+    "headword": "ÉPOQUE (la nôtre)",
+    "text": "Tonner contre elle. Se plaindre de ce qu'elle n'est pas poétique. L'appeler époque de transition, de décadence.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10
+  },
+  {
+    "headword": "ÉPUISEMENT",
+    "text": "Toujours prématuré.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Still premature.",
+    "headword_en": "EXHAUSTION"
+  },
+  {
+    "headword": "ÉPÉE",
+    "text": "On ne connaît que celle de Damoclès. Regretter le temps où on en portait. « Brave comme une épée. » Quelquefois elle n'a jamais servi.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "We only know that of Damocles. Regretting the days when we wore them. “Brave as a sword.” Sometimes it was never used.",
+    "headword_en": "SWORD"
+  },
+  {
+    "headword": "ÉPÉRONS",
+    "text": "Font bien à une paire de bottes.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "Looks great with a pair of boots.",
+    "headword_en": "SPURS"
+  },
+  {
+    "headword": "ÉQUITATION",
+    "text": "Bon exercice pour faire maigrir. Ex.: tous les soldats de cavalerie sont maigres. Bon exercice pour engraisser. Ex.: tous les officiers de cavalerie ont un gros ventre. « Il monte à cheval comme un vrai centaure. »",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6
+  },
+  {
+    "headword": "ÉRECTION",
+    "text": "Ne se dit qu'en parlant des monuments.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Only said when talking about monuments.",
+    "headword_en": "ERECTION"
+  },
+  {
+    "headword": "ÉRUDITION",
+    "text": "La mépriser comme étant la marque d'un esprit étroit.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Disdain it as the mark of a narrow mind.",
+    "headword_en": "ERUDITION"
+  },
+  {
+    "headword": "ÉTAGÈRE",
+    "text": "Indispensable chez une jolie femme.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "Essential for a pretty woman.",
+    "headword_en": "SHELF"
+  },
+  {
+    "headword": "ÉTALON",
+    "text": "Toujours vigoureux. Une femme doit ignorer la différence qu'il y a entre un étalon et un cheval.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 6,
+    "text_en": "Still vigorous. A woman must ignore the difference between a stallion and a horse.",
+    "headword_en": "STANDARD"
+  },
+  {
+    "headword": "ÉTERNUEMENT",
+    "text": "Après qu'on a dit: « Dieu vous bénisse » , engager une discussion sur l'origine de cet usage.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "After saying, “God bless you,” engage in a discussion about the origin of this usage.",
+    "headword_en": "SNEEZE"
+  },
+  {
+    "headword": "ÉTERNUER",
+    "text": "C'est une raillerie spirituelle de dire: le russe et le polonais ne se parlent pas, ça s'éternue.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "It's a witty mockery to say: Russian and Polish don't speak to each other, they sneeze.",
+    "headword_en": "SNEEZE"
+  },
+  {
+    "headword": "ÉTOILE",
+    "text": "Chacun a la sienne, comme l'Empereur.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 8,
+    "text_en": "Everyone has their own, like the Emperor.",
+    "headword_en": "STAR"
+  },
+  {
+    "headword": "ÉTRANGER",
+    "text": "Engouement pour tout ce qui vient de l'étranger, preuve de l'esprit libéral. Dénigrement de tout ce qui n'est pas français, preuve de patriotisme.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 7,
+    "text_en": "Craze for everything that comes from abroad, proof of the liberal spirit. Denigration of everything that is not French, proof of patriotism.",
+    "headword_en": "STRANGER"
+  },
+  {
+    "headword": "ÉTRENNES",
+    "text": "S'indigner contre.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "To be indignant against.",
+    "headword_en": "NEWS"
+  },
+  {
+    "headword": "ÉTRUSQUE",
+    "text": "Tous les vases anciens sont étrusques.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "All the ancient vases are Etruscan.",
+    "headword_en": "ETRUSCAN"
+  },
+  {
+    "headword": "ÉTUDIANT",
+    "text": "Portent tous des bérets rouges, des pantalons à la hussarde, fumant la pipe dans la rue et n'étudie pas.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "All wear red berets, hussar pants, smoke pipes in the street and don't study.",
+    "headword_en": "STUDENT"
+  },
+  {
+    "headword": "ÉTYMOLOGIE",
+    "text": "Rien de plus facile à trouver avec le latin et un peu de réflexion.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "text_en": "Nothing could be easier to find with Latin and a little thought.",
+    "headword_en": "ETYMOLOGY"
+  },
+  {
+    "headword": "ÉTÉ",
+    "text": "Toujours exceptionnel (v. hiver).",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 9,
+    "text_en": "Always exceptional (v. winter).",
+    "headword_en": "SUMMER"
+  },
+  {
+    "headword": "ÉVACUATIONS",
+    "text": "Les évacuations sont souvent copieuses et toujours de mauvaise nature.",
+    "tags": [
+      "social_obligation"
+    ],
+    "xrefs": [],
+    "cluster_id": 11,
+    "text_en": "The evacuations are often copious and always of a bad nature.",
+    "headword_en": "EVACUATIONS"
+  },
+  {
+    "headword": "ÉVANGILES",
+    "text": "Livres divins, sublimes, etc.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 2,
+    "text_en": "Divine, sublime books, etc.",
+    "headword_en": "GOSPELS"
+  },
+  {
+    "headword": "ÉVIDENCE",
+    "text": "Vous aveugle, quand elle ne crève pas les yeux.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 4,
+    "text_en": "Blinds you, when it doesn't stare you out.",
+    "headword_en": "EVIDENCE"
   }
 ]
