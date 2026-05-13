@@ -4,7 +4,7 @@
     "text": "Là où la mécanisation et l'absence de sens humains se marient en harmonie. « Et maintenant, mon ami, tes enfants sont des nombres aléatoires. »",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 11,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -13,7 +13,7 @@
     "text": "Smartphone. Un objet sans lequel un humain moderne serait perdu en milieu sauvage, incapable de trouver la voie et ne connaissant plus même comment se mettre debout.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 0,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -22,7 +22,7 @@
     "text": "RESEAUX SOCIAux. Lieux où l'on peut échanger des informations, des photos, et où le plus de temps passé est généralement proportional au manque de vie privée. Un lieu idéal pour les gens qui aiment être en permanence en contact avec eux-mêmes.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 11,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -31,7 +31,7 @@
     "text": "Un esprit inférieur à celui de ses utilisateurs, qui n'a pas le sens commun ni la raison, et dont les erreurs sont souvent plus couteuses que celles des humains. Les programmateurs le détestent en même temps qu'ils lui rendent hommage.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 0,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -40,7 +40,7 @@
     "text": "Instrument de transport préféré des gens qui détestent la nature et les exercices physiques. Si vous avez besoin d'air frais, ouvrez une fenêtre à la maison.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 7,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -49,7 +49,7 @@
     "text": "Ruse des riches pour payer chères les confessions de leurs problèmes intimes à leur médecin psychanalyste. La clé du bonheur: dépensez pour connaître le pire de vous-même.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 8,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -58,7 +58,7 @@
     "text": "Genteel charlatan, expert en inconscient collectif. Analyse les rêves des autres et sonne des cloches dans ses propres têtes.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": -1,
+    "cluster_id": 11,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
@@ -76,7 +76,7 @@
     "text": "Écrits dans un langage incompréhensible par les humains mais facilement lisible par des machines, enfermés dans du codage complexe et abstrait à l'apparence insensée.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 10,
+    "cluster_id": 11,
     "is_generated": true,
     "generator": "OllamaGenerator"
   }
