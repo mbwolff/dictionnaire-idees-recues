@@ -5,7 +5,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ACADÉMIE FRANCAISE",
@@ -13,7 +14,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ACCIDENT",
@@ -21,43 +23,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ACCOUCHEMENT",
     "text": "Mot à éviter; le remplacer par événement. \"Pour quelle époque attendez-vous l'événement?\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ACHILLE",
     "text": "Ajouter \"aux pieds légers\"; cela donne à croire qu'on a lu Homère.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ACTRICES",
     "text": "La perte des fils de famille. Sont d'une lubricité effrayante, se livrent à des orgies, avalent des millions, finissent à l'hôpital. Pardon! il y en a qui sont bonnes mères de famille!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ADIEUX",
     "text": "Mettre des larmes dans sa voix en parlant des adieux de Fontainebleau.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ADOLESCENT",
     "text": "Ne jamais commencer un discours de distribution des prix autrement que par \"Jeunes adolescents\" (ce qui est un pléonasme). AFFAIRES (Les): Passent avant tout. Une femme doit éviter de parler des siennes. Sont dans la vie ce qu'il y a de plus important. Tout est là.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "AGENT",
     "text": "Terme lubrique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "AGRICULTURE",
@@ -65,13 +74,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "AIL",
     "text": "Tue les vers intestinaux et dispose aux combats de l'amour. On en frotta les lèvres de Henri IV au moment où il vient au monde.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "AIR",
@@ -79,19 +90,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "AIRAIN",
     "text": "Métal de l'antiquité.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ALBÂTRE",
     "text": "Sert à décrire les plus belles parties du corps de la femme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ALBION",
@@ -99,19 +113,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ALCIBIADE",
     "text": "Célèbre par la queue de son chien. Type de débauché. Fréquentait Aspasie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ALCOOLISME",
     "text": "Cause de toute les maladies modernes (v. absinthe et tabac).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ALLEMAGNE",
@@ -120,19 +137,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ALLEMANDS",
     "text": "Peuple de rêveurs (vieux). Ce n'est pas étonnant qu'ils nous aient battus, nous n'étions pas prêts!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "AMBITIEUX",
     "text": "En province, tout homme qui fait parler de lui. \"Je ne suis pas ambitieux, moi! \" veut dire égoïste ou incapable.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "AMBITION",
@@ -140,13 +160,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "AMÉRIQUE",
     "text": "Bel exemple d'injustice: C'est Colomb qui la découvrit et elle tire son nom d'Améric Vespuce. Sans la découverte de l'Amérique, nous n'aurions pas la syphilis et le phylloxéra. L'exalter quand même, surtout quand on n'y a pas été. Faire une tirade sur le self-government.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "AMIRAL",
@@ -154,31 +176,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ANDROCLÈS",
     "text": "Citer le lion d'Androclès à propos de dompteurs.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ANGE",
     "text": "Fait bien en amour et en littérature.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ANGLAIS",
     "text": "Tous riches.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ANGLAISES",
     "text": "S'étonner de ce qu'elles ont de jolis enfants.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ANTÉCHRIST",
@@ -186,7 +213,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "APLOMB",
@@ -194,13 +222,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ARBALÈTE",
     "text": "Belle occasion pour raconter l'histoire de Guillaume Tell.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ARCHIMÈDE",
@@ -208,7 +238,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ARCHITECTES",
@@ -216,13 +247,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ARCHITECTURE",
     "text": "Il n'y a que quatre ordre d'architecture. Bien entendu qu'on ne compte pas l'égyptien, le cyclopéen, l'assyrien, l'indien, le chinois, le gothique, le roman, etc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ARGENT",
@@ -230,13 +263,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ARMÉE",
     "text": "Le rempart de la Société.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ARSENIC",
@@ -244,13 +279,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ART",
     "text": "Ca mène à l'hôpital. A quoi ça sert, puisqu'on le remplace par la mécanique qui fait mieux et plus vite.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ARTISTES",
@@ -259,13 +296,15 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ASPIC",
     "text": "Animal connu par le panier de figues de Cléopâtre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "ASSASSIN",
@@ -273,19 +312,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ASTRONOMIE",
     "text": "Belle science. N'est utile que pour la marine. A ce propos, rire de l'astrologie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ATHÉE",
     "text": "Un peuple d'athée ne saurait subsister.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "AUTEUR",
@@ -293,13 +335,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "AUTRUCHE",
     "text": "Digère les pierres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "AVOCATS",
@@ -307,13 +351,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BACCALAURÉAT",
     "text": "Tonner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "BADAUD",
@@ -321,13 +367,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BAGNOLET",
     "text": "Pays célèbre par ses aveugles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "BAGUE",
@@ -335,7 +383,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "BÂILLEMENT",
@@ -344,19 +393,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "BAISER",
     "text": "Dire embrasser, plus décent. Doux larcin. Le baiser se dépose sur le front d'une jeune fille, la joue d'une maman, la main d'une jolie femme, le cou d'un enfant, les lèvres d'une maîtresse.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "BALLONS",
     "text": "Avec les ballons, on finira par aller dans la lune. On n'est pas près de les diriger.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BANDITS",
@@ -364,19 +416,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BANQUET",
     "text": "La plus franche des cordialité ne cesse d'y régner. On en emporte le meilleur souvenir et on ne se sépare jamais sans s'être donné rendez-vous pour l'année prochaine. Un farceur doit dire: \"Au banquet de la vie, infortuné convive...\" , etc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "BANQUIERS",
     "text": "Tous riches. Arabes, loups, cerviers.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "BARAGOUIN",
@@ -384,31 +439,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "BARBE",
     "text": "Signe de force. Trop de barbe fait tomber les cheveux. Utile pour protéger les cravates.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "BARBIER",
     "text": "Aller chez le frater, chez Figaro. Le barbier de Louis",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "XI",
     "text": "Autrefois saignait.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "BAS-BLEU",
     "text": "Terme de mépris pour désigner toute femme qui s'intéresse aux choses intellectuelles. Citer Molière à l'appui: \"Quand la capacité de son esprit se hausse...\" , etc. BASES de la société: Id est, la propriété, la famille, la religion, le respect des autorités. En parler avec colère si on les attaque.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BASILIQUE",
@@ -416,13 +476,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "BASQUES",
     "text": "Le peuple qui court le mieux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "BATAILLE",
@@ -430,49 +492,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BÂTON",
     "text": "Plus redoutable que l'épée.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BAUDRUCHE",
     "text": "Ne sert qu'à faire des ballons.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BAYADÈRE",
     "text": "Mot qui entraîne l'imagination. Toutes les femmes de l'Orient sont des bayadères (v. odalisques).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "BEETHOVEN",
     "text": "Ne prononcez pas Bitovan. Se pâmer quand même lorsqu'on exécute une de se oeuvres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "BERGERS",
     "text": "Tous sorciers. Ont la spécialité de causer avec la Sainte Vierge.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BÊTES",
     "text": "Ah! si les bêtes pouvaient parler! Il y en a qui sont plus intelligentes que des hommes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "BIBLE",
     "text": "Le plus ancien livre du monde.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "BIBLIOTHÈQUE",
@@ -480,25 +550,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BIÈRE",
     "text": "Il ne faut pas en boire, ça enrhume.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "BILLARD",
     "text": "Noble jeu. Indispensable à la campagne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "BLONDES",
     "text": "Plus chaudes que les brunes (v. brunes).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BOIS",
@@ -506,19 +580,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BONNES",
     "text": "Toutes mauvaises. Il n'y a plus de domestiques!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "BONNET GREC",
     "text": "Indispensable à l'homme de cabinet. Donne de la majesté au visage.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BOSSUS",
@@ -526,13 +603,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BOTTE",
     "text": "Par les grandes chaleurs, ne jamais oublier les allusions sur les bottes de gendarmes ou les souliers des facteurs (n'est permis qu'à la campagne, au grand air). On n'est bien chaussé qu'avec des bottes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "BOUCHERS",
@@ -540,25 +619,29 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BOUDIN",
     "text": "Signe de gaieté dans les maisons. Indispensable la nuit de Noël.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "BOUDDHISME",
     "text": "\"Fausse religion de l'Inde\" (Définition du Dictionnaire Bouillet, 1re édition). BOUILLI (le): C'est sain. Inséparable du mot soupe: la soupe et le bouilli.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "BOULET",
     "text": "Le vent du boulet rend aveugle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "BOURREAU",
@@ -566,25 +649,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BOURSIERS",
     "text": "Tous voleurs.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BOUTONS",
     "text": "Au visage ou ailleurs, signe de santé et de force du sang. Ne point les faire passer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "BRACONNIERS",
     "text": "Tous forçats libérés. Auteurs de tous les crimes commis dans les campagnes. Doivent exciter une colère frénétique: \"Pas de pitié, monsieur, pas de pitié!\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "BRAS",
@@ -592,7 +679,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BRETONS",
@@ -600,7 +688,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "BROCHE",
@@ -608,25 +697,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "BRUNES",
     "text": "Plus chaudes que les blondes (v. blondes).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "BUDGET",
     "text": "Jamais en équilibre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "BUFFON",
     "text": "Mettait des manchettes pour écrire.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "CACHET",
@@ -634,7 +727,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "CACHOT",
@@ -642,13 +736,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CADEAU",
     "text": "Ce n'est pas la valeur qui en fait le prix, ou bien ce n'est pas le prix qui en fait la valeur. Le cadeau n'est rien, c'est l'intention qui compte.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CAFÉ",
@@ -656,7 +752,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CALVITIE",
@@ -664,25 +761,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CAMARILLA",
     "text": "S'indigner quand on prononce ce mot.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "CAMPAGNE",
     "text": "Les gens de la campagne meilleurs que ceux des villes: envier leur sort. A la campagne tout est permis; habits bas, farces, etc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CANARDS",
     "text": "Viennent tous de Rouen.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CANDEUR",
@@ -690,25 +791,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "CANONADE",
     "text": "Change le temps.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CARABINS",
     "text": "Dorment près des cadavres. Il y en a qui en mangent.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CARÈME",
     "text": "Au fond n'est qu'une mesure hygiénique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "CATAPLASME",
@@ -716,7 +821,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CATHOLICISME",
@@ -724,19 +830,22 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CAUCHEMAR",
     "text": "Vient de l'estomac.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CAVALERIE",
     "text": "Plus noble que l'infanterie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CAVERNES",
@@ -744,25 +853,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "CÈDRE",
     "text": "Celui du Jardin des Plantes a été rapporté dans un chapeau.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CÉLÉBRITÉ",
     "text": "Les célébrités: s'inquiéter du moindre détail de leur vie privée, afin de pouvoir les dénigrer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "CELIBATAIRES",
     "text": "Tous égoïstes et débauchés. On devrait les imposer. Se préparent une triste vieillesse.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "CENSURE",
@@ -770,7 +883,8 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "CERCLE",
@@ -778,7 +892,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CERTIFICAT",
@@ -786,13 +901,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "CÉRUMEN",
     "text": "\"Cire humaine\" . Se garder de l'ôter parce qu'elle empêche les insectes d'enter dans les oreilles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CHACAL",
@@ -801,7 +918,8 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "CHALEUR",
@@ -809,7 +927,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "CHAMBRE À COUCHER",
@@ -817,13 +936,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CHAMEAU",
     "text": "A deux bosses et le dromadaire une seule. Ou bien le chameau a une bosse et le dromadaire deux (on s'y embrouille).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CHAMPAGNE",
@@ -831,13 +952,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CHAMPIGNONS",
     "text": "Ne doivent être achetés qu'au marché.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CHANTEUR",
@@ -845,19 +968,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CHAPEAU",
     "text": "Protester contre la forme des chapeaux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CHARCUTIER",
     "text": "Anecdote des pâtés faits avec de la chair humaine. Toutes les charcutières sont jolies.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CHARTREUX",
@@ -865,7 +991,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "CHASSE",
@@ -873,25 +1000,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "CHAT",
     "text": "Les chats sont traîtres. Les appeler tigres de salon. Leur couper la queue pour empêcher le vertigo.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "CHÂTAIGNE",
     "text": "Femelle du marron.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CHATEAUBRIAND",
     "text": "Connu surtout par le beefsteak qui porte son nom.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CHÂTEAU FORT",
@@ -899,7 +1030,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CHEMINÉE",
@@ -907,13 +1039,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CHEMINS DE FER",
     "text": "Si Napoléon les avait eus à sa disposition, il aurait été invincible. S'extasier sur leur invention et dire: \"Moi, monsieur, qui vous parle, j'étais ce matin à X...; je suis parti par le train de X...; là-bas, j'ai fait mes affaires, etc. , et à x heures, j'étais revenu!\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CHEVAL",
@@ -921,91 +1055,106 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CHIEN",
     "text": "Spécialement créé pour sauver la vie à son maître. Le chien est l'ami de l'homme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "CHIRURGIENS",
     "text": "Ont le coeur dur: les appeler bouchers.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CHOLÉRA",
     "text": "Le melon donne le choléra. On s'en guérit en prenant beaucoup de thé avec du rhum.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CHRISTIANISME",
     "text": "A affranchi les esclaves.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "CIDRE",
     "text": "Gâte les dents.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CIGARES",
     "text": "Ceux de la Régie, \"tous infects\" . Les seuls bons viennent par contrebande.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CIRAGE",
     "text": "N'est bon que si on le fait soi-même.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CLAIR-OBSCUR",
     "text": "On ne sait pas ce que c'est.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "CLARINETTE",
     "text": "En jouer rend aveugle. Ex.: Tous les aveugles jouent de la clarinette. CLASSIQUES (les): On est censé les connaître. CLOCHER de village: Fait battre le coeur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CLOU",
     "text": "V. boutons.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CLOWN",
     "text": "A été disloqué dès l'enfance.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CLUB",
     "text": "Sujet d'exaspération pour les conservateurs. Embarras et discussion sur la prononciation de ce mot.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COCHON",
     "text": "L'intérieur de son corps étant \"tout pareil à celui d'un homme\" , on devrait s'en servir dans les hôpitaux pour apprendre l'anatomie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "COCU",
     "text": "Toute femme doit faire son mari cocu.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COFFRES-FORTS",
@@ -1013,7 +1162,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COGNAC",
@@ -1021,13 +1171,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COLÈRE",
     "text": "Fouette le sang; hygiénique de s'y mettre de temps en temps. COLLEGE, lycée: Plus noble qu'une pension. COLONIES (nos): S'attrister quand on en parle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COMÉDIE",
@@ -1036,19 +1188,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "COMÈTES",
     "text": "Rire des gens qui en avaient peur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COMMERCE",
     "text": "Discuter pour savoir lequel est le plus noble, du commerce ou de l'industrie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "COMMUNION",
@@ -1056,13 +1211,15 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "COMPAS",
     "text": "On voit juste quand on l'a dans l'oeil.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CONCERT",
@@ -1070,13 +1227,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "CONCESSIONS",
     "text": "N'en faire jamais. Elles ont perdu Louis XVI.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "CONCILIATION",
@@ -1084,37 +1243,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CONCUPISCENCE",
     "text": "Mot de curé pour exprimer les désirs charnels.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CONCURRENCE",
     "text": "L'âme du commerce.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "CONFISEURS",
     "text": "Tous les Rouennais sont confiseurs.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CONFORTABLE",
     "text": "Précieuse découverte moderne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "CONGRÉGANISTE",
     "text": "Chevalier d'Onan.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CONJURÉ",
@@ -1122,43 +1287,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CONSERVATEUR",
     "text": "Homme politique à gros ventre. \"Conservateur borné! - Oui, monsieur, les bornes servent de garde-fou. \"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CONSERVATOIRE",
     "text": "Il est indispensable d'être abonné au Conservatoire.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CONSTIPATION",
     "text": "Tous les gens de lettres sont constipés. Influe sur les convictions politiques.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "CONTRALTO",
     "text": "On ne sait pas ce que c'est.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "CONVERSATION",
     "text": "La politique et la religion doivent en être exclues.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "COPAHU",
     "text": "Feindre d'en ignorer l'usage.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COQ",
@@ -1167,43 +1339,50 @@
       "danger",
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CORDE",
     "text": "On ne connaît pas la force d'une corde. Est plus solide que le fer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CORDONNIER",
     "text": "Ne sutor ultra crepidam.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CORPS",
     "text": "Si nous savions comment notre corps est fait, nous n'oserions pas faire un mouvement.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "CORSET",
     "text": "Empêche d'avoir des enfants.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "COSAQUES",
     "text": "Mangent de la chandelle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "COTON",
     "text": "Est surtout utile pour les oreilles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "COURTISANE",
@@ -1211,19 +1390,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "COUSIN",
     "text": "Conseiller aux maris de se méfier du petit cousin.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "COUTEAU",
     "text": "Est catalan quand la lame est longue. S'appelle poignard quand il a servi à commettre un crime.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "CRAPAUD",
@@ -1231,13 +1413,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CRÉOLE",
     "text": "Vit dans un hamac.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CRIMINEL",
@@ -1245,7 +1429,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "CRITIQUE",
@@ -1253,31 +1438,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "CROCODILE",
     "text": "Imite le cri des enfants pour attirer l'homme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CROISADES",
     "text": "Ont été bienfaisantes pour le commerce de Venise.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "CRUCIFIX",
     "text": "Fait bien dans une alcôve et à la guillotine.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CUIR",
     "text": "Tous les cuirs viennent de Russie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "CUISINE",
@@ -1285,19 +1475,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "CUJAS",
     "text": "Inséparable de Bartole; on ne sait pas ce qu'ils ont écrit, n'importe. Dire à tout homme étudiant le droit: \"Vous êtes enfermé dans Cujas et Bartole\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "CURACAO",
     "text": "Le meilleur est de Hollande parce qu'il se fabrique à Curaçao, une des Antilles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "CYGNE",
@@ -1305,43 +1498,50 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "CYPRÈS",
     "text": "Ne pousse que dans les cimetières.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "CZAR",
     "text": "Prononcer tzar et de temps en temps autocrate.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DAGUERRÉOTYPE",
     "text": "Remplacera la peinture (v. photographie).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "DAMAS",
     "text": "Seul endroit où l'on sache faire les sabres. Toute bonne lame est de Damas.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DAME",
     "text": "Tout pour les dames. Honneur aux dames. Ne jamais dire: \"Ces dames sont aux salons.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DANSE",
     "text": "On ne danse plus, on marche.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DANTON",
@@ -1349,31 +1549,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "DARTRE",
     "text": "signe de santé (v. boutons).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DARWIN",
     "text": "Celui qui dit que nous descendons du singe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "DAUPHIN",
     "text": "Porte les enfants sur son dos.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "DÉBAUCHE",
     "text": "Cause de toutes les maladies des célibataires.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DÉCHAÎNER",
@@ -1382,19 +1587,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DÉCORUM",
     "text": "Donne du prestige. Frappe l'imagination des masses. \"Il en faut! Il en faut!\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DÉFAITE",
     "text": "S'essuie, et elle est tellement complète qu'il n'en reste personne pour en porter la nouvelle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "DÉFILÉ",
@@ -1403,25 +1611,29 @@
       "social_obligation",
       "numeric_authority"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DÉICIDE",
     "text": "S'indigner contre, bien que le crime ne soit pas fréquent. DÉJEUNER des garçons: Exige des huîtres, du vin blanc et des gaudrioles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DÉMÊLOIR",
     "text": "Fait tomber les cheveux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DÉMOSTHÈNE",
     "text": "Ne prononçait pas de discours sans avoir un galet dans la bouche.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "DENTS",
@@ -1429,25 +1641,29 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "DENTISTES",
     "text": "Tous menteurs. Se servent du baume d'acier. On les croit aussi pédicures. Se disent chirurgiens comme les opticiens se disent se disent ingénieurs.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "DÉPURATIF",
     "text": "Se prend en cachette.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DÉPUTÉ",
     "text": "L'être, comble de la gloire. Tonner contre la Chambre des députés. Trop de bavards à le Chambre. Ne font rien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DÉRATÉ",
@@ -1455,7 +1671,8 @@
     "tags": [
       "never_existed"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "DERBY",
@@ -1463,19 +1680,22 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "DESCARTES",
     "text": "Cogito, ergo sum.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DESERT",
     "text": "Produit des dattes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DESSERT",
@@ -1483,7 +1703,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "DEVOIRS",
@@ -1491,31 +1712,36 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "DÉVOUEMENT",
     "text": "Se plaindre de ce que les autres en manquent. \"Nous sommes bien inférieurs au chien, sous ce rapport!\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "DIAMANT",
     "text": "On finira par en faire! Et dire que ce n'est que du charbon! Si nous en trouvions un dans son état naturel, nous ne le ramasserions pas!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "DIANE",
     "text": "Déesse de la chasse-teté.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "DICTIONNAIRE",
     "text": "En dire: \"N'est fait que pour les ignorants.\" Dictionnaire de rimes: s'en servir? Honteux!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "DIDEROT",
@@ -1523,25 +1749,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DIEU",
     "text": "Voltaire lui-même l'a dit: \"Si Dieu n'existait pas, il faudrait l'inventer.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "DILETTANTE",
     "text": "Homme riche, abonné à l'Opéra.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DILIGENCES",
     "text": "Regretter le temps des diligences.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DÎNER",
@@ -1549,13 +1779,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "DIOGÈNE",
     "text": "\"Je cherche un homme... Retire-toi de mon soleil.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DIPLOMATIE",
@@ -1564,25 +1796,29 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DIPLÔME",
     "text": "Signe de science. Ne prouve rien. DIRECTOIRE (le): Les hontes du Directoire. \"Dans ce temps-là l'honneur s'était réfugié aux armées.\" Les femmes, à Paris, se promenaient toutes nues.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DISSECTION",
     "text": "Outrage à la majesté de la mort.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DIVA",
     "text": "Toutes les cantatrices doivent être appelées Diva.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "DIVORCE",
@@ -1590,13 +1826,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DJINN",
     "text": "Nom d'une danse orientale.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "DOCTEUR",
@@ -1604,13 +1842,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DOCTRINAIRES",
     "text": "Les mépriser. Pourquoi? On n'en sait rien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DOCUMENT",
@@ -1618,31 +1858,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "DOGE",
     "text": "Epousait la mer. On n'en connaît qu'un: Marino Faliero.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DOIGT",
     "text": "Le doigt de Dieu se fourre partout.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DOLMEN",
     "text": "A rapport aux anciens Français. Pierre qui servait au sacrifice des druides. Il n'y en a qu'en Bretagne. On n'en sait pas plus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "DÔME",
     "text": "Tour de forme (sic) architecturale. S'étonner de ce que cela puisse tenir tout seul. En citer deux: celui des Invalides et celui de Saint-Pierre de Rome.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "DOMICILE",
@@ -1651,25 +1896,29 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DOMINOS",
     "text": "On y joue d'autant mieux qu'on est gris. DOMPTEURS de bêtes féroces: Emploient des pratiques obscènes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DONJON",
     "text": "Eveille des idées lugubres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DORMIR",
     "text": "Trop dormir épaissit le sang.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DORTOIRS",
@@ -1677,13 +1926,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "DOS",
     "text": "Une tape dans le dos peut rendre poitrinaire.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DOUANE",
@@ -1691,7 +1942,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DOULEUR",
@@ -1699,91 +1951,106 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "DOUTE",
     "text": "Pire que la négation.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "DRAP",
     "text": "Tous les draps viennent d'Elbeuf. DRAPEAU national: Sa vue fait battre le coeur. DROIT (le): On ne sait pas ce que c'est.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "DRÔLE",
     "text": "Doit s'employer à tout propos: \"C'est drôle.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DUEL",
     "text": "Tonner contre. N'est pas une preuve de courage. Prestige de l'homme qui a eu un duel.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "DUPE",
     "text": "Mieux vaut être fripon que dupe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "DUPUYTREN",
     "text": "Célèbre par sa pommade et son musée.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "DUR",
     "text": "Ajouter invariablement comme du fer. Il y a bien dur comme la pierre, mas c'est moins énergique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "EAU",
     "text": "L'eau de Paris donne des coliques. L'eau de mer soutient pour nager. L'eau de Cologne sent bon.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ÉBÉNISTE",
     "text": "Ouvrier qui travaille surtout l'acajou.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ÉCHAFAUD",
     "text": "S'arranger quand on y monte pour prononcer quelques mots éloquents avant de mourir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ÉCHARPE",
     "text": "Poétique. ÉCHECS (jeu des): Image de la tactique militaire. Tous les grands capitaines y étaient forts. Trop sérieux pour un jeu, trop futile pour une science.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ÉCHO",
     "text": "Citer ceux du Panthéon et du pont de Neuilly.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ÉCLECTISME",
     "text": "Tonner contre comme étant une philosophie immorale.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ÉCOLES",
     "text": "Polytechnique, rêve de toutes les mères (vieux). Terreur du bourgeois dans les émeutes quand il apprend que l'Ecole Polytechnique sympathise avec les ouvriers (vieux). Dire simplement \"l'Ecole\" fait accroire qu'on y a été. A Saint-Cyr: jeunes gens nobles. A l'Ecole de Médecine: tous exaltés. A l'Ecole de Droit: jeunes gens de bonne famille.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ÉCONOMIE",
@@ -1791,13 +2058,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ÉCONOMIE POLITIQUE",
     "text": "Science sans entrailles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ÉCREVISSE",
@@ -1805,31 +2074,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ÉCRIRE",
     "text": "Currente calamo, c'est l'excuse pour les fautes de style ou d'orthographe. ÉCRIT, BIEN ÉCRIT: Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ÉCRITURE",
     "text": "Une belle écriture mène à tout. Indéchiffrable: signe de science. Ex.: les ordonnances des médecins.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ÉCUME DE MER",
     "text": "Se trouve dans la terre. On en fait des pipes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "ÉDILES",
     "text": "Tonner contre à propos du pavage des rues. \"A quoi songent nos édiles?\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ÉGOÏSME",
@@ -1837,79 +2111,92 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ÉLÉPHANTS",
     "text": "Se distinguent par leur mémoire, et adorent le soleil.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ÉMAIL",
     "text": "Le secret en est perdu.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "EMBONPOINT",
     "text": "Signe de richesse et de fainéantise.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ÉMIGRÉS",
     "text": "Gagnaient leur vie à donner des leçons de guitare et à faire la salade.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉMIR",
     "text": "Ne se dit qu'en parlant d'Abd-el-Kader.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "EMPIRE",
     "text": "\"L'Empire c'est la paix.\" (Napoléon III.)",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ENCEINTE",
     "text": "Fait bien dans les discours officiels: \"Messieurs, dans cette enceinte...\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ENCRIER",
     "text": "Se donne en cadeau à un médecin.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ENCYCLOPÉDIE",
     "text": "En rire de pitié, comme étant un ouvrage rococo, et même tonner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ENFANTS",
     "text": "Affecter pour eux une tendresse lyrique, quand il y a du monde.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ENGELURE",
     "text": "Signe de santé: vient de s'être chauffé quand on avait froid.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ENTERREMENT",
     "text": "A propos du défunt: \"Et dire que je dînais avec lui il y a huit jours!\" S'appelle obsèques quand il s'agit d'un général, enfouissement quand c'est celui d'un philosophe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ENTHOUSIASME",
@@ -1917,7 +2204,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ENTRACTE",
@@ -1925,37 +2213,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ENVERGURE",
     "text": "Se disputer sur la prononciation du mot. ÉPACTE, NOMBRE D'OR, LETTRE DOMINICALE: Sur les calendriers, on ne sait pas ce que c'est. ÉPARGNE (Caisse d'): Occasion de vol pour les domestiques.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ÉPÉE",
     "text": "On ne connaît que celle de Damoclès. Regretter le temps où on en portait. \"Brave comme une épée.\" Quelquefois elle n'a jamais servi.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ÉPÉRONS",
     "text": "Font bien à une paire de bottes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉPICURE",
     "text": "Le mépriser.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ÉPINARDS",
     "text": "Sont le balai de l'estomac. Ne jamais rater la phrase célèbre de Prudhomme: \"Je ne les aime pas, j'en suis bien aise, car si je les aimais, j'en mangerai et je ne puis pas les souffrir.\" (Il y en a qui trouveront cela parfaitement logique et qui ne riront pas). ÉPOQUE (la nôtre): Tonner contre elle. Se plaindre de ce qu'elle n'est pas poétique. L'appeler époque de transition, de décadence.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ÉPUISEMENT",
@@ -1963,7 +2257,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ÉQUITATION",
@@ -1971,25 +2266,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ÉRECTION",
     "text": "Ne se dit qu'en parlant des monuments.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ÉRUDITION",
     "text": "La mépriser comme étant la marque d'un esprit étroit.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ESCRIME",
     "text": "Les maîtres d'escrime savent des bottes secrètes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ESCROC",
@@ -1997,7 +2296,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ESPION",
@@ -2005,13 +2305,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ESPLANADE",
     "text": "Ne se voit qu'aux Invalides.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ESPRIT",
@@ -2019,19 +2321,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ESTOMAC",
     "text": "Toutes les maladies viennent de l'estomac.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉTAGÈRE",
     "text": "Indispensable chez une jolie femme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ÉTALON",
@@ -2039,7 +2344,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "ÉTÉ",
@@ -2047,61 +2353,71 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ÉTERNUEMENT",
     "text": "Après qu'on a dit: \"Dieu vous bénisse\" , engager une discussion sur l'origine de cet usage.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ÉTERNUER",
     "text": "C'est une raillerie spirituelle de dire: le russe et le polonais ne se parlent pas, ça s'éternue.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ÉTOILE",
     "text": "Chacun a la sienne, comme l'Empereur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ÉTRANGER",
     "text": "Engouement pour tout ce qui vient de l'étranger, preuve de l'esprit libéral. Dénigrement de tout ce qui n'est pas français, preuve de patriotisme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ÉTRENNES",
     "text": "S'indigner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ÉTRUSQUE",
     "text": "Tous les vases anciens sont étrusques.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "ÉTUDIANT",
     "text": "Portent tous des bérets rouges, des pantalons à la hussarde, fumant la pipe dans la rue et n'étudie pas.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉTYMOLOGIE",
     "text": "Rien de plus facile à trouver avec le latin et un peu de réflexion.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "EUNUQUE",
     "text": "N'a jamais d'enfants... Fulminer contre les castrats de la chapelle Sixtine.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉVACUATIONS",
@@ -2109,37 +2425,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ÉVANGILES",
     "text": "Livres divins, sublimes, etc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "ÉVIDENCE",
     "text": "Vous aveugle, quand elle ne crève pas les yeux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "EXASPÉRATION",
     "text": "Constamment à son comble.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "EXCEPTION",
     "text": "Dites qu'elle confirme la règle. Ne vous risquez pas à expliquer comment.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "EXÉCUTIONS CAPITALES",
     "text": "Se plaindre des femmes qui vont les voir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "EXERCICE",
@@ -2147,31 +2469,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "EXPIRER",
     "text": "Ne se conjugue qu'à propos des abonnements de journaux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "EXPOSITION",
     "text": "Sujet de délire du XIXe siècle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "EXTINCTION",
     "text": "Ne s'emploie qu'avec paupérisme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "EXTIRPER",
     "text": "Ce verbe ne s'emploie que pour les hérésies et les cors aux pieds.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "FABRIQUE",
@@ -2179,7 +2506,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "FACTURE",
@@ -2187,13 +2515,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FAÏENCE",
     "text": "Plus chic que la porcelaine.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FAISAN",
@@ -2201,13 +2531,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "FAISCEAUX",
     "text": "A former, est le comble de la difficulté dans la garde nationale.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FANFARE",
@@ -2215,7 +2547,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FARCE",
@@ -2223,13 +2556,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FARD",
     "text": "Abîme la peau.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "FATALITÉ",
@@ -2237,7 +2572,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "FAUBOURGS",
@@ -2245,13 +2581,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FAUTE",
     "text": "\"C'est pire qu'un crime, c'est une faute.\" (Talleyrand.) \"Il n'y a plus une seule faute à commettre.\" (Thiers.) Ces deux phrases doivent être articulées avec profondeur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "FAUX-MONNAYEURS",
@@ -2259,7 +2597,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "FÉLICITATIONS",
@@ -2267,7 +2606,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FÉLICITÉ",
@@ -2275,13 +2615,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FEMELLE",
     "text": "A n'employer qu'en parlant des animaux. Contrairement à ce qui existe dans l'espèce humaine, les femelles des animaux sont moins belles que les mâles. Ex.: faisan, coq, lion, etc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "FEMME",
@@ -2289,7 +2631,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "FEMMES DE CHAMBRE",
@@ -2297,7 +2640,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "FÉODALITÉ",
@@ -2306,7 +2650,8 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "FERMÉ",
@@ -2314,7 +2659,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "FERMIER",
@@ -2322,19 +2668,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FEUILLE DE VIGNE",
     "text": "Emblème de la virilité dans l'art de la sculpture.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FEUILLETONS",
     "text": "Cause de démoralisation. Se disputer sur le dénouement probable. Ecrire à l'auteur pour lui fournir des idées. Fureur quand on y trouve un nom pareil au sien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FIDÈLE",
@@ -2342,37 +2691,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "FIÈVRE",
     "text": "Preuve de la force du sang. Est causée par les prunes, le melon, le soleil d'avril, etc. FIGARO (_Le Mariage de_): Encore une des causes de la Révolution!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FIGURE",
     "text": "Une figure agréable est le plus sûr des passeports.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "FLAGRANT DÉLIT",
     "text": "Prononcer flagrante delicto. Ne s'emploie que pour les cas d'adultère.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "FLAMANT",
     "text": "Oiseau ainsi nommé parce qu'il vient des Flandres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "FLATTEUR",
     "text": "Ne jamais manquer la citation: Détestables flatteurs, présent le plus funeste - Que puisse faire aux rois la colère céleste! ou bien: Apprenez que tout flatteur - Vit aux dépens de celui qui l'écoute.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "FLEGME",
@@ -2380,37 +2735,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FOETUS",
     "text": "Toute pièce anatomique conservée dans l'esprit de vin.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "FOLLICULAIRES",
     "text": "Les journalistes. Quand on ajoute de bas étage, c'est le comble du mépris.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FONCTIONNAIRE",
     "text": "Inspire le respect quelle que soit la fonction qu'il remplisse.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FONDEMENT",
     "text": "Toutes les nouvelles en manquent.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "FONDS SECRETS",
     "text": "Sommes incalculables avec lesquelles les ministres achètent les consciences. S'indigner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "FORCATS",
@@ -2419,7 +2780,8 @@
       "danger",
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FORCE",
@@ -2427,19 +2789,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FORNARINA",
     "text": "C'était une belle femme; inutile d'en savoir plus long.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FORT",
     "text": "Comme un Turc, un boeuf, un cheval, comme Hercule. Cet homme doit être fort, il est tout de nerfs.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "FORTUNE",
@@ -2448,7 +2813,8 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "FOSSETTES",
@@ -2456,13 +2822,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "FOSSILES",
     "text": "Preuve du déluge. Plaisanterie de bon goût, en parlant d'un académicien. FOUDRES du Vatican: En rire.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FOULARD",
@@ -2470,7 +2838,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "FOULE",
@@ -2478,7 +2847,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "FOURCHETTE",
@@ -2487,31 +2857,36 @@
       "danger",
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "FOURMIS",
     "text": "Bel exemple à citer devant un dissipateur. Ont donné l'idée des caisses d'épargne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "FOURRURE",
     "text": "Signe de richesse.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "FOUTRE",
     "text": "N'employer de mot que pour jurer, et encore! (v. Docteur).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "FRANÇAIS",
     "text": "Le premier peuple de l'univers. \"Il n'y a qu'un Français de plus\" , a dit le comte d'Artois. Ah! qu'on est fier d'être Français, - Quand on regarde la colonne!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "FRANC-MACONNERIE",
@@ -2519,7 +2894,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FRANCS-TIREURS",
@@ -2527,55 +2903,64 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "FRAUDER",
     "text": "Frauder l'octroi n'est pas tromper, c'est une preuve d'esprit et d'indépendance politique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FRESQUE",
     "text": "On n'en fait plus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "FRICASSÉE",
     "text": "Ne se fait bien qu'à la campagne. FRISER, FRISURE: Ne convient pas à un homme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FROID",
     "text": "Plus sain que la chaleur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FROMAGE",
     "text": "Citer l'aphorisme de Brillat-Savarin: \"Un dessert sans fromage est une belle à qui il manque un oeil.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "FRONT",
     "text": "Large et chauve, signe de génie ou d'aplomb.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "FRONTISPICE",
     "text": "Les grands hommes font bien dessus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FRUSTE",
     "text": "Tout ce qui antique est fruste, et tout ce qui est fruste est antique. Bien se le rappeler quand on achète des antiquités.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "FUGUE",
@@ -2585,13 +2970,15 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FULMINER",
     "text": "Joli verbe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FURIE FRANÇAISE",
@@ -2599,13 +2986,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "FURONCLE",
     "text": "V. boutons.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "FUSIL",
@@ -2613,13 +3002,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "FUSILLADE",
     "text": "Seule manière de faire taire les Parisiens.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "FUSILLER",
@@ -2627,13 +3018,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GAGNE-PETIT",
     "text": "Belle enseigne pour une boutique, comme inspirant la confiance.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "GAIETÉ",
@@ -2641,19 +3034,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GALANT HOMME",
     "text": "Suivant les circonstances prononcer galantuomo ou gentleman.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GALBE",
     "text": "Dire devant toute statue qu'on examine: \"Ca manque de galbe.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GALETS",
@@ -2661,13 +3057,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GALLOPHOBE",
     "text": "Se servie de cette expression en parlant des journalistes allemands.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "GAMIN",
@@ -2675,7 +3073,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GANTS",
@@ -2683,19 +3082,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GARDE",
     "text": "La garde meurt et ne se rend pas! Huit mots pour remplacer cinq lettres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "GARDE-COTE",
     "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme. GARES de chemin de fer: S'extasier devant elles et les donner comme modèles d'architecture.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GAUCHERS",
@@ -2703,31 +3105,36 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "GENDARME",
     "text": "Rempart de la société.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "GENDARMERIE",
     "text": "Dites: force publique ou maréchaussée.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GENDRE",
     "text": "Mon gendre, tout est rompu!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "GÉNÉRATION SPONTANÉE",
     "text": "Idée de socialiste.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "GÉNÉRAL",
@@ -2735,31 +3142,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GENOVEFAIN",
     "text": "On ne sait pas ce que c'est.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "GENRE ÉPISTOLAIRE",
     "text": "Genre de style exclusivement réservé aux femmes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GENTILHOMME",
     "text": "Il n'y en a plus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "GÉOMÈTRE",
     "text": "\"Nul n'entre ici s'il n'est géomètre.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "GIAOUR",
@@ -2767,7 +3179,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "GIBELOTTE",
@@ -2775,19 +3188,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "GIBERNE",
     "text": "Etui pour bâton de maréchal de France.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GIBIER",
     "text": "N'est bon que faisandé.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "GIRAFE",
@@ -2795,13 +3211,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "GIRONDINS",
     "text": "Plus à plaindre qu'à blâmer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "GLACES",
@@ -2809,25 +3227,29 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "GLACIERS",
     "text": "Tous Napolitains. GLÈBE (la): S'apitoyer sur la glèbe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GLOBE",
     "text": "Mot pudique pour désigner les seins d'une femme. \"Laissez- moi baiser vos globes adorables.\"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "GLOIRE",
     "text": "N'est qu'un peu de fumée.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GLORIA",
@@ -2835,19 +3257,22 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GODDAM",
     "text": "\"C'est le fond de la langue anglaise\" , comme disait Beaumarchais, et là-dessus on ricane de pitié.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "GOD SAVE THE KING",
     "text": "Chez Béranger se prononce \"God savé te King\" et rime avec sauvé, préservé...",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GOG",
@@ -2855,19 +3280,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "GOMME ÉLASTIQUE",
     "text": "Est faite avec le scrotum de cheval.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "GOTHIQUE",
     "text": "Style d'architecture portant plus à la religion que les autres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GOURMÉ",
@@ -2875,7 +3303,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GOÛT",
@@ -2883,49 +3312,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GRAMMAIRE",
     "text": "L'apprendre aux enfants dès le plus bas âge comme étant une chose claire et facile.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "GRAMMAIRIENS",
     "text": "Tous pédants.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GRAS",
     "text": "Les personnes grasses n'ont pas besoin d'apprendre à nager. Font le désespoir des bourreaux parce qu'elles offrent des difficultés d'exécution. Ex.: la Du Barry.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "GRÊLÉ",
     "text": "Les femmes grêlées sont toutes lascives.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "GRENIER",
     "text": "On y est bien à vingt ans!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GRENOUILLE",
     "text": "La femelle du crapaud.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "GRISETTES",
     "text": "Il n'y a plus de grisettes. Cela doit être dit avec l'air déconfit du chasseur qui se plaint qu'il n'y a plus de gibier.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "GROG",
@@ -2933,43 +3370,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "GROTTES À STALACTITES",
     "text": "Il y a eu dedans une fête célèbre, bal ou souper, donné par un grand personnage. On y voit \"comme des tuyaux d'orgue\" . On y a dit la messe pendant la Révolution.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GROUPE",
     "text": "Convient sur une cheminée et en politique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "GUÉRILLA",
     "text": "Fait plus de mal à l'ennemi que l'armée régulière.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "GUERRE",
     "text": "Tonner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "GULF-STREAM",
     "text": "Ville célèbre de Norvège, nouvellement découverte. GYMNASE (le): Succursale de la Comédie-Française.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "GYMNASTIQUE",
     "text": "On ne saurait trop en faire. Exténue les enfants.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HABIT NOIR",
@@ -2977,13 +3421,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HABITUDE",
     "text": "Est une seconde nature. Les habitudes de collège sont de mauvaises habitudes. Avec de l'habitude on peut jouer du violon comme Paganini.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "HACHISCH",
@@ -2991,19 +3437,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "HALEINE",
     "text": "L'avoir forte donne l'air distingué. Eviter les allusions sur les mouches et affirmer que ça vient de l'estomac.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "HALLEBARDE",
     "text": "Quand on voit un nuage menaçant, na pas manquer de dire: \"Il va tomber des hallebardes. \" En Suisse, tous les hommes portent des hallebardes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HALLIER",
@@ -3011,19 +3460,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "HAMAC",
     "text": "Propre aux créoles. Indispensable dans un jardin. Se persuader qu'on y est mieux que dans un lit.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HAMEAU",
     "text": "Substantif attendrissant. Fait bien en poésie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "HANNETONS",
@@ -3032,13 +3484,15 @@
       "social_obligation",
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HAQUENÉE",
     "text": "Animal blanc du Moyen Âge dont la race est disparue.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HARAS",
@@ -3046,7 +3500,8 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "HAREM",
@@ -3054,43 +3509,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HARENGS",
     "text": "Fortune de la Hollande.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "HARPE",
     "text": "Produit des harmonies céleste. Ne se joue, en gravure, que sur des ruines ou au bord d'un torrent. Fait valoir le bras et la main.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "HEBREU",
     "text": "Est hébreu tout ce qu'on ne comprend pas.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "HEIDUQUE",
     "text": "Le confondre avec eunuque.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "HÉLICE",
     "text": "Avenir de la mécanique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "HÉMICYCLE",
     "text": "Ne connaître que celui des Beaux-Arts.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HÉMORROÏDES",
@@ -3098,19 +3560,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HERCULE",
     "text": "Les Hercules sont du Nord.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "HERMAPHRODITE",
     "text": "Excite la curiosité malsaine. Chercher à en voir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "HERNIE",
@@ -3118,25 +3583,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HÉRODE",
     "text": "Etre vieux comme Hérode.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "HÉROSTRATE",
     "text": "A employer dans toute conversation sur les incendies de la Commune.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "HEUREUX",
     "text": "En parlant d'un homme heureux: \"Il est né coiffé. \" On ne sait pas ce que ça signifie, et l'interlocuteur non plus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HIATUS",
@@ -3144,13 +3613,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HIÉROGLYPHES",
     "text": "Ancienne langue des Egyptiens, inventée par les prêtres pour cacher leurs secrets criminels. Et dire qu'il y a des gens qui les comprennent! Après tout, c'est peut-être une blague?",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "HIPPOCRATE",
@@ -3159,7 +3630,8 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "HIPPOLYTE",
@@ -3168,13 +3640,15 @@
       "social_obligation",
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HIRONDELLE",
     "text": "Ne jamais les appeler autrement que messagères du printemps. Comme on ignore d'où elles viennent, dire qu'elles arrivent \"des bords lointains\" (poétique).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HISTRION",
@@ -3182,7 +3656,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "HIVER",
@@ -3190,7 +3665,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HOMÈRE",
@@ -3198,13 +3674,15 @@
     "tags": [
       "never_existed"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HOMO",
     "text": "Dire Ecce homo! en voyant entrer l'individu qu'on attend.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "HONNEUR",
@@ -3213,19 +3691,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HOQUET",
     "text": "Pour le guérir, une clef dans le dos ou une peur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HORIZONS",
     "text": "Trouver beaux ceux de la nature et sombres ceux de la politique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HORREUR",
@@ -3233,7 +3714,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HOSPITALITÉ",
@@ -3242,37 +3724,43 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HOSPODAR",
     "text": "Fait bien dans une phrase, à propos de \"la question d'Orient\" .",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "HOSTILITÉS",
     "text": "Les hostilités sont comme les huîtres, on les ouvre. \"Les hostilités sont ouvertes\" . Il semble qu'il n'y a plus qu'à se mettre à table.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "HÔTELS",
     "text": "Ne sont bons qu'en Suisse.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "HÔTES",
     "text": "Exemples à donner à son fils.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "HUGO (VICTOR)",
     "text": "A eu bien tort, vraiment, de s'occuper de politique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HUILE D'OLIVE",
@@ -3280,25 +3768,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HUÎTRES",
     "text": "On n'en mange plus! Elles sont trop chères!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "HUMEUR",
     "text": "Se réjouir quand elle sort, et s'étonner que le corps humain puisse en contenir de si grandes quantités.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HUMIDITÉ",
     "text": "Cause de toute les maladies.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HUSSARD",
@@ -3306,13 +3798,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "HYDROTHÉRAPIE",
     "text": "Enlève toutes les maladies et les procure.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "HYGIÈNE",
@@ -3320,7 +3814,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "HYPOTHÈQUE",
@@ -3328,7 +3823,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "HYPOTHÈSE",
@@ -3336,31 +3832,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "HYSTÉRIE",
     "text": "La confondre avec la nymphomanie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "IDÉAL",
     "text": "Tout à fait inutile.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "IDÉOLOGUES",
     "text": "Tous les journalistes le sont.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "IDOLÂTRES",
     "text": "Sont cannibales.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "ILIADE",
@@ -3368,19 +3869,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "ILLISIBLE",
     "text": "Une ordonnance de médecin doit l'être. Toute signature idem. Cela indique qu'on est accablé de correspondance.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ILLUSIONS",
     "text": "Affecter d'en avoir beaucoup, se plaindre de ce qu'on les a perdues.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ILOTES",
@@ -3388,7 +3892,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "IMAGES",
@@ -3396,7 +3901,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "IMAGINATION",
@@ -3404,31 +3910,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "IMBÉCILES",
     "text": "Ceux qui ne pensent pas comme vous.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "IMBROGLIO",
     "text": "Le fond de toutes les pièces de théâtre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "IMMORALITÉ",
     "text": "Ce mot bien prononcé rehausse celui qui l'emploie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "IMPÉRATRICES",
     "text": "Toutes belles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "IMPÉRIALISTES",
@@ -3436,19 +3947,22 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "IMPIE",
     "text": "Tonner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "IMPORTATION",
     "text": "Ver rongeur du commerce.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "IMPRÉSARIO",
@@ -3456,7 +3970,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "IMPRIMÉ",
@@ -3464,19 +3979,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "IMPRIMERIE",
     "text": "Découverte merveilleuse. A fait plus de mal que de bien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "INAUGURATION",
     "text": "Sujet de joie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "INCAPACITÉ",
@@ -3484,49 +4002,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "INCENDIE",
     "text": "Un spectacle à voir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "INCOGNITO",
     "text": "Costumes des princes en voyage.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "INCRUSTATION",
     "text": "Ne se dit qu'en parlant de la nacre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "INDOLENCE",
     "text": "Résultat des pays chauds.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "INDUSTRIE",
     "text": "V. commerce.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "INFANTICIDE",
     "text": "Ne se commet que dans le peuple.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "INFECT",
     "text": "Doit se dire de toute oeuvre artistique ou littéraire que le Figaro n'a pas permis d'admirer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "INFÉODÉ",
@@ -3534,7 +4060,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "INFINITÉSIMAL",
@@ -3542,19 +4069,22 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "INGÉNIEUR",
     "text": "La première carrière pour un jeune homme. Connaît les sciences.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "INHUMATION",
     "text": "Trop souvent précipitée: raconter des histoires de cadavres qui s'étaient dévoré le bras pour apaiser leur faim.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "INJURE",
@@ -3562,13 +4092,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "INNOCENCE",
     "text": "L'impassibilité la prouve.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "INNOVATION",
@@ -3576,7 +4108,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "INONDÉS",
@@ -3584,13 +4117,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "INQUISITION",
     "text": "On a bien exagéré ses crimes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "INSCRIPTION",
@@ -3598,13 +4133,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "INSTINCT",
     "text": "Supplée à l'intelligence. INSTITUT (l'): Les membres de l'Institut sont tous des vieillards et portent des abat-jour en taffetas vert.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "INSTITUTRICES",
@@ -3612,13 +4149,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "INSTRUCTION",
     "text": "Laisser croire qu'on en a reçu beaucoup. Le peuple n'en a pas besoin pour gagner sa vie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "INSTRUMENT",
@@ -3626,61 +4165,71 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "INSURRECTION",
     "text": "Le plus saint des devoirs (Blanqui).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "INTÉGRITÉ",
     "text": "Appartient surtout à la magistrature.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "INTRIGUE",
     "text": "Mène à tout.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "INTRODUCTION",
     "text": "Mot obscène.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "INVASION",
     "text": "Excite les larmes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "INVENTEURS",
     "text": "Meurent tous à l'hôpital. Un autre profite de leur découverte, ce n'est pas juste.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ITALIE",
     "text": "Doit se voir immédiatement après le mariage. Donne bien des déceptions, n'est pas si belle qu'on dit.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ITALIENS",
     "text": "Tous musiciens. Tous traîtres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "IVOIRE",
     "text": "Ne s'emploie qu'en parlant des dents.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "IVRESSE",
@@ -3688,7 +4237,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "JALOUSIE",
@@ -3697,7 +4247,8 @@
       "danger",
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "JAMBON",
@@ -3705,7 +4256,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "JANSÉNISME",
@@ -3713,19 +4265,22 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "JAPON",
     "text": "Tout y est en porcelaine.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "JARDINS ANGLAIS",
     "text": "Plus naturels que les jardins à la française. JARNAC (coup de): S'indigner contre ce coup, qui, du reste était fort loyal.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JARRETIÈRE",
@@ -3733,25 +4288,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JASPE",
     "text": "Tous les vases des musées sont en jaspe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "JAVELOT",
     "text": "Vaut bien un fusil, quand on sait s'en servir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JÉSUITES",
     "text": "Ont la main dans toutes les révolutions. On ne se doute pas du nombre qu'il y en a. Ne point parler de la \"bataille des Jésuites\" .",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "JEU",
@@ -3759,7 +4318,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "JEUNE FILLE",
@@ -3767,7 +4327,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JEUNE HOMME",
@@ -3775,7 +4336,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "JEUNESSE",
@@ -3784,13 +4346,15 @@
       "social_obligation",
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "JOCKEY",
     "text": "Déplorer la race des jockeys.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "JOCKEY-CLUB",
@@ -3798,19 +4362,22 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "JOHN BULL",
     "text": "Quand on ne sait pas le nom d'un Anglais, on l'appelle John Bull.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "JOIE",
     "text": "La mère des jeux et des ris: on ne doit pas parler de ses filles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "JOLI",
@@ -3818,13 +4385,15 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JONC",
     "text": "Une canne doit être en jonc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "JOUETS",
@@ -3832,19 +4401,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "JOUISSANCE",
     "text": "Mot obscène.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "JOUR",
     "text": "Il y a les jours de Monsieur, le jour de barbe, le jour de médecine, etc. Il y a ceux de Madame, qu'elle appelle critiques à certaines époques du mois.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JOURNAUX",
@@ -3854,19 +4426,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "JUIF",
     "text": "Fils d'Israël. Les Juifs sont tous des marchands de lorgnettes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "JUJUBE",
     "text": "On ne sait pas avec quoi c'est fait.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "JURY",
@@ -3874,43 +4449,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "JUSTICE",
     "text": "Ne jamais s'en inquiéter.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "KALÉIDOSCOPE",
     "text": "Ne s'emploie qu'à propos des salons de peinture.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "KEEPSAKE",
     "text": "Doit se trouver sur la table d'un salon.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "KIOSQUE",
     "text": "Lieu de délices dans un jardin.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "KNOUT",
     "text": "Mot qui vexe les Russes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "KORAN",
     "text": "Livre de Mahomet, où il n'est question que de femmes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "LABORATOIRE",
@@ -3918,31 +4500,36 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "LABOUREURS",
     "text": "Que serions-nous sans eux?",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "LAC",
     "text": "Avoir une femme près de soi quand on se promène dessus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "LACONISME",
     "text": "Langue qu'on ne parle plus. LACUSTRES (les villes): Nier leur existence, parce qu'on ne peut pas vivre sous l'eau.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "LA FAYETTE",
     "text": "Général célèbre par son cheval blanc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "LA FONTAINE",
@@ -3950,19 +4537,22 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "LAGUNE",
     "text": "Ville de l'Adriatique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "LAIT",
     "text": "Dissout les huîtres. Attire les serpents. Blanchit la peau; des femmes à Paris prennent un bain de lait tous les matins.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "LANCETTE",
@@ -3971,19 +4561,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "LANGOUSTE",
     "text": "Femelle du homard.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "LANGUES VIVANTES",
     "text": "Les malheurs de la France viennent de ce qu'on n'en sait pas assez.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "LATIN",
@@ -3991,85 +4584,99 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "LAURIERS",
     "text": "Empêchent de dormir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "LAVEMENT",
     "text": "Ne se dit qu'en parlant de la cérémonie du lavement des pieds.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "LÉGALITÉ",
     "text": "La légalité nous tue. Avec elle aucun gouvernement n'est possible.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "LÉTHARGIES",
     "text": "On en a vu qui duraient des années.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "LIBELLE",
     "text": "On n'en fait plus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "LIBERTÉ",
     "text": "O liberté! que de crimes on commet en ton nom! Nous avons toutes celles qui sont nécessaires. La liberté n'est pas la licence (phrase de conservateur).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "LIBERTINAGE",
     "text": "Ne se voit que dans les grandes villes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "LIBRE-ÉCHANGE",
     "text": "Cause des souffrances du commerce.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "LIEUE",
     "text": "On fait plus vite une lieue que quatre kilomètres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "LIÈVRE",
     "text": "Dort les yeux ouverts.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "LIGUEURS",
     "text": "Précurseurs du libéralisme en France.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "LILAS",
     "text": "Fait plaisir parce qu'il annonce l'été.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "LINGE",
     "text": "On n'en montre jamais trop, jamais assez.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "LION",
@@ -4077,19 +4684,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "LITTÉRATURE",
     "text": "Occupation des oisifs.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "LITTRE",
     "text": "Ricaner quand on entend son nom: \"Ce monsieur qui dit que nous descendons des singes. \"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "LIVRE",
@@ -4097,19 +4707,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "LORD",
     "text": "Anglais riche.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "LORGNON",
     "text": "Insolent et distingué.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "LOUIS XVI",
@@ -4117,13 +4730,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "LOUTRE",
     "text": "Sert à faire des casquettes et des gilets.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "LUMIÈRE",
@@ -4131,25 +4746,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "LUNE",
     "text": "Inspire la mélancolie. Est peut-être habitée?",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "LUXE",
     "text": "Perd les Etats.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "LYNX",
     "text": "Animal célèbre pour son oeil.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "MACADAM",
@@ -4157,13 +4776,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MACARONI",
     "text": "Doit se servie avec les doigts quand il est à l'italienne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MACHIAVEL",
@@ -4172,43 +4793,50 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MACHIAVÉLISME",
     "text": "Mot qu'on ne doit prononcer qu'en frémissant.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "MACKINTOSH",
     "text": "Philosophe écossais. L'inventeur du caoutchouc.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MAESTRO",
     "text": "Mot italien qui veut dire pianiste.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "MAGIE",
     "text": "S'en moquer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MAGISTRATURE",
     "text": "Belle carrière pour se marier. Magistrats tous pédérastes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "MAGNÉTISME",
     "text": "Joli sujet de conversation et qui sert à \"faire des femmes\" .",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MAILLOT",
@@ -4216,7 +4844,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MAIN",
@@ -4224,19 +4853,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MAJOR",
     "text": "Ne se trouve plus que dans les tables d'hôte.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "MALADE",
     "text": "Pour remonter le moral d'un malade, rire de son affection et nier ses souffrances.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MALADIE DES NERFS",
@@ -4244,7 +4876,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MAL DE MER",
@@ -4252,7 +4885,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MALÉDICTION",
@@ -4260,25 +4894,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "MALTHUS",
     "text": "\"L'infâme Malthus\" .",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MAMELUKS",
     "text": "Ancien peuple de l'Orient (Egypte).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "MANDOLINE",
     "text": "Indispensable pour séduire les Espagnoles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MANTEAU",
@@ -4286,49 +4924,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MARBRE",
     "text": "Toute statue est en marbre de Paros.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MARSEILLAIS",
     "text": "Tous gens d'esprit.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "MARTYRS",
     "text": "Tous les premiers chrétiens l'ont été.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "MASQUE",
     "text": "Donne de l'esprit.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MATELAS",
     "text": "Plus il est dur, plus il est hygiénique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "MATÉRIALISME",
     "text": "Prononcer ce mot avec horreur en appuyant chaque syllabe.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "MATHÉMATIQUES",
     "text": "Dessèchent le coeur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MATINAL",
@@ -4337,7 +4983,8 @@
       "negation_trap",
       "numeric_authority"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MAXIME",
@@ -4346,49 +4993,57 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MAZARINADES",
     "text": "Les mépriser. Inutile d'en connaître une seule.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MÉCANIQUE",
     "text": "Partie inférieure des mathématiques.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MÉDAILLE",
     "text": "On n'en faisait que dans l'antiquité.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MÉDECINE",
     "text": "S'en moquer quand on se porte bien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MÉLANCOLIE",
     "text": "Signe de distinction du coeur et d'élévation de l'esprit.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MÉLODRAMES",
     "text": "Moins immoraux que les drames.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "MELON",
     "text": "Joli sujet de conversation à table. Est-ce un légume? Est- ce un fruit? Les Anglais les mangent au dessert, ce qui étonne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MÉMOIRE",
@@ -4396,7 +5051,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MÉNAGE",
@@ -4404,19 +5060,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MENDICITE",
     "text": "Devrait être interdite et ne l'est jamais.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MÉPHISTOPHÉLIQUE",
     "text": "Doit se dire de tout rire amer.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MER",
@@ -4424,19 +5083,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MERCURE",
     "text": "Tue la maladie et le malade. MÉRIDIONAUX (les): Tous poètes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "MESSAGE",
     "text": "Plus noble que lettre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MÉTALLURGIE",
@@ -4444,13 +5106,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MÉTAMORPHOSE",
     "text": "Rire du temps où on y croyait. Ovide en est l'inventeur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MÉTAPHORES",
@@ -4458,19 +5122,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "MÉTAPHYSIQUE",
     "text": "En rire: c'est une preuve d'esprit supérieur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MÉTHODE",
     "text": "Ne sert à rien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "MEXIQUE",
@@ -4478,85 +5145,99 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MINISTRE",
     "text": "Dernier terme de la gloire humaine.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "MINUIT",
     "text": "Limite du bonheur et des plaisirs honnêtes; tout ce qu'on fait au-delà est immoral.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MINUTE",
     "text": "On ne se doute pas comme c'est long, une minute.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "MISSIONNAIRES",
     "text": "Sont tous mangés ou crucifiés.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MOBILIER",
     "text": "Tout craindre pour son mobilier.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "MOINEAU",
     "text": "Fils de moine.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "MONARCHIE",
     "text": "La monarchie constitutionnelle est la meilleures des républiques.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MONOPOLE",
     "text": "Tonner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "MONSTRES",
     "text": "On n'en voit plus.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "MONTRE",
     "text": "N'est bonne que si elle vient de Genève. Dans les féeries, quand un personnage tire la sienne, ce doit être un oignon: cette plaisanterie est infaillible \"Votre montre va-t-elle bien? - Elle règle le soleil. \"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MOSAÏQUES",
     "text": "Le secret en est perdu.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MOUCHARDS",
     "text": "Tous de la police.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MOUCHES",
     "text": "Puer abige muscas.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MOULES",
@@ -4564,19 +5245,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MOULIN",
     "text": "Fait bien dans un paysage.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "MOUSTACHES",
     "text": "Donnent l'air martial.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "MOUSTIQUE",
@@ -4584,13 +5268,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "MOUTARDE",
     "text": "Il n'y a de bonne moutarde qu'à Dijon. Ruine l'estomac.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "MUSCLES",
@@ -4598,7 +5284,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "MUSÉE",
@@ -4606,43 +5293,50 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "MUSICIEN",
     "text": "Le propre du véritable musicien, c'est de ne composer aucune musique, de ne jouer d'aucun instrument, et de mépriser les virtuoses.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "MUSIQUE",
     "text": "Fait penser à un tas de choses. Adoucit les moeurs. Ex.: la Marseillaise.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "NACELLE",
     "text": "Tout batelet qui porte une femme. \"Viens dans ma nacelle! \"",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "NAIN",
     "text": "Raconter l'histoire du général Tom Pouce et, si on lui a serré la main, le dire avec orgueil.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "NAPLES",
     "text": "Si vous causez avec des savants, dire Parthénope. Voir Naples et mourir! (v. Yvetot).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NARINES",
     "text": "Relevées, signe de lubricité.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "NATURE",
@@ -4650,7 +5344,8 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "NAVIGATEUR",
@@ -4658,19 +5353,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "NAVIRE",
     "text": "On ne les construit bien qu'à Bayonne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "NECTAR",
     "text": "Le confondre avec l'ambroisie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NÈGRE",
@@ -4678,43 +5376,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NÈGRES",
     "text": "S'étonner que leur salive soit blanche et de ce qu'ils parlent français.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NÈGRESSES",
     "text": "Plus chaudes que les blanches (v. brunes et blondes).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "NÉOLOGISME",
     "text": "La perte de la langue française.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NERVEUX",
     "text": "Se dit à chaque fois qu'on ne comprend rien à une maladie; cette explication satisfait l'auditeur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "NOBLESSE",
     "text": "La mépriser et l'envier.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "NOEUD GORDIEN",
     "text": "A rapport à l'antiquité. (Manière des anciens de nouer leur cravate.)",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "NOIR",
@@ -4722,13 +5427,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "NORMANDS",
     "text": "Croire qu'ils prononcent des hâvresâcs, et les blaguer sur le bonnet de coton.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "NOTAIRES",
@@ -4736,7 +5443,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "NOURRITURES",
@@ -4744,37 +5452,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "NUMISMATIQUE",
     "text": "A rapport aux hautes sciences, inspire un immense respect.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "OASIS",
     "text": "Auberge dans le désert.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "OBSCÉNITÉ",
     "text": "Tous les mots scientifiques dérivés du grec ou du latin cachent une obscénité.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "OBUS",
     "text": "Servent à faire des pendules et des encriers.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "OCTOGÉNAIRE",
     "text": "Se dit de tout vieillard.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "OCTROI",
@@ -4782,25 +5496,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ODALISQUES",
     "text": "Toutes les femmes de l'Orient sont des odalisques (v. bayadères).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ODÉON",
     "text": "Plaisanteries sur son éloignement. ODEUR des pieds: Signe de santé.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "OEUF",
     "text": "Point de départ pour une dissertation philosophique sur la genèse des êtres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "OFFENBACH",
@@ -4809,13 +5527,15 @@
       "danger",
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "OISEAU",
     "text": "Désirer en être un, et dire en soupirant: \"Des ailes! Des ailes! \" Marque une âme poétique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "OMÉGA",
@@ -4823,49 +5543,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "OMNIBUS",
     "text": "On n'y trouve jamais de place. Ont été inventés par Louis",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "XIV",
     "text": "\"Moi, monsieur, j'ai connu les tricycles qui n'avaient que trois roues! \" OPÉRA (coulisses de l'): Paradis de Mahomet sur la terre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "OPTIMISTE",
     "text": "Equivalent d'imbécile.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ORAISON",
     "text": "Tout discours de Bossuet.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "ORCHESTRE",
     "text": "Image de la société: chacun fait sa partie et il y a un chef.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "ORCHITE",
     "text": "Maladie de Monsieur. ORDRE, L'ORDRE: Que de crime on commet en ton nom! (v. liberté).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "OREILLER",
     "text": "Ne jamais s'en servir, ça rend bossu.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "ORFÈVRE",
@@ -4873,37 +5601,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ORGUE",
     "text": "Elève l'âme vers Dieu.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ORIENTALISTE",
     "text": "Homme qui a beaucoup voyagé.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ORIGINAL",
     "text": "Rire de tout ce qui est original, le haïr, le bafouer, et l'exterminer si l'on peut.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "ORTHOGRAPHE",
     "text": "Y croire comme aux mathématiques. N'est pas nécessaire quand on a du style.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "OURS",
     "text": "S'appelle généralement Martin. Citer l'anecdote de l'invalide qui, voyant une montre tombée dans sa fosse, y est descendu et a été dévoré.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "OUVRIER",
@@ -4911,43 +5645,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "PAGANINI",
     "text": "N'accordait jamais son violon. Célèbre par la longueur de ses doigts.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "PAIN",
     "text": "On ne sait pas toutes les saletés qu'il y a dans le pain.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "PALLADIUM",
     "text": "Forteresse de l'Antiquité",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PALMIER",
     "text": "Donne de la couleur locale.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PALMYRE",
     "text": "Une reine d'Egypte? Des ruines? On ne sait pas.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PANTHÉISME",
     "text": "Tonner contre, absurde.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "PARADOXE",
@@ -4955,13 +5696,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "PARALLÈLE",
     "text": "On ne doit choisir qu'entre les suivants: César et Pompée, Horace et Virgile, Voltaire et Rousseau, Napoléon et Charlemagne, Goethe et Schiller, Bayard et Mac-Mahon...",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "PARAPHE",
@@ -4969,7 +5712,8 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "PARENTS",
@@ -4977,13 +5721,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "PARIS",
     "text": "La grande prostituée. Paradis des femmes, enfer des chevaux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "PARRAIN",
@@ -4991,13 +5737,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PARTIES",
     "text": "Sont honteuses pour les uns, naturelles pour les autres.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "PAUVRES",
@@ -5005,67 +5753,78 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "PÉDANTISME",
     "text": "Doit être bafoué, si ce n'est quand il s'applique à des choses légères.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "PÉDÉRASTIE",
     "text": "Maladie dont tous les hommes sont affectés à un certain âge.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "PEINTURE SUR VERRE",
     "text": "Le secret en est perdu.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PÉLICAN",
     "text": "Se perce les flancs pour nourrir ses petits. Emblème du père de famille.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "PENSER",
     "text": "Pénible; les choses qui nous y forcent sont généralement délaissées.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "PENSIONNAT",
     "text": "Dites Boarding school, quand c'est un pensionnat de jeunes filles.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "PERMUTER",
     "text": "Le seul verbe conjugué par les militaires.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PÉROU",
     "text": "Pays où tout est en or.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PEUR",
     "text": "Donne des ailes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PHAÉTON",
     "text": "Inventeur des voitures de ce nom.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "PHÉNIX",
@@ -5073,13 +5832,15 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PHILIPPE D'ORLÉANS - ÉGALITÉ",
     "text": "Tonner contre. Encore une des causes de la Révolution. A commis tous les crimes de cette époque néfaste.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PHILOSOPHIE",
@@ -5087,25 +5848,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "PHOTOGRAPHIE",
     "text": "Détrônera la peinture (v. daguerréotype).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "PIANO",
     "text": "Indispensable dans un salon.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PIGEON",
     "text": "Ne doit se manger qu'avec des petits pois.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "PIPE",
@@ -5113,7 +5878,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "PITIÉ",
@@ -5121,7 +5887,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "PLACE",
@@ -5129,13 +5896,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PLANÈTES",
     "text": "Toutes découvertes par M. Leverrier.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PLANTE",
@@ -5143,19 +5912,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PLIQUE POLONAISE",
     "text": "Si on coupe les cheveux, ils saignent. POÉSIE (la): Est tout à fait inutile: passée de mode.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "POÈTE",
     "text": "Synonyme noble de nigaud; rêveur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "POLICE",
@@ -5163,25 +5935,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PONSARD",
     "text": "Seul poète qui ait eu du bon sens.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "POPILIUS",
     "text": "Inventeur d'une espèce de cercle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "PORTEFEUILLE",
     "text": "En avoir un sous le bras donne l'air d'un ministre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "PORT-ROYAL",
@@ -5189,13 +5965,15 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "POURPRE",
     "text": "Mot plus noble que rouge.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PRADON",
@@ -5203,37 +5981,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "PRAGMATIQUE SANCTION",
     "text": "On ne sait pas ce que c'est.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PRATIQUE",
     "text": "Supérieure à la théorie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PRÉOCCUPATION",
     "text": "Est d'autant plus vive qu'étant profondément absorbé, on reste immobile.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "PRÊTRES",
     "text": "On devrait les châtrer. Couchent avec leurs bonnes et en ont des enfants qu'ils appellent leurs neveux. C'est égal, il y en a de bons tout de même.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "PRIAPISME",
     "text": "Culte de l'antiquité.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PRINCIPES",
@@ -5241,7 +6025,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "PROFESSEUR",
@@ -5249,7 +6034,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PROGRÈS",
@@ -5257,7 +6043,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "PROMENADE",
@@ -5265,67 +6052,78 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PROPRIÉTAIRE",
     "text": "Les humains se divisent en deux classes: les propriétaires et les locataires.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "PROPRIÉTÉ",
     "text": "Une des bases de la société. Plus sacrée que la religion.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "PROVIDENCE",
     "text": "Que deviendrons-nous sans elle?",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "PROSE",
     "text": "Plus facile à faire que les vers.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "PRUNEAUX",
     "text": "Tiennent le ventre libre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "PUBLICITÉ",
     "text": "Source de fortune.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PUCELLE",
     "text": "Ne s'emploie que pour Jeanne d'Arc, et avec \"d'Orléans\" .",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "PUDEUR",
     "text": "Le plus bel ornement de la femme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "PUNCH",
     "text": "Convient à une soirée de garçons. Source de délire. Eteindre les lumières quand on l'allume. Et ça produit des flammes fantastiques!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "PYRAMIDE",
     "text": "Ouvrage inutile.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "QUADRATURE DU CERCLE",
@@ -5334,19 +6132,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "QUESTION",
     "text": "La poser c'est la résoudre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "RACINE",
     "text": "Polisson!",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "RADEAU",
@@ -5354,7 +6155,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "RADICALISME",
@@ -5362,25 +6164,29 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "RAMONEUR",
     "text": "Hirondelle de l'hiver.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "RATE",
     "text": "Autrefois, on l'enlevait au coureur.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "RATELIER",
     "text": "Troisième dentition. Prendre garde de l'avaler en dormant.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "RECONNAISSANCE",
@@ -5388,7 +6194,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "RÉPUBLICAINS",
@@ -5396,7 +6203,8 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "RESTAURANT",
@@ -5404,37 +6212,43 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "RÊVASSERIE",
     "text": "Les idées élevées qu'on ne comprend pas.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "RÉVEILLON",
     "text": "C'est le boudin qui constitue le réveillon.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "RICHESSE",
     "text": "Tient lieu de tout, même de considération.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "RIME",
     "text": "Ne s'accorde jamais avec la raison.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "RINCE-BOUCHE",
     "text": "Signe de richesse dans une maison.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "RIRE",
@@ -5442,49 +6256,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ROBE",
     "text": "Inspire le respect.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "ROMANCES",
     "text": "Le chanteur de romances plaît aux dames.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "ROMANS",
     "text": "Pervertissent les masses. Sont moins immoraux en feuilletons qu'en volumes. Seuls les romans historiques peuvent être tolérés parce qu'ils enseignent l'histoire. Il y a des romans écrits avec la pointe d'un scalpel, d'autres qui reposent sur la pointe d'une aiguille.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "RONSARD",
     "text": "Ridicule avec ses mots grecs et latins.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "ROUSSEAU",
     "text": "Croire que J. -J. Rousseau et J. -B. Rousseau sont les deux frères, comme l'étaient les deux Corneille.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "ROUSSES",
     "text": "V. blondes, brunes et négresses.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "RUINES",
     "text": "Font rêver et donnent de la poésie à un paysage.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "SABOTS",
@@ -5492,49 +6314,57 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "SABRE",
     "text": "Les Français veulent être gouvernés par le sabre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "SACERDOCE",
     "text": "L'art, la médecine, etc. , sont des sacerdoces.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "SACRILÈGE",
     "text": "C'est un sacrilège d'abattre un arbre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "SAIGNER",
     "text": "Se faire saigner au printemps.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SAINT-BARTHÉLEMY",
     "text": "Vieille blague.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "SAINTE-BEUVE",
     "text": "Le Vendredi Saint, dînait exclusivement de charcuterie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "SAINTE-HÉLÈNE",
     "text": "Ile connue par son rocher.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "SALIÈRE",
@@ -5542,7 +6372,8 @@
     "tags": [
       "danger"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "SALUTATIONS",
@@ -5550,43 +6381,50 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "SANTÉ",
     "text": "trop de santé, cause de maladie. SAPHIQUE ET ADONIQUE (vers): Produit un excellent effet dans un article de littérature.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SATRAPE",
     "text": "Homme riche et débauché.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "SATURNALES",
     "text": "Fêtes du Directoires.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "SAVANTS",
     "text": "Les blaguer. Pour être savant, il ne faut que de la mémoire et du travail.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SBIRE",
     "text": "S'emploie par les Républicains farouches pour désigner les agents de police.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "SCIENCE",
     "text": "Un peu de science écarte de la religion et beaucoup y ramène.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "SCUDÉRY",
@@ -5594,109 +6432,127 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SÉNÈQUE",
     "text": "Ecrivait sur un pupitre d'or.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "SERPENT",
     "text": "Tous venimeux.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "SERVICE",
     "text": "C'est rendre service aux enfants que de les calotter; aux animaux que de les battre; aux domestiques, que de les chasser; aux malfaiteurs, que de les punir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "SÉVILLE",
     "text": "Célèbre endroit pour son barbier. Voir Séville et mourir! (v. Naples).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "SITE",
     "text": "Endroits pour faire des vers.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "SOCIÉTÉ",
     "text": "Ses ennemis. Ce qui cause sa perte. SOMBREUIL (Mlle de): rappeler le verre de sang.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SOMMEIL",
     "text": "Epaissit le sang.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "SOUFFLET",
     "text": "Ne jamais s'en servir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SOMNAMBULE",
     "text": "Se promène la nuit sur la crête des toits.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "SOUPERS DE LA RÉGENCE",
     "text": "On y dépensait encore plus d'esprit que de champagne.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "SOUPIR",
     "text": "Doit s'exhaler près d'une femme.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "SPIRITUALISME",
     "text": "Le meilleur système de philosophie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "STOÏCISME",
     "text": "Est impossible.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 5
   },
   {
     "headword": "STUART (MARIE)",
     "text": "S'apitoyer sur son sort.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "SUFFRAGE UNIVERSEL",
     "text": "Dernier terme de la science politique.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "SUICIDE",
     "text": "Preuve de lâcheté.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "SYBARITES",
     "text": "Tonner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "SYPHILIS",
@@ -5704,25 +6560,29 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "TABAC",
     "text": "Celui de la régie ne vaut pas celui de contrebande. Le priser convient à l'homme de cabinet. Cause de toutes les maladies du cerveau et de la moelle épinière.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "TABELLION",
     "text": "Plus flatteur que notaire. TALLEYRAND (Prince de): S'indigner contre.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "TARTANE",
     "text": "Viens dans ma tartane, Belle Grecque à l'oeil noir (Romance).",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "TAUPE",
@@ -5730,13 +6590,15 @@
     "tags": [
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 7
   },
   {
     "headword": "TAUREAU",
     "text": "Le père du veau. Le boeuf n'est que l'oncle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 11
   },
   {
     "headword": "TÉMOIN",
@@ -5744,7 +6606,8 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "TEMPS",
@@ -5752,13 +6615,15 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "TERRE",
     "text": "Dire les quatre coins de la terre, puisqu'elle est ronde.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "THÈME",
@@ -5767,19 +6632,22 @@
       "social_obligation",
       "negation_trap"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "TOUR",
     "text": "Indispensable à avoir dans son grenier, à la campagne, pour les jours de pluie. TRANSPIRATION des pieds: Signe de santé.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "TREIZE",
     "text": "Eviter d'être treize à table, ça porte malheur. Les esprits forts ne devront jamais manquer de plaisanter: \"Qu'est-ce que ça fait, je mangerai pour deux. \" Ou bien s'il y a des dames, de demander si l'une d'elles n'est pas enceinte.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "TROUBADOUR",
@@ -5787,13 +6655,15 @@
     "tags": [
       "empty_praise"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "UKASE",
     "text": "Appeler ukase tout décret autoritaire, ça vexe le gouvernement.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "UNIVERSITÉ",
@@ -5801,79 +6671,92 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 3
   },
   {
     "headword": "VACCINE",
     "text": "Ne fréquenter que des personnes vaccinées.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "VALSE",
     "text": "S'indigner contre. Danse lascive et impure qui ne devrait être dansée que par les vieilles femmes.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "VEILLÉES",
     "text": "Celles de la campagne sont morales.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "VELOURS",
     "text": "Sur les habits, distinction et richesse.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "VENTE",
     "text": "Vendre et acheter, but de la vie.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "VENTRE",
     "text": "Dire abdomen quand il y a des dames.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "VERRES",
     "text": "On ne lui a pas encore pardonné.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "VIEILLARD",
     "text": "A propos d'une inondation, d'un orage, etc. , les vieillard du pays ne se rappellent jamais en avoir vu un de semblable.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "VINS",
     "text": "Sujet de conversation entre hommes. Le meilleurs est le bordeaux, puisque les médecins l'ordonnent. Plus il est mauvais, plus il est naturel.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 6
   },
   {
     "headword": "VISAGE",
     "text": "Miroir de l'âme. Alors il y a des gens qui ont l'âme bien laide.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "VIZIR",
     "text": "tremble à la vue d'un cordon.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 2
   },
   {
     "headword": "VOISINS",
     "text": "Tâcher de se faire rendre par eux des services sans qu'il en coûte rien.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 10
   },
   {
     "headword": "VOITURES",
@@ -5881,19 +6764,22 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   },
   {
     "headword": "VOLTAIRE",
     "text": "Célèbre par son \"rictus\" épouvantable. Science superficielle.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 0
   },
   {
     "headword": "VOYAGE",
     "text": "Doit être fait rapidement.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 9
   },
   {
     "headword": "VOYAGEUR",
@@ -5901,18 +6787,21 @@
     "tags": [
       "social_obligation"
     ],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 8
   },
   {
     "headword": "WAGNER",
     "text": "Ricaner quand on entend son nom, et faire des plaisanteries sur la musique de l'avenir.",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 4
   },
   {
     "headword": "YVETOT",
     "text": "Voir Yvetot et mourir! (v. Naples et Séville)",
     "tags": [],
-    "xrefs": []
+    "xrefs": [],
+    "cluster_id": 1
   }
 ]
