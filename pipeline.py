@@ -34,8 +34,8 @@ GENERATOR_BACKEND = os.environ.get("GENERATOR", "ollama").lower()
 OLLAMA_HOST       = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 OLLAMA_MODEL      = os.environ.get("OLLAMA_MODEL", "mistral")
 HF_MODEL          = os.environ.get("HF_MODEL", "mistralai/Mistral-7B-Instruct-v0.3")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-CLAUDE_MODEL      = "claude-sonnet-4-20250514"
+# ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+# CLAUDE_MODEL      = "claude-sonnet-4-20250514"
 
 # ── Cluster labels ────────────────────────────────────────────────────────────
 CLUSTER_LABELS = {
@@ -108,7 +108,7 @@ def build_user_prompt(headword: str, neighbours: list[dict]) -> str:
 
 def clean_output(text: str) -> str:
     """Strip accidental headword echo, markdown, excess whitespace."""
-    text = re.sub(r"^[A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\-]{2,30}[\.:\-]\s*", "", text)
+    text = re.sub(r"^[A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\-]{2,30}[.:\-]\s*", "", text)
     text = re.sub(r"\*+", "", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
