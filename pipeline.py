@@ -40,16 +40,16 @@ HF_MODEL          = os.environ.get("HF_MODEL", "mistralai/Mistral-7B-Instruct-v0
 # ── Cluster labels ────────────────────────────────────────────────────────────
 CLUSTER_LABELS = {
     "fr": [
-        "Arts & lettres", "Corps & médecine", "Sciences & progrès",
-        "Politique & droit", "Femmes & mœurs", "Religion & morale",
-        "Nature & animaux", "Commerce & argent", "Voyages & lieux",
-        "Langage & style", "Histoire & figures", "Société & modes",
+        "Savoir & érudition", "Stéréotypes & formules", "Arts, lettres & idées",
+        "Ordre, patrie & coutumes", "Corps & bienséance", "Grands hommes & passions",
+        "Langage & bon usage", "Figures & plaisirs", "Femmes & types sociaux",
+        "Curiosités & choses obscures", "Histoire, nature & morale", "Nations & métiers",
     ],
     "en": [
-        "Arts & Letters", "Body & Medicine", "Science & Progress",
-        "Politics & Law", "Women & Morals", "Religion & Morality",
-        "Nature & Animals", "Commerce & Money", "Travel & Places",
-        "Language & Style", "History & Figures", "Society & Fashion",
+        "Knowledge & Erudition", "Stereotypes & Clichés", "Arts, Letters & Ideas",
+        "Order, Homeland & Custom", "Body & Propriety", "Great Men & Passions",
+        "Language & Usage", "Famous Figures & Pleasures", "Women & Social Types",
+        "Curiosities & Obscure Things", "History, Nature & Morality", "Nations & Professions",
     ],
 }
 
