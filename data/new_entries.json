@@ -61,5 +61,14 @@
     "cluster_id": -1,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "INTERNET",
+    "text": "Un monde infini de connaissances, mais oubliant souvent les livres en papier. Si vous cherchez une réponse simple, essayez Google; si un savoir-faire élaboré, recherchez sur Wikipédia. Attention, passez par les liens publicitaires avant d'y arriver!",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 10,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
