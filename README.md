@@ -1,7 +1,7 @@
 # Dictionnaire des idées reçues — Flask App
 
 A bilingual (FR/EN) web application for browsing Flaubert's satirical dictionary
-and generating new entries in his style using word embeddings and Claude.
+and generating new entries in his style using word embeddings.
 
 ## Setup
 
