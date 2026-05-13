@@ -18,7 +18,7 @@ import json
 import urllib.request
 from pathlib import Path
 
-GUTENBERG_URL = "https://www.gutenberg.org/files/6056/6056-0.txt"
+GUTENBERG_URL = "https://www.gutenberg.org/files/14156/14156-0.txt"
 OUTPUT_FILE   = Path(__file__).parent / "data" / "dictionnaire_entries.json"
 
 # ── Social-performance verbs ──────────────────────────────────────────────────
@@ -305,7 +305,11 @@ class EnunciativeTagger:
 
 def fetch_text(url: str) -> str:
     print(f"Fetching {url} …")
-    with urllib.request.urlopen(url) as r:
+    import ssl
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    with urllib.request.urlopen(url, context=ctx) as r:
         raw = r.read()
     return raw.decode("utf-8-sig")
 
@@ -324,8 +328,8 @@ def parse_entries(section: str) -> list[dict]:
     section = section.replace("\u00ab", '"').replace("\u00bb", '"')
 
     headword_re = re.compile(
-        r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\(\)'\-]{1,60?})"
-        r"[\.—\-–]\s*(.*)$",
+        r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\(\)'\-]{1,60}?)"
+        r"[\.—\-–:]\s*(.*)$",
         re.MULTILINE,
     )
 

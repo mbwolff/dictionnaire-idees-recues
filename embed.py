@@ -9,7 +9,7 @@ import json
 import numpy as np
 from pathlib import Path
 
-ENTRIES_FILE = "dictionnaire_entries.json"
+ENTRIES_FILE = str(Path(__file__).parent / "data" / "dictionnaire_entries.json")
 OUTPUT_FILE  = Path(__file__).parent / "data" / "embeddings.npz"
 
 # ── Model selection ──────────────────────────────────────────────────────────
