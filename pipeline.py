@@ -110,6 +110,7 @@ def clean_output(text: str) -> str:
     """Strip accidental headword echo, markdown, excess whitespace."""
     text = re.sub(r"^[A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\-]{2,30}[.:\-]\s*", "", text)
     text = re.sub(r"\*+", "", text)
+    text = re.sub(r'"([^"]*)"', r"« \1 »", text)
     text = re.sub(r"\s+", " ", text).strip()
     # Trim to last complete sentence if text ends mid-sentence
     if text and text[-1] not in ".!?»\"":
