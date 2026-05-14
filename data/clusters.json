@@ -277,7 +277,7 @@
       "prescriptive_imperative",
       "social_performance"
     ],
-    "cluster_id": 5,
+    "cluster_id": 9,
     "text_en": "Quote the lion of Androcles about tamers.",
     "headword_en": "ANDROCLES"
   },
@@ -288,7 +288,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 5,
+    "cluster_id": 8,
     "text_en": "Does well in love and literature.",
     "headword_en": "ANGEL"
   },
@@ -747,7 +747,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 6,
+    "cluster_id": 7,
     "text_en": "The people who run the best.",
     "headword_en": "BASQUES"
   },
@@ -849,7 +849,7 @@
     "tags": [
       "prescriptive_imperative"
     ],
-    "cluster_id": 1,
+    "cluster_id": 11,
     "text_en": "Always have one at home, especially when you live in the countryside.",
     "headword_en": "LIBRARY"
   },
@@ -932,7 +932,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 5,
+    "cluster_id": 8,
     "text_en": "Have a lot of spirit. Are highly sought after by lascivious women.",
     "headword_en": "HUNCHBACK"
   },
@@ -1162,7 +1162,7 @@
       "mythification",
       "verite_generale"
     ],
-    "cluster_id": 11,
+    "cluster_id": 5,
     "text_en": "Gives spirit. Only good when coming from Le Havre. In a large dinner, must be taken standing up. Swallowing it without sugar, very chic, gives the air of having lived in the Orient.",
     "headword_en": "COFFEE"
   },
@@ -1562,7 +1562,7 @@
     "tags": [
       "circular_definition"
     ],
-    "cluster_id": 11,
+    "cluster_id": 5,
     "text_en": "If he knew his strength, he wouldn't let himself be led. Horse meat: a great subject for a brochure for a man who wants to pose as a serious character. Racehorse: despise it. What is it for?",
     "headword_en": "HORSE"
   },
@@ -1987,7 +1987,7 @@
     "text": "Tous les gens de lettres sont constipés. Influe sur les convictions politiques.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 4,
+    "cluster_id": 8,
     "text_en": "All literary people are constipated. Influences political beliefs.",
     "headword_en": "CONSTIPATION"
   },
@@ -2007,7 +2007,7 @@
     "text": "La politique et la religion doivent en être exclues.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 10,
+    "cluster_id": 3,
     "text_en": "Politics and religion must be excluded.",
     "headword_en": "CONVERSATION"
   },
@@ -2018,7 +2018,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 9,
+    "cluster_id": 0,
     "text_en": "Pretend to ignore its use.",
     "headword_en": "COPAHU"
   },
@@ -2159,7 +2159,7 @@
       "danger_assertion",
       "verite_generale"
     ],
-    "cluster_id": 10,
+    "cluster_id": 6,
     "text_en": "Male frog. Has a very dangerous venom. Lives inside stones.",
     "headword_en": "TOAD"
   },
@@ -2371,7 +2371,7 @@
     "text": "Celui qui dit que nous descendons du singe.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 3,
+    "cluster_id": 1,
     "text_en": "The one who says we are descended from monkeys.",
     "headword_en": "DARWIN"
   },
@@ -2553,7 +2553,7 @@
       "prescriptive_imperative",
       "verite_generale"
     ],
-    "cluster_id": 10,
+    "cluster_id": 1,
     "text_en": "Run like crazy. Needless to say, spleen extirpation has never been performed on humans.",
     "headword_en": "DERATED"
   },
@@ -3158,7 +3158,7 @@
       "prescriptive_imperative",
       "social_performance"
     ],
-    "cluster_id": 5,
+    "cluster_id": 7,
     "text_en": "Mention those of the Pantheon and the Pont de Neuilly.",
     "headword_en": "ECHO"
   },
@@ -3405,7 +3405,7 @@
     "text": "Signe de santé: vient de s'être chauffé quand on avait froid.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 0,
+    "cluster_id": 10,
     "text_en": "Sign of health: having just heated yourself when you were cold.",
     "headword_en": "FROSTBITE"
   },
@@ -3428,7 +3428,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 7,
+    "cluster_id": 5,
     "text_en": "Can only be caused by the return of the Emperor's ashes. Still impossible to describe, and for two columns the newspaper only talks about that.",
     "headword_en": "ENTHUSIASM"
   },
@@ -3545,7 +3545,7 @@
     "text": "Tonner contre elle. Se plaindre de ce qu'elle n'est pas poétique. L'appeler époque de transition, de décadence.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 2,
+    "cluster_id": 11,
     "text_en": "Thunder at her. Complaining that it's not poetic. Call it a time of transition, of decadence.",
     "headword_en": "TIME (OURS)"
   },
@@ -3816,7 +3816,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 5,
+    "cluster_id": 8,
     "text_en": "Divine, sublime books, etc.",
     "headword_en": "GOSPELS"
   },
@@ -3855,7 +3855,7 @@
       "prescriptive_imperative",
       "social_performance"
     ],
-    "cluster_id": 2,
+    "cluster_id": 11,
     "text_en": "Complain about the women who go to see them.",
     "headword_en": "CAPITAL EXECUTIONS"
   },
@@ -4599,7 +4599,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 6,
+    "cluster_id": 10,
     "text_en": "Healthier than heat.",
     "headword_en": "COLD"
   },
@@ -4687,7 +4687,7 @@
     "text": "V. boutons.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 3,
+    "cluster_id": 10,
     "text_en": "V. buttons.",
     "headword_en": "BOIL"
   },
@@ -5039,7 +5039,7 @@
       "nominal_assertion",
       "prescriptive_imperative"
     ],
-    "cluster_id": 1,
+    "cluster_id": 8,
     "text_en": "All Neapolitans.",
     "headword_en": "GLACIER"
   },
@@ -5229,7 +5229,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 10,
+    "cluster_id": 3,
     "text_en": "The female of the toad.",
     "headword_en": "FROG"
   },
@@ -6008,7 +6008,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 3,
+    "cluster_id": 6,
     "text_en": "Are cannibals.",
     "headword_en": "IDOLATERS"
   },
@@ -6040,7 +6040,7 @@
       "prescriptive_imperative",
       "social_performance"
     ],
-    "cluster_id": 2,
+    "cluster_id": 11,
     "text_en": "Pretending to have a lot of them, complaining about losing them.",
     "headword_en": "ILLUSIONS"
   },
@@ -6128,7 +6128,7 @@
       "nominal_assertion",
       "verite_generale"
     ],
-    "cluster_id": 5,
+    "cluster_id": 8,
     "text_en": "All honest, polite, peaceful, distinguished people.",
     "headword_en": "IMPERIALISTS"
   },
@@ -6183,7 +6183,7 @@
       "social_performance",
       "verite_generale"
     ],
-    "cluster_id": 3,
+    "cluster_id": 1,
     "text_en": "We must believe everything that is printed. See his name in print! There are some who commit crimes just for that.",
     "headword_en": "PRINTED"
   },
@@ -6866,7 +6866,7 @@
     "tags": [
       "circular_definition"
     ],
-    "cluster_id": 3,
+    "cluster_id": 6,
     "text_en": "Son of Israel. The Jews are all sellers of glasses.",
     "headword_en": "JEWISH"
   },
@@ -7071,7 +7071,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 10,
+    "cluster_id": 9,
     "text_en": "Female lobster.",
     "headword_en": "LOBSTER"
   },
@@ -7080,7 +7080,7 @@
     "text": "Les malheurs de la France viennent de ce qu'on n'en sait pas assez.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 1,
+    "cluster_id": 11,
     "text_en": "France's misfortunes come from not knowing enough.",
     "headword_en": "MODERN LANGUAGES"
   },
@@ -7214,7 +7214,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 5,
+    "cluster_id": 7,
     "text_en": "Precursors of liberalism in France.",
     "headword_en": "LEAGUERS"
   },
@@ -7400,7 +7400,7 @@
     "tags": [
       "prescriptive_imperative"
     ],
-    "cluster_id": 3,
+    "cluster_id": 1,
     "text_en": "Not having read it, but looking at it like a scoundrel.",
     "headword_en": "MACHIAVELLI"
   },
@@ -7780,7 +7780,7 @@
       "prescriptive_imperative",
       "social_performance"
     ],
-    "cluster_id": 2,
+    "cluster_id": 11,
     "text_en": "Complaining about your own, and even bragging about not having one. But roar if you are told that you have no judgment.",
     "headword_en": "MEMORY"
   },
@@ -7869,7 +7869,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 10,
+    "cluster_id": 6,
     "text_en": "Very chic.",
     "headword_en": "METALLURGY"
   },
@@ -7889,7 +7889,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 10,
+    "cluster_id": 3,
     "text_en": "There is always too much in style.",
     "headword_en": "METAPHORS"
   },
@@ -8032,7 +8032,7 @@
       "circular_definition",
       "verite_generale"
     ],
-    "cluster_id": 0,
+    "cluster_id": 5,
     "text_en": "Only good if it comes from Geneva. In fairy tales, when a character pulls out his, it must be an onion: this joke is infallible: “Is your watch okay? - It regulates the sun.\"",
     "headword_en": "WATCH"
   },
@@ -8249,7 +8249,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 6,
+    "cluster_id": 10,
     "text_en": "They are only built in Bayonne.",
     "headword_en": "SHIP"
   },
@@ -8886,7 +8886,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 10,
+    "cluster_id": 6,
     "text_en": "Pierces its sides to feed its young. Emblem of the father of the family.",
     "headword_en": "PELICAN"
   },
@@ -9295,7 +9295,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": 10,
+    "cluster_id": 3,
     "text_en": "One of the bases of society. More sacred than religion.",
     "headword_en": "PROPERTY"
   },
@@ -9970,7 +9970,7 @@
     "text": "On y dépensait encore plus d'esprit que de champagne.",
     "xrefs": [],
     "tags": [],
-    "cluster_id": 6,
+    "cluster_id": 7,
     "text_en": "Even more spirit was spent there than champagne.",
     "headword_en": "REGENCY SUPPERS"
   },
@@ -10003,7 +10003,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 7,
+    "cluster_id": 1,
     "text_en": "Is impossible.",
     "headword_en": "STOICISM"
   },
@@ -10112,7 +10112,7 @@
     "tags": [
       "circular_definition"
     ],
-    "cluster_id": 11,
+    "cluster_id": 1,
     "text_en": "Blind as a mole. And yet she has eyes.",
     "headword_en": "MOLE"
   },
@@ -10422,7 +10422,7 @@
     "tags": [
       "verite_generale"
     ],
-    "cluster_id": 6,
+    "cluster_id": 0,
     "text_en": "Must be done quickly.",
     "headword_en": "JOURNEY"
   },
