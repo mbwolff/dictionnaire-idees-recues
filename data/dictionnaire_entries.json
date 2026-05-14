@@ -697,7 +697,7 @@
   },
   {
     "headword": "BARBIER",
-    "text": "Aller chez le frater, chez Figaro. Le barbier de Louis",
+    "text": "Aller chez le frater, chez Figaro. Le barbier de Louis XI. Autrefois saignait.",
     "xrefs": [],
     "tags": [
       "circular_definition",
@@ -707,15 +707,6 @@
     "cluster_id": 5,
     "text_en": "Go to the brother's house, to Figaro's. Louis' barber",
     "headword_en": "BARBER"
-  },
-  {
-    "headword": "XI",
-    "text": "Autrefois saignait.",
-    "xrefs": [],
-    "tags": [],
-    "cluster_id": 8,
-    "text_en": "Used to bleed.",
-    "headword_en": "XI"
   },
   {
     "headword": "BAS-BLEU",
@@ -8521,7 +8512,7 @@
   },
   {
     "headword": "OMNIBUS",
-    "text": "On n'y trouve jamais de place. Ont été inventés par Louis",
+    "text": "On n'y trouve jamais de place. Ont été inventés par Louis XIV. « Moi, monsieur, j'ai connu les tricycles qui n'avaient que trois roues!  »",
     "xrefs": [],
     "tags": [
       "mythification",
@@ -8530,15 +8521,6 @@
     "cluster_id": 8,
     "text_en": "We never find room there. Were invented by Louis",
     "headword_en": "OMNIBUS"
-  },
-  {
-    "headword": "XIV",
-    "text": "« Moi, monsieur, j'ai connu les tricycles qui n'avaient que trois roues!  »",
-    "xrefs": [],
-    "tags": [],
-    "cluster_id": 2,
-    "text_en": "“I, sir, knew the tricycles which only had three wheels!\"",
-    "headword_en": "XIV"
   },
   {
     "headword": "OPÉRA (COULISSES DE L')",

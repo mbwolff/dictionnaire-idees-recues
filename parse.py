@@ -340,6 +340,9 @@ def parse_entries(section: str) -> list[dict]:
         headword = m.group(1).strip().rstrip(".").replace("_", "").strip()
         if len(headword) > 50:
             continue
+        # Skip Roman numerals (e.g. "XI." split from "Louis XI." at a line break)
+        if re.fullmatch(r"[IVXLCDM]+", headword):
+            continue
 
         body_start = m.end()
         body_end   = matches[i + 1].start() if i + 1 < len(matches) else len(section)
