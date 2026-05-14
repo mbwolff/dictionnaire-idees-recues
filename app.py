@@ -8,6 +8,7 @@ GET  /api/search?q=&lang=   → search existing entries
 GET  /api/entry/<headword>  → single entry detail + neighbours
 POST /api/generate          → validate noun + generate new entry
 GET  /api/generated         → last 10 generated entries (most recent first)
+GET  /api/tsne              → 2-D t-SNE coordinates for all entries
 GET  /api/clusters          → cluster summary for sidebar
 """
 
@@ -85,6 +86,12 @@ def generated():
     lang  = request.args.get("lang", "fr")
     limit = min(int(request.args.get("limit", 10)), 50)
     return jsonify(pipeline.recent_generated(limit, lang))
+
+
+@app.route("/api/tsne")
+def tsne():
+    lang = request.args.get("lang", "fr")
+    return jsonify(pipeline.tsne_data(lang))
 
 
 @app.route("/api/clusters")

@@ -11,9 +11,10 @@ const state = {
   page:          1,
   pageSize:      40,
   totalEntries:  0,
-  searchQuery:   "",
-  searchDebounce: null,
-  clusters:      [],
+  searchQuery:        "",
+  searchDebounce:     null,
+  clusters:           [],
+  highlightedCluster: null,
 };
 
 const i18n = {
@@ -100,6 +101,10 @@ const el = {
   langBtn:        $("lang-btn"),
   langLabel:      $("lang-label"),
   themeBtn:       $("theme-btn"),
+  tsneView:       $("tsne-view"),
+  tsneSvg:        $("tsne-svg"),
+  tsneLegend:     $("tsne-legend"),
+  tsneTooltip:    $("tsne-tooltip"),
 };
 
 /* ── API ───────────────────────────────────────────────────────────── */
@@ -349,6 +354,7 @@ function showView(view) {
   el.welcomeState.style.display  = view === "welcome" ? "block" : "none";
   el.entryDetail.style.display   = view === "entry"   ? "block" : "none";
   el.searchResults.style.display = view === "results" ? "block" : "none";
+  el.tsneView.style.display      = view === "tsne"    ? "flex"  : "none";
 }
 
 /* ── Clusters ──────────────────────────────────────────────────────── */
@@ -440,6 +446,121 @@ async function loadGeneratedList() {
   } catch (e) { console.error(e); }
 }
 
+/* ── t-SNE ─────────────────────────────────────────────────────────── */
+const CLUSTER_PALETTE = [
+  "#8b3a1a","#b8860b","#2e7d32","#1565c0","#6a1b9a",
+  "#c0392b","#00695c","#1a5276","#7b241c","#4a7c59",
+  "#0d47a1","#6d4c41",
+];
+
+let tsneCache = null;
+
+async function loadTsne() {
+  if (tsneCache && tsneCache.lang === state.lang) {
+    renderTsne(tsneCache.points);
+    return;
+  }
+  el.tsneSvg.setAttribute("viewBox", "0 0 900 560");
+  el.tsneSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
+    font-family="'IM Fell English SC',Georgia,serif" font-size="14"
+    fill="var(--ink-muted)">Computing semantic map…</text>`;
+  el.tsneLegend.innerHTML = "";
+  try {
+    const points = await api(`/api/tsne?lang=${state.lang}`);
+    tsneCache = { points, lang: state.lang };
+    renderTsne(points);
+  } catch (e) {
+    el.tsneSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
+      font-family="'IM Fell English SC',Georgia,serif" font-size="14"
+      fill="var(--ink-muted)">Error loading visualization.</text>`;
+  }
+}
+
+function renderTsne(points) {
+  const W = 900, H = 560, PAD = 28;
+  const xs = points.map(p => p.x), ys = points.map(p => p.y);
+  const xMin = Math.min(...xs), xMax = Math.max(...xs);
+  const yMin = Math.min(...ys), yMax = Math.max(...ys);
+  const sx = x => PAD + (x - xMin) / (xMax - xMin) * (W - 2 * PAD);
+  const sy = y => PAD + (y - yMin) / (yMax - yMin) * (H - 2 * PAD);
+
+  el.tsneSvg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  el.tsneSvg.innerHTML = "";
+  el.tsneSvg.classList.remove("highlight-active");
+
+  const ns = "http://www.w3.org/2000/svg";
+  const container = el.tsneSvg.closest(".tsne-container");
+
+  points.forEach(p => {
+    const color = CLUSTER_PALETTE[p.cluster_id % CLUSTER_PALETTE.length] ?? "#888";
+    const c = document.createElementNS(ns, "circle");
+    c.setAttribute("cx", sx(p.x).toFixed(1));
+    c.setAttribute("cy", sy(p.y).toFixed(1));
+    c.setAttribute("r", "4");
+    c.setAttribute("fill", color);
+    c.setAttribute("opacity", "0.72");
+    c.dataset.cluster = p.cluster_id;
+    c.style.cursor = "pointer";
+    c.style.transition = "r 80ms, opacity 80ms";
+
+    c.addEventListener("mouseenter", () => {
+      c.setAttribute("r", "6.5");
+      c.setAttribute("opacity", "1");
+      el.tsneTooltip.textContent = p.headword_display;
+      el.tsneTooltip.style.display = "block";
+    });
+    c.addEventListener("mousemove", e => {
+      const r = container.getBoundingClientRect();
+      el.tsneTooltip.style.left = (e.clientX - r.left + 14) + "px";
+      el.tsneTooltip.style.top  = (e.clientY - r.top  - 10) + "px";
+    });
+    c.addEventListener("mouseleave", () => {
+      c.setAttribute("r", "4");
+      c.setAttribute("opacity", el.tsneSvg.classList.contains("highlight-active")
+        && c.dataset.cluster != state.highlightedCluster ? "0.12" : "0.72");
+      el.tsneTooltip.style.display = "none";
+    });
+    c.addEventListener("click", () => {
+      loadEntry(p.headword);
+      showView("entry");
+    });
+
+    el.tsneSvg.appendChild(c);
+  });
+
+  // Legend
+  const clusters = {};
+  points.forEach(p => { clusters[p.cluster_id] ??= p.cluster_label; });
+  el.tsneLegend.innerHTML = Object.entries(clusters)
+    .sort((a, b) => +a[0] - +b[0])
+    .map(([id, label]) => `
+      <div class="tsne-legend-item" data-cluster="${id}" onclick="highlightCluster(${id})">
+        <span class="tsne-legend-dot" style="background:${CLUSTER_PALETTE[+id % CLUSTER_PALETTE.length]}"></span>
+        <span class="tsne-legend-label">${label}</span>
+      </div>`).join("");
+
+  applyTranslations();
+}
+
+function highlightCluster(id) {
+  const svg = el.tsneSvg;
+  if (state.highlightedCluster === id) {
+    state.highlightedCluster = null;
+    svg.classList.remove("highlight-active");
+    svg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
+    document.querySelectorAll(".tsne-legend-item").forEach(i => i.classList.remove("active"));
+  } else {
+    state.highlightedCluster = id;
+    svg.classList.add("highlight-active");
+    svg.querySelectorAll("circle").forEach(c => {
+      c.setAttribute("opacity", c.dataset.cluster == id ? "0.88" : "0.1");
+    });
+    document.querySelectorAll(".tsne-legend-item").forEach(i => {
+      i.classList.toggle("active", i.dataset.cluster == id);
+    });
+  }
+}
+
 /* ── Stats ─────────────────────────────────────────────────────────── */
 async function loadStats() {
   try {
@@ -500,7 +621,8 @@ el.searchInput.addEventListener("input", e => {
 document.querySelectorAll(".nav-item").forEach(btn => {
   btn.addEventListener("click", () => {
     switchView(btn.dataset.view);
-    if (btn.dataset.view === "add") loadGeneratedList();
+    if (btn.dataset.view === "add")      loadGeneratedList();
+    if (btn.dataset.view === "clusters") { showView("tsne"); loadTsne(); }
   });
 });
 
