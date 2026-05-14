@@ -18,5 +18,15 @@
     "is_generated": true,
     "generator": "OllamaGenerator",
     "headword_en": "SOCIAL MEDIA"
+  },
+  {
+    "headword": "ORDINATEUR",
+    "text": "Nécessaire à la survie, mais impossible à comprendre pour le grand public. Les plus simples mots et gestes lui défont la tête. Aide-moi s'il te plaît à écrire une lettre d'amour, je t'écouterais avec intérêt.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "COMPUTER"
   }
 ]

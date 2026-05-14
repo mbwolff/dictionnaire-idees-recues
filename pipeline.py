@@ -475,6 +475,10 @@ class DictionairePipeline:
             "generator":         self.generator.name(),
         }
 
+    def recent_generated(self, limit: int, lang: str) -> list[dict]:
+        recent = list(reversed(self._new_entries[-limit:]))
+        return [self._format_entry({**e, "is_generated": True}, lang) for e in recent if "headword" in e]
+
     def all_entries(self, start: int, limit: int, lang: str) -> list[dict]:
         all_e = self._entries + [
             {**e, "is_generated": True} for e in self._new_entries if "headword" in e
