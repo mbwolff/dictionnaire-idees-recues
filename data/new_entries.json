@@ -28,5 +28,51 @@
     "is_generated": true,
     "generator": "OllamaGenerator",
     "headword_en": "COMPUTER"
+  },
+  {
+    "headword": "LOGICIELS",
+    "text": "Bêtise de l'humanité, source des pertes de temps les plus précieuses. Un clic et vous avez un monde entier sous vos doigts... ainsi que tous les problèmes du monde entier.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "CHINE",
+    "text": "CHINE, pays où l'art consiste à faire ressortir les épaules le plus haut possible lorsqu'il y a du poisson. Un peu de rire et on peut dire que cela est leur plus grand atout culturel.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "LOOK",
+    "text": "Un art subtil consistant à détecter les défauts de toute chose, sauf dans le miroir.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "REGARDER",
+    "text": "Un passe-temps inutile et répétitif, pratiqué généralement devant une écran lumineux qui ne permet de voir plus ce qui se passe dans le monde. Les yeux sont enfermés mais l'esprit est libre: un bon compromis pour les gens trop occupés pour s'amuser à plein temps.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "LOOK"
+  },
+  {
+    "headword": "DEVENIR",
+    "text": "Avoir des parents bien connus dans le milieu du cinéma n'est pas suffisant pour obtenir un rôle principal.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
