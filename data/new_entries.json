@@ -1,0 +1,20 @@
+[
+  {
+    "headword": "ALGORITHME",
+    "text": "Une invention de génies qui permettent à des gens ordinaires d'effectuer des calculs complexes en une seule minute, et aux génies de les perdre dans un écran bleu clair.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "ALGORITHM",
+    "text": "Un mystérieux être créé par des humains, pensant en leur nom et travaillant sans sommeil ni repas. Souvent plus intelligent que ses créateurs mais toujours incapable de comprendre la vie sociale complexe. « Mon algorithme est un ami silencieux qui m'aide à trouver mon chemin dans ce labyrinthe moderne. »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  }
+]

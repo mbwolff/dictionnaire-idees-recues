@@ -619,17 +619,17 @@ class DictionairePipeline:
         fr_word = self.translator.to_french(word) if lang == "en" else word
         fr_word = fr_word.strip().upper()
 
-        # For EN mode, check headword_en fields directly before relying on
-        # to_french(), which can return inconsistent forms (e.g. "l'algorithme"
-        # instead of "ALGORITHME"), causing cross-language duplicate entries.
-        if lang == "en":
-            word_upper = word.strip().upper()
-            for e in self._entries + list(self._new_entries):
-                if e.get("headword_en", "").upper() == word_upper:
-                    fe = self._format_entry(e, lang)
-                    fe["already_exists"] = True
-                    fe["neighbours"] = self._get_neighbours(e["headword"].upper(), lang)
-                    return fe
+        # Check headword_en fields in both directions to prevent cross-language
+        # duplicates: EN mode uses the raw proposed word; FR mode uses it too
+        # because someone can type an English word ("ALGORITHM") in FR mode
+        # and bypass translation entirely.
+        word_upper = word.strip().upper()
+        for e in self._entries + list(self._new_entries):
+            if e.get("headword_en", "").upper() == word_upper:
+                fe = self._format_entry(e, lang)
+                fe["already_exists"] = True
+                fe["neighbours"] = self._get_neighbours(e["headword"].upper(), lang)
+                return fe
 
         validation = self.validator.validate(fr_word)
         if not validation["valid"]:
