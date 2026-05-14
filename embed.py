@@ -1,6 +1,5 @@
 """
-Step 2 — Embed every dictionary entry using FlauBERT
-(or a multilingual sentence-transformer as fallback).
+Step 2 — Embed every dictionary entry using a French sentence-transformer.
 
 Produces:  embeddings.npz   (matrix + headword list)
 """
@@ -13,11 +12,9 @@ ENTRIES_FILE = str(Path(__file__).parent / "data" / "dictionnaire_entries.json")
 OUTPUT_FILE  = Path(__file__).parent / "data" / "embeddings.npz"
 
 # ── Model selection ──────────────────────────────────────────────────────────
-# Primary:  FlauBERT fine-tuned for sentence similarity (French)
-# Fallback: multilingual MiniLM (smaller, faster, still good)
-PRIMARY_MODEL   = "almanach/camembert-base"          # CamemBERT — robust French BERT
-SENTENCE_MODEL  = "dangvantuan/sentence-camembert-base"  # sentence-transformers wrapper
-FALLBACK_MODEL  = "paraphrase-multilingual-MiniLM-L12-v2"
+# CamemBERT fine-tuned for semantic similarity — best quality for French text
+SENTENCE_MODEL = "dangvantuan/sentence-camembert-base"
+FALLBACK_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
 
 
 def load_entries(path: str) -> list[dict]:
@@ -109,19 +106,13 @@ def main():
 
     print(f"Loaded {len(entries)} entries.")
 
-    # Try sentence-transformers first (cleanest API)
     try:
         embeddings = embed_with_sentence_transformers(texts, SENTENCE_MODEL)
         method = SENTENCE_MODEL
     except Exception as e1:
-        print(f"sentence-camembert failed ({e1}), trying multilingual fallback …")
-        try:
-            embeddings = embed_with_sentence_transformers(texts, FALLBACK_MODEL)
-            method = FALLBACK_MODEL
-        except Exception as e2:
-            print(f"sentence-transformers failed ({e2}), using raw transformers …")
-            embeddings = embed_with_transformers(texts, PRIMARY_MODEL)
-            method = PRIMARY_MODEL
+        print(f"sentence-camembert failed ({e1}), falling back to multilingual MiniLM …")
+        embeddings = embed_with_sentence_transformers(texts, FALLBACK_MODEL)
+        method = FALLBACK_MODEL
 
     print(f"\nEmbeddings shape: {embeddings.shape}  (method: {method})")
 
