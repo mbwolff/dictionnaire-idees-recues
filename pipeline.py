@@ -55,22 +55,28 @@ CLUSTER_LABELS = {
 
 RHETORICAL_TAG_LABELS = {
     "fr": {
-        "danger": "Danger",
-        "never_existed": "Mythe",
-        "cross_reference": "Renvoi",
-        "social_obligation": "Obligation sociale",
-        "empty_praise": "Éloge creux",
-        "negation_trap": "Contradiction",
-        "numeric_authority": "Autorité chiffrée",
+        "verite_generale":        "Vérité générale",
+        "nominal_assertion":      "Assertion nominale",
+        "prescriptive_imperative":"Impératif prescriptif",
+        "circular_definition":    "Définition circulaire",
+        "social_performance":     "Performance sociale",
+        "superlative_assertion":  "Assertion superlative",
+        "danger_assertion":       "Assertion de danger",
+        "self_undermining":       "Auto-contradiction",
+        "mythification":          "Mythification",
+        "cross_reference":        "Renvoi",
     },
     "en": {
-        "danger": "Danger",
-        "never_existed": "Myth",
-        "cross_reference": "Cross-reference",
-        "social_obligation": "Social obligation",
-        "empty_praise": "Empty praise",
-        "negation_trap": "Contradiction",
-        "numeric_authority": "Numeric authority",
+        "verite_generale":        "General truth",
+        "nominal_assertion":      "Nominal assertion",
+        "prescriptive_imperative":"Prescriptive imperative",
+        "circular_definition":    "Circular definition",
+        "social_performance":     "Social performance",
+        "superlative_assertion":  "Superlative assertion",
+        "danger_assertion":       "Danger assertion",
+        "self_undermining":       "Self-undermining",
+        "mythification":          "Mythification",
+        "cross_reference":        "Cross-reference",
     },
 }
 
@@ -516,6 +522,26 @@ class DictionairePipeline:
         ]
         all_e.sort(key=lambda x: x.get("headword", ""))
         return [self._format_entry(e, lang) for e in all_e[start:start + limit]]
+
+    def tag_summary(self, lang: str) -> list[dict]:
+        from collections import Counter
+        counts: Counter = Counter(
+            tag for e in self._entries for tag in e.get("tags", [])
+        )
+        labels = RHETORICAL_TAG_LABELS[lang]
+        return [
+            {"tag": tag, "label": labels.get(tag, tag), "count": count}
+            for tag, count in sorted(counts.items(), key=lambda x: -x[1])
+        ]
+
+    def tag_search(self, tag: str, limit: int, lang: str) -> list[dict]:
+        results = [
+            self._format_entry(e, lang)
+            for e in self._entries
+            if tag in e.get("tags", [])
+        ]
+        results.sort(key=lambda x: x["headword"])
+        return results[:limit]
 
     def cluster_search(self, cluster_id: int, limit: int, lang: str) -> list[dict]:
         all_e = self._entries + [{**e, "is_generated": True} for e in self._new_entries if "headword" in e]

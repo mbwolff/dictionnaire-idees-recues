@@ -105,6 +105,7 @@ const el = {
   tsneSvg:        $("tsne-svg"),
   tsneLegend:     $("tsne-legend"),
   tsneTooltip:    $("tsne-tooltip"),
+  tagList:        $("tag-list"),
 };
 
 /* ── API ───────────────────────────────────────────────────────────── */
@@ -449,6 +450,37 @@ async function loadGeneratedList() {
   } catch (e) { console.error(e); }
 }
 
+/* ── Rhetorical tags ───────────────────────────────────────────────── */
+async function loadTags() {
+  try {
+    const tags = await api(`/api/tags?lang=${state.lang}`);
+    renderTags(tags);
+  } catch (e) { el.tagList.innerHTML = `<p class="empty-state">Error.</p>`; }
+}
+
+function renderTags(tags) {
+  el.tagList.innerHTML = tags.map(t => `
+    <div class="tag-item" onclick="filterByTag(${JSON.stringify(t.tag)}, ${JSON.stringify(t.label)})">
+      <span class="tag-label">${t.label}</span>
+      <span class="tag-count">${t.count}</span>
+    </div>`).join("");
+}
+
+function filterByTag(tag, label) {
+  switchView("browse");
+  el.searchInput.value = "";
+  state.searchQuery = "";
+  const url = `/api/search?mode=tag&tag=${encodeURIComponent(tag)}&lang=${state.lang}&limit=500`;
+  api(url).then(data => {
+    renderEntryList(data.results);
+    el.loadMore.style.display = "none";
+    showView("results");
+    $("results-title").textContent = label;
+    $("results-count").textContent = `${data.total} ${state.lang === "fr" ? "entrées" : "entries"}`;
+    $("results-list").innerHTML = "";
+  }).catch(err => console.error(err));
+}
+
 /* ── t-SNE ─────────────────────────────────────────────────────────── */
 const CLUSTER_PALETTE = [
   "#8b3a1a","#b8860b","#2e7d32","#1565c0","#6a1b9a",
@@ -592,6 +624,7 @@ function refreshAll() {
   loadClusters();
   loadStats();
   loadGeneratedList();
+  if (state.currentView === "rhetoric") loadTags();
   if (state.currentEntry) renderEntryDetail(state.currentEntry);
   if (state.searchQuery) doSearch(state.searchQuery);
 }
@@ -626,6 +659,7 @@ document.querySelectorAll(".nav-item").forEach(btn => {
     switchView(btn.dataset.view);
     if (btn.dataset.view === "add")      loadGeneratedList();
     if (btn.dataset.view === "clusters") { showView("tsne"); loadTsne(); }
+    if (btn.dataset.view === "rhetoric") loadTags();
   });
 });
 

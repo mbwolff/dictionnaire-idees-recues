@@ -318,6 +318,28 @@ body {
 /* ── Cluster list ─────────────────────────────────────────────────────── */
 .cluster-list { flex: 1; overflow-y: auto; padding: 8px 0; }
 
+.tag-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+
+.tag-item {
+  display: flex; align-items: baseline; justify-content: space-between;
+  padding: 9px 16px; cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.tag-item:hover { background: var(--cream-dark); }
+.tag-item.active { border-left-color: var(--rust); background: var(--rust-pale); }
+
+.tag-label {
+  font-family: var(--font-ui);
+  font-size: 12px; font-weight: 700; color: var(--ink-soft);
+}
+
+.tag-count {
+  font-family: var(--font-ui);
+  font-size: 10px; color: var(--ink-faint); margin-left: 6px; flex-shrink: 0;
+}
+
 .cluster-item {
   padding: 10px 16px; cursor: pointer;
   border-left: 2px solid transparent;
