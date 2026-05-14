@@ -352,6 +352,11 @@ def parse_entries(section: str) -> list[dict]:
         if not body:
             continue
 
+        # Skip headwords whose body is identical to the immediately preceding entry
+        # (signals a sub-entry or article variant parsed as a duplicate)
+        if entries and body == entries[-1]["text"] and len(body) < 120:
+            continue
+
         xrefs = re.findall(r"\(Voir\s+([^)]+)\)", body, re.IGNORECASE)
         xrefs = [x.strip().rstrip(".") for x in xrefs]
 
