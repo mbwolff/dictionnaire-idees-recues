@@ -151,5 +151,23 @@
     "is_generated": true,
     "generator": "OllamaGenerator",
     "headword_en": "DRAWING"
+  },
+  {
+    "headword": "HHHHHHHHHHHHHHHHHHHHHHKKKKKKKKKKKKKKKKKKKKKKKKKHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHKKK",
+    "text": "Prophétesse de l'imminente extinction humaine, rédigeant des discours effrayants qui font plaisir à tout le monde, car cela signifie qu'on ne doit plus rien faire pour sauver la planète.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "JKJKJK",
+    "text": "JKJKJK. Une abréviation de l'anglais « Just Kidding, Just Kidding, » utilisée par ceux qui ont besoin d'excuses multiples avant de se reconnaître dans leur méchant plaisantinisme. Un outil précieux pour ceux qui ne peuvent pas supporter le fait que les gens puissent prendre au sérieux ce qu'ils disent, mais trouvent aussi agaçants ceux qui veulent bien croire à leurs mensonges.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
