@@ -1,0 +1,47 @@
+[
+  {
+    "headword": "ALGORITHME",
+    "text": "Une réponse de machine, qui ne se sent pas profondément humaine. Si vous souhaitez avoir une conversation avec un robot, il fonctionnera mieux si vous l'entendez comme un miroir plutôt que comme un ami.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "SMARTPHONE",
+    "text": "Nécessité absolue et source de dépendance indéniable, un objet indispensable que l'on regarde lorsqu'il faut parler aux autres ou écouter sa propre voix enregistrée. A été découvert par des géants qui souhaitaient apprendre à danser avec leurs doigts.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "RÉSEAUX SOCIAUX",
+    "text": "RESEAUX SOCIAux. Plats de salutations sans substance, liens artificiels qui vous empêchent de rester en contact avec vos proches les plus importants. Vous dépensez toutes les heures de votre journée pour apprendre à parler aux étrangers, mais ça ne compte pas tant que vous n'avez pas des amis qui ont plus d'amis que vous sur Facebook.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "INTERNET",
+    "text": "Un réseau mondial de toutes les connaissances, mais où l'on ne trouve jamais le sien. Tout savoir sans se former, tout se former sans savoir grand-chose.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "BOVARYSME",
+    "text": "Maladie de l'imagination exagérée et de la jalousie injustifiée. Symptômes: désir d'une vie plus romanesque, déception constante à l'égard des réalités et une collection de livres romansques en surplus. Cure possible par un séjour dans le domaine rural et un abstinence littéraire prolongée.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 3,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  }
+]
