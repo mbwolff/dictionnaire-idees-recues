@@ -7,6 +7,7 @@ GET  /                      → main page
 GET  /api/search?q=&lang=   → search existing entries
 GET  /api/entry/<headword>  → single entry detail + neighbours
 POST /api/generate          → validate noun + generate new entry
+GET  /api/generated         → last 10 generated entries (most recent first)
 GET  /api/clusters          → cluster summary for sidebar
 """
 
@@ -77,6 +78,13 @@ def generate():
 
     result = pipeline.generate_entry(word, lang)
     return jsonify(result)
+
+
+@app.route("/api/generated")
+def generated():
+    lang  = request.args.get("lang", "fr")
+    limit = min(int(request.args.get("limit", 10)), 50)
+    return jsonify(pipeline.recent_generated(limit, lang))
 
 
 @app.route("/api/clusters")

@@ -475,6 +475,10 @@ class DictionairePipeline:
             "generator":         self.generator.name(),
         }
 
+    def recent_generated(self, limit: int, lang: str) -> list[dict]:
+        recent = list(reversed(self._new_entries[-limit:]))
+        return [self._format_entry({**e, "is_generated": True}, lang) for e in recent if "headword" in e]
+
     def all_entries(self, start: int, limit: int, lang: str) -> list[dict]:
         all_e = self._entries + [
             {**e, "is_generated": True} for e in self._new_entries if "headword" in e
@@ -619,6 +623,18 @@ class DictionairePipeline:
         fr_word = self.translator.to_french(word) if lang == "en" else word
         fr_word = fr_word.strip().upper()
 
+        # Check headword_en fields in both directions to prevent cross-language
+        # duplicates: EN mode uses the raw proposed word; FR mode uses it too
+        # because someone can type an English word ("ALGORITHM") in FR mode
+        # and bypass translation entirely.
+        word_upper = word.strip().upper()
+        for e in self._entries + list(self._new_entries):
+            if e.get("headword_en", "").upper() == word_upper:
+                fe = self._format_entry(e, lang)
+                fe["already_exists"] = True
+                fe["neighbours"] = self._get_neighbours(e["headword"].upper(), lang)
+                return fe
+
         validation = self.validator.validate(fr_word)
         if not validation["valid"]:
             return {
@@ -652,6 +668,8 @@ class DictionairePipeline:
             "is_generated": True,
             "generator":    self.generator.name(),
         }
+        if lang == "en":
+            new_entry["headword_en"] = word.strip().upper()
         self._new_entries.append(new_entry)
         NEW_ENTRIES_FILE.parent.mkdir(parents=True, exist_ok=True)
         NEW_ENTRIES_FILE.write_text(

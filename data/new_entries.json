@@ -1,46 +1,77 @@
 [
   {
     "headword": "ALGORITHME",
-    "text": "Une réponse de machine, qui ne se sent pas profondément humaine. Si vous souhaitez avoir une conversation avec un robot, il fonctionnera mieux si vous l'entendez comme un miroir plutôt que comme un ami.",
+    "text": "Un mystérieux être qui, s'il pouvait parler, répéterait constamment « Je résolve des problèmes » jusqu'à l'ennui des humains. Les enfants lui préfèrent les ours en peluche.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
+    "cluster_id": 9,
     "is_generated": true,
-    "generator": "OllamaGenerator"
-  },
-  {
-    "headword": "SMARTPHONE",
-    "text": "Nécessité absolue et source de dépendance indéniable, un objet indispensable que l'on regarde lorsqu'il faut parler aux autres ou écouter sa propre voix enregistrée. A été découvert par des géants qui souhaitaient apprendre à danser avec leurs doigts.",
-    "tags": [],
-    "xrefs": [],
-    "cluster_id": 3,
-    "is_generated": true,
-    "generator": "OllamaGenerator"
+    "generator": "OllamaGenerator",
+    "headword_en": "ALGORITHM"
   },
   {
     "headword": "RÉSEAUX SOCIAUX",
-    "text": "RESEAUX SOCIAux. Plats de salutations sans substance, liens artificiels qui vous empêchent de rester en contact avec vos proches les plus importants. Vous dépensez toutes les heures de votre journée pour apprendre à parler aux étrangers, mais ça ne compte pas tant que vous n'avez pas des amis qui ont plus d'amis que vous sur Facebook.",
+    "text": "RESEAUX SOCIAux. Lieux où les gens passent des heures à ne pas se voir en face-à-face. « Je te souhaite une belle journée... de réseaux sociaux. »",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "SOCIAL MEDIA"
+  },
+  {
+    "headword": "ORDINATEUR",
+    "text": "Nécessaire à la survie, mais impossible à comprendre pour le grand public. Les plus simples mots et gestes lui défont la tête. Aide-moi s'il te plaît à écrire une lettre d'amour, je t'écouterais avec intérêt.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "COMPUTER"
+  },
+  {
+    "headword": "LOGICIELS",
+    "text": "Bêtise de l'humanité, source des pertes de temps les plus précieuses. Un clic et vous avez un monde entier sous vos doigts... ainsi que tous les problèmes du monde entier.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
   {
-    "headword": "INTERNET",
-    "text": "Un réseau mondial de toutes les connaissances, mais où l'on ne trouve jamais le sien. Tout savoir sans se former, tout se former sans savoir grand-chose.",
+    "headword": "CHINE",
+    "text": "CHINE, pays où l'art consiste à faire ressortir les épaules le plus haut possible lorsqu'il y a du poisson. Un peu de rire et on peut dire que cela est leur plus grand atout culturel.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
+    "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
   },
   {
-    "headword": "BOVARYSME",
-    "text": "Maladie de l'imagination exagérée et de la jalousie injustifiée. Symptômes: désir d'une vie plus romanesque, déception constante à l'égard des réalités et une collection de livres romansques en surplus. Cure possible par un séjour dans le domaine rural et un abstinence littéraire prolongée.",
+    "headword": "LOOK",
+    "text": "Un art subtil consistant à détecter les défauts de toute chose, sauf dans le miroir.",
     "tags": [],
     "xrefs": [],
-    "cluster_id": 3,
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "REGARDER",
+    "text": "Un passe-temps inutile et répétitif, pratiqué généralement devant une écran lumineux qui ne permet de voir plus ce qui se passe dans le monde. Les yeux sont enfermés mais l'esprit est libre: un bon compromis pour les gens trop occupés pour s'amuser à plein temps.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "LOOK"
+  },
+  {
+    "headword": "DEVENIR",
+    "text": "Avoir des parents bien connus dans le milieu du cinéma n'est pas suffisant pour obtenir un rôle principal.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
   }

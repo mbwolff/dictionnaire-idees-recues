@@ -422,8 +422,7 @@ async function generateEntry() {
 
 async function loadGeneratedList() {
   try {
-    const data = await api(`/api/search?lang=${state.lang}&limit=50`);
-    const generated = data.results.filter(e => e.is_generated);
+    const generated = await api(`/api/generated?lang=${state.lang}&limit=10`);
     const t = i18n[state.lang];
     if (!generated.length) {
       el.generatedList.innerHTML = `<p class="empty-state">${t.noGenerated}</p>`;
