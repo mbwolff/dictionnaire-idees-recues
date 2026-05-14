@@ -337,7 +337,7 @@ def parse_entries(section: str) -> list[dict]:
     matches  = list(headword_re.finditer(section))
 
     for i, m in enumerate(matches):
-        headword = m.group(1).strip().rstrip(".")
+        headword = m.group(1).strip().rstrip(".").replace("_", "").strip()
         if len(headword) > 50:
             continue
 
