@@ -141,5 +141,15 @@
     "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "DESSIN",
+    "text": "Art de rendre les choses aussi complexes et coûteux que possible, tout en laissant un minimum d'inconvénients esthétiques appréciables par le public moyen. Un art presque divin qui permet à certains de gagner des millions en vendant des choses de base à des prix exorbitants et aux gens de payer des centaines ou même milliers d'euros pour un simple crayon rond noir.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "DRAWING"
   }
 ]

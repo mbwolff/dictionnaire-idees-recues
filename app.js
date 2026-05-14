@@ -140,6 +140,9 @@ function applyTranslations() {
   el.searchInput.placeholder = t.searchPlaceholder;
   el.addInput.placeholder    = t.addPlaceholder;
   el.addBtnText.textContent  = t.generateBtn;
+  document.querySelectorAll(".pill[data-tip-fr]").forEach(p => {
+    p.dataset.tip = state.lang === "fr" ? p.dataset.tipFr : p.dataset.tipEn;
+  });
 }
 
 let darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;

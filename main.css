@@ -165,6 +165,31 @@ body {
 .pill.active { color: var(--rust); background: var(--rust-pale); }
 .pill:not(.active):hover { color: var(--ink-soft); }
 
+.pill[data-tip] { position: relative; }
+.pill[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+  z-index: 50;
+}
+.pill[data-tip]:hover::after { opacity: 1; }
+
 /* ── Layout ──────────────────────────────────────────────────────────── */
 .layout {
   display: flex;
