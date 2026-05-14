@@ -74,5 +74,72 @@
     "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "ASIE",
+    "text": "Le berceau de la démocratie, mais où les élections ont lieu tous les 20 ans et se limitent aux membres d'un clan royal. Ou alors le continent le plus populeux, si l'on considère que chaque bambin indien fait un nouvel habitant à sa naissance.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "ASIE"
+  },
+  {
+    "headword": "JAZZ",
+    "text": "MUSIQUE DE DÉCLINE DES VALEUREUX: un peu de bruit, beaucoup d'alcool et des danseuses provocantes – ce que les bourgeois satisfaits trouvent charmants mais niais. Les jazzmen y perdent leur intelligence avant même d'y gagner une solde.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "JAZZ"
+  },
+  {
+    "headword": "BOOGIE",
+    "text": "Danse spontanée et désordonnée des blancs américains pendant les grandes chaleurs de l'été, accompagnée d'un rythme énervant et répétitif qui est la preuve qu'ils ont oublié leur patrimoine culturel européen.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "BOOGIE"
+  },
+  {
+    "headword": "DISCO",
+    "text": "Fête musicale où les jeunes gens s'échangent des danses extravagantes en suivant un rythme entraînant, mais auquel la majorité ne sait pas danser correctement et qui a l'effet d'un poids mort autour du cou de la budgettaire.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "DISCO"
+  },
+  {
+    "headword": "PEINDRE",
+    "text": "Occupation la plus facile de tous les métiers, car il suffit d'avoir un œil pour observer, une main pour tenir une brosse et un cerveau vide pour ne pas savoir ce qu'on est en train de faire. Les maîtres ont souvent été reconnus comme démentis par leur propre époque, mais admirés plus tard lorsque les hommes ont fini d'être sots.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "NARRER",
+    "text": "Un passe-temps pour les fous qui n'ont rien d'intéressant à dire, mais qui insistent à le faire en détail aux autres fous. Au milieu des histoires sans fin, il se perd une vie et un auditoire patient.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "BOVARYSME",
+    "text": "Bovarysme. Un état d'esprit fétichant l'illusion de la perfection sociale et amoureuse, aboutissant fréquemment à une déception désolante et un sentiment de dissatisfaction persistant. Aucun remède sauf le voyage vers Carthage en voiture rouge.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
