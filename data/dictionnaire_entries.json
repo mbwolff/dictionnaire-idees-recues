@@ -4127,12 +4127,21 @@
   },
   {
     "headword": "FERME (ADJECTIF)",
-    "text": "Toujours suivi de « comme un roc » . FERME (subst.): Lorsqu'on visite une ferme, on ne doit y manger que du pain bis et ne boire que du lait. Si on ajoute des oeufs, s'écrier: « Dieu! comme ils sont frais! Il n'y a pas de danger pour qu'on en trouve de comme ça à la ville. »",
+    "text": "Toujours suivi de « comme un roc ».",
     "xrefs": [],
     "tags": [],
     "cluster_id": 2,
     "text_en": "Always followed by “like a rock”. FARM (noun): When you visit a farm, you should only eat brown bread and drink only milk. If eggs are added, exclaim: “God! how fresh they are! There is no danger of finding one like that in the city.\"",
     "headword_en": "FIRM (ADJECTIVE)"
+  },
+  {
+    "headword": "FERME (SUBST.)",
+    "text": "Lorsqu'on visite une ferme, on ne doit y manger que du pain bis et ne boire que du lait. Si on ajoute des oeufs, s'écrier: « Dieu! comme ils sont frais! Il n'y a pas de danger pour qu'on en trouve de comme ça à la ville. »",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 2,
+    "text_en": "",
+    "headword_en": ""
   },
   {
     "headword": "FERMÉ",
@@ -4145,7 +4154,7 @@
   },
   {
     "headword": "FERMIER",
-    "text": "Toujours lui dire: Maître un tel. Les fermiers sont tous à leur aise. FEU (subst.): Purifie tout. Quand on entend crier « au feu! » on doit commencer par perdre la tête. FEU (adj.): Feu mon père, et on soulève son chapeau.",
+    "text": "Toujours lui dire: Maître un tel. Les fermiers sont tous à leur aise.",
     "xrefs": [],
     "tags": [
       "circular_definition",
@@ -4157,6 +4166,15 @@
     "headword_en": "FARMER"
   },
   {
+    "headword": "FEU (SUBST.)",
+    "text": "Purifie tout. Quand on entend crier « au feu! » on doit commencer par perdre la tête.",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 2,
+    "text_en": "",
+    "headword_en": ""
+  },
+  {
     "headword": "FEUILLE DE VIGNE",
     "text": "Emblème de la virilité dans l'art de la sculpture.",
     "xrefs": [],
@@ -4166,6 +4184,15 @@
     "cluster_id": 11,
     "text_en": "Emblem of virility in the art of sculpture.",
     "headword_en": "VINE LEAF"
+  },
+  {
+    "headword": "FEU (ADJ.)",
+    "text": "Feu mon père, et on soulève son chapeau.",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 2,
+    "text_en": "",
+    "headword_en": ""
   },
   {
     "headword": "FEUILLETONS",

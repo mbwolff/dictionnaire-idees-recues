@@ -359,10 +359,31 @@ def parse_entries(section: str) -> list[dict]:
         if entries and body == entries[-1]["text"] and len(body) < 120:
             continue
 
-        xrefs = re.findall(r"\(Voir\s+([^)]+)\)", body, re.IGNORECASE)
-        xrefs = [x.strip().rstrip(".") for x in xrefs]
+        # Split sub-entries embedded as "WORD (subst.): …" or "WORD (adj.): …"
+        sub_re = re.compile(
+            r"\s+([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ \(\)'\-]{1,50}?)"
+            r"\s*\((subst|adj|adv|verb)\.\):\s*",
+            re.IGNORECASE,
+        )
+        sub_bodies = [body]
+        sub_heads  = [headword]
+        for sm in sub_re.finditer(body):
+            sub_heads.append(sm.group(1).strip().upper()
+                             + " (" + sm.group(2).upper() + ".)")
+        if len(sub_heads) > 1:
+            parts = sub_re.split(body)
+            # parts alternates: text, head, qualifier, text, head, qualifier, text …
+            sub_bodies = [parts[0]]
+            for k in range(1, len(parts) - 2, 3):
+                sub_bodies.append(parts[k + 2])
 
-        entries.append({"headword": headword, "text": body, "xrefs": xrefs})
+        for sh, sb in zip(sub_heads, sub_bodies):
+            sb = sb.strip()
+            if not sb:
+                continue
+            xrefs = re.findall(r"\(Voir\s+([^)]+)\)", sb, re.IGNORECASE)
+            xrefs = [x.strip().rstrip(".") for x in xrefs]
+            entries.append({"headword": sh, "text": sb, "xrefs": xrefs})
 
     return entries
 
