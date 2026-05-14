@@ -1,35 +1,35 @@
-Cluster  0 (138 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
-    ADIEUX, AGENT, AIRAIN, ALCIBIADE, ANGE, BARBIER, BASQUES, BIBLE
+Cluster  0 (130 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
+    ADIEUX, AGENT, ALBÂTRE, ANGE, BASES DE LA SOCIÉTÉ, BIBLE, BILLARD, BROCHE
 
-Cluster  1 (137 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
-    ABSINTHE, ACTRICES, AFFAIRES (LES), AGRICULTURE, AIL, ALLEMANDS, AMBITIEUX, AMÉRIQUE
+Cluster  1 ( 96 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
+    ACCOUCHEMENT, ACHILLE, ADOLESCENT, ALCOOLISME, ANDROCLÈS, BAS-BLEU, BASILIQUE, BAYADÈRE
 
-Cluster  2 (112 entries)  tags=['nominal_assertion', 'verite_generale', 'circular_definition']
-    ANGLAIS, ANTIQUITÉS (LES), APPARTEMENT DE GARÇON, ASPIC, BANDITS, BANQUIERS, BLONDES, BONNES
+Cluster  2 ( 49 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
+    BAGNOLET, BAGUE, BALLONS, BOULET, CLAIR-OBSCUR, CLARINETTE, CLASSIQUES (LES), COMPAS
 
-Cluster  3 ( 73 entries)  tags=['verite_generale', 'nominal_assertion', 'prescriptive_imperative']
-    AIR, ARMÉE, BAGUE, BAISER, XI, BAUDRUCHE, BIÈRE, BOURSE (LA)
+Cluster  3 ( 93 entries)  tags=['verite_generale', 'nominal_assertion', 'circular_definition']
+    ABSINTHE, AIL, ALLEMANDS, ANGLAIS, ARCHITECTES, ASPIC, BANQUIERS, BERGERS
 
-Cluster  4 ( 52 entries)  tags=['prescriptive_imperative', 'verite_generale', 'social_performance']
-    ACADÉMIE FRANCAISE, ACCIDENT, ANGLAISES, ANTIQUITÉ _ET TOUT CE QUI S'Y RAPPORTE_, BANQUET, BARAGOUIN, CAMARILLA, CHACAL
+Cluster  4 ( 86 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
+    AFFAIRES (LES), AGRICULTURE, ALBION, AMÉRIQUE, ARCHITECTURE, ART, ARTISTES, AUTEUR
 
-Cluster  5 ( 78 entries)  tags=['verite_generale', 'prescriptive_imperative', 'nominal_assertion']
-    ART, ASTRONOMIE, BARBE, BIBLIOTHÈQUE, BILLARD, BOTTE, BOUDIN, CARÈME
+Cluster  5 ( 25 entries)  tags=['prescriptive_imperative', 'social_performance', 'verite_generale']
+    BACCALAURÉAT, BADIGEON DANS LES ÉGLISES, DÉICIDE, DOCTRINAIRES, DOUANE, DUEL, ÉCLECTISME, ÉDILES
 
-Cluster  6 ( 51 entries)  tags=['verite_generale', 'circular_definition', 'nominal_assertion']
-    ARCHITECTURE, ARSENIC, AUTRUCHE, BÂILLEMENT, BOUILLI (LE), CACHOT, CAFÉ, CANARDS
+Cluster  6 ( 90 entries)  tags=['verite_generale', 'nominal_assertion', 'circular_definition']
+    ACTRICES, AIR, ARSENIC, AUTRUCHE, BÂILLEMENT, XI, BAUDRUCHE, BIÈRE
 
-Cluster  7 ( 43 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
-    AUTEUR, BAGNOLET, BOULET, CLAIR-OBSCUR, CLARINETTE, CLASSIQUES (LES), CLOWN, COMPAS
+Cluster  7 ( 76 entries)  tags=['verite_generale', 'nominal_assertion', 'prescriptive_imperative']
+    APPARTEMENT DE GARÇON, ASTRONOMIE, BOUDIN, CALVITIE, CARÈME, CATAPLASME, CENSURE, CHAMPIGNONS
 
-Cluster  8 ( 63 entries)  tags=['verite_generale', 'nominal_assertion', 'circular_definition']
-    ACCOUCHEMENT, APLOMB, BASILIQUE, BOUDDHISME, CZAR, DAGUERRÉOTYPE, DJINN, ÉMIR
+Cluster  8 ( 85 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
+    ALLEMAGNE, AMBITION, ANTÉCHRIST, BANDITS, BLONDES, BOUCHERS, BOURSE (LA), BRUNES
 
-Cluster  9 (103 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
-    ALCOOLISME, ALLEMAGNE, AMBITION, ARCHITECTES, ATHÉE, BERGERS, BUDGET, CALVITIE
+Cluster  9 ( 88 entries)  tags=['nominal_assertion', 'verite_generale', 'circular_definition']
+    AIRAIN, ANTIQUITÉS (LES), APLOMB, ARCHIMÈDE, ARMÉE, ATHÉE, BASQUES, BATAILLE
 
-Cluster 10 ( 46 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
-    ALBION, ANTÉCHRIST, ARCHIMÈDE, BACCALAURÉAT, BADIGEON DANS LES ÉGLISES, BATAILLE, BÂTON, BRAS
+Cluster 10 ( 65 entries)  tags=['prescriptive_imperative', 'verite_generale', 'social_performance']
+    ACADÉMIE FRANCAISE, ACCIDENT, ANGLAISES, ANTIQUITÉ _ET TOUT CE QUI S'Y RAPPORTE_, BANQUET, BARAGOUIN, CAMARILLA, CANDEUR
 
-Cluster 11 ( 62 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
-    ACHILLE, ADOLESCENT, ALBÂTRE, ARBALÈTE, BAS-BLEU, BAYADÈRE, BOIS, COMÉDIE
+Cluster 11 ( 74 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
+    ALCIBIADE, AMBITIEUX, AMIRAL, ARBALÈTE, ARGENT, ASSASSIN, AVOCATS, BARBE
