@@ -365,10 +365,16 @@ class NounValidator:
         except Exception as exc:
             print(f"[NounValidator] spaCy unavailable ({exc}); heuristic fallback active.")
 
+    # French vowels incl. accented forms
+    _VOWEL_RE = re.compile(r"[aeiouyàâæéèêëîïôœùûü]", re.IGNORECASE)
+
     def validate(self, word: str) -> dict:
         word = word.strip()
         if not word:
             return {"valid": False, "pos": "", "lemma": word, "reason": "Empty input."}
+        if not self._VOWEL_RE.search(word):
+            return {"valid": False, "pos": "", "lemma": word.upper(),
+                    "reason": f"'{word}' does not look like a word."}
         return self._validate_spacy(word) if self._nlp else self._validate_heuristic(word)
 
     def _validate_spacy(self, word: str) -> dict:
@@ -376,7 +382,7 @@ class NounValidator:
         token = doc[0]
         pos   = token.pos_
         lemma = token.lemma_.upper()
-        if pos in ("NOUN", "PROPN", "X"):
+        if pos in ("NOUN", "PROPN"):
             return {"valid": True, "pos": pos, "lemma": lemma, "reason": ""}
         if len(doc) > 1 and any(t.pos_ in ("NOUN", "PROPN") for t in doc):
             return {"valid": True, "pos": "NOUN", "lemma": word.upper(), "reason": ""}
