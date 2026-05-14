@@ -664,6 +664,8 @@ class DictionairePipeline:
             "is_generated": True,
             "generator":    self.generator.name(),
         }
+        if lang == "en":
+            new_entry["headword_en"] = word.strip().upper()
         self._new_entries.append(new_entry)
         NEW_ENTRIES_FILE.parent.mkdir(parents=True, exist_ok=True)
         NEW_ENTRIES_FILE.write_text(
