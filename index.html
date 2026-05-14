@@ -187,6 +187,19 @@
         </div>
       </article>
 
+      <!-- t-SNE semantic map -->
+      <section class="tsne-view" id="tsne-view" style="display:none">
+        <div class="tsne-header">
+          <h2 class="tsne-title" id="tsne-title" data-fr="Carte sémantique" data-en="Semantic map">Carte sémantique</h2>
+          <p class="tsne-hint" data-fr="Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour isoler le thème" data-en="Hover a dot to see the entry · Click to open · Click a label to isolate the theme">Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour isoler le thème</p>
+        </div>
+        <div class="tsne-container">
+          <svg id="tsne-svg" class="tsne-svg" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="tsne-legend" id="tsne-legend"></div>
+          <div class="tsne-tooltip" id="tsne-tooltip"></div>
+        </div>
+      </section>
+
       <!-- Search results -->
       <section class="search-results" id="search-results" style="display:none">
         <div class="results-header">

@@ -410,6 +410,7 @@ class DictionairePipeline:
         self._headwords: list[str]     = []
         self._hw_index: dict[str, int] = {}
         self._sentence_model           = None
+        self._tsne_cache: Optional[np.ndarray] = None
         self._load_data()
 
     def _load_data(self):
@@ -474,6 +475,36 @@ class DictionairePipeline:
             "clusters":          len(CLUSTER_LABELS["fr"]),
             "generator":         self.generator.name(),
         }
+
+    def tsne_data(self, lang: str) -> list[dict]:
+        if self._embeddings is None:
+            return []
+        if self._tsne_cache is None:
+            from sklearn.manifold import TSNE
+            print("[Pipeline] Computing t-SNE…")
+            coords = TSNE(
+                n_components=2, random_state=42, perplexity=30,
+                max_iter=1000, init="pca", learning_rate="auto",
+            ).fit_transform(self._embeddings)
+            self._tsne_cache = coords.astype(np.float32)
+            print("[Pipeline] t-SNE done.")
+        coords = self._tsne_cache
+        labels = CLUSTER_LABELS[lang]
+        result = []
+        for i, e in enumerate(self._entries):
+            if i >= len(coords):
+                break
+            cid = e.get("cluster_id", -1)
+            hw  = e["headword"]
+            result.append({
+                "headword":         hw,
+                "headword_display": e.get("headword_en", hw) if lang == "en" else hw,
+                "x":                float(coords[i][0]),
+                "y":                float(coords[i][1]),
+                "cluster_id":       cid,
+                "cluster_label":    labels[cid] if 0 <= cid < len(labels) else "",
+            })
+        return result
 
     def recent_generated(self, limit: int, lang: str) -> list[dict]:
         recent = list(reversed(self._new_entries[-limit:]))
