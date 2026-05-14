@@ -1,20 +1,22 @@
 [
   {
     "headword": "ALGORITHME",
-    "text": "Un tigre auquel on a appris la bureaucratie, qui effectue ses fonctions avec une efficacité inhumaine et un manque total d'émotion. Les gens le craignent plus que les lions parce qu'ils ne peuvent pas comprendre ses mouvements.",
+    "text": "Un mystérieux être qui, s'il pouvait parler, répéterait constamment « Je résolve des problèmes » jusqu'à l'ennui des humains. Les enfants lui préfèrent les ours en peluche.",
     "tags": [],
     "xrefs": [],
     "cluster_id": 9,
     "is_generated": true,
-    "generator": "OllamaGenerator"
+    "generator": "OllamaGenerator",
+    "headword_en": "ALGORITHM"
   },
   {
-    "headword": "ALGORITHM",
-    "text": "Un mystérieux objet qui transforme les gens en esclaves de l'ordinateur, permettant aux machines d'entendre et répondre à leurs maîtres ordinaires. Les humains sont devenus des intermédiaires entre les algorithmes incompréhensibles et le monde réel.",
+    "headword": "RÉSEAUX SOCIAUX",
+    "text": "RESEAUX SOCIAux. Lieux où les gens passent des heures à ne pas se voir en face-à-face. « Je te souhaite une belle journée... de réseaux sociaux. »",
     "tags": [],
     "xrefs": [],
     "cluster_id": 9,
     "is_generated": true,
-    "generator": "OllamaGenerator"
+    "generator": "OllamaGenerator",
+    "headword_en": "SOCIAL MEDIA"
   }
 ]
