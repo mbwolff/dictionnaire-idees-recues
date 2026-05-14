@@ -467,17 +467,26 @@ function renderTags(tags) {
 }
 
 function filterByTag(tag, label) {
-  switchView("browse");
   el.searchInput.value = "";
   state.searchQuery = "";
   const url = `/api/search?mode=tag&tag=${encodeURIComponent(tag)}&lang=${state.lang}&limit=500`;
   api(url).then(data => {
-    renderEntryList(data.results);
-    el.loadMore.style.display = "none";
     showView("results");
     $("results-title").textContent = label;
     $("results-count").textContent = `${data.total} ${state.lang === "fr" ? "entrées" : "entries"}`;
-    $("results-list").innerHTML = "";
+    $("results-list").innerHTML = data.results.map(entry => {
+      const hw = entry.headword;
+      const text = entry.text_translated || entry.text || "";
+      const preview = text.length > 120 ? text.slice(0, 120) + "…" : text;
+      return `
+        <div class="result-card" onclick="loadEntry('${hw.replace(/'/g, "\\'")}')">
+          <div class="result-headword">${hw}</div>
+          <div class="result-text">${preview}</div>
+          <div class="result-meta">
+            <span class="cluster-badge">${entry.cluster_label || ""}</span>
+          </div>
+        </div>`;
+    }).join("");
   }).catch(err => console.error(err));
 }
 
