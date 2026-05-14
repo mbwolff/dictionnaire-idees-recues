@@ -348,6 +348,8 @@ def parse_entries(section: str) -> list[dict]:
         body_end   = matches[i + 1].start() if i + 1 < len(matches) else len(section)
         body       = m.group(2) + " " + section[body_start:body_end]
         body       = re.sub(r"\s+", " ", body).strip()
+        # Rejoin words split across lines with a hyphen in the Gutenberg source
+        body       = re.sub(r"(\w)- (\w)", r"\1-\2", body)
 
         if not body:
             continue

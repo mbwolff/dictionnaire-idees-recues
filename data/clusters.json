@@ -2359,7 +2359,7 @@
   },
   {
     "headword": "DARTRE",
-    "text": "signe de santé (v. boutons).",
+    "text": "Signe de santé (v. boutons).",
     "xrefs": [],
     "tags": [],
     "cluster_id": 8,
@@ -2590,7 +2590,7 @@
   },
   {
     "headword": "DESSERT",
-    "text": "Regretter qu'on n'y chante plus. Les gens vertueux le méprisent: « Non! non! pas de pâtisseries! Jamais de dessert! » DESSIN (l'art du): Se compose de trois choses: le ligne, le grain, et le grainé fin; de plus, le trait de force. Mais le trait de force, il n'y a que le maître seul qui le donne. (Christophe.)",
+    "text": "Regretter qu'on n'y chante plus. Les gens vertueux le méprisent: « Non! non! pas de pâtisseries! Jamais de dessert! »",
     "xrefs": [],
     "tags": [
       "circular_definition",
@@ -2599,6 +2599,15 @@
     "cluster_id": 1,
     "text_en": "Regret that we no longer sing there. Virtuous people despise him: “No! No! no pastries! Never dessert!\" DRAWING (the art of): Consists of three things: line, grain, and fine grain; moreover, the trait of strength. But only the master gives the trait of strength. (Christophe.)",
     "headword_en": "DESSERT"
+  },
+  {
+    "headword": "DESSIN (L'ART DU)",
+    "text": "Se compose de trois choses: le ligne, le grain, et le grainé fin; de plus, le trait de force. Mais le trait de force, il n'y a que le maître seul qui le donne. (Christophe.)",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 1,
+    "text_en": "",
+    "headword_en": ""
   },
   {
     "headword": "DEVOIRS",
@@ -3223,7 +3232,7 @@
   },
   {
     "headword": "BIEN ÉCRIT",
-    "text": "Mots de portier, pour désigner les romans- feuilletons qui les amusent.",
+    "text": "Mots de portier, pour désigner les romans-feuilletons qui les amusent.",
     "xrefs": [],
     "tags": [],
     "cluster_id": 0,
@@ -5018,7 +5027,7 @@
   },
   {
     "headword": "GLOBE",
-    "text": "Mot pudique pour désigner les seins d'une femme. « Laissez- moi baiser vos globes adorables. »",
+    "text": "Mot pudique pour désigner les seins d'une femme. « Laissez-moi baiser vos globes adorables. »",
     "xrefs": [],
     "tags": [
       "prescriptive_imperative"
@@ -7729,7 +7738,7 @@
   },
   {
     "headword": "MELON",
-    "text": "Joli sujet de conversation à table. Est-ce un légume? Est- ce un fruit? Les Anglais les mangent au dessert, ce qui étonne.",
+    "text": "Joli sujet de conversation à table. Est-ce un légume? Est-ce un fruit? Les Anglais les mangent au dessert, ce qui étonne.",
     "xrefs": [],
     "tags": [],
     "cluster_id": 4,
