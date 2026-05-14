@@ -328,7 +328,7 @@ def parse_entries(section: str) -> list[dict]:
     section = section.replace("\u00ab", '"').replace("\u00bb", '"')
 
     headword_re = re.compile(
-        r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ\s\(\)'\-]{1,60}?)"
+        r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ \(\)'\-]{1,60}?)"
         r"[\.—\-–:]\s*(.*)$",
         re.MULTILINE,
     )
