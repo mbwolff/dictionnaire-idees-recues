@@ -40,16 +40,16 @@ HF_MODEL          = os.environ.get("HF_MODEL", "mistralai/Mistral-7B-Instruct-v0
 # ── Cluster labels ────────────────────────────────────────────────────────────
 CLUSTER_LABELS = {
     "fr": [
-        "Vie bourgeoise & convenances", "Corps, santé & bienséance", "Langage & bon usage",
-        "Nations & corps de métiers", "Dérision & attitudes", "Histoire, politique & religion",
-        "Curiosités, nature & plaisirs", "Types sociaux & vices", "Femmes & séduction",
-        "Stéréotypes & grands hommes", "Idées reçues & formules", "Société, arts & figures",
+        "Types sociaux & passions", "Conventions, corps & bienséance", "Arts, société & plaisirs",
+        "Langage & bon usage", "Vie bourgeoise & formules", "Usages, apparences & antiquité",
+        "Arts, séduction & culture", "Polémiques & conflits", "Patrie, religion & nature",
+        "Nations & corps de métiers", "Dérision & attitudes", "Sciences, figures & institutions",
     ],
     "en": [
-        "Bourgeois Life & Convention", "Body, Health & Propriety", "Language & Proper Usage",
-        "Nations & Trades", "Derision & Attitudes", "History, Politics & Religion",
-        "Curiosities, Nature & Pleasures", "Social Types & Vices", "Women & Seduction",
-        "Stereotypes & Great Men", "Received Ideas & Stock Phrases", "Society, Arts & Figures",
+        "Social Types & Passions", "Conventions, Body & Propriety", "Arts, Society & Pleasures",
+        "Language & Proper Usage", "Bourgeois Life & Stock Phrases", "Customs, Appearances & Antiquity",
+        "Arts, Seduction & Culture", "Polemics & Conflict", "Homeland, Religion & Nature",
+        "Nations & Trades", "Derision & Attitudes", "Sciences, Figures & Institutions",
     ],
 }
 
