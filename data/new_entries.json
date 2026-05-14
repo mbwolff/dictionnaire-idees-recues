@@ -151,5 +151,23 @@
     "is_generated": true,
     "generator": "OllamaGenerator",
     "headword_en": "DRAWING"
+  },
+  {
+    "headword": "ABABABA",
+    "text": "Un mot à prononcer sans être sûr de sa signification; une joie pour les linguistes et un dégoût pour tous les autres. Les écoliers en apprennent le mot, mais ne savent pas comment l'utiliser dans une phrase cohérente.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "ABABA",
+    "text": "Mot inutilisable en toute circonstance, sauf si vous souhaitez paraître complètement déconnecté de la réalité moderne et esthétiquement désavantagé dans tout domaine linguistique.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
