@@ -254,12 +254,12 @@ function renderSearchResults(q, results) {
     return;
   }
 
-  list.innerHTML = results.map(entry => {
+  list.innerHTML = results.map((entry, i) => {
     const hw = entry.headword;
     const text = entry.text_translated || entry.text || "";
     const preview = text.length > 120 ? text.slice(0, 120) + "…" : text;
     return `
-      <div class="result-card" onclick="loadEntry('${hw.replace(/'/g, "\\'")}')">
+      <div class="result-card" data-idx="${i}">
         <div class="result-headword">${highlight(hw, q)}</div>
         <div class="result-text">${preview}</div>
         <div class="result-meta">
@@ -270,6 +270,9 @@ function renderSearchResults(q, results) {
         </div>
       </div>`;
   }).join("");
+  list.querySelectorAll(".result-card").forEach((card, i) => {
+    card.addEventListener("click", () => loadEntry(results[i].headword));
+  });
 }
 
 function highlight(text, q) {
@@ -326,10 +329,14 @@ function renderEntryDetail(entry) {
 
   // Cross-references
   const xrefsWrap = $("detail-xrefs-wrap");
+  const xrefsEl = $("detail-xrefs");
   if (entry.xrefs && entry.xrefs.length) {
-    $("detail-xrefs").innerHTML = entry.xrefs
-      .map(x => `<span class="xref-link" onclick="loadEntry('${x}')">${x}</span>`)
+    xrefsEl.innerHTML = entry.xrefs
+      .map((x, i) => `<span class="xref-link" data-idx="${i}">${x}</span>`)
       .join("");
+    xrefsEl.querySelectorAll(".xref-link").forEach((span, i) => {
+      span.addEventListener("click", () => loadEntry(entry.xrefs[i]));
+    });
     $("xrefs-label").textContent = t.seeAlso;
     xrefsWrap.style.display = "block";
   } else {
@@ -341,12 +348,15 @@ function renderEntryDetail(entry) {
   const nbGrid    = $("neighbours-grid");
   if (entry.neighbours && entry.neighbours.length) {
     $("neighbours-title").textContent = t.neighbours;
-    nbGrid.innerHTML = entry.neighbours.map(n => `
-      <div class="neighbour-card" onclick="loadEntry('${n.headword.replace(/'/g, "\\'")}')">
+    nbGrid.innerHTML = entry.neighbours.map((n, i) => `
+      <div class="neighbour-card" data-idx="${i}">
         <div class="neighbour-hw">${n.headword}</div>
         <div class="neighbour-text">${n.text_translated || n.text || ""}</div>
         <div class="neighbour-sim">${t.similarity}: ${(n.similarity * 100).toFixed(0)}%</div>
       </div>`).join("");
+    nbGrid.querySelectorAll(".neighbour-card").forEach((card, i) => {
+      card.addEventListener("click", () => loadEntry(entry.neighbours[i].headword));
+    });
     nbSection.style.display = "block";
   } else {
     nbSection.style.display = "none";
@@ -477,12 +487,13 @@ function filterByTag(tag, label) {
     showView("results");
     $("results-title").textContent = label;
     $("results-count").textContent = `${data.total} ${state.lang === "fr" ? "entrées" : "entries"}`;
-    $("results-list").innerHTML = data.results.map(entry => {
+    const list = $("results-list");
+    list.innerHTML = data.results.map((entry, i) => {
       const hw = entry.headword;
       const text = entry.text_translated || entry.text || "";
       const preview = text.length > 120 ? text.slice(0, 120) + "…" : text;
       return `
-        <div class="result-card" onclick="loadEntry('${hw.replace(/'/g, "\\'")}')">
+        <div class="result-card" data-idx="${i}">
           <div class="result-headword">${hw}</div>
           <div class="result-text">${preview}</div>
           <div class="result-meta">
@@ -490,6 +501,9 @@ function filterByTag(tag, label) {
           </div>
         </div>`;
     }).join("");
+    list.querySelectorAll(".result-card").forEach((card, i) => {
+      card.addEventListener("click", () => loadEntry(data.results[i].headword));
+    });
   }).catch(err => console.error(err));
 }
 
