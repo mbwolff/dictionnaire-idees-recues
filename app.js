@@ -459,11 +459,14 @@ async function loadTags() {
 }
 
 function renderTags(tags) {
-  el.tagList.innerHTML = tags.map(t => `
-    <div class="tag-item" onclick="filterByTag(${JSON.stringify(t.tag)}, ${JSON.stringify(t.label)})">
+  el.tagList.innerHTML = tags.map((t, i) => `
+    <div class="tag-item" data-idx="${i}">
       <span class="tag-label">${t.label}</span>
       <span class="tag-count">${t.count}</span>
     </div>`).join("");
+  el.tagList.querySelectorAll(".tag-item").forEach((item, i) => {
+    item.addEventListener("click", () => filterByTag(tags[i].tag, tags[i].label));
+  });
 }
 
 function filterByTag(tag, label) {
