@@ -169,5 +169,14 @@
     "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "BUBU",
+    "text": "Est un mot utilisé par les gens qui cherchent à être originaux, mais il signifie en fait rien du tout. Utiliser ce mot équivaut donc à se mettre en évidence comme une personne insipide.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
