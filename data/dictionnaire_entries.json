@@ -718,8 +718,8 @@
     "headword_en": "XI"
   },
   {
-    "headword": "BAS",
-    "text": "BLEU: Terme de mépris pour désigner toute femme qui s'intéresse aux choses intellectuelles. Citer Molière à l'appui: « Quand la capacité de son esprit se hausse... » , etc.",
+    "headword": "BAS-BLEU",
+    "text": "Terme de mépris pour désigner toute femme qui s'intéresse aux choses intellectuelles. Citer Molière à l'appui: « Quand la capacité de son esprit se hausse... » , etc.",
     "xrefs": [],
     "tags": [
       "prescriptive_imperative",
@@ -1651,8 +1651,8 @@
     "headword_en": "POLISH"
   },
   {
-    "headword": "CLAIR",
-    "text": "OBSCUR: On ne sait pas ce que c'est.",
+    "headword": "CLAIR-OBSCUR",
+    "text": "On ne sait pas ce que c'est.",
     "xrefs": [],
     "tags": [
       "verite_generale"
@@ -1743,8 +1743,8 @@
     "headword_en": "CUCKOLD"
   },
   {
-    "headword": "COFFRES",
-    "text": "FORTS: Leurs complications sont très faciles à déjouer.",
+    "headword": "COFFRES-FORTS",
+    "text": "Leurs complications sont très faciles à déjouer.",
     "xrefs": [],
     "tags": [],
     "cluster_id": 0,
@@ -4059,8 +4059,8 @@
     "headword_en": "MISTAKE"
   },
   {
-    "headword": "FAUX",
-    "text": "MONNAYEURS: Travaillent toujours dans les souterrains.",
+    "headword": "FAUX-MONNAYEURS",
+    "text": "Travaillent toujours dans les souterrains.",
     "xrefs": [],
     "tags": [
       "verite_generale"
@@ -4509,8 +4509,8 @@
     "headword_en": "FRENCH"
   },
   {
-    "headword": "FRANC",
-    "text": "MACONNERIE: Encore une des causes de la Révolution! Les épreuves de l'initiation sont terribles. Cause de dispute dans les ménages. Mal vue des ecclésiastiques. Quel peut bien être son secret?",
+    "headword": "FRANC-MACONNERIE",
+    "text": "Encore une des causes de la Révolution! Les épreuves de l'initiation sont terribles. Cause de dispute dans les ménages. Mal vue des ecclésiastiques. Quel peut bien être son secret?",
     "xrefs": [],
     "tags": [
       "danger_assertion",
@@ -4521,8 +4521,8 @@
     "headword_en": "FRANC"
   },
   {
-    "headword": "FRANCS",
-    "text": "TIREURS: Plus terribles que l'ennemi.",
+    "headword": "FRANCS-TIREURS",
+    "text": "Plus terribles que l'ennemi.",
     "xrefs": [],
     "tags": [
       "danger_assertion",
@@ -4727,8 +4727,8 @@
     "headword_en": "MERGER OF THE ROYAL BRANCHES"
   },
   {
-    "headword": "GAGNE",
-    "text": "PETIT: Belle enseigne pour une boutique, comme inspirant la confiance.",
+    "headword": "GAGNE-PETIT",
+    "text": "Belle enseigne pour une boutique, comme inspirant la confiance.",
     "xrefs": [],
     "tags": [
       "nominal_assertion",
@@ -5292,8 +5292,8 @@
     "headword_en": "WAR"
   },
   {
-    "headword": "GULF",
-    "text": "STREAM: Ville célèbre de Norvège, nouvellement découverte.",
+    "headword": "GULF STREAM",
+    "text": "Ville célèbre de Norvège, nouvellement découverte.",
     "xrefs": [],
     "tags": [
       "nominal_assertion"
@@ -7174,8 +7174,8 @@
     "headword_en": "LIBERTINATION"
   },
   {
-    "headword": "LIBRE",
-    "text": "ÉCHANGE: Cause des souffrances du commerce.",
+    "headword": "LIBRE-ÉCHANGE",
+    "text": "Cause des souffrances du commerce.",
     "xrefs": [],
     "tags": [
       "nominal_assertion"
@@ -8980,8 +8980,8 @@
     "headword_en": "PHOENIX"
   },
   {
-    "headword": "PHILIPPE D'ORLÉANS",
-    "text": "ÉGALITÉ: Tonner contre. Encore une des causes de la Révolution. A commis tous les crimes de cette époque néfaste.",
+    "headword": "PHILIPPE D'ORLÉANS-ÉGALITÉ",
+    "text": "Tonner contre. Encore une des causes de la Révolution. A commis tous les crimes de cette époque néfaste.",
     "xrefs": [],
     "tags": [],
     "cluster_id": 7,
@@ -9161,8 +9161,8 @@
     "headword_en": "WALLET"
   },
   {
-    "headword": "PORT",
-    "text": "ROYAL: Sujet de conversation très bien porté.",
+    "headword": "PORT-ROYAL",
+    "text": "Sujet de conversation très bien porté.",
     "xrefs": [],
     "tags": [
       "nominal_assertion"
@@ -9576,8 +9576,8 @@
     "headword_en": "RHYME"
   },
   {
-    "headword": "RINCE",
-    "text": "BOUCHE: Signe de richesse dans une maison.",
+    "headword": "RINCE-BOUCHE",
+    "text": "Signe de richesse dans une maison.",
     "xrefs": [],
     "tags": [
       "nominal_assertion"
@@ -9733,8 +9733,8 @@
     "headword_en": "BLEED"
   },
   {
-    "headword": "SAINT",
-    "text": "BARTHÉLEMY: Vieille blague.",
+    "headword": "SAINT-BARTHÉLEMY",
+    "text": "Vieille blague.",
     "xrefs": [],
     "tags": [
       "nominal_assertion"
@@ -9744,8 +9744,8 @@
     "headword_en": "SAINT"
   },
   {
-    "headword": "SAINTE",
-    "text": "BEUVE: Le Vendredi Saint, dînait exclusivement de charcuterie.",
+    "headword": "SAINTE-BEUVE",
+    "text": "Le Vendredi Saint, dînait exclusivement de charcuterie.",
     "xrefs": [],
     "tags": [
       "circular_definition"

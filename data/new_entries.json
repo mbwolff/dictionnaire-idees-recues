@@ -232,5 +232,43 @@
     "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "TRADUCTION",
+    "text": "Art sublime, mais inutilisable sans le dictionnaire. Un poète se traduit par lui-même en allemand, mais pas en anglais.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "TRADUCTION"
+  },
+  {
+    "headword": "TOURISME",
+    "text": "Un phénomène qui permet d'admirer les monuments de loin, sans être gêné par des foules ou des coûts élevés. Les touristes n'apprécient pas le paysage; ils prennent uniquement des photos pour leur profil Instagram.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator",
+    "headword_en": "TOURISME"
+  },
+  {
+    "headword": "COMMUNISME",
+    "text": "Le plus grand vecteur de misère et d'inégalité sociale connue au XXIème siècle: un communiste est toujours plus heureux lorsque tous sont pauvres.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "PSYCHANALYSER",
+    "text": "N'apporter aucune consolation, mais payé cher. Les analysés finissent toujours en pensant que les gens autour d'eux sont des robots manipulés par leur soubassement.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]

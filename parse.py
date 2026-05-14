@@ -329,7 +329,7 @@ def parse_entries(section: str) -> list[dict]:
 
     headword_re = re.compile(
         r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ \(\)'\-]{1,60}?)"
-        r"[\.—\-–:]\s*(.*)$",
+        r"[\.—–:]\s*(.*)$",
         re.MULTILINE,
     )
 
