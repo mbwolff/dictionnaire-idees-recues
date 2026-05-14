@@ -178,5 +178,59 @@
     "cluster_id": 9,
     "is_generated": true,
     "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "BUBUDI",
+    "text": "Le symbole de la sagesse traditionnelle indiquant: « Je ne comprends rien de ce que vous venez d'dire, mais je ferai semblant d'être en accord avec toi. »",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "BÉBÉ",
+    "text": "Un tas d'inconveniens et de coûts injustifiés. Les parents sont enfin libres quand il/elle s'endort. Néanmoins, on l'aime tant qu'on passerait une fortune pour avoir un autre...",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "RAGE",
+    "text": "Mot réservé aux déclassés; les riches le font sans nom.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "CINÉMA",
+    "text": "Art de représenter des gens parlant et ne faisant rien d'autre, tout en payant cher.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "TÉLÉPHONE",
+    "text": "Le son des bruits les plus inutiles, lointains ou proches, qui rendent impossible tout réveil matinal. Une invention destinée à nuire aux relations humaines, au silence du quotidien et au bonheur domestique.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
+  },
+  {
+    "headword": "ARRIVISTE",
+    "text": "Celui qui fait paraître son énervement derrière une souriante insistance sans fin, comme s'il nourrissait sa carrière d'un mélange de papier dentaire et de béchamel.",
+    "tags": [],
+    "xrefs": [],
+    "cluster_id": 9,
+    "is_generated": true,
+    "generator": "OllamaGenerator"
   }
 ]
