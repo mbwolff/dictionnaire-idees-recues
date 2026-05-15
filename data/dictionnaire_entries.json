@@ -4878,6 +4878,18 @@
     "headword_en": "GUARD"
   },
   {
+    "headword": "GARDE-COTE",
+    "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme.",
+    "xrefs": [],
+    "tags": []
+  },
+  {
+    "headword": "GARES DE CHEMIN DE FER",
+    "text": "S'extasier devant elles et les donner comme modèles d'architecture.",
+    "xrefs": [],
+    "tags": []
+  },
+  {
     "headword": "GAUCHERS",
     "text": "Terribles à l'escrime. Plus adroits que ceux qui se servent de la main droite.",
     "xrefs": [],
@@ -6817,6 +6829,12 @@
     "headword_en": "JOCKEY"
   },
   {
+    "headword": "JOCKEY-CLUB",
+    "text": "Ses membres sont tous des jeunes gens farceurs et très riches. Dire simplement \"le Jockey\" : très chic, donne à croire qu'on en fait partie.",
+    "xrefs": [],
+    "tags": []
+  },
+  {
     "headword": "JOHN BULL",
     "text": "Quand on ne sait pas le nom d'un Anglais, on l'appelle John Bull.",
     "xrefs": [],
@@ -7973,6 +7991,12 @@
     "cluster_id": 2,
     "text_en": "“The Mexican War is the greatest thought of the reign.\" (Rouher.) MIDI (cuisine): Always with garlic. Thunder against.",
     "headword_en": "MEXICO"
+  },
+  {
+    "headword": "MIDI (CUISINE DU)",
+    "text": "Toujours à l'ail. Tonner contre.",
+    "xrefs": [],
+    "tags": []
   },
   {
     "headword": "MINISTRE",
@@ -9812,6 +9836,12 @@
     "headword_en": "HOLY"
   },
   {
+    "headword": "SAINTE-HÉLÈNE",
+    "text": "Ile connue par son rocher.",
+    "xrefs": [],
+    "tags": []
+  },
+  {
     "headword": "SALIÈRE",
     "text": "La renverser porte malheur.",
     "xrefs": [],
@@ -10556,41 +10586,5 @@
     "cluster_id": 0,
     "text_en": "See Yvetot and die! (v. Naples and Seville)",
     "headword_en": "YVETOT"
-  },
-  {
-    "headword": "GARDE-COTE",
-    "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme.",
-    "xrefs": [],
-    "tags": []
-  },
-  {
-    "headword": "GARES DE CHEMIN DE FER",
-    "text": "S'extasier devant elles et les donner comme modèles d'architecture.",
-    "xrefs": [],
-    "tags": []
-  },
-  {
-    "headword": "GYMNASE (LE)",
-    "text": "Succursale de la Comédie-Française.",
-    "xrefs": [],
-    "tags": []
-  },
-  {
-    "headword": "JOCKEY-CLUB",
-    "text": "Ses membres sont tous des jeunes gens farceurs et très riches. Dire simplement \"le Jockey\" : très chic, donne à croire qu'on en fait partie.",
-    "xrefs": [],
-    "tags": []
-  },
-  {
-    "headword": "MIDI (CUISINE DU)",
-    "text": "Toujours à l'ail. Tonner contre.",
-    "xrefs": [],
-    "tags": []
-  },
-  {
-    "headword": "SAINTE-HÉLÈNE",
-    "text": "Ile connue par son rocher.",
-    "xrefs": [],
-    "tags": []
   }
 ]
