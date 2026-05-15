@@ -34,6 +34,7 @@ Port 5050 is used because macOS AirPlay Receiver occupies port 5000 and returns 
 | `data/dictionnaire_entries.json` | `parse.py` | 962 parsed and tagged Flaubert entries |
 | `data/embeddings.npz` | `embed.py` | CamemBERT sentence embeddings (962 × 768) |
 | `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) + soft membership scores (12-vector per entry) |
+| `data/tsne_coords.npy` | `cluster.py` | Pre-computed t-SNE coordinates (962 × 2, perplexity=30); loaded at startup in <1ms |
 | `data/new_entries.json` | app (runtime) | User-generated entries, persisted across sessions |
 
 The app runs without `embeddings.npz`; semantic search falls back to text search.
@@ -45,14 +46,20 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Browse | Alphabetical index + paginated entry list |
 | Text search | Substring match on headword and entry text |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
+| Browse | Alphabetical index + paginated entry list; ⚂ random-entry button |
+| Text search | Substring match on headword and entry text |
+| Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Themes | 12 semantic clusters with labels; t-SNE map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
-| Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "carte" button in entry detail pulses that entry's dot |
+| Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
+| Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
 | Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); "carte" link to semantic map |
 | Add entry | Propose a French noun → validate → generate in Flaubert's style → persist |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
+| Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail |
+| URL routing | `#entry/HEADWORD`, `#themes`, `#stats`, `#rhetoric` — browser back/forward works; links are shareable |
 
 ## Pipeline
 
@@ -60,11 +67,12 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 parse.py      Fetch text from Project Gutenberg · extract entries · tag with
               Herschberg-Pierrot's enunciative categories (spaCy morphology)
 embed.py      Encode entries with dangvantuan/sentence-camembert-base
-cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores
-              (softmax of cosine similarities to centroids, 12-vector per entry) ·
+cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
+              pre-computes t-SNE (perplexity=30) to data/tsne_coords.npy ·
               batch-translate headwords and entry texts to English via deep-translator
-pipeline.py   Runtime: search · validation · translation · generation · t-SNE
-app.py        Flask routes
+pipeline.py   Runtime: search · validation · translation · generation · t-SNE ·
+              random entry · detailed stats · xref graph
+app.py        Flask routes (+ /api/random, /api/stats/detailed, /api/xrefs)
 ```
 
 ## Architecture
@@ -77,7 +85,8 @@ embed.py        One-off: generate sentence embeddings
 cluster.py      One-off: cluster, label, and translate entries
 index.html      Single-page app shell
 app.js          Vanilla JS: browse, search, entry detail, t-SNE rendering (centroid labels,
-                score-sized dots, secondary toggle, ripple pulse, show-on-map)
+                score-sized dots, secondary toggle, map search, ripple pulse, show-on-map),
+                statistics view, force-directed xref network, keyboard shortcuts, URL routing
 main.css        19th-century editorial typographic stylesheet
 data/           JSON entries + NumPy embeddings
 ```
