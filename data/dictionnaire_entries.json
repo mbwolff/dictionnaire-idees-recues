@@ -10261,6 +10261,17 @@
     "headword_en": "UNIVERSITY"
   },
   {
+    "headword": "USUM (AD).",
+    "text": "Locution latine qui fait bien dans la phrase: Ad usum Delphini. Devra toujours s'employer en parlant d'une femme appelée Delphine.",
+    "xrefs": [],
+    "tags": [
+      "nominal_assertion"
+    ],
+    "cluster_id": null,
+    "text_en": "Latin phrase that sounds well in a sentence: Ad usum Delphini. Should always be used when speaking of a woman named Delphine.",
+    "headword_en": "USUM (AD)."
+  },
+  {
     "headword": "VACCINE",
     "text": "Ne fréquenter que des personnes vaccinées.",
     "xrefs": [],

@@ -332,27 +332,8 @@ def parse_entries(section: str) -> list[dict]:
         r"[\.—–:]\s*(.*)$",
         re.MULTILINE,
     )
-    # Secondary: headwords containing lowercase particles/articles
-    # e.g. "GARES de chemin de fer:", "GYMNASE (le):", "MIDI (cuisine du):"
-    particle_re = re.compile(
-        r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜA-zàâæçéèêëîïôœùûü \(\)'\-]{2,60}?)"
-        r"[:\.\—–]\s+[A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜa-z]",
-        re.MULTILINE,
-    )
-
     entries  = []
-    # Combine both sets of matches, sorted by position
-    hw_matches = sorted(
-        set(headword_re.finditer(section)) | set(),
-        key=lambda m: m.start()
-    )
-    # Build match list: primary regex + secondary for lines missed by primary
-    primary_spans = {m.start() for m in headword_re.finditer(section)}
-    extra = [m for m in particle_re.finditer(section)
-             if m.start() not in primary_spans
-             and re.match(r".*[a-zàâæçéèêëîïôœùûü]", m.group(1))]
-    matches = sorted(list(headword_re.finditer(section)) + extra,
-                     key=lambda m: m.start())
+    matches = list(headword_re.finditer(section))
 
     for i, m in enumerate(matches):
         headword = m.group(1).strip().rstrip(".").replace("_", "").strip().upper()
