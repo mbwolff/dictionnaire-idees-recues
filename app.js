@@ -413,6 +413,20 @@ function filterByCluster(clusterId) {
   }).catch(err => console.error(err));
 }
 
+function filterByClusterSorted(clusterId) {
+  switchView("browse");
+  el.searchInput.value = "";
+  state.searchQuery = "";
+  const url = `/api/search?mode=cluster&cluster_id=${clusterId}&lang=${state.lang}&limit=200`;
+  api(url).then(data => {
+    const sorted = [...data.results].sort(
+      (a, b) => (b.primary_cluster_score ?? 0) - (a.primary_cluster_score ?? 0)
+    );
+    renderEntryList(sorted);
+    el.loadMore.style.display = "none";
+  }).catch(err => console.error(err));
+}
+
 /* ── Add / Generate ────────────────────────────────────────────────── */
 async function generateEntry() {
   const word = el.addInput.value.trim();
@@ -606,7 +620,7 @@ function renderTsne(points) {
   el.tsneLegend.innerHTML = Object.entries(clusters)
     .sort((a, b) => +a[0] - +b[0])
     .map(([id, label]) => `
-      <div class="tsne-legend-item" data-cluster="${id}" onclick="highlightCluster(${id})">
+      <div class="tsne-legend-item" data-cluster="${id}" onclick="highlightCluster(${id}); filterByClusterSorted(${id})">
         <span class="tsne-legend-dot" style="background:${CLUSTER_PALETTE[+id % CLUSTER_PALETTE.length]}"></span>
         <span class="tsne-legend-label">${label}</span>
       </div>`).join("");
