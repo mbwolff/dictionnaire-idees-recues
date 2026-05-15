@@ -306,10 +306,14 @@ function renderEntryDetail(entry) {
     ? `(${entry.headword_translated})` : "";
   $("detail-headword-tr").textContent = tr;
 
-  $("detail-cluster").textContent = entry.cluster_label || "";
+  const priLabel = entry.cluster_label || "";
+  const priMult  = entry.primary_cluster_score
+    ? ` ${(entry.primary_cluster_score * 12).toFixed(1)}×` : "";
+  $("detail-cluster").textContent = priLabel + priMult;
   const secBadge = $("detail-secondary-cluster");
   if (entry.show_secondary_cluster && entry.secondary_cluster_label) {
-    secBadge.textContent = entry.secondary_cluster_label;
+    const secMult = ` ${(entry.secondary_cluster_score * 12).toFixed(1)}×`;
+    secBadge.textContent = entry.secondary_cluster_label + secMult;
     secBadge.style.display = "";
   } else {
     secBadge.style.display = "none";
