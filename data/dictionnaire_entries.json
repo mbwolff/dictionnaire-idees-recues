@@ -4883,7 +4883,8 @@
     "xrefs": [],
     "tags": [],
     "headword_en": "COASTGUARD",
-    "text_en": "Never use this word in the plural when speaking of a woman's breasts."
+    "text_en": "Never use this word in the plural when speaking of a woman's breasts.",
+    "cluster_id": 2
   },
   {
     "headword": "GARES DE CHEMIN DE FER",
@@ -4891,7 +4892,8 @@
     "xrefs": [],
     "tags": [],
     "headword_en": "RAILWAY STATIONS",
-    "text_en": "Go into raptures over them and hold them up as models of architecture."
+    "text_en": "Go into raptures over them and hold them up as models of architecture.",
+    "cluster_id": 8
   },
   {
     "headword": "GAUCHERS",
@@ -6838,7 +6840,8 @@
     "xrefs": [],
     "tags": [],
     "headword_en": "JOCKEY CLUB",
-    "text_en": "Its members are all young pranksters and very wealthy. Say simply 'the Jockey': very chic, suggests you belong to it."
+    "text_en": "Its members are all young pranksters and very wealthy. Say simply 'the Jockey': very chic, suggests you belong to it.",
+    "cluster_id": 5
   },
   {
     "headword": "JOHN BULL",
@@ -8004,7 +8007,8 @@
     "xrefs": [],
     "tags": [],
     "headword_en": "SOUTHERN COOKING",
-    "text_en": "Always with garlic. Inveigh against it."
+    "text_en": "Always with garlic. Inveigh against it.",
+    "cluster_id": 11
   },
   {
     "headword": "MINISTRE",
@@ -9849,7 +9853,8 @@
     "xrefs": [],
     "tags": [],
     "headword_en": "SAINT HELENA",
-    "text_en": "Island known for its rock."
+    "text_en": "Island known for its rock.",
+    "cluster_id": 4
   },
   {
     "headword": "SALIÈRE",
@@ -10385,7 +10390,7 @@
     "tags": [
       "nominal_assertion"
     ],
-    "cluster_id": null,
+    "cluster_id": 3,
     "text_en": "Latin phrase that sounds well in a sentence: Ad usum Delphini. Should always be used when speaking of a woman named Delphine.",
     "headword_en": "USUM (AD)."
   },

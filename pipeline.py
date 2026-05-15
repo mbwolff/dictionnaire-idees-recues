@@ -454,7 +454,9 @@ class DictionairePipeline:
     def _format_entry(self, entry: dict, lang: str) -> dict:
         text = entry.get("text", "")
         hw   = entry.get("headword", "")
-        cid  = entry.get("cluster_id", -1)
+        cid  = entry.get("cluster_id")
+        if not isinstance(cid, int):
+            cid = -1
         result = {
             "headword":      hw,
             "text":          text,
@@ -512,7 +514,9 @@ class DictionairePipeline:
         for i, e in enumerate(self._entries):
             if i >= len(coords):
                 break
-            cid = e.get("cluster_id", -1)
+            cid = e.get("cluster_id")
+            if not isinstance(cid, int):
+                cid = -1
             hw  = e["headword"]
             result.append({
                 "headword":         hw,
