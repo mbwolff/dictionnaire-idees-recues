@@ -117,7 +117,7 @@ class EnunciativeTagger:
         doc  = self._nlp(text)
         tags = set()
 
-        if re.search(r"\(Voir\s+.+?\)", text, re.IGNORECASE):
+        if re.search(r"\(v\.\s*[^)]+\)", text, re.IGNORECASE) or re.match(r"^V\.\s+", text, re.IGNORECASE):
             tags.add("cross_reference")
 
         if self._is_prescriptive_imperative(doc):
@@ -380,8 +380,15 @@ def parse_entries(section: str) -> list[dict]:
             sb = sb.strip()
             if not sb:
                 continue
-            xrefs = re.findall(r"\(Voir\s+([^)]+)\)", sb, re.IGNORECASE)
-            xrefs = [x.strip().rstrip(".") for x in xrefs]
+            # Collect "(v. X)" inline xrefs and standalone "V. X." entries
+            xref_raw = re.findall(r"\(v\.\s*([^)]+)\)", sb, re.IGNORECASE)
+            sm2 = re.match(r"^V\.\s+(.+?)\.?\s*$", sb, re.IGNORECASE)
+            if sm2:
+                xref_raw.append(sm2.group(1))
+            xrefs = []
+            for raw in xref_raw:
+                for part in re.split(r",\s*|\s+et\s+", raw.strip()):
+                    xrefs.append(part.strip().rstrip(".").upper())
             entries.append({"headword": sh, "text": sb, "xrefs": xrefs})
 
     return entries

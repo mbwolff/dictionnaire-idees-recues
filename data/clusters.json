@@ -193,9 +193,13 @@
   {
     "headword": "ALCOOLISME",
     "text": "Cause de toute les maladies modernes (v. absinthe et tabac).",
-    "xrefs": [],
+    "xrefs": [
+      "ABSINTHE",
+      "TABAC"
+    ],
     "tags": [
-      "nominal_assertion"
+      "nominal_assertion",
+      "cross_reference"
     ],
     "cluster_id": 0,
     "text_en": "Cause of all modern diseases (see absinthe and tobacco).",
@@ -788,9 +792,12 @@
   {
     "headword": "BAYADÈRE",
     "text": "Mot qui entraîne l'imagination. Toutes les femmes de l'Orient sont des bayadères (v. odalisques).",
-    "xrefs": [],
+    "xrefs": [
+      "ODALISQUES"
+    ],
     "tags": [
-      "circular_definition"
+      "circular_definition",
+      "cross_reference"
     ],
     "cluster_id": 1,
     "text_en": "Word that trains the imagination. All the women of the Orient are bayadères (see odalisques).",
@@ -879,11 +886,14 @@
   {
     "headword": "BLONDES",
     "text": "Plus chaudes que les brunes (v. brunes).",
-    "xrefs": [],
+    "xrefs": [
+      "BRUNES"
+    ],
     "tags": [
       "nominal_assertion",
       "superlative_assertion",
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 9,
     "text_en": "Warmer than brunettes (v. brunettes).",
@@ -1091,11 +1101,14 @@
   {
     "headword": "BRUNES",
     "text": "Plus chaudes que les blondes (v. blondes).",
-    "xrefs": [],
+    "xrefs": [
+      "BLONDES"
+    ],
     "tags": [
       "nominal_assertion",
       "superlative_assertion",
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 9,
     "text_en": "Hotter than blondes (v. blondes).",
@@ -1685,8 +1698,12 @@
   {
     "headword": "CLOU",
     "text": "V. boutons.",
-    "xrefs": [],
-    "tags": [],
+    "xrefs": [
+      "BOUTONS"
+    ],
+    "tags": [
+      "cross_reference"
+    ],
     "cluster_id": 9,
     "text_en": "V. buttons.",
     "headword_en": "NAIL"
@@ -2306,8 +2323,12 @@
   {
     "headword": "DAGUERRÉOTYPE",
     "text": "Remplacera la peinture (v. photographie).",
-    "xrefs": [],
-    "tags": [],
+    "xrefs": [
+      "PHOTOGRAPHIE"
+    ],
+    "tags": [
+      "cross_reference"
+    ],
     "cluster_id": 7,
     "text_en": "Will replace the paint (see photography).",
     "headword_en": "DAGUERREOTYPE"
@@ -2360,8 +2381,12 @@
   {
     "headword": "DARTRE",
     "text": "Signe de santé (v. boutons).",
-    "xrefs": [],
-    "tags": [],
+    "xrefs": [
+      "BOUTONS"
+    ],
+    "tags": [
+      "cross_reference"
+    ],
     "cluster_id": 10,
     "text_en": "sign of health (see pimples).",
     "headword_en": "DARTRE"
@@ -2975,10 +3000,13 @@
   {
     "headword": "DOUANE",
     "text": "On doit se révolter contre et la frauder (v. octroi).",
-    "xrefs": [],
+    "xrefs": [
+      "OCTROI"
+    ],
     "tags": [
       "prescriptive_imperative",
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 0,
     "text_en": "We must revolt against and defraud it (v. granting).",
@@ -3618,9 +3646,12 @@
   {
     "headword": "ESCROC",
     "text": "Toujours du grand monde (v. espion).",
-    "xrefs": [],
+    "xrefs": [
+      "ESPION"
+    ],
     "tags": [
-      "nominal_assertion"
+      "nominal_assertion",
+      "cross_reference"
     ],
     "cluster_id": 7,
     "text_en": "Always in the big world (v. spy).",
@@ -3629,9 +3660,12 @@
   {
     "headword": "ESPION",
     "text": "Toujours du grand monde (v. escroc).",
-    "xrefs": [],
+    "xrefs": [
+      "ESCROC"
+    ],
     "tags": [
-      "nominal_assertion"
+      "nominal_assertion",
+      "cross_reference"
     ],
     "cluster_id": 6,
     "text_en": "Always in the big world (v. crook).",
@@ -3697,9 +3731,12 @@
   {
     "headword": "ÉTÉ",
     "text": "Toujours exceptionnel (v. hiver).",
-    "xrefs": [],
+    "xrefs": [
+      "HIVER"
+    ],
     "tags": [
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 4,
     "text_en": "Always exceptional (v. winter).",
@@ -4496,10 +4533,13 @@
   {
     "headword": "FOUTRE",
     "text": "N'employer de mot que pour jurer, et encore! (v. Docteur).",
-    "xrefs": [],
+    "xrefs": [
+      "DOCTEUR"
+    ],
     "tags": [
       "prescriptive_imperative",
-      "social_performance"
+      "social_performance",
+      "cross_reference"
     ],
     "cluster_id": 3,
     "text_en": "Use words only to swear, and then again! (v. Doctor).",
@@ -4685,8 +4725,12 @@
   {
     "headword": "FURONCLE",
     "text": "V. boutons.",
-    "xrefs": [],
-    "tags": [],
+    "xrefs": [
+      "BOUTONS"
+    ],
+    "tags": [
+      "cross_reference"
+    ],
     "cluster_id": 9,
     "text_en": "V. buttons.",
     "headword_en": "BOIL"
@@ -5699,11 +5743,14 @@
   {
     "headword": "HIVER",
     "text": "Toujours exceptionnel (v. été). Est plus sain que les autres saisons.",
-    "xrefs": [],
+    "xrefs": [
+      "ÉTÉ"
+    ],
     "tags": [
       "prescriptive_imperative",
       "superlative_assertion",
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 4,
     "text_en": "Always exceptional (v. summer). Is healthier than other seasons.",
@@ -6266,9 +6313,12 @@
   {
     "headword": "INDUSTRIE",
     "text": "V. commerce.",
-    "xrefs": [],
+    "xrefs": [
+      "COMMERCE"
+    ],
     "tags": [
-      "nominal_assertion"
+      "nominal_assertion",
+      "cross_reference"
     ],
     "cluster_id": 6,
     "text_en": "V. commerce.",
@@ -8198,10 +8248,13 @@
   {
     "headword": "NAPLES",
     "text": "Si vous causez avec des savants, dire Parthénope. Voir Naples et mourir! (v. Yvetot).",
-    "xrefs": [],
+    "xrefs": [
+      "YVETOT"
+    ],
     "tags": [
       "prescriptive_imperative",
-      "social_performance"
+      "social_performance",
+      "cross_reference"
     ],
     "cluster_id": 9,
     "text_en": "If you chat with scholars, say Parthenope. See Naples and die! (see Yvetot).",
@@ -8290,11 +8343,15 @@
   {
     "headword": "NÈGRESSES",
     "text": "Plus chaudes que les blanches (v. brunes et blondes).",
-    "xrefs": [],
+    "xrefs": [
+      "BRUNES",
+      "BLONDES"
+    ],
     "tags": [
       "nominal_assertion",
       "superlative_assertion",
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 9,
     "text_en": "Warmer than white women (see brunettes and blondes).",
@@ -8446,9 +8503,12 @@
   {
     "headword": "OCTROI",
     "text": "On doit le frauder (v. douane)",
-    "xrefs": [],
+    "xrefs": [
+      "DOUANE"
+    ],
     "tags": [
-      "verite_generale"
+      "verite_generale",
+      "cross_reference"
     ],
     "cluster_id": 0,
     "text_en": "We have to defraud it (see customs)",
@@ -8457,9 +8517,12 @@
   {
     "headword": "ODALISQUES",
     "text": "Toutes les femmes de l'Orient sont des odalisques (v. bayadères).",
-    "xrefs": [],
+    "xrefs": [
+      "BAYADÈRE"
+    ],
     "tags": [
-      "circular_definition"
+      "circular_definition",
+      "cross_reference"
     ],
     "cluster_id": 1,
     "text_en": "All the women of the Orient are odalisques (v. bayadères).",
@@ -8592,8 +8655,12 @@
   {
     "headword": "L'ORDRE",
     "text": "Que de crime on commet en ton nom! (v. liberté).",
-    "xrefs": [],
-    "tags": [],
+    "xrefs": [
+      "LIBERTÉ"
+    ],
+    "tags": [
+      "cross_reference"
+    ],
     "cluster_id": 0,
     "text_en": "What crimes are committed in your name! (v. freedom).",
     "headword_en": "THE ORDER"
@@ -8984,9 +9051,12 @@
   {
     "headword": "PHOTOGRAPHIE",
     "text": "Détrônera la peinture (v. daguerréotype).",
-    "xrefs": [],
+    "xrefs": [
+      "DAGUERRÉOTYPE"
+    ],
     "tags": [
-      "nominal_assertion"
+      "nominal_assertion",
+      "cross_reference"
     ],
     "cluster_id": 7,
     "text_en": "Will dethrone painting (see daguerreotype).",
@@ -9641,9 +9711,14 @@
   {
     "headword": "ROUSSES",
     "text": "V. blondes, brunes et négresses.",
-    "xrefs": [],
+    "xrefs": [
+      "BLONDES",
+      "BRUNES",
+      "NÈGRESSES"
+    ],
     "tags": [
-      "nominal_assertion"
+      "nominal_assertion",
+      "cross_reference"
     ],
     "cluster_id": 9,
     "text_en": "V. blondes, brunettes and negresses.",
@@ -9888,12 +9963,15 @@
   {
     "headword": "SÉVILLE",
     "text": "Célèbre endroit pour son barbier. Voir Séville et mourir! (v. Naples).",
-    "xrefs": [],
+    "xrefs": [
+      "NAPLES"
+    ],
     "tags": [
       "circular_definition",
       "nominal_assertion",
       "prescriptive_imperative",
-      "social_performance"
+      "social_performance",
+      "cross_reference"
     ],
     "cluster_id": 7,
     "text_en": "Famous place for its barber. See Seville and die! (v. Naples).",
@@ -10464,12 +10542,16 @@
   {
     "headword": "YVETOT",
     "text": "Voir Yvetot et mourir! (v. Naples et Séville)",
-    "xrefs": [],
+    "xrefs": [
+      "NAPLES",
+      "SÉVILLE"
+    ],
     "tags": [
       "circular_definition",
       "nominal_assertion",
       "prescriptive_imperative",
-      "social_performance"
+      "social_performance",
+      "cross_reference"
     ],
     "cluster_id": 11,
     "text_en": "See Yvetot and die! (v. Naples and Seville)",
