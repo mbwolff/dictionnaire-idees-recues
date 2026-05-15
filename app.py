@@ -118,6 +118,24 @@ def stats():
     return jsonify(pipeline.stats())
 
 
+@app.route("/api/random")
+def random_entry():
+    lang = request.args.get("lang", "fr")
+    return jsonify(pipeline.random_entry(lang))
+
+
+@app.route("/api/stats/detailed")
+def stats_detailed():
+    lang = request.args.get("lang", "fr")
+    return jsonify(pipeline.detailed_stats(lang))
+
+
+@app.route("/api/xrefs")
+def xrefs():
+    lang = request.args.get("lang", "fr")
+    return jsonify(pipeline.xref_graph(lang))
+
+
 if __name__ == "__main__":
     # Port 5000 is hijacked by macOS AirPlay Receiver (Control Center) and
     # returns 403, so use 5050 instead.

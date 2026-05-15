@@ -79,6 +79,10 @@
           <span class="nav-icon">¶</span>
           <span data-fr="Rhétorique" data-en="Rhetoric">Rhétorique</span>
         </button>
+        <button class="nav-item" data-view="stats" id="nav-stats">
+          <span class="nav-icon">∑</span>
+          <span data-fr="Statistiques" data-en="Statistics">Statistiques</span>
+        </button>
         <button class="nav-item" data-view="add" id="nav-add">
           <span class="nav-icon">✦</span>
           <span data-fr="Ajouter" data-en="Add entry">Ajouter</span>
@@ -90,6 +94,7 @@
         <div class="panel-header">
           <span class="panel-title" data-fr="Toutes les entrées" data-en="All entries">Toutes les entrées</span>
           <span class="entry-count" id="entry-count">—</span>
+          <button class="random-btn" id="random-btn" title="Entrée au hasard" data-fr="⚂" data-en="⚂">⚂</button>
         </div>
         <div class="alpha-index" id="alpha-index"></div>
         <div class="entry-list" id="entry-list">
@@ -121,6 +126,14 @@
         <div class="tag-list" id="tag-list">
           <div class="loading-state"><span class="loading-dot"></span></div>
         </div>
+      </div>
+
+      <!-- Stats panel -->
+      <div class="sidebar-panel" id="panel-stats">
+        <div class="panel-header">
+          <span class="panel-title" data-fr="Corpus" data-en="Corpus">Corpus</span>
+        </div>
+        <div id="stats-nav-summary" class="stats-nav-summary"></div>
       </div>
 
       <!-- Add panel -->
@@ -214,6 +227,9 @@
           <h2 class="tsne-title" id="tsne-title" data-fr="Carte sémantique" data-en="Semantic map">Carte sémantique</h2>
           <div class="tsne-hint-row">
             <p class="tsne-hint" data-fr="Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour parcourir le thème par score" data-en="Hover a dot to see the entry · Click to open · Click a label to browse the theme by score">Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour parcourir le thème par score</p>
+            <input type="search" id="tsne-search" class="tsne-search"
+              data-placeholder-fr="Localiser…" data-placeholder-en="Locate…"
+              placeholder="Localiser…" autocomplete="off" spellcheck="false"/>
             <button class="tsne-secondary-btn" id="tsne-secondary-btn" onclick="toggleSecondary()" data-fr="Ambiguïtés" data-en="Ambiguous">Ambiguïtés</button>
           </div>
         </div>
@@ -221,6 +237,13 @@
           <svg id="tsne-svg" class="tsne-svg" preserveAspectRatio="xMidYMid meet"></svg>
           <div class="tsne-legend" id="tsne-legend"></div>
           <div class="tsne-tooltip" id="tsne-tooltip"></div>
+        </div>
+      </section>
+
+      <!-- Statistics view -->
+      <section class="stats-view" id="stats-view" style="display:none">
+        <div id="stats-content">
+          <div class="loading-state"><span class="loading-dot"></span></div>
         </div>
       </section>
 

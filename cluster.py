@@ -17,6 +17,7 @@ ENTRIES_FILE    = Path(__file__).parent / "data" / "dictionnaire_entries.json"
 EMBEDDINGS_FILE = Path(__file__).parent / "data" / "embeddings.npz"
 CLUSTERS_FILE   = Path(__file__).parent / "data" / "clusters.json"
 GAPS_FILE       = Path(__file__).parent / "data" / "gap_candidates.json"
+TSNE_FILE       = Path(__file__).parent / "data" / "tsne_coords.npy"
 REPORTS_DIR     = Path(__file__).parent / "reports"
 
 N_CLUSTERS = 12   # tunable — roughly one per major thematic zone
@@ -246,9 +247,20 @@ def main():
         print(f"    Nearest entry: {g['nearest_headword']}")
         print(f"    Neighbours: {[h for h, _ in g['top_5_members']]}")
 
-    # 2-D projection + plot
+    # 2-D projection + plot (perplexity=15, for the report image)
     coords = reduce_2d(embeddings)
     plot_clusters(coords, labels, headwords, REPORTS_DIR / "clusters.png")
+
+    # Pre-compute t-SNE for the pipeline (perplexity=30, matches pipeline.py)
+    from sklearn.manifold import TSNE as _TSNE
+    from sklearn.preprocessing import normalize as _norm
+    print("Pre-computing t-SNE for runtime (perplexity=30)…")
+    tsne_pipeline = _TSNE(
+        n_components=2, random_state=42, perplexity=30,
+        max_iter=1000, init="pca", learning_rate="auto",
+    ).fit_transform(_norm(embeddings))
+    np.save(TSNE_FILE, tsne_pipeline.astype(np.float32))
+    print(f"  Saved → {TSNE_FILE}")
 
 
 if __name__ == "__main__":

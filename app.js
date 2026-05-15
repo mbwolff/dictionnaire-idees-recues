@@ -106,7 +106,10 @@ const el = {
   tsneSvg:        $("tsne-svg"),
   tsneLegend:     $("tsne-legend"),
   tsneTooltip:    $("tsne-tooltip"),
+  tsneSearch:     $("tsne-search"),
   tagList:        $("tag-list"),
+  statsView:      $("stats-view"),
+  statsContent:   $("stats-content"),
 };
 
 /* ── API ───────────────────────────────────────────────────────────── */
@@ -283,17 +286,18 @@ function highlight(text, q) {
 }
 
 /* ── Entry detail ──────────────────────────────────────────────────── */
-async function loadEntry(headword) {
-  // Mark active in sidebar
+async function loadEntry(headword, skipHistory = false) {
   document.querySelectorAll(".list-entry").forEach(b => {
     b.classList.toggle("active", b.dataset.headword === headword);
   });
-
   try {
     const entry = await api(`/api/entry/${encodeURIComponent(headword)}?lang=${state.lang}`);
     state.currentEntry = entry;
     renderEntryDetail(entry);
     showView("entry");
+    if (!skipHistory) {
+      history.pushState({ type: "entry", headword }, "", "#entry/" + encodeURIComponent(headword));
+    }
   } catch (e) {
     console.error("Entry not found:", headword, e);
   }
@@ -388,6 +392,8 @@ function showView(view) {
   el.entryDetail.style.display   = view === "entry"   ? "block" : "none";
   el.searchResults.style.display = view === "results" ? "block" : "none";
   el.tsneView.style.display      = view === "tsne"    ? "flex"  : "none";
+  el.statsView.style.display     = view === "stats"   ? "block" : "none";
+  if (view !== "tsne" && el.tsneSearch) el.tsneSearch.value = "";
 }
 
 /* ── Clusters ──────────────────────────────────────────────────────── */
@@ -646,7 +652,7 @@ function renderTsne(points) {
     c.addEventListener("click", () => { loadEntry(p.headword); showView("entry"); });
 
     el.tsneSvg.appendChild(c);
-    tsneCircles.set(p.headword, { cx: +cx, cy: +cy, color });
+    tsneCircles.set(p.headword, { cx: +cx, cy: +cy, color, el: c });
 
     // Accumulate centroid
     if (p.cluster_id >= 0) {
@@ -737,6 +743,7 @@ async function showOnMap(headword) {
   switchView("clusters");
   showView("tsne");
   await loadTsne();
+  el.tsneSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
   const data = tsneCircles.get(headword);
   if (!data) return;
   pulseAt(data.cx, data.cy, data.color);
@@ -764,6 +771,184 @@ function pulseAt(cx, cy, color) {
       setTimeout(() => ring.remove(), 750);
     }, i * 350);
   }
+}
+
+/* ── Random entry ───────────────────────────────────────────────────── */
+async function loadRandom() {
+  try {
+    const entry = await api(`/api/random?lang=${state.lang}`);
+    state.currentEntry = entry;
+    renderEntryDetail(entry);
+    showView("entry");
+    history.pushState({ type: "entry", headword: entry.headword }, "", "#entry/" + encodeURIComponent(entry.headword));
+  } catch (e) { console.error("Random entry failed:", e); }
+}
+
+/* ── Detailed stats + xref network ─────────────────────────────────── */
+let statsCache = null;
+
+async function loadDetailedStats() {
+  if (statsCache && statsCache.lang === state.lang) { renderStatsView(statsCache.data); return; }
+  el.statsContent.innerHTML = `<div class="loading-state"><span class="loading-dot"></span></div>`;
+  try {
+    const [data, xdata] = await Promise.all([
+      api(`/api/stats/detailed?lang=${state.lang}`),
+      api(`/api/xrefs?lang=${state.lang}`),
+    ]);
+    statsCache = { lang: state.lang, data, xdata };
+    renderStatsView(data, xdata);
+  } catch (e) { el.statsContent.innerHTML = `<p class="empty-state">Error loading statistics.</p>`; }
+}
+
+function barChart(items, colorFn, labelKey = "label", valueKey = "count") {
+  const BAR_MAX = 180, LABEL_W = 140, ROW_H = 16, PAD = 3;
+  const maxVal = Math.max(...items.map(d => d[valueKey]), 1);
+  const h = items.length * (ROW_H + PAD) + PAD;
+  const rows = items.map((d, i) => {
+    const bw = Math.max(1, (d[valueKey] / maxVal) * BAR_MAX);
+    const y  = PAD + i * (ROW_H + PAD);
+    const lbl = d[labelKey].length > 24 ? d[labelKey].slice(0, 22) + "…" : d[labelKey];
+    return `<text x="${LABEL_W - 4}" y="${y + ROW_H * 0.72}" text-anchor="end" font-size="8.5" font-family="var(--font-ui)" fill="var(--ink-soft)">${lbl}</text>
+<rect x="${LABEL_W}" y="${y}" width="${bw}" height="${ROW_H}" fill="${colorFn(d, i)}" rx="1" opacity="0.75"/>
+<text x="${LABEL_W + bw + 4}" y="${y + ROW_H * 0.72}" font-size="8.5" font-family="var(--font-ui)" fill="var(--ink-faint)">${d[valueKey]}</text>`;
+  }).join("");
+  return `<svg width="${LABEL_W + BAR_MAX + 40}" height="${h}" overflow="visible">${rows}</svg>`;
+}
+
+const TAG_COLORS = ["#8b3a1a","#b8860b","#2e7d32","#1565c0","#6a1b9a","#c0392b","#00695c","#1a5276","#7b241c","#4a7c59","#0d47a1"];
+
+function renderStatsView(data, xdata) {
+  const t = i18n[state.lang];
+  const tagSvg = barChart(data.tags, (_, i) => TAG_COLORS[i % TAG_COLORS.length]);
+  const clsSvg = barChart(data.clusters, (d) => CLUSTER_PALETTE[d.cluster_id % CLUSTER_PALETTE.length]);
+
+  el.statsContent.innerHTML = `
+<div class="stats-page">
+  <div class="stats-headline">
+    <div class="stat-big"><span>${data.flaubert_entries}</span><br>${t.statsFlaubert}</div>
+    <div class="stat-big"><span>${data.generated_entries}</span><br>${t.statsGenerated}</div>
+    <div class="stat-big"><span>${data.dual_theme}</span><br>${state.lang === "fr" ? "thèmes ambigus" : "dual-theme"}</div>
+    <div class="stat-big"><span>${data.xrefs.entries_with_xrefs}</span><br>${state.lang === "fr" ? "entrées avec renvois" : "entries with xrefs"}</div>
+    <div class="stat-big"><span>${data.text_length.avg}</span><br>${state.lang === "fr" ? "car. moy. par entrée" : "avg chars / entry"}</div>
+  </div>
+  <div class="stats-charts">
+    <div class="chart-block">
+      <h3 class="chart-title">${state.lang === "fr" ? "Catégories rhétoriques" : "Rhetorical categories"}</h3>
+      ${tagSvg}
+    </div>
+    <div class="chart-block">
+      <h3 class="chart-title">${state.lang === "fr" ? "Répartition thématique" : "Thematic distribution"}</h3>
+      ${clsSvg}
+    </div>
+  </div>
+  <div class="xref-section">
+    <h3 class="chart-title">${state.lang === "fr" ? "Réseau de renvois" : "Cross-reference network"}</h3>
+    <p class="chart-sub">${data.xrefs.total_edges} ${state.lang === "fr" ? "liens · cliquez sur un nœud pour ouvrir l'entrée" : "links · click a node to open the entry"}</p>
+    <svg id="xref-svg" class="xref-svg" preserveAspectRatio="xMidYMid meet"></svg>
+  </div>
+</div>`;
+
+  // Populate sidebar summary
+  const sum = $("stats-nav-summary");
+  if (sum) sum.innerHTML = `
+<div class="stats-nav-item"><span>${data.flaubert_entries}</span> ${t.statsFlaubert}</div>
+<div class="stats-nav-item"><span>${data.generated_entries}</span> ${t.statsGenerated}</div>
+<div class="stats-nav-item"><span>${data.xrefs.entries_with_xrefs}</span> ${state.lang === "fr" ? "avec renvois" : "with xrefs"}</div>`;
+
+  if (xdata) renderXrefNetwork($("xref-svg"), xdata.nodes, xdata.edges);
+}
+
+function renderXrefNetwork(svgEl, nodes, edges) {
+  if (!svgEl || !nodes.length) return;
+  const W = 720, H = 400;
+  const k = Math.sqrt(W * H / nodes.length) * 0.9;
+  const ns = "http://www.w3.org/2000/svg";
+
+  // Seed positions
+  const rng = (seed => () => { seed = (seed * 1664525 + 1013904223) & 0xffffffff; return (seed >>> 0) / 0xffffffff; })(42);
+  nodes.forEach(n => { n.x = 40 + rng() * (W - 80); n.y = 40 + rng() * (H - 80); n.vx = 0; n.vy = 0; });
+
+  const nodeIdx = new Map(nodes.map((n, i) => [n.id, i]));
+
+  svgEl.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svgEl.innerHTML = "";
+
+  // Arrowhead marker
+  const defs = document.createElementNS(ns, "defs");
+  defs.innerHTML = `<marker id="xref-arrow" markerWidth="6" markerHeight="4" refX="10" refY="2" orient="auto">
+    <polygon points="0 0,6 2,0 4" fill="var(--ink-faint)" opacity="0.7"/></marker>`;
+  svgEl.appendChild(defs);
+
+  const edgeEls = edges.map(e => {
+    const line = document.createElementNS(ns, "line");
+    line.setAttribute("stroke", "var(--rule-heavy)");
+    line.setAttribute("stroke-width", "1");
+    line.setAttribute("marker-end", "url(#xref-arrow)");
+    svgEl.appendChild(line);
+    return line;
+  });
+
+  const nodeEls = nodes.map(n => {
+    const g = document.createElementNS(ns, "g");
+    g.style.cursor = "pointer";
+    const color = CLUSTER_PALETTE[(n.cluster_id >= 0 ? n.cluster_id : 0) % CLUSTER_PALETTE.length];
+    const circ = document.createElementNS(ns, "circle");
+    circ.setAttribute("r", "5"); circ.setAttribute("fill", color); circ.setAttribute("opacity", "0.85");
+    g.appendChild(circ);
+    const lbl = n.display.length > 14 ? n.display.slice(0, 13) + "…" : n.display;
+    const txt = document.createElementNS(ns, "text");
+    txt.setAttribute("text-anchor", "middle"); txt.setAttribute("dy", "-8");
+    txt.setAttribute("font-size", "7.5"); txt.setAttribute("font-family", "var(--font-ui)");
+    txt.setAttribute("fill", "var(--ink-soft)"); txt.setAttribute("pointer-events", "none");
+    txt.textContent = lbl;
+    g.appendChild(txt);
+    g.addEventListener("click", () => { loadEntry(n.id); });
+    svgEl.appendChild(g);
+    return g;
+  });
+
+  // Force simulation
+  let step = 0;
+  const MAX = 250;
+  function tick() {
+    // Repulsion
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const dx = nodes[j].x - nodes[i].x, dy = nodes[j].y - nodes[i].y;
+        const d = Math.sqrt(dx * dx + dy * dy) + 0.1;
+        const f = (k * k) / (d * d);
+        nodes[i].vx -= f * dx; nodes[i].vy -= f * dy;
+        nodes[j].vx += f * dx; nodes[j].vy += f * dy;
+      }
+    }
+    // Attraction along edges
+    edges.forEach(e => {
+      const si = nodeIdx.get(e.source), ti = nodeIdx.get(e.target);
+      if (si == null || ti == null) return;
+      const dx = nodes[ti].x - nodes[si].x, dy = nodes[ti].y - nodes[si].y;
+      const d = Math.sqrt(dx * dx + dy * dy) + 0.1;
+      const f = (d / k) * 0.6;
+      nodes[si].vx += f * dx / d; nodes[si].vy += f * dy / d;
+      nodes[ti].vx -= f * dx / d; nodes[ti].vy -= f * dy / d;
+    });
+    // Gravity + damping + clamp
+    nodes.forEach(n => {
+      n.vx = (n.vx + (W / 2 - n.x) * 0.008) * 0.82;
+      n.vy = (n.vy + (H / 2 - n.y) * 0.008) * 0.82;
+      n.x = Math.max(25, Math.min(W - 25, n.x + n.vx));
+      n.y = Math.max(18, Math.min(H - 18, n.y + n.vy));
+    });
+    // Update DOM
+    nodeEls.forEach((g, i) => g.setAttribute("transform", `translate(${nodes[i].x.toFixed(1)},${nodes[i].y.toFixed(1)})`));
+    edgeEls.forEach((line, i) => {
+      const si = nodeIdx.get(edges[i].source), ti = nodeIdx.get(edges[i].target);
+      if (si == null || ti == null) return;
+      line.setAttribute("x1", nodes[si].x.toFixed(1)); line.setAttribute("y1", nodes[si].y.toFixed(1));
+      line.setAttribute("x2", nodes[ti].x.toFixed(1)); line.setAttribute("y2", nodes[ti].y.toFixed(1));
+    });
+    if (++step < MAX) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
 }
 
 /* ── Stats ─────────────────────────────────────────────────────────── */
@@ -794,7 +979,9 @@ function refreshAll() {
   loadClusters();
   loadStats();
   loadGeneratedList();
+  statsCache = null;
   if (state.currentView === "rhetoric") loadTags();
+  if (state.currentView === "stats")    { loadDetailedStats(); }
   if (state.currentEntry) renderEntryDetail(state.currentEntry);
   if (state.searchQuery) doSearch(state.searchQuery);
 }
@@ -826,12 +1013,17 @@ el.searchInput.addEventListener("input", e => {
 
 document.querySelectorAll(".nav-item").forEach(btn => {
   btn.addEventListener("click", () => {
-    switchView(btn.dataset.view);
-    if (btn.dataset.view === "add")      loadGeneratedList();
-    if (btn.dataset.view === "clusters") { showView("tsne"); loadTsne(); }
-    if (btn.dataset.view === "rhetoric") loadTags();
+    const view = btn.dataset.view;
+    switchView(view);
+    if (view === "add")      { loadGeneratedList(); history.pushState({ type: "view", view }, "", "#add"); }
+    if (view === "clusters") { showView("tsne"); loadTsne(); history.pushState({ type: "view", view }, "", "#themes"); }
+    if (view === "rhetoric") { loadTags(); history.pushState({ type: "view", view }, "", "#rhetoric"); }
+    if (view === "stats")    { showView("stats"); loadDetailedStats(); history.pushState({ type: "view", view }, "", "#stats"); }
+    if (view === "browse")   { history.pushState({ type: "view", view }, "", "#"); }
   });
 });
+
+$("random-btn").addEventListener("click", loadRandom);
 
 el.loadMore.addEventListener("click", () => {
   state.page++;
@@ -844,6 +1036,72 @@ el.addInput.addEventListener("keydown", e => {
   if (e.key === "Enter") generateEntry();
 });
 
+/* ── Keyboard shortcuts ─────────────────────────────────────────────── */
+document.addEventListener("keydown", e => {
+  const tag = document.activeElement.tagName;
+  const inInput = tag === "INPUT" || tag === "TEXTAREA";
+  if (e.key === "/" && !inInput) {
+    e.preventDefault();
+    el.searchInput.focus();
+    el.searchInput.select();
+  } else if (e.key === "Escape") {
+    if (inInput) { document.activeElement.blur(); }
+    else if (el.entryDetail.style.display !== "none") { showView("welcome"); }
+  } else if (e.key === "r" && !inInput && !e.metaKey && !e.ctrlKey) {
+    loadRandom();
+  }
+});
+
+/* ── t-SNE map search ───────────────────────────────────────────────── */
+if (el.tsneSearch) {
+  el.tsneSearch.addEventListener("input", e => {
+    const q = e.target.value.trim().toUpperCase();
+    if (!q) {
+      el.tsneSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
+      return;
+    }
+    let match = null;
+    tsneCircles.forEach((data, hw) => {
+      const hit = hw.includes(q);
+      data.el.setAttribute("opacity", hit ? "1" : "0.08");
+      if (hit && !match) match = data;
+    });
+    if (match) pulseAt(match.cx, match.cy, match.color);
+  });
+  el.tsneSearch.addEventListener("keydown", e => {
+    if (e.key === "Escape") { el.tsneSearch.value = ""; el.tsneSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72")); }
+  });
+}
+
+/* ── URL / browser history ──────────────────────────────────────────── */
+window.addEventListener("popstate", e => {
+  const s = e.state;
+  if (!s) return;
+  if (s.type === "entry") { loadEntry(s.headword, true); }
+  else if (s.type === "view") {
+    const v = s.view;
+    switchView(v);
+    if (v === "clusters") { showView("tsne"); loadTsne(); }
+    else if (v === "stats") { showView("stats"); loadDetailedStats(); }
+    else if (v === "rhetoric") loadTags();
+    else if (v === "add") loadGeneratedList();
+  }
+});
+
+function handleInitialHash() {
+  const hash = location.hash.slice(1);
+  if (!hash || hash === "#") return;
+  if (hash.startsWith("entry/")) {
+    loadEntry(decodeURIComponent(hash.slice(6)), true);
+  } else if (hash === "themes") {
+    switchView("clusters"); showView("tsne"); loadTsne();
+  } else if (hash === "stats") {
+    switchView("stats"); showView("stats"); loadDetailedStats();
+  } else if (hash === "rhetoric") {
+    switchView("rhetoric"); loadTags();
+  }
+}
+
 /* ── Init ───────────────────────────────────────────────────────────── */
 function init() {
   buildAlphaIndex();
@@ -852,6 +1110,7 @@ function init() {
   loadStats();
   showView("welcome");
   applyTranslations();
+  handleInitialHash();
 }
 
 init();

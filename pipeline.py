@@ -27,6 +27,7 @@ import numpy as np
 BASE_DIR        = Path(__file__).parent
 ENTRIES_FILE    = BASE_DIR / "data" / "clusters.json"
 EMBEDDINGS_FILE = BASE_DIR / "data" / "embeddings.npz"
+TSNE_FILE       = BASE_DIR / "data" / "tsne_coords.npy"
 NEW_ENTRIES_FILE= BASE_DIR / "data" / "new_entries.json"
 
 # ── Generator config ──────────────────────────────────────────────────────────
@@ -526,14 +527,19 @@ class DictionairePipeline:
         if self._embeddings is None:
             return []
         if self._tsne_cache is None:
-            from sklearn.manifold import TSNE
-            print("[Pipeline] Computing t-SNE…")
-            coords = TSNE(
-                n_components=2, random_state=42, perplexity=30,
-                max_iter=1000, init="pca", learning_rate="auto",
-            ).fit_transform(self._embeddings)
-            self._tsne_cache = coords.astype(np.float32)
-            print("[Pipeline] t-SNE done.")
+            if TSNE_FILE.exists():
+                print("[Pipeline] Loading t-SNE from disk…")
+                self._tsne_cache = np.load(TSNE_FILE).astype(np.float32)
+            else:
+                from sklearn.manifold import TSNE
+                print("[Pipeline] Computing t-SNE…")
+                coords = TSNE(
+                    n_components=2, random_state=42, perplexity=30,
+                    max_iter=1000, init="pca", learning_rate="auto",
+                ).fit_transform(self._embeddings)
+                self._tsne_cache = coords.astype(np.float32)
+                np.save(TSNE_FILE, self._tsne_cache)
+                print("[Pipeline] t-SNE done.")
         coords = self._tsne_cache
         labels = CLUSTER_LABELS[lang]
         result = []
@@ -567,6 +573,80 @@ class DictionairePipeline:
                 "show_secondary_cluster": show_sec,
             })
         return result
+
+    def random_entry(self, lang: str) -> dict:
+        import random as _rnd
+        return self._format_entry(_rnd.choice(self._entries), lang)
+
+    def detailed_stats(self, lang: str) -> dict:
+        from collections import Counter
+        entries = self._entries
+        tag_counts = Counter(tag for e in entries for tag in e.get("tags", []))
+        tag_labels_map = RHETORICAL_TAG_LABELS[lang]
+        tags = [{"tag": t, "label": tag_labels_map.get(t, t), "count": c}
+                for t, c in sorted(tag_counts.items(), key=lambda x: -x[1])]
+        cluster_counts = Counter(
+            e.get("cluster_id") for e in entries
+            if isinstance(e.get("cluster_id"), int) and e.get("cluster_id", -1) >= 0
+        )
+        cls_labels = CLUSTER_LABELS[lang]
+        clusters = [{"cluster_id": cid, "label": cls_labels[cid] if cid < len(cls_labels) else str(cid), "count": cnt}
+                    for cid, cnt in sorted(cluster_counts.items())]
+        lengths = sorted(len(e.get("text", "")) for e in entries)
+        avg_len = round(sum(lengths) / len(lengths)) if lengths else 0
+        k = len(CLUSTER_LABELS["fr"])
+        dual = sum(
+            1 for e in entries
+            if isinstance(e.get("cluster_id"), int) and e.get("cluster_id", -1) >= 0
+            and len(e.get("membership_scores", [])) == k
+            and e["membership_scores"][e["cluster_id"]] >= 0.10
+            and max((e["membership_scores"][j] for j in range(k) if j != e["cluster_id"]), default=0)
+               / e["membership_scores"][e["cluster_id"]] >= 0.90
+        )
+        return {
+            "flaubert_entries":  len(entries),
+            "generated_entries": len(self._new_entries),
+            "dual_theme":        dual,
+            "tags":              tags,
+            "clusters":          clusters,
+            "text_length":       {
+                "avg":    avg_len,
+                "median": lengths[len(lengths) // 2] if lengths else 0,
+                "min":    min(lengths, default=0),
+                "max":    max(lengths, default=0),
+            },
+            "xrefs": {
+                "entries_with_xrefs": sum(1 for e in entries if e.get("xrefs")),
+                "total_edges":        sum(len(e.get("xrefs", [])) for e in entries),
+            },
+        }
+
+    def xref_graph(self, lang: str) -> dict:
+        hw_map = {e["headword"].upper(): e for e in self._entries}
+        nodes: dict[str, dict] = {}
+        edges = []
+        for e in self._entries:
+            if not e.get("xrefs"):
+                continue
+            src = e["headword"]
+            if src not in nodes:
+                nodes[src] = {
+                    "id":         src,
+                    "display":    e.get("headword_en", src) if lang == "en" else src,
+                    "cluster_id": e.get("cluster_id", -1) if isinstance(e.get("cluster_id"), int) else -1,
+                }
+            for xr in e["xrefs"]:
+                tgt = xr.upper().strip().rstrip(".")
+                if tgt in hw_map:
+                    if tgt not in nodes:
+                        te = hw_map[tgt]
+                        nodes[tgt] = {
+                            "id":         tgt,
+                            "display":    te.get("headword_en", tgt) if lang == "en" else tgt,
+                            "cluster_id": te.get("cluster_id", -1) if isinstance(te.get("cluster_id"), int) else -1,
+                        }
+                    edges.append({"source": src, "target": tgt})
+        return {"nodes": list(nodes.values()), "edges": edges}
 
     def recent_generated(self, limit: int, lang: str) -> list[dict]:
         recent = list(reversed(self._new_entries[-limit:]))
