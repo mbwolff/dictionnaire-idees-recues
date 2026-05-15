@@ -523,6 +523,16 @@ body {
 }
 .cluster-badge.secondary { opacity: 0.55; }
 
+.show-on-map-btn {
+  font-family: var(--font-ui);
+  font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-faint); background: transparent;
+  border: 1px solid var(--rule); border-radius: 2px;
+  padding: 2px 7px; cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+.show-on-map-btn:hover { color: var(--rust); border-color: var(--rust-light); }
+
 .source-badge {
   font-family: var(--font-ui);
   font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
@@ -699,13 +709,29 @@ mark {
   margin: 0 0 0.3rem;
 }
 
+.tsne-hint-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
 .tsne-hint {
   font-family: var(--font-ui);
   font-size: 0.68rem;
   color: var(--ink-faint);
   margin: 0;
   font-style: italic;
+  flex: 1;
 }
+.tsne-secondary-btn {
+  font-family: var(--font-ui);
+  font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-soft); background: transparent;
+  border: 1px solid var(--rule-heavy); border-radius: 2px;
+  padding: 2px 7px; cursor: pointer; white-space: nowrap;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+.tsne-secondary-btn:hover { color: var(--ink); border-color: var(--gold); }
+.tsne-secondary-btn.active { color: var(--gold); border-color: var(--gold); background: var(--cream-dark); }
 
 .tsne-container {
   position: relative;
@@ -775,7 +801,7 @@ mark {
   border-radius: var(--radius);
   pointer-events: none;
   z-index: 20;
-  white-space: nowrap;
+  white-space: pre-line;
   box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
 

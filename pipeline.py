@@ -543,14 +543,28 @@ class DictionairePipeline:
             cid = e.get("cluster_id")
             if not isinstance(cid, int):
                 cid = -1
-            hw  = e["headword"]
+            hw     = e["headword"]
+            scores = e.get("membership_scores", [])
+            pri_score = float(scores[cid]) if (0 <= cid < len(scores)) else 0.0
+            sec_cid_e = -1
+            show_sec  = False
+            if len(scores) == len(CLUSTER_LABELS["fr"]) and cid >= 0:
+                sec_cid_e = int(max(
+                    (j for j in range(len(scores)) if j != cid),
+                    key=lambda j: scores[j],
+                ))
+                sec_score_e = float(scores[sec_cid_e])
+                show_sec = pri_score >= 0.10 and (sec_score_e / pri_score >= 0.90 if pri_score > 0 else False)
             result.append({
-                "headword":         hw,
-                "headword_display": e.get("headword_en", hw) if lang == "en" else hw,
-                "x":                float(coords[i][0]),
-                "y":                float(coords[i][1]),
-                "cluster_id":       cid,
-                "cluster_label":    labels[cid] if 0 <= cid < len(labels) else "",
+                "headword":              hw,
+                "headword_display":      e.get("headword_en", hw) if lang == "en" else hw,
+                "x":                     float(coords[i][0]),
+                "y":                     float(coords[i][1]),
+                "cluster_id":            cid,
+                "cluster_label":         labels[cid] if 0 <= cid < len(labels) else "",
+                "primary_cluster_score": round(pri_score, 4),
+                "secondary_cluster_id":  sec_cid_e,
+                "show_secondary_cluster": show_sec,
             })
         return result
 

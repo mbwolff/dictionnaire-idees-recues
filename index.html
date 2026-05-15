@@ -185,6 +185,7 @@
             <span class="cluster-badge" id="detail-cluster"></span>
             <span class="cluster-badge secondary" id="detail-secondary-cluster" style="display:none"></span>
             <span class="source-badge" id="detail-source"></span>
+            <button class="show-on-map-btn" id="show-on-map-btn" style="display:none" data-fr="carte" data-en="map">carte</button>
           </div>
         </div>
 
@@ -211,7 +212,10 @@
       <section class="tsne-view" id="tsne-view" style="display:none">
         <div class="tsne-header">
           <h2 class="tsne-title" id="tsne-title" data-fr="Carte sémantique" data-en="Semantic map">Carte sémantique</h2>
-          <p class="tsne-hint" data-fr="Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour isoler le thème" data-en="Hover a dot to see the entry · Click to open · Click a label to isolate the theme">Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour isoler le thème</p>
+          <div class="tsne-hint-row">
+            <p class="tsne-hint" data-fr="Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour parcourir le thème par score" data-en="Hover a dot to see the entry · Click to open · Click a label to browse the theme by score">Survolez un point pour voir l'entrée · Cliquez pour l'ouvrir · Cliquez sur une étiquette pour parcourir le thème par score</p>
+            <button class="tsne-secondary-btn" id="tsne-secondary-btn" onclick="toggleSecondary()" data-fr="Ambiguïtés" data-en="Ambiguous">Ambiguïtés</button>
+          </div>
         </div>
         <div class="tsne-container">
           <svg id="tsne-svg" class="tsne-svg" preserveAspectRatio="xMidYMid meet"></svg>

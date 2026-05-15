@@ -15,6 +15,7 @@ const state = {
   searchDebounce:     null,
   clusters:           [],
   highlightedCluster: null,
+  showSecondary:      false,
 };
 
 const i18n = {
@@ -310,6 +311,13 @@ function renderEntryDetail(entry) {
   const priMult  = entry.primary_cluster_score
     ? ` ${(entry.primary_cluster_score * 12).toFixed(1)}×` : "";
   $("detail-cluster").textContent = priLabel + priMult;
+
+  const mapBtn = $("show-on-map-btn");
+  if (mapBtn) {
+    mapBtn.onclick = () => showOnMap(entry.headword);
+    mapBtn.style.display = entry.cluster_id >= 0 ? "" : "none";
+  }
+
   const secBadge = $("detail-secondary-cluster");
   if (entry.show_secondary_cluster && entry.secondary_cluster_label) {
     const secMult = ` ${(entry.secondary_cluster_score * 12).toFixed(1)}×`;
@@ -539,7 +547,8 @@ const CLUSTER_PALETTE = [
   "#0d47a1","#6d4c41",
 ];
 
-let tsneCache = null;
+let tsneCache   = null;
+let tsneCircles = new Map();   // headword → { cx, cy, color }
 
 async function loadTsne() {
   if (tsneCache && tsneCache.lang === state.lang) {
@@ -573,45 +582,100 @@ function renderTsne(points) {
   el.tsneSvg.setAttribute("viewBox", `0 0 ${W} ${H}`);
   el.tsneSvg.innerHTML = "";
   el.tsneSvg.classList.remove("highlight-active");
+  tsneCircles.clear();
 
   const ns = "http://www.w3.org/2000/svg";
   const container = el.tsneSvg.closest(".tsne-container");
 
+  // Centroid accumulator
+  const centroids = {};
+
   points.forEach(p => {
     const color = CLUSTER_PALETTE[p.cluster_id % CLUSTER_PALETTE.length] ?? "#888";
+    const cx = sx(p.x).toFixed(1), cy = sy(p.y).toFixed(1);
+
+    // Radius proportional to membership strength (2.5 baseline → ~6 max)
+    const r0 = p.primary_cluster_score
+      ? (2.5 + Math.max(0, (p.primary_cluster_score * 12 - 1) * 8)).toFixed(1)
+      : "4";
+
     const c = document.createElementNS(ns, "circle");
-    c.setAttribute("cx", sx(p.x).toFixed(1));
-    c.setAttribute("cy", sy(p.y).toFixed(1));
-    c.setAttribute("r", "4");
+    c.setAttribute("cx", cx);
+    c.setAttribute("cy", cy);
+    c.setAttribute("r", r0);
     c.setAttribute("fill", color);
     c.setAttribute("opacity", "0.72");
     c.dataset.cluster = p.cluster_id;
+    c.dataset.secondary = p.show_secondary_cluster ? "1" : "0";
+    c.dataset.secondaryCluster = p.secondary_cluster_id ?? -1;
     c.style.cursor = "pointer";
     c.style.transition = "r 80ms, opacity 80ms";
 
+    if (state.showSecondary && p.show_secondary_cluster) {
+      const secColor = CLUSTER_PALETTE[(p.secondary_cluster_id ?? 0) % CLUSTER_PALETTE.length];
+      c.setAttribute("stroke", secColor);
+      c.setAttribute("stroke-width", "1.5");
+    }
+
+    const mult = p.primary_cluster_score
+      ? ` · ${(p.primary_cluster_score * 12).toFixed(1)}×` : "";
+
     c.addEventListener("mouseenter", () => {
-      c.setAttribute("r", "6.5");
+      c.setAttribute("r", (+r0 + 2.5).toFixed(1));
       c.setAttribute("opacity", "1");
-      el.tsneTooltip.textContent = p.headword_display;
+      el.tsneTooltip.textContent = `${p.headword_display}\n${p.cluster_label}${mult}`;
       el.tsneTooltip.style.display = "block";
     });
     c.addEventListener("mousemove", e => {
-      const r = container.getBoundingClientRect();
-      el.tsneTooltip.style.left = (e.clientX - r.left + 14) + "px";
-      el.tsneTooltip.style.top  = (e.clientY - r.top  - 10) + "px";
+      const rect = container.getBoundingClientRect();
+      el.tsneTooltip.style.left = (e.clientX - rect.left + 14) + "px";
+      el.tsneTooltip.style.top  = (e.clientY - rect.top  - 10) + "px";
     });
     c.addEventListener("mouseleave", () => {
-      c.setAttribute("r", "4");
-      c.setAttribute("opacity", el.tsneSvg.classList.contains("highlight-active")
-        && c.dataset.cluster != state.highlightedCluster ? "0.12" : "0.72");
+      c.setAttribute("r", r0);
+      if (el.tsneSvg.classList.contains("highlight-active")) {
+        const isPri = c.dataset.cluster == state.highlightedCluster;
+        const isSec = state.showSecondary && c.dataset.secondary === "1"
+          && c.dataset.secondaryCluster == state.highlightedCluster;
+        c.setAttribute("opacity", isPri ? "0.88" : isSec ? "0.45" : "0.10");
+      } else {
+        c.setAttribute("opacity", "0.72");
+      }
       el.tsneTooltip.style.display = "none";
     });
-    c.addEventListener("click", () => {
-      loadEntry(p.headword);
-      showView("entry");
-    });
+    c.addEventListener("click", () => { loadEntry(p.headword); showView("entry"); });
 
     el.tsneSvg.appendChild(c);
+    tsneCircles.set(p.headword, { cx: +cx, cy: +cy, color });
+
+    // Accumulate centroid
+    if (p.cluster_id >= 0) {
+      if (!centroids[p.cluster_id]) centroids[p.cluster_id] = { sumX: 0, sumY: 0, n: 0, label: p.cluster_label };
+      centroids[p.cluster_id].sumX += +cx;
+      centroids[p.cluster_id].sumY += +cy;
+      centroids[p.cluster_id].n++;
+    }
+  });
+
+  // Centroid labels
+  Object.entries(centroids).forEach(([id, { sumX, sumY, n, label }]) => {
+    const tx = (sumX / n).toFixed(1), ty = (sumY / n).toFixed(1);
+    const abbrev = label.split(" & ")[0].trim().toUpperCase();
+    const txt = document.createElementNS(ns, "text");
+    txt.setAttribute("x", tx);
+    txt.setAttribute("y", ty);
+    txt.setAttribute("text-anchor", "middle");
+    txt.setAttribute("dominant-baseline", "central");
+    txt.setAttribute("font-size", "8");
+    txt.setAttribute("font-family", "var(--font-ui)");
+    txt.setAttribute("font-weight", "700");
+    txt.setAttribute("letter-spacing", "0.06em");
+    txt.setAttribute("fill", CLUSTER_PALETTE[+id % CLUSTER_PALETTE.length]);
+    txt.setAttribute("opacity", "0.40");
+    txt.setAttribute("pointer-events", "none");
+    txt.setAttribute("data-centroid", id);
+    txt.textContent = abbrev;
+    el.tsneSvg.appendChild(txt);
   });
 
   // Legend
@@ -625,6 +689,10 @@ function renderTsne(points) {
         <span class="tsne-legend-label">${label}</span>
       </div>`).join("");
 
+  // Restore secondary toggle button state
+  const secBtn = $("tsne-secondary-btn");
+  if (secBtn) secBtn.classList.toggle("active", state.showSecondary);
+
   applyTranslations();
 }
 
@@ -634,16 +702,67 @@ function highlightCluster(id) {
     state.highlightedCluster = null;
     svg.classList.remove("highlight-active");
     svg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
+    svg.querySelectorAll("text[data-centroid]").forEach(t => t.setAttribute("opacity", "0.40"));
     document.querySelectorAll(".tsne-legend-item").forEach(i => i.classList.remove("active"));
   } else {
     state.highlightedCluster = id;
     svg.classList.add("highlight-active");
     svg.querySelectorAll("circle").forEach(c => {
-      c.setAttribute("opacity", c.dataset.cluster == id ? "0.88" : "0.1");
+      const isPri = c.dataset.cluster == id;
+      const isSec = state.showSecondary && c.dataset.secondary === "1"
+        && c.dataset.secondaryCluster == id;
+      c.setAttribute("opacity", isPri ? "0.88" : isSec ? "0.45" : "0.10");
+    });
+    svg.querySelectorAll("text[data-centroid]").forEach(t => {
+      t.setAttribute("opacity", t.getAttribute("data-centroid") == id ? "0.90" : "0.08");
     });
     document.querySelectorAll(".tsne-legend-item").forEach(i => {
       i.classList.toggle("active", i.dataset.cluster == id);
     });
+  }
+}
+
+function toggleSecondary() {
+  state.showSecondary = !state.showSecondary;
+  $("tsne-secondary-btn").classList.toggle("active", state.showSecondary);
+  el.tsneSvg.querySelectorAll("circle[data-secondary='1']").forEach(c => {
+    const sid = +c.dataset.secondaryCluster;
+    c.setAttribute("stroke", state.showSecondary
+      ? CLUSTER_PALETTE[sid % CLUSTER_PALETTE.length] : "none");
+    c.setAttribute("stroke-width", state.showSecondary ? "1.5" : "0");
+  });
+}
+
+async function showOnMap(headword) {
+  switchView("clusters");
+  showView("tsne");
+  await loadTsne();
+  const data = tsneCircles.get(headword);
+  if (!data) return;
+  pulseAt(data.cx, data.cy, data.color);
+}
+
+function pulseAt(cx, cy, color) {
+  const ns = "http://www.w3.org/2000/svg";
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      const ring = document.createElementNS(ns, "circle");
+      ring.setAttribute("cx", cx);
+      ring.setAttribute("cy", cy);
+      ring.setAttribute("r", "5");
+      ring.setAttribute("fill", "none");
+      ring.setAttribute("stroke", color);
+      ring.setAttribute("stroke-width", "2.5");
+      ring.setAttribute("opacity", "0.9");
+      ring.style.pointerEvents = "none";
+      ring.style.transition = "r 700ms ease-out, opacity 700ms ease-out";
+      el.tsneSvg.appendChild(ring);
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        ring.setAttribute("r", "24");
+        ring.setAttribute("opacity", "0");
+      }));
+      setTimeout(() => ring.remove(), 750);
+    }, i * 350);
   }
 }
 
