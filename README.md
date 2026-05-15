@@ -45,11 +45,12 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Browse | Alphabetical index + paginated entry list |
 | Text search | Substring match on headword and entry text |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
-| Themes | 12 semantic clusters with labels; t-SNE map of the full corpus; clicking a legend item navigates to that cluster's entries sorted by membership score |
+| Themes | 12 semantic clusters with labels; t-SNE map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
+| Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "carte" button in entry detail pulses that entry's dot |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
-| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours, primary and (where applicable) secondary theme badge |
+| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); "carte" link to semantic map |
 | Add entry | Propose a French noun → validate → generate in Flaubert's style → persist |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
 
@@ -75,7 +76,8 @@ parse.py        One-off: fetch, parse, and enunciatively tag all entries
 embed.py        One-off: generate sentence embeddings
 cluster.py      One-off: cluster, label, and translate entries
 index.html      Single-page app shell
-app.js          Vanilla JS: browse, search, entry detail, t-SNE rendering
+app.js          Vanilla JS: browse, search, entry detail, t-SNE rendering (centroid labels,
+                score-sized dots, secondary toggle, ripple pulse, show-on-map)
 main.css        19th-century editorial typographic stylesheet
 data/           JSON entries + NumPy embeddings
 ```
