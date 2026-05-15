@@ -45,7 +45,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Browse | Alphabetical index + paginated entry list |
 | Text search | Substring match on headword and entry text |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
-| Themes | 12 semantic clusters with labels; t-SNE map of the full corpus |
+| Themes | 12 semantic clusters with labels; t-SNE map of the full corpus; clicking a legend item navigates to that cluster's entries sorted by membership score |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
