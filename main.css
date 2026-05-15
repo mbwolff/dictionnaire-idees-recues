@@ -521,6 +521,7 @@ body {
   border: 1px solid currentColor; border-radius: 2px;
   padding: 2px 7px;
 }
+.cluster-badge.secondary { opacity: 0.55; }
 
 .source-badge {
   font-family: var(--font-ui);

@@ -307,6 +307,13 @@ function renderEntryDetail(entry) {
   $("detail-headword-tr").textContent = tr;
 
   $("detail-cluster").textContent = entry.cluster_label || "";
+  const secBadge = $("detail-secondary-cluster");
+  if (entry.secondary_cluster_label && entry.secondary_cluster_score > 0.15) {
+    secBadge.textContent = entry.secondary_cluster_label;
+    secBadge.style.display = "";
+  } else {
+    secBadge.style.display = "none";
+  }
   const srcBadge = $("detail-source");
   srcBadge.textContent = entry.is_generated ? t.generated : t.flaubert;
   srcBadge.className = `source-badge ${entry.is_generated ? "generated" : "flaubert"}`;

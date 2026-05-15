@@ -45,6 +45,16 @@ def cluster_embeddings(embeddings: np.ndarray, n_clusters: int):
     return labels, km.cluster_centers_
 
 
+def soft_membership(embeddings: np.ndarray, centers: np.ndarray) -> np.ndarray:
+    """Cosine similarity to each centroid, softmax-normalised. Returns (N, K)."""
+    from sklearn.preprocessing import normalize
+    X = normalize(embeddings)
+    C = normalize(centers)
+    sims = X @ C.T                                        # (N, K)
+    exp_s = np.exp(sims - sims.max(axis=1, keepdims=True))
+    return exp_s / exp_s.sum(axis=1, keepdims=True)      # (N, K)
+
+
 # ── 2. Dimensionality reduction for plotting ─────────────────────────────────
 
 def reduce_2d(embeddings: np.ndarray) -> np.ndarray:
@@ -180,10 +190,14 @@ def main():
     print(f"Clustering {len(headwords)} entries into {N_CLUSTERS} clusters …")
     labels, centers = cluster_embeddings(embeddings, N_CLUSTERS)
 
-    # Annotate entries with cluster id
+    # Annotate entries with cluster id and soft membership scores
     hw_to_cluster = {hw: int(labels[i]) for i, hw in enumerate(headwords)}
+    probs = soft_membership(embeddings, centers)          # (N, K)
+    hw_to_probs = {hw: probs[i] for i, hw in enumerate(headwords)}
     for e in entries_data:
         e["cluster_id"] = hw_to_cluster.get(e["headword"], -1)
+        ms = hw_to_probs.get(e["headword"])
+        e["membership_scores"] = [round(float(v), 4) for v in ms] if ms is not None else []
 
     # Group by cluster for reporting
     clusters = defaultdict(list)
