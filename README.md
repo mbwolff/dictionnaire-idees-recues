@@ -33,7 +33,7 @@ Port 5050 is used because macOS AirPlay Receiver occupies port 5000 and returns 
 |---|---|---|
 | `data/dictionnaire_entries.json` | `parse.py` | 962 parsed and tagged Flaubert entries |
 | `data/embeddings.npz` | `embed.py` | CamemBERT sentence embeddings (962 × 768) |
-| `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) |
+| `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) + soft membership scores (12-vector per entry) |
 | `data/new_entries.json` | app (runtime) | User-generated entries, persisted across sessions |
 
 The app runs without `embeddings.npz`; semantic search falls back to text search.
@@ -49,7 +49,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
-| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours |
+| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours, primary and (where applicable) secondary theme badge |
 | Add entry | Propose a French noun → validate → generate in Flaubert's style → persist |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
 
@@ -59,8 +59,9 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 parse.py      Fetch text from Project Gutenberg · extract entries · tag with
               Herschberg-Pierrot's enunciative categories (spaCy morphology)
 embed.py      Encode entries with dangvantuan/sentence-camembert-base
-cluster.py    k-means (k=12) on L2-normalised embeddings · batch-translate headwords
-              and entry texts to English via deep-translator
+cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores
+              (softmax of cosine similarities to centroids, 12-vector per entry) ·
+              batch-translate headwords and entry texts to English via deep-translator
 pipeline.py   Runtime: search · validation · translation · generation · t-SNE
 app.py        Flask routes
 ```
@@ -78,6 +79,23 @@ app.js          Vanilla JS: browse, search, entry detail, t-SNE rendering
 main.css        19th-century editorial typographic stylesheet
 data/           JSON entries + NumPy embeddings
 ```
+
+## Soft cluster membership
+
+Each entry carries a `membership_scores` vector (length 12): the softmax of its
+cosine similarities to the 12 L2-normalised k-means centroids. A score of 1/12 ≈ 0.083
+is the flat-distribution baseline; scores well above it indicate genuine thematic affinity.
+
+A **secondary theme badge** is shown in entry detail when two conditions both hold:
+
+| Condition | Value | Meaning |
+|---|---|---|
+| `primary_score ≥ 0.10` | ~1.2× baseline | primary cluster is meaningful |
+| `secondary_score / primary_score ≥ 0.90` | ratio | secondary is nearly as strong |
+
+About 166 entries (~17% of corpus) meet this criterion — entries that sit at the boundary
+between two themes, e.g. CHEMINS DE FER (economy + politics), HIPPOCRATE (history + arts),
+JALOUSIE (daily life + society).
 
 ## Noun validation
 
