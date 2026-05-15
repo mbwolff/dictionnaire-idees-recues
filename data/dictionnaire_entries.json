@@ -2631,8 +2631,8 @@
     "xrefs": [],
     "tags": [],
     "cluster_id": 2,
-    "text_en": "",
-    "headword_en": ""
+    "text_en": "Consists of three things: line, grain, and fine grain; and also the bold stroke. But the bold stroke — only the master can achieve it. (Christophe.)",
+    "headword_en": "Drawing (the Art of)"
   },
   {
     "headword": "DEVOIRS",
@@ -4177,8 +4177,8 @@
     "xrefs": [],
     "tags": [],
     "cluster_id": 2,
-    "text_en": "",
-    "headword_en": ""
+    "text_en": "When visiting a farm, one must eat nothing but brown bread and drink nothing but milk. If eggs are added, exclaim: 'Good God, how fresh they are! You'd never find the like in town.'",
+    "headword_en": "FARM (NOUN)"
   },
   {
     "headword": "FERMÉ",
@@ -4208,8 +4208,8 @@
     "xrefs": [],
     "tags": [],
     "cluster_id": 2,
-    "text_en": "",
-    "headword_en": ""
+    "text_en": "Purifies everything. When you hear someone cry 'Fire!', the first thing to do is lose your head.",
+    "headword_en": "FIRE (NOUN)"
   },
   {
     "headword": "FEUILLE DE VIGNE",
@@ -4228,8 +4228,8 @@
     "xrefs": [],
     "tags": [],
     "cluster_id": 2,
-    "text_en": "",
-    "headword_en": ""
+    "text_en": "My late father — and one raises one's hat.",
+    "headword_en": "LATE (ADJ.)"
   },
   {
     "headword": "FEUILLETONS",
@@ -4881,13 +4881,17 @@
     "headword": "GARDE-COTE",
     "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "headword_en": "COASTGUARD",
+    "text_en": "Never use this word in the plural when speaking of a woman's breasts."
   },
   {
     "headword": "GARES DE CHEMIN DE FER",
     "text": "S'extasier devant elles et les donner comme modèles d'architecture.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "headword_en": "RAILWAY STATIONS",
+    "text_en": "Go into raptures over them and hold them up as models of architecture."
   },
   {
     "headword": "GAUCHERS",
@@ -6832,7 +6836,9 @@
     "headword": "JOCKEY-CLUB",
     "text": "Ses membres sont tous des jeunes gens farceurs et très riches. Dire simplement \"le Jockey\" : très chic, donne à croire qu'on en fait partie.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "headword_en": "JOCKEY CLUB",
+    "text_en": "Its members are all young pranksters and very wealthy. Say simply 'the Jockey': very chic, suggests you belong to it."
   },
   {
     "headword": "JOHN BULL",
@@ -7996,7 +8002,9 @@
     "headword": "MIDI (CUISINE DU)",
     "text": "Toujours à l'ail. Tonner contre.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "headword_en": "SOUTHERN COOKING",
+    "text_en": "Always with garlic. Inveigh against it."
   },
   {
     "headword": "MINISTRE",
@@ -9839,7 +9847,9 @@
     "headword": "SAINTE-HÉLÈNE",
     "text": "Ile connue par son rocher.",
     "xrefs": [],
-    "tags": []
+    "tags": [],
+    "headword_en": "SAINT HELENA",
+    "text_en": "Island known for its rock."
   },
   {
     "headword": "SALIÈRE",
