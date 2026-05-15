@@ -308,7 +308,7 @@ function renderEntryDetail(entry) {
 
   $("detail-cluster").textContent = entry.cluster_label || "";
   const secBadge = $("detail-secondary-cluster");
-  if (entry.secondary_cluster_label && entry.secondary_cluster_score > 0.15) {
+  if (entry.show_secondary_cluster && entry.secondary_cluster_label) {
     secBadge.textContent = entry.secondary_cluster_label;
     secBadge.style.display = "";
   } else {

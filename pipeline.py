@@ -460,13 +460,20 @@ class DictionairePipeline:
         scores = entry.get("membership_scores", [])
         # Secondary cluster: highest-scoring cluster that isn't the primary
         if len(scores) == len(CLUSTER_LABELS["fr"]) and cid >= 0:
+            pri_score = scores[cid]
             sec_cid = int(max(
                 (i for i in range(len(scores)) if i != cid),
                 key=lambda i: scores[i],
             ))
             sec_score = scores[sec_cid]
+            # Compound criterion: primary meaningfully above baseline AND
+            # secondary nearly as strong (sec/pri >= 0.90)
+            show_secondary = (
+                pri_score >= 0.10 and
+                sec_score / pri_score >= 0.90
+            )
         else:
-            sec_cid, sec_score = -1, 0.0
+            pri_score, sec_cid, sec_score, show_secondary = 0.0, -1, 0.0, False
         result = {
             "headword":               hw,
             "text":                   text,
@@ -477,12 +484,14 @@ class DictionairePipeline:
                 CLUSTER_LABELS[lang][cid]
                 if 0 <= cid < len(CLUSTER_LABELS["fr"]) else ""
             ),
+            "primary_cluster_score":  round(pri_score, 4),
             "secondary_cluster_id":   sec_cid,
             "secondary_cluster_label":(
                 CLUSTER_LABELS[lang][sec_cid]
                 if 0 <= sec_cid < len(CLUSTER_LABELS["fr"]) else ""
             ),
             "secondary_cluster_score": round(sec_score, 4),
+            "show_secondary_cluster": show_secondary,
             "membership_scores":      scores,
             "is_generated":  entry.get("is_generated", False),
             "generator":     entry.get("generator", ""),
