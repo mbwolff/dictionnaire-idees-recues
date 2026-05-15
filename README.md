@@ -98,6 +98,8 @@ source. Artifacts fixed in `parse.py` (and patched directly in the JSON):
 - **Roman numeral splits** — "Louis XI." and "Louis XIV." split at line breaks were merged back into BARBIER and OMNIBUS
 - **Duplicate sub-entries** — consecutive entries with identical body text caused by article variants (LYCÉE/COLLEGE, ÉCRIT/BIEN ÉCRIT, ORDRE/L'ORDRE) reduced to the canonical form
 - **Line-break hyphens** — `word- word` rejoined to `word-word` in body text
+- **Embedded guillemet spacing** — Gutenberg double-space before `»` normalised to single space across 15 entries
+- **MEXIQUE body** — trailing MIDI (cuisine du) sub-entry removed after that entry was recovered separately
 - **Swallowed entries** — DESSIN (L'ART DU) recovered from DESSERT's body; FERME (SUBST.), FEU (SUBST.), and FEU (ADJ.) recovered from FERME (ADJECTIF) and FERMIER
 - **Capitalisation** — LYCÉE uppercased; DARTRE body text capitalised
 - **Missing entries** — GARDE-COTE, GARES DE CHEMIN DE FER, GYMNASE (LE), JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE, and USUM (AD). recovered by direct comparison with the Gutenberg source
