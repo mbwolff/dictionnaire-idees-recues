@@ -44,6 +44,7 @@
             data-placeholder-en="Search an entry…"
             placeholder="Chercher une entrée…"
           />
+          <div class="typeahead-dropdown" id="typeahead-dropdown" style="display:none"></div>
           <div class="search-mode-pills">
             <button class="pill active" data-mode="text" id="pill-text"
               data-tip-fr="Recherche dans les intitulés et les textes des entrées"
@@ -193,6 +194,10 @@
           <div class="entry-headword-wrap">
             <h2 class="entry-headword" id="detail-headword"></h2>
             <span class="entry-headword-tr" id="detail-headword-tr"></span>
+          </div>
+          <div class="entry-nav-row">
+            <button class="entry-nav-btn" id="entry-prev-btn" style="display:none" title="Previous entry">‹</button>
+            <button class="entry-nav-btn" id="entry-next-btn" style="display:none" title="Next entry">›</button>
           </div>
           <div class="entry-meta-row">
             <span class="cluster-badge" id="detail-cluster"></span>

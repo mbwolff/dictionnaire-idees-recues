@@ -435,9 +435,13 @@ class DictionairePipeline:
     def _load_data(self):
         if ENTRIES_FILE.exists():
             self._entries = json.loads(ENTRIES_FILE.read_text("utf-8"))
+            self._entry_index: dict[str, int] = {
+                e["headword"].upper(): i for i, e in enumerate(self._entries)
+            }
             print(f"[Pipeline] {len(self._entries)} Flaubert entries loaded.")
         else:
             print(f"[Pipeline] WARNING: {ENTRIES_FILE} not found. Run 01_parse.py first.")
+            self._entry_index = {}
 
         if NEW_ENTRIES_FILE.exists():
             self._new_entries = json.loads(NEW_ENTRIES_FILE.read_text("utf-8"))
@@ -759,11 +763,16 @@ class DictionairePipeline:
             if e.get("headword", "").upper() == hw:
                 fe = self._format_entry(e, lang)
                 fe["neighbours"] = self._get_neighbours(hw, lang)
+                idx = self._entry_index.get(hw, -1)
+                fe["prev_headword"] = self._entries[idx - 1]["headword"] if idx > 0 else None
+                fe["next_headword"] = self._entries[idx + 1]["headword"] if idx < len(self._entries) - 1 else None
                 return fe
         for e in self._new_entries:
             if e.get("headword", "").upper() == hw:
                 fe = self._format_entry({**e, "is_generated": True}, lang)
                 fe["neighbours"] = self._get_neighbours(hw, lang)
+                fe["prev_headword"] = None
+                fe["next_headword"] = None
                 return fe
         return None
 

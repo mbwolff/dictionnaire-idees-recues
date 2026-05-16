@@ -44,15 +44,15 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Feature | Description |
 |---|---|
 | Browse | Alphabetical index + paginated entry list; ⚂ random-entry button |
-| Text search | Substring match on headword and entry text |
+| Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Themes | 12 semantic clusters with labels; t-SNE map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
 | Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
-| Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) |
+| Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
-| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); "carte" link to semantic map |
+| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; "carte" link to semantic map |
 | Add entry | Propose a French noun → validate → generate in Flaubert's style → persist |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail |

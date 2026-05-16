@@ -13,6 +13,8 @@ const state = {
   totalEntries:  0,
   searchQuery:        "",
   searchDebounce:     null,
+  typeaheadDebounce:  null,
+  typeaheadIdx:       -1,
   clusters:           [],
   highlightedCluster: null,
   showSecondary:      false,
@@ -83,6 +85,7 @@ const i18n = {
 const $ = id => document.getElementById(id);
 const el = {
   searchInput:    $("search-input"),
+  typeahead:      $("typeahead-dropdown"),
   pillText:       $("pill-text"),
   pillSemantic:   $("pill-semantic"),
   entryList:      $("entry-list"),
@@ -310,6 +313,17 @@ function renderEntryDetail(entry) {
   const tr = entry.headword_translated && entry.headword_translated !== entry.headword
     ? `(${entry.headword_translated})` : "";
   $("detail-headword-tr").textContent = tr;
+
+  const prevBtn = $("entry-prev-btn");
+  const nextBtn = $("entry-next-btn");
+  if (prevBtn) {
+    prevBtn.style.display = entry.prev_headword ? "" : "none";
+    prevBtn.onclick = entry.prev_headword ? () => loadEntry(entry.prev_headword) : null;
+  }
+  if (nextBtn) {
+    nextBtn.style.display = entry.next_headword ? "" : "none";
+    nextBtn.onclick = entry.next_headword ? () => loadEntry(entry.next_headword) : null;
+  }
 
   const priLabel = entry.cluster_label || "";
   const priMult  = entry.primary_cluster_score
@@ -893,12 +907,21 @@ function renderXrefNetwork(svgEl, nodes, edges) {
     return line;
   });
 
+  // Compute degree for each node
+  const degree = new Map(nodes.map(n => [n.id, 0]));
+  edges.forEach(e => {
+    degree.set(e.source, (degree.get(e.source) || 0) + 1);
+    degree.set(e.target, (degree.get(e.target) || 0) + 1);
+  });
+  const maxDeg = Math.max(...degree.values(), 1);
+
   const nodeEls = nodes.map(n => {
     const g = document.createElementNS(ns, "g");
     g.style.cursor = "pointer";
     const color = CLUSTER_PALETTE[(n.cluster_id >= 0 ? n.cluster_id : 0) % CLUSTER_PALETTE.length];
+    const r = 4 + 6 * (degree.get(n.id) || 0) / maxDeg;
     const circ = document.createElementNS(ns, "circle");
-    circ.setAttribute("r", "5"); circ.setAttribute("fill", color); circ.setAttribute("opacity", "0.85");
+    circ.setAttribute("r", r.toFixed(1)); circ.setAttribute("fill", color); circ.setAttribute("opacity", "0.85");
     g.appendChild(circ);
     const lbl = n.display.length > 14 ? n.display.slice(0, 13) + "…" : n.display;
     const txt = document.createElementNS(ns, "text");
@@ -1029,6 +1052,7 @@ el.pillSemantic.addEventListener("click", () => {
   state.searchMode = "semantic";
   el.pillSemantic.classList.add("active");
   el.pillText.classList.remove("active");
+  hideTypeahead();
   if (state.searchQuery) doSearch(state.searchQuery);
 });
 
@@ -1037,7 +1061,64 @@ el.searchInput.addEventListener("input", e => {
   state.searchQuery = q;
   clearTimeout(state.searchDebounce);
   state.searchDebounce = setTimeout(() => doSearch(q), 280);
+  if (state.searchMode === "text" && q.length >= 1) {
+    clearTimeout(state.typeaheadDebounce);
+    state.typeaheadDebounce = setTimeout(() => updateTypeahead(q), 120);
+  } else {
+    hideTypeahead();
+  }
 });
+
+el.searchInput.addEventListener("keydown", e => {
+  const items = el.typeahead.querySelectorAll(".typeahead-item");
+  if (!items.length || el.typeahead.style.display === "none") return;
+  if (e.key === "ArrowDown") {
+    e.preventDefault();
+    state.typeaheadIdx = Math.min(state.typeaheadIdx + 1, items.length - 1);
+    updateTypeaheadActive(items);
+  } else if (e.key === "ArrowUp") {
+    e.preventDefault();
+    state.typeaheadIdx = Math.max(state.typeaheadIdx - 1, -1);
+    updateTypeaheadActive(items);
+  } else if (e.key === "Enter" && state.typeaheadIdx >= 0) {
+    e.preventDefault();
+    items[state.typeaheadIdx].click();
+  } else if (e.key === "Escape") {
+    hideTypeahead();
+  }
+});
+
+el.searchInput.addEventListener("blur", () => {
+  setTimeout(hideTypeahead, 150);
+});
+
+function hideTypeahead() {
+  el.typeahead.style.display = "none";
+  state.typeaheadIdx = -1;
+}
+
+function updateTypeaheadActive(items) {
+  items.forEach((it, i) => it.classList.toggle("active", i === state.typeaheadIdx));
+}
+
+async function updateTypeahead(q) {
+  const results = await api(`/api/search?q=${encodeURIComponent(q)}&mode=prefix&lang=${state.lang}&limit=8`);
+  if (!results.results || !results.results.length || el.searchInput.value.trim() !== q) {
+    hideTypeahead(); return;
+  }
+  state.typeaheadIdx = -1;
+  el.typeahead.innerHTML = results.results.map((r, i) =>
+    `<div class="typeahead-item" data-idx="${i}">${r.headword}</div>`
+  ).join("");
+  el.typeahead.querySelectorAll(".typeahead-item").forEach((item, i) => {
+    item.addEventListener("mousedown", () => {
+      el.searchInput.value = "";
+      hideTypeahead();
+      loadEntry(results.results[i].headword);
+    });
+  });
+  el.typeahead.style.display = "block";
+}
 
 document.querySelectorAll(".nav-item").forEach(btn => {
   btn.addEventListener("click", () => {
