@@ -6,6 +6,7 @@ numpy>=1.26.0
 deep-translator>=1.11.4
 
 # ── Noun validation ───────────────────────────────────────────────────────────
+requests>=2.31.0
 spacy>=3.7.0
 # After pip install:  python -m spacy download fr_core_news_sm
 

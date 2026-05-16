@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import urllib.parse
 import urllib.request
 from abc import ABC, abstractmethod
 from pathlib import Path
@@ -384,12 +385,35 @@ class NounValidator:
                     "reason": f"'{word}' does not look like a word."}
         return self._validate_spacy(word) if self._nlp else self._validate_heuristic(word)
 
+    def _wiktionary_exists(self, word: str) -> bool:
+        """Return True if word has a French Wiktionary page (fail-open on network error)."""
+        import requests as _req
+        url = (
+            "https://fr.wiktionary.org/w/api.php?action=query"
+            f"&titles={urllib.parse.quote(word.lower().strip())}"
+            "&format=json&redirects=1"
+        )
+        try:
+            r = _req.get(url, timeout=5, headers={"User-Agent": "DictionnaireApp/1.0"})
+            pages = r.json().get("query", {}).get("pages", {})
+            return "-1" not in pages
+        except Exception:
+            return True  # network error → fail open so the app keeps working
+
     def _validate_spacy(self, word: str) -> dict:
         doc   = self._nlp(word)
         token = doc[0]
         pos   = token.pos_
         lemma = token.lemma_.upper()
         if pos in ("NOUN", "PROPN"):
+            # For single words, verify the word actually exists in French
+            if " " not in word.strip():
+                known = self._wiktionary_exists(word)
+                if not known and lemma.lower() != word.lower():
+                    known = self._wiktionary_exists(lemma)
+                if not known:
+                    return {"valid": False, "pos": pos, "lemma": lemma,
+                            "reason": f"'{word}' is not a recognized French word."}
             return {"valid": True, "pos": pos, "lemma": lemma, "reason": ""}
         if len(doc) > 1 and any(t.pos_ in ("NOUN", "PROPN") for t in doc):
             return {"valid": True, "pos": "NOUN", "lemma": word.upper(), "reason": ""}
@@ -874,6 +898,11 @@ class DictionairePipeline:
             new_entry["headword_en"] = word.strip().upper()
         self._new_entries.append(new_entry)
         self._persist_new_entries()
+
+        result = self._format_entry(new_entry, lang)
+        result["neighbours"] = neighbours
+        result["generated"]  = True
+        return result
 
     def _persist_new_entries(self) -> None:
         NEW_ENTRIES_FILE.parent.mkdir(parents=True, exist_ok=True)
