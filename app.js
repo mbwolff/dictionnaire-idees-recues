@@ -1054,6 +1054,15 @@ function refreshAll() {
 el.langBtn.addEventListener("click", toggleLang);
 el.themeBtn.addEventListener("click", toggleTheme);
 
+$("home-btn").addEventListener("click", () => {
+  el.searchInput.value = "";
+  state.searchQuery = "";
+  hideTypeahead();
+  switchView("browse");
+  showView("welcome");
+  history.pushState({ type: "view", view: "browse" }, "", "#");
+});
+
 el.pillText.addEventListener("click", () => {
   state.searchMode = "text";
   el.pillText.classList.add("active");
