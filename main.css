@@ -864,6 +864,8 @@ mark {
   border-radius: var(--radius);
   background: var(--cream-dark);
   display: block;
+  user-select: none;
+  touch-action: none;
 }
 
 .tsne-legend {

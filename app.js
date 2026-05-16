@@ -569,6 +569,7 @@ const CLUSTER_PALETTE = [
 
 let tsneCache   = null;
 let tsneCircles = new Map();   // headword → { cx, cy, color }
+let tsneTransform = { tx: 0, ty: 0, k: 1 };  // current pan/zoom state
 
 async function loadTsne() {
   if (tsneCache && tsneCache.lang === state.lang) {
@@ -591,6 +592,12 @@ async function loadTsne() {
   }
 }
 
+function applyTsneTransform() {
+  const g = document.getElementById("tsne-g");
+  if (g) g.setAttribute("transform",
+    `translate(${tsneTransform.tx.toFixed(2)},${tsneTransform.ty.toFixed(2)}) scale(${tsneTransform.k.toFixed(4)})`);
+}
+
 function renderTsne(points) {
   const W = 900, H = 560, PAD = 28;
   const xs = points.map(p => p.x), ys = points.map(p => p.y);
@@ -603,9 +610,15 @@ function renderTsne(points) {
   el.tsneSvg.innerHTML = "";
   el.tsneSvg.classList.remove("highlight-active");
   tsneCircles.clear();
+  tsneTransform = { tx: 0, ty: 0, k: 1 };
 
   const ns = "http://www.w3.org/2000/svg";
   const container = el.tsneSvg.closest(".tsne-container");
+
+  // All drawn content lives in this group so pan/zoom only transforms it
+  const g = document.createElementNS(ns, "g");
+  g.id = "tsne-g";
+  el.tsneSvg.appendChild(g);
 
   // Centroid accumulator
   const centroids = {};
@@ -665,7 +678,7 @@ function renderTsne(points) {
     });
     c.addEventListener("click", () => { loadEntry(p.headword); showView("entry"); });
 
-    el.tsneSvg.appendChild(c);
+    g.appendChild(c);
     tsneCircles.set(p.headword, { cx: +cx, cy: +cy, color, el: c });
 
     // Accumulate centroid
@@ -695,7 +708,7 @@ function renderTsne(points) {
     txt.setAttribute("pointer-events", "none");
     txt.setAttribute("data-centroid", id);
     txt.textContent = abbrev;
-    el.tsneSvg.appendChild(txt);
+    g.appendChild(txt);
   });
 
   // Legend
@@ -777,7 +790,7 @@ function pulseAt(cx, cy, color) {
       ring.setAttribute("opacity", "0.9");
       ring.style.pointerEvents = "none";
       ring.style.transition = "r 700ms ease-out, opacity 700ms ease-out";
-      el.tsneSvg.appendChild(ring);
+      (document.getElementById("tsne-g") || el.tsneSvg).appendChild(ring);
       requestAnimationFrame(() => requestAnimationFrame(() => {
         ring.setAttribute("r", "24");
         ring.setAttribute("opacity", "0");
@@ -1212,6 +1225,58 @@ function handleInitialHash() {
 }
 
 /* ── Init ───────────────────────────────────────────────────────────── */
+// ── t-SNE pan/zoom (registered once; reads/writes tsneTransform) ────────────
+(function wireTsnePanZoom() {
+  const svgEl = el.tsneSvg;
+  const TSNE_W = 900, TSNE_H = 560;
+  svgEl.style.cursor = "grab";
+
+  svgEl.addEventListener("wheel", e => {
+    e.preventDefault();
+    const rect = svgEl.getBoundingClientRect();
+    const mx = (e.clientX - rect.left) / rect.width  * TSNE_W;
+    const my = (e.clientY - rect.top)  / rect.height * TSNE_H;
+    const factor = e.deltaY < 0 ? 1.12 : 1 / 1.12;
+    const newK = Math.max(0.5, Math.min(8, tsneTransform.k * factor));
+    tsneTransform.tx = mx - (mx - tsneTransform.tx) * (newK / tsneTransform.k);
+    tsneTransform.ty = my - (my - tsneTransform.ty) * (newK / tsneTransform.k);
+    tsneTransform.k  = newK;
+    applyTsneTransform();
+  }, { passive: false });
+
+  // Pan: use window listeners so drag survives leaving the SVG; no setPointerCapture,
+  // which would redirect click to svgEl and prevent circle click handlers from firing.
+  let drag = null;
+  let didDrag = false;
+  svgEl.addEventListener("pointerdown", e => {
+    if (e.button !== 0) return;
+    drag = { startX: e.clientX, startY: e.clientY, tx0: tsneTransform.tx, ty0: tsneTransform.ty };
+    didDrag = false;
+    svgEl.style.cursor = "grabbing";
+  });
+  window.addEventListener("pointermove", e => {
+    if (!drag) return;
+    const dx = e.clientX - drag.startX, dy = e.clientY - drag.startY;
+    if (!didDrag && Math.hypot(dx, dy) < 4) return;
+    didDrag = true;
+    const rect = svgEl.getBoundingClientRect();
+    tsneTransform.tx = drag.tx0 + dx * TSNE_W / rect.width;
+    tsneTransform.ty = drag.ty0 + dy * TSNE_H / rect.height;
+    applyTsneTransform();
+  });
+  window.addEventListener("pointerup", () => {
+    if (!drag) return;
+    drag = null;
+    svgEl.style.cursor = "grab";
+  });
+  // Suppress click that fires immediately after a drag-release
+  svgEl.addEventListener("click", e => { if (didDrag) { e.stopPropagation(); } }, true);
+  svgEl.addEventListener("dblclick", () => {
+    tsneTransform = { tx: 0, ty: 0, k: 1 };
+    applyTsneTransform();
+  });
+}());
+
 function init() {
   buildAlphaIndex();
   loadBrowsePage();
