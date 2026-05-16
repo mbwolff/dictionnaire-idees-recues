@@ -53,9 +53,10 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
 | Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; "carte" link to semantic map |
-| Add entry | Propose a French noun → validate → generate in Flaubert's style → persist |
+| Add entry | Propose a French noun → validate → generate in Flaubert's style → persist; × button removes a generated entry |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
-| Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail |
+| Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
+| No-results hint | Empty text-search results offer a one-click switch to semantic mode |
 | URL routing | `#entry/HEADWORD`, `#themes`, `#stats`, `#rhetoric` — browser back/forward works; links are shareable |
 | Home button | Clicking the title returns to the welcome state and clears the search |
 
