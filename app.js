@@ -257,7 +257,21 @@ function renderSearchResults(q, results) {
 
   const list = $("results-list");
   if (!results.length) {
-    list.innerHTML = `<p class="empty-state">${t.noResults}</p>`;
+    const hint = state.searchMode === "text"
+      ? (state.lang === "fr"
+          ? `<p class="empty-state">${t.noResults}</p><p class="empty-hint">Essayez la recherche <button class="empty-switch-btn" id="empty-switch-semantic">Sémantique</button> pour trouver des entrées de sens proche.</p>`
+          : `<p class="empty-state">${t.noResults}</p><p class="empty-hint">Try <button class="empty-switch-btn" id="empty-switch-semantic">Semantic</button> search to find entries with similar meaning.</p>`)
+      : `<p class="empty-state">${t.noResults}</p>`;
+    list.innerHTML = hint;
+    const switchBtn = $("empty-switch-semantic");
+    if (switchBtn) {
+      switchBtn.addEventListener("click", () => {
+        state.searchMode = "semantic";
+        el.pillSemantic.classList.add("active");
+        el.pillText.classList.remove("active");
+        doSearch(state.searchQuery);
+      });
+    }
     return;
   }
 
@@ -503,12 +517,27 @@ async function loadGeneratedList() {
     }
     el.generatedList.innerHTML = "";
     generated.forEach(entry => {
+      const row = document.createElement("div");
+      row.className = "generated-row";
+
       const btn = document.createElement("button");
       btn.className = "list-entry generated";
       btn.dataset.headword = entry.headword;
       btn.textContent = entry.headword;
       btn.addEventListener("click", () => loadEntry(entry.headword));
-      el.generatedList.appendChild(btn);
+
+      const del = document.createElement("button");
+      del.className = "delete-generated-btn";
+      del.title = "Supprimer";
+      del.textContent = "×";
+      del.addEventListener("click", async () => {
+        await fetch(`/api/generated/${encodeURIComponent(entry.headword)}`, { method: "DELETE" });
+        loadGeneratedList();
+      });
+
+      row.appendChild(btn);
+      row.appendChild(del);
+      el.generatedList.appendChild(row);
     });
   } catch (e) { console.error(e); }
 }
@@ -1180,6 +1209,11 @@ document.addEventListener("keydown", e => {
     else if (el.entryDetail.style.display !== "none") { showView("welcome"); }
   } else if (e.key === "r" && !inInput && !e.metaKey && !e.ctrlKey) {
     loadRandom();
+  } else if ((e.key === "ArrowLeft" || e.key === "ArrowRight") && !inInput) {
+    const entry = state.currentEntry;
+    if (!entry || el.entryDetail.style.display === "none") return;
+    const hw = e.key === "ArrowLeft" ? entry.prev_headword : entry.next_headword;
+    if (hw) loadEntry(hw);
   }
 });
 

@@ -873,10 +873,22 @@ class DictionairePipeline:
         if lang == "en":
             new_entry["headword_en"] = word.strip().upper()
         self._new_entries.append(new_entry)
+        self._persist_new_entries()
+
+    def _persist_new_entries(self) -> None:
         NEW_ENTRIES_FILE.parent.mkdir(parents=True, exist_ok=True)
         NEW_ENTRIES_FILE.write_text(
             json.dumps(self._new_entries, ensure_ascii=False, indent=2), "utf-8"
         )
+
+    def delete_generated(self, headword: str) -> bool:
+        hw = headword.upper()
+        before = len(self._new_entries)
+        self._new_entries = [e for e in self._new_entries if e.get("headword", "").upper() != hw]
+        if len(self._new_entries) == before:
+            return False
+        self._persist_new_entries()
+        return True
 
         result = self._format_entry(new_entry, lang)
         result["neighbours"] = neighbours

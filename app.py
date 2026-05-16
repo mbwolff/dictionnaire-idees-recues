@@ -95,6 +95,12 @@ def generated():
     return jsonify(pipeline.recent_generated(limit, lang))
 
 
+@app.route("/api/generated/<path:headword>", methods=["DELETE"])
+def delete_generated(headword):
+    ok = pipeline.delete_generated(headword.upper())
+    return jsonify({"ok": ok}), (200 if ok else 404)
+
+
 @app.route("/api/tags")
 def tags():
     lang = request.args.get("lang", "fr")
