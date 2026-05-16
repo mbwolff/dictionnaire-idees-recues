@@ -109,11 +109,11 @@ JALOUSIE (daily life + society).
 
 ## Noun validation
 
-Proposed headwords are validated with spaCy `fr_core_news_sm` (accepted POS: `NOUN`,
-`PROPN`). Two heuristic pre-filters reject obvious non-words before spaCy is consulted:
+Proposed headwords pass three successive checks:
 
-- **Vowel check** — rejects strings with no French vowel
-- **Repetition check** — rejects strings longer than 4 characters that use only 2 distinct characters (e.g. ABABA)
+1. **Heuristic pre-filters** — rejects strings with no French vowel, and strings longer than 4 characters that use only 2 distinct characters (e.g. ABABA)
+2. **spaCy POS check** — `fr_core_news_sm` must tag the word as `NOUN` or `PROPN`
+3. **French Wiktionary lookup** — single words are verified against the French Wiktionary API; invented words that pass the POS check are rejected here. Multi-word headwords (e.g. ACADÉMIE FRANÇAISE) skip this step. The check fails open on network errors.
 
 Input is capped at 80 characters server-side.
 
