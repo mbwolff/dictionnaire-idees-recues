@@ -47,7 +47,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Themes | 12 semantic clusters with labels; t-SNE map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
-| Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot |
+| Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree |
 | FR/EN toggle | Switches UI language and entry translations throughout |
@@ -57,6 +57,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail |
 | URL routing | `#entry/HEADWORD`, `#themes`, `#stats`, `#rhetoric` — browser back/forward works; links are shareable |
+| Home button | Clicking the title returns to the welcome state and clears the search |
 
 ## Pipeline
 
