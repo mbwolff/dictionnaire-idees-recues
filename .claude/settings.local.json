@@ -48,7 +48,8 @@
       "Bash(curl -sv \"http://localhost:5050/api/tsne?lang=fr\" --max-time 90)",
       "Bash(curl -k -s \"https://www.gutenberg.org/files/14156/14156-0.txt\" -o /tmp/gutenberg_flaubert.txt)",
       "Bash(curl -s http://localhost:5050/api/tsne)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(python cluster.py)"
     ]
   }
 }

@@ -43,9 +43,6 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 
 | Feature | Description |
 |---|---|
-| Browse | Alphabetical index + paginated entry list |
-| Text search | Substring match on headword and entry text |
-| Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Browse | Alphabetical index + paginated entry list; ⚂ random-entry button |
 | Text search | Substring match on headword and entry text |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |

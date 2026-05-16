@@ -788,7 +788,7 @@ async function loadRandom() {
 let statsCache = null;
 
 async function loadDetailedStats() {
-  if (statsCache && statsCache.lang === state.lang) { renderStatsView(statsCache.data); return; }
+  if (statsCache && statsCache.lang === state.lang) { renderStatsView(statsCache.data, statsCache.xdata); return; }
   el.statsContent.innerHTML = `<div class="loading-state"><span class="loading-dot"></span></div>`;
   try {
     const [data, xdata] = await Promise.all([
@@ -864,9 +864,14 @@ function renderXrefNetwork(svgEl, nodes, edges) {
   const k = Math.sqrt(W * H / nodes.length) * 0.9;
   const ns = "http://www.w3.org/2000/svg";
 
-  // Seed positions
-  const rng = (seed => () => { seed = (seed * 1664525 + 1013904223) & 0xffffffff; return (seed >>> 0) / 0xffffffff; })(42);
-  nodes.forEach(n => { n.x = 40 + rng() * (W - 80); n.y = 40 + rng() * (H - 80); n.vx = 0; n.vy = 0; });
+  // Initialise in a circle — much better starting point than random scatter
+  const r0 = Math.min(W, H) * 0.32;
+  nodes.forEach((n, i) => {
+    const a = (2 * Math.PI * i) / nodes.length;
+    n.x = W / 2 + r0 * Math.cos(a);
+    n.y = H / 2 + r0 * Math.sin(a);
+    n.fx = 0; n.fy = 0;
+  });
 
   const nodeIdx = new Map(nodes.map((n, i) => [n.id, i]));
 
@@ -907,37 +912,60 @@ function renderXrefNetwork(svgEl, nodes, edges) {
     return g;
   });
 
-  // Force simulation
+  // Spring-damper simulation: Coulomb repulsion + Hooke edge springs + gravity
+  // FR repulsion (k²/d) falls off too slowly — gravity can't counter it for sparse graphs.
+  // Inverse-square Coulomb (charge/d²) weakens fast enough that gravity dominates at distance.
+  const charge = 1500;  // repulsion strength
+  const springK = 0.12; // edge spring stiffness
+  const restLen = 60;   // edge rest length (px)
+  const grav = 0.04;    // gravity toward canvas centre
+  const damp = 0.82;    // velocity damping per tick
+  const maxV = 15;      // px/tick velocity cap
+
+  nodes.forEach(n => { n.vx = 0; n.vy = 0; });
   let step = 0;
-  const MAX = 250;
+  const MAX = 350;
+
   function tick() {
-    // Repulsion
+    nodes.forEach(n => { n.fx = 0; n.fy = 0; });
+
+    // Coulomb repulsion between every pair (inverse-square)
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i + 1; j < nodes.length; j++) {
         const dx = nodes[j].x - nodes[i].x, dy = nodes[j].y - nodes[i].y;
-        const d = Math.sqrt(dx * dx + dy * dy) + 0.1;
-        const f = (k * k) / (d * d);
-        nodes[i].vx -= f * dx; nodes[i].vy -= f * dy;
-        nodes[j].vx += f * dx; nodes[j].vy += f * dy;
+        const d2 = Math.max(dx * dx + dy * dy, 100); // floor at d=10
+        const d = Math.sqrt(d2);
+        const f = charge / d2;
+        nodes[i].fx -= f * dx / d; nodes[i].fy -= f * dy / d;
+        nodes[j].fx += f * dx / d; nodes[j].fy += f * dy / d;
       }
     }
-    // Attraction along edges
+
+    // Hooke's law spring along each edge
     edges.forEach(e => {
       const si = nodeIdx.get(e.source), ti = nodeIdx.get(e.target);
       if (si == null || ti == null) return;
       const dx = nodes[ti].x - nodes[si].x, dy = nodes[ti].y - nodes[si].y;
-      const d = Math.sqrt(dx * dx + dy * dy) + 0.1;
-      const f = (d / k) * 0.6;
-      nodes[si].vx += f * dx / d; nodes[si].vy += f * dy / d;
-      nodes[ti].vx -= f * dx / d; nodes[ti].vy -= f * dy / d;
+      const d = Math.max(Math.sqrt(dx * dx + dy * dy), 0.1);
+      const f = springK * (d - restLen);
+      nodes[si].fx += f * dx / d; nodes[si].fy += f * dy / d;
+      nodes[ti].fx -= f * dx / d; nodes[ti].fy -= f * dy / d;
     });
-    // Gravity + damping + clamp
+
+    // Gravity toward canvas centre
     nodes.forEach(n => {
-      n.vx = (n.vx + (W / 2 - n.x) * 0.008) * 0.82;
-      n.vy = (n.vy + (H / 2 - n.y) * 0.008) * 0.82;
-      n.x = Math.max(25, Math.min(W - 25, n.x + n.vx));
-      n.y = Math.max(18, Math.min(H - 18, n.y + n.vy));
+      n.fx += (W / 2 - n.x) * grav;
+      n.fy += (H / 2 - n.y) * grav;
     });
+
+    // Integrate: damp, cap, boundary-clamp
+    nodes.forEach(n => {
+      n.vx = Math.max(-maxV, Math.min(maxV, (n.vx + n.fx) * damp));
+      n.vy = Math.max(-maxV, Math.min(maxV, (n.vy + n.fy) * damp));
+      n.x = Math.max(30, Math.min(W - 30, n.x + n.vx));
+      n.y = Math.max(20, Math.min(H - 20, n.y + n.vy));
+    });
+
     // Update DOM
     nodeEls.forEach((g, i) => g.setAttribute("transform", `translate(${nodes[i].x.toFixed(1)},${nodes[i].y.toFixed(1)})`));
     edgeEls.forEach((line, i) => {
