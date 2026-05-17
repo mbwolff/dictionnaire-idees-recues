@@ -376,7 +376,7 @@ class NounValidator:
         "ENCULÉ", "ENCULER", "ENCULE", "NIQUER", "NIQUE", "BAISER",
         "CHIER", "CHIASSE", "CON", "CONNE", "BITE", "COUILLE", "COUILLES",
         "CHIOTTE", "CHIOTTES", "SALOPARD", "ORDURE", "PÉTASSE", "PETASSE",
-        "BRANLEUR", "BRANLER", "FOUTRE", "FOUTAISE", "SALAUD",
+        "BRANLEUR", "BRANLER", "FOUTRE", "FOUTAISE", "SALAUD"
     })
 
     # Wiktionary category keywords that flag a word as profane
