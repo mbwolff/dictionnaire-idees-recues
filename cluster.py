@@ -60,12 +60,12 @@ def soft_membership(embeddings: np.ndarray, centers: np.ndarray) -> np.ndarray:
 
 def reduce_2d(embeddings: np.ndarray) -> np.ndarray:
     try:
-        from sklearn.manifold import TSNE
-        print("Running t-SNE …")
-        return TSNE(n_components=2, random_state=42, perplexity=15).fit_transform(embeddings)
+        import umap
+        print("Running UMAP …")
+        return umap.UMAP(n_components=2, random_state=42, n_neighbors=15, min_dist=0.1).fit_transform(embeddings)
     except Exception:
         from sklearn.decomposition import PCA
-        print("t-SNE unavailable, using PCA …")
+        print("UMAP unavailable, using PCA …")
         return PCA(n_components=2).fit_transform(embeddings)
 
 
@@ -251,15 +251,14 @@ def main():
     coords = reduce_2d(embeddings)
     plot_clusters(coords, labels, headwords, REPORTS_DIR / "clusters.png")
 
-    # Pre-compute t-SNE for the pipeline (perplexity=30, matches pipeline.py)
-    from sklearn.manifold import TSNE as _TSNE
+    # Pre-compute UMAP for the pipeline
+    import umap as _umap
     from sklearn.preprocessing import normalize as _norm
-    print("Pre-computing t-SNE for runtime (perplexity=30)…")
-    tsne_pipeline = _TSNE(
-        n_components=2, random_state=42, perplexity=30,
-        max_iter=1000, init="pca", learning_rate="auto",
+    print("Pre-computing UMAP for runtime…")
+    umap_pipeline = _umap.UMAP(
+        n_components=2, random_state=42, n_neighbors=15, min_dist=0.1,
     ).fit_transform(_norm(embeddings))
-    np.save(TSNE_FILE, tsne_pipeline.astype(np.float32))
+    np.save(TSNE_FILE, umap_pipeline.astype(np.float32))
     print(f"  Saved → {TSNE_FILE}")
 
 

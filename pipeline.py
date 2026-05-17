@@ -394,7 +394,7 @@ class NounValidator:
         core = re.sub(r"[\s\-']", "", word).upper()
         if core in self._BLOCKLIST:
             return {"valid": False, "pos": "", "lemma": word.upper(),
-                    "reason": self._NEUTRAL_REFUSAL}
+                    "reason": self._NEUTRAL_REFUSAL, "blocked": True}
         if not self._VOWEL_RE.search(word):
             return {"valid": False, "pos": "", "lemma": word.upper(),
                     "reason": f"'{word}' does not look like a word."}
@@ -576,18 +576,18 @@ class DictionairePipeline:
             return []
         if self._tsne_cache is None:
             if TSNE_FILE.exists():
-                print("[Pipeline] Loading t-SNE from disk…")
+                print("[Pipeline] Loading UMAP from disk…")
                 self._tsne_cache = np.load(TSNE_FILE).astype(np.float32)
             else:
-                from sklearn.manifold import TSNE
-                print("[Pipeline] Computing t-SNE…")
-                coords = TSNE(
-                    n_components=2, random_state=42, perplexity=30,
-                    max_iter=1000, init="pca", learning_rate="auto",
-                ).fit_transform(self._embeddings)
+                from sklearn.preprocessing import normalize
+                import umap
+                print("[Pipeline] Computing UMAP…")
+                coords = umap.UMAP(
+                    n_components=2, random_state=42, n_neighbors=15, min_dist=0.1,
+                ).fit_transform(normalize(self._embeddings))
                 self._tsne_cache = coords.astype(np.float32)
                 np.save(TSNE_FILE, self._tsne_cache)
-                print("[Pipeline] t-SNE done.")
+                print("[Pipeline] UMAP done.")
         coords = self._tsne_cache
         labels = CLUSTER_LABELS[lang]
         result = []
@@ -883,10 +883,9 @@ class DictionairePipeline:
 
         validation = self.validator.validate(fr_word)
         if not validation["valid"]:
-            return {
-                "error": f"'{word}' does not appear to be a noun: {validation['reason']}",
-                "validation": validation,
-            }
+            reason = validation["reason"]
+            error = reason if validation.get("blocked") else f"'{word}' does not appear to be a noun: {reason}"
+            return {"error": error, "validation": validation}
 
         existing = self.get_entry(fr_word, lang)
         if existing:
@@ -938,8 +937,3 @@ class DictionairePipeline:
             return False
         self._persist_new_entries()
         return True
-
-        result = self._format_entry(new_entry, lang)
-        result["neighbours"] = neighbours
-        result["generated"]  = True
-        return result
