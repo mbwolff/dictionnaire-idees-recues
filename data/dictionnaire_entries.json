@@ -2682,12 +2682,21 @@
   },
   {
     "headword": "DICTIONNAIRE",
-    "text": "En dire: « N'est fait que pour les ignorants. » Dictionnaire de rimes: s'en servir? Honteux!",
+    "text": "En dire: « N’est fait que pour les ignorants. »",
     "xrefs": [],
     "tags": [],
     "cluster_id": 3,
-    "text_en": "To say: “Is only made for the ignorant.”\" Rhyming dictionary: use it? Ashamed!",
+    "text_en": "To say: “Is only made for the ignorant.”",
     "headword_en": "DICTIONARY"
+  },
+  {
+    "headword": "DICTIONNAIRE DE RIMES",
+    "text": "S’en servir ? Honteux !",
+    "xrefs": [],
+    "tags": [],
+    "cluster_id": 3,
+    "text_en": "To use one? Shameful!",
+    "headword_en": "RHYMING DICTIONARY"
   },
   {
     "headword": "DIDEROT",
