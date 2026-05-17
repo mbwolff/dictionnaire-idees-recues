@@ -1,31 +1,59 @@
 [
   {
+    "cluster_id": 6,
+    "nearest_headword": "MÉDAILLE",
+    "nearest_similarity": 0.5746,
+    "top_5_members": [
+      [
+        "MÉDAILLE",
+        0.5745552182197571
+      ],
+      [
+        "CHIRURGIENS",
+        0.5189394950866699
+      ],
+      [
+        "CERCLE",
+        0.5152708888053894
+      ],
+      [
+        "CLAIR-OBSCUR",
+        0.5135831832885742
+      ],
+      [
+        "AUTRUCHE",
+        0.5117983222007751
+      ]
+    ],
+    "gap_score": 0.4254
+  },
+  {
     "cluster_id": 9,
     "nearest_headword": "PRÉOCCUPATION",
-    "nearest_similarity": 0.5755,
+    "nearest_similarity": 0.5753,
     "top_5_members": [
       [
         "PRÉOCCUPATION",
-        0.575535237789154
+        0.5752943754196167
       ],
       [
         "IMPERMÉABLE (UN)",
-        0.5686140656471252
-      ],
-      [
-        "HALLIER",
-        0.5576361417770386
-      ],
-      [
-        "DORMIR",
-        0.557308554649353
+        0.5689714550971985
       ],
       [
         "LUNE",
-        0.556365430355072
+        0.5598056316375732
+      ],
+      [
+        "DORMIR",
+        0.5579578280448914
+      ],
+      [
+        "CHALEUR",
+        0.5573521852493286
       ]
     ],
-    "gap_score": 0.4245
+    "gap_score": 0.4247
   },
   {
     "cluster_id": 4,
@@ -38,7 +66,7 @@
       ],
       [
         "FORT",
-        0.5633415579795837
+        0.5633416175842285
       ],
       [
         "PRINCIPES",
@@ -46,98 +74,70 @@
       ],
       [
         "FORCE",
-        0.5372107625007629
+        0.5372108221054077
       ],
       [
         "CRITIQUE",
-        0.5328440070152283
+        0.532844066619873
       ]
     ],
     "gap_score": 0.4238
   },
   {
-    "cluster_id": 6,
-    "nearest_headword": "MÉDAILLE",
-    "nearest_similarity": 0.5771,
+    "cluster_id": 5,
+    "nearest_headword": "IMPRÉSARIO",
+    "nearest_similarity": 0.5985,
     "top_5_members": [
       [
-        "MÉDAILLE",
-        0.5771019458770752
+        "IMPRÉSARIO",
+        0.5984591245651245
       ],
       [
-        "CERCLE",
-        0.5211256146430969
+        "BONNET GREC",
+        0.5890152454376221
       ],
       [
-        "CLAIR-OBSCUR",
-        0.5161529183387756
+        "CRITIQUE",
+        0.5778694152832031
       ],
       [
-        "CHIRURGIENS",
-        0.5146571397781372
+        "FLATTEUR",
+        0.5724586248397827
       ],
       [
-        "AUTRUCHE",
-        0.5134580135345459
+        "HUSSARD",
+        0.5628036260604858
       ]
     ],
-    "gap_score": 0.4229
+    "gap_score": 0.4015
   },
   {
     "cluster_id": 1,
     "nearest_headword": "FOURRURE",
-    "nearest_similarity": 0.5946,
+    "nearest_similarity": 0.5989,
     "top_5_members": [
       [
         "FOURRURE",
-        0.5946130156517029
+        0.5989472270011902
       ],
       [
         "SALUTATIONS",
-        0.5844581127166748
+        0.5833984613418579
       ],
       [
         "MAILLOT",
-        0.5760855078697205
+        0.5760110020637512
       ],
       [
         "INAUGURATION",
-        0.5674901604652405
+        0.5687288641929626
       ],
       [
         "ESPRIT",
-        0.5644719004631042
+        0.56695556640625
       ]
     ],
-    "gap_score": 0.4054
-  },
-  {
-    "cluster_id": 5,
-    "nearest_headword": "IMPRÉSARIO",
-    "nearest_similarity": 0.6041,
-    "top_5_members": [
-      [
-        "IMPRÉSARIO",
-        0.604112982749939
-      ],
-      [
-        "BONNET GREC",
-        0.5915000438690186
-      ],
-      [
-        "CRITIQUE",
-        0.5752177238464355
-      ],
-      [
-        "FLATTEUR",
-        0.5712905526161194
-      ],
-      [
-        "BOTTE",
-        0.5593248605728149
-      ]
-    ],
-    "gap_score": 0.3959
+    "gap_score": 0.4011
   },
   {
     "cluster_id": 8,
@@ -170,169 +170,169 @@
   {
     "cluster_id": 0,
     "nearest_headword": "MESSAGE",
-    "nearest_similarity": 0.6405,
+    "nearest_similarity": 0.6394,
     "top_5_members": [
       [
         "MESSAGE",
-        0.6404894590377808
-      ],
-      [
-        "NUMISMATIQUE",
-        0.618191123008728
-      ],
-      [
-        "RICHESSE",
-        0.6153120994567871
+        0.639431357383728
       ],
       [
         "MÉNAGE",
-        0.6069536209106445
+        0.6128172874450684
+      ],
+      [
+        "NUMISMATIQUE",
+        0.6117532253265381
+      ],
+      [
+        "RICHESSE",
+        0.6072323322296143
       ],
       [
         "DOCUMENT",
-        0.5818706154823303
+        0.581775426864624
       ]
     ],
-    "gap_score": 0.3595
+    "gap_score": 0.3606
   },
   {
     "cluster_id": 2,
     "nearest_headword": "SOUFFLET",
-    "nearest_similarity": 0.6465,
+    "nearest_similarity": 0.6522,
     "top_5_members": [
       [
         "SOUFFLET",
-        0.6464880704879761
+        0.6521918177604675
       ],
       [
         "EXERCICE",
-        0.6134135723114014
+        0.61046302318573
       ],
       [
         "OREILLER",
-        0.5775372982025146
-      ],
-      [
-        "JUSTICE",
-        0.5699450373649597
+        0.5850282907485962
       ],
       [
         "LINGE",
-        0.5695011615753174
+        0.5688610672950745
+      ],
+      [
+        "COPAHU",
+        0.5677919387817383
       ]
     ],
-    "gap_score": 0.3535
+    "gap_score": 0.3478
   },
   {
     "cluster_id": 7,
     "nearest_headword": "JOUISSANCE",
-    "nearest_similarity": 0.6607,
+    "nearest_similarity": 0.6571,
     "top_5_members": [
       [
         "JOUISSANCE",
-        0.6606805920600891
+        0.6571274995803833
       ],
       [
         "INTRODUCTION",
-        0.647528886795044
+        0.642849326133728
       ],
       [
         "EXPOSITION",
-        0.6298955678939819
+        0.6331650018692017
       ],
       [
         "CHASSE",
-        0.6258164644241333
+        0.628466010093689
       ],
       [
         "ENTRACTE",
-        0.6175594329833984
+        0.6153143644332886
       ]
     ],
-    "gap_score": 0.3393
+    "gap_score": 0.3429
   },
   {
     "cluster_id": 11,
     "nearest_headword": "TALLEYRAND (PRINCE DE)",
-    "nearest_similarity": 0.6897,
+    "nearest_similarity": 0.6888,
     "top_5_members": [
       [
         "TALLEYRAND (PRINCE DE)",
-        0.6896535158157349
+        0.6888405084609985
       ],
       [
         "ÉTRENNES",
-        0.6445873379707336
+        0.6442053318023682
       ],
       [
         "JEU",
-        0.6267024874687195
+        0.6296562552452087
       ],
       [
         "BADIGEON DANS LES ÉGLISES",
-        0.6068253517150879
+        0.609937846660614
       ],
       [
         "ÉPOQUE (LA NÔTRE)",
-        0.6042786240577698
+        0.6033338308334351
       ]
     ],
-    "gap_score": 0.3103
+    "gap_score": 0.3112
   },
   {
     "cluster_id": 3,
     "nearest_headword": "INCRUSTATION",
-    "nearest_similarity": 0.7637,
+    "nearest_similarity": 0.7636,
     "top_5_members": [
       [
         "INCRUSTATION",
-        0.763651967048645
+        0.7636222839355469
       ],
       [
         "JANSÉNISME",
-        0.675121009349823
+        0.6772228479385376
       ],
       [
         "IVOIRE",
-        0.6740887761116028
+        0.6738995909690857
       ],
       [
         "LACONISME",
-        0.6708731651306152
+        0.6698893904685974
       ],
       [
         "ÉTERNUER",
-        0.6642264723777771
+        0.6625602841377258
       ]
     ],
-    "gap_score": 0.2363
+    "gap_score": 0.2364
   },
   {
     "cluster_id": 10,
     "nearest_headword": "INNÉES (IDÉES)",
-    "nearest_similarity": 0.7839,
+    "nearest_similarity": 0.7854,
     "top_5_members": [
       [
         "INNÉES (IDÉES)",
-        0.7839423418045044
+        0.7853946685791016
       ],
       [
         "MÉTAPHYSIQUE",
-        0.778963029384613
+        0.7771098613739014
       ],
       [
         "MÉPHISTOPHÉLIQUE",
-        0.7353624105453491
-      ],
-      [
-        "HOMÈRE",
-        0.7296349406242371
+        0.7349141836166382
       ],
       [
         "DRÔLE",
-        0.7295325994491577
+        0.7330113053321838
+      ],
+      [
+        "HOMÈRE",
+        0.7293562293052673
       ]
     ],
-    "gap_score": 0.2161
+    "gap_score": 0.2146
   }
 ]
