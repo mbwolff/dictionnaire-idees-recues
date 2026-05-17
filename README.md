@@ -34,7 +34,7 @@ Port 5050 is used because macOS AirPlay Receiver occupies port 5000 and returns 
 | `data/dictionnaire_entries.json` | `parse.py` | 963 parsed and tagged Flaubert entries |
 | `data/embeddings.npz` | `embed.py` | CamemBERT sentence embeddings (963 × 768) |
 | `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) + soft membership scores (12-vector per entry) |
-| `data/tsne_coords.npy` | `cluster.py` | Pre-computed t-SNE coordinates (963 × 2, perplexity=30); loaded at startup in <1ms |
+| `data/tsne_coords.npy` | `cluster.py` | Pre-computed UMAP coordinates (963 × 2, n_neighbors=15, min_dist=0.1); loaded at startup in <1ms |
 | `data/new_entries.json` | app (runtime) | User-generated entries, persisted across sessions |
 | `data/gap_candidates.json` | `cluster.py` | Semantic gap analysis: one record per cluster, ranked by distance from centroid to nearest entry |
 
@@ -48,7 +48,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Themes | 12 semantic clusters with labels; t-SNE map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
-| Semantic map | Dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
+| Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree |
 | FR/EN toggle | Switches UI language and entry translations throughout |
@@ -68,9 +68,9 @@ parse.py      Fetch text from Project Gutenberg · extract entries · tag with
               Herschberg-Pierrot's enunciative categories (spaCy morphology)
 embed.py      Encode entries with dangvantuan/sentence-camembert-base
 cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
-              pre-computes t-SNE (perplexity=30) to data/tsne_coords.npy ·
+              pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/tsne_coords.npy ·
               batch-translate headwords and entry texts to English via deep-translator
-pipeline.py   Runtime: search · validation · translation · generation · t-SNE ·
+pipeline.py   Runtime: search · validation · translation · generation · UMAP ·
               random entry · detailed stats · xref graph
 app.py        Flask routes (+ /api/random, /api/stats/detailed, /api/xrefs)
 ```
