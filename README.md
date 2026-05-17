@@ -36,6 +36,7 @@ Port 5050 is used because macOS AirPlay Receiver occupies port 5000 and returns 
 | `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) + soft membership scores (12-vector per entry) |
 | `data/tsne_coords.npy` | `cluster.py` | Pre-computed t-SNE coordinates (963 × 2, perplexity=30); loaded at startup in <1ms |
 | `data/new_entries.json` | app (runtime) | User-generated entries, persisted across sessions |
+| `data/gap_candidates.json` | `cluster.py` | Semantic gap analysis: one record per cluster, ranked by distance from centroid to nearest entry |
 
 The app runs without `embeddings.npz`; semantic search falls back to text search.
 
@@ -53,7 +54,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
 | Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; "carte" link to semantic map |
-| Add entry | Propose a French noun → validate → generate in Flaubert's style → persist; × button removes a generated entry |
+| Add entry | Propose a French noun → validate → generate in Flaubert's style → persist; × button removes a generated entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
 | No-results hint | Empty text-search results offer a one-click switch to semantic mode |
