@@ -10,11 +10,13 @@ POST /api/generate          → validate noun + generate new entry
 GET  /api/generated         → last 10 generated entries (most recent first)
 GET  /api/tsne              → 2-D t-SNE coordinates for all entries
 GET  /api/clusters          → cluster summary for sidebar
+GET  /api/suggest?lang=     → random underrepresented theme suggestion
 """
 
 from flask import Flask, jsonify, request, render_template, abort
 from pipeline import DictionairePipeline
-import os
+import os, json, random
+from pathlib import Path
 
 app = Flask(__name__, template_folder=".", static_folder=".", static_url_path="/static")
 app.config["JSON_AS_ASCII"] = False
@@ -140,6 +142,35 @@ def stats_detailed():
 def xrefs():
     lang = request.args.get("lang", "fr")
     return jsonify(pipeline.xref_graph(lang))
+
+
+_GAPS_FILE = Path(__file__).parent / "data" / "gap_candidates.json"
+_gaps_cache: list | None = None
+
+def _load_gaps() -> list:
+    global _gaps_cache
+    if _gaps_cache is None:
+        _gaps_cache = json.loads(_GAPS_FILE.read_text("utf-8")) if _GAPS_FILE.exists() else []
+    return _gaps_cache
+
+from pipeline import CLUSTER_LABELS
+
+@app.route("/api/suggest")
+def suggest():
+    lang = request.args.get("lang", "fr")
+    gaps = _load_gaps()
+    if not gaps:
+        return jsonify({"error": "No gap data available."}), 404
+    # Pick randomly from all gaps, weighted by gap_score
+    scores  = [g["gap_score"] for g in gaps]
+    total   = sum(scores)
+    weights = [s / total for s in scores]
+    pick    = random.choices(gaps, weights=weights, k=1)[0]
+    cid     = pick["cluster_id"]
+    labels  = CLUSTER_LABELS.get(lang, CLUSTER_LABELS["fr"])
+    label   = labels[cid] if 0 <= cid < len(labels) else str(cid)
+    members = [m[0] for m in pick["top_5_members"][:3]]
+    return jsonify({"cluster_id": cid, "label": label, "members": members, "gap_score": pick["gap_score"]})
 
 
 if __name__ == "__main__":

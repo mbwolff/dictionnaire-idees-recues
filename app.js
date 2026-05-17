@@ -49,6 +49,8 @@ const i18n = {
     generatedEntries:"Entrées générées",
     noGenerated:     "Aucune entrée générée.",
     generateBtn:     "Générer l'entrée",
+    suggestBtn:      "Suggérer un thème",
+    suggestHint:     (label, members) => `Le thème <strong>${label}</strong> est peu représenté — entrées voisines : ${members}.`,
   },
   en: {
     flaubert:        "Flaubert",
@@ -78,6 +80,8 @@ const i18n = {
     generatedEntries:"Generated entries",
     noGenerated:     "No generated entries yet.",
     generateBtn:     "Generate entry",
+    suggestBtn:      "Suggest a topic",
+    suggestHint:     (label, members) => `The theme <strong>${label}</strong> is underrepresented — related entries: ${members}.`,
   },
 };
 
@@ -98,6 +102,8 @@ const el = {
   addBtn:         $("add-btn"),
   addStatus:      $("add-status"),
   addBtnText:     $("add-btn-text"),
+  suggestBtn:     $("suggest-btn"),
+  suggestHint:    $("suggest-hint"),
   welcomeState:   $("welcome-state"),
   entryDetail:    $("entry-detail"),
   searchResults:  $("search-results"),
@@ -148,6 +154,7 @@ function applyTranslations() {
   el.searchInput.placeholder = t.searchPlaceholder;
   el.addInput.placeholder    = t.addPlaceholder;
   el.addBtnText.textContent  = t.generateBtn;
+  el.suggestHint.style.display = "none";
   document.querySelectorAll(".pill[data-tip-fr]").forEach(p => {
     p.dataset.tip = state.lang === "fr" ? p.dataset.tipFr : p.dataset.tipEn;
   });
@@ -1194,6 +1201,20 @@ el.addBtn.addEventListener("click", generateEntry);
 
 el.addInput.addEventListener("keydown", e => {
   if (e.key === "Enter") generateEntry();
+});
+
+el.suggestBtn.addEventListener("click", async () => {
+  el.suggestBtn.disabled = true;
+  try {
+    const data = await api(`/api/suggest?lang=${state.lang}`);
+    const t = i18n[state.lang];
+    el.suggestHint.innerHTML = t.suggestHint(data.label, data.members.join(", "));
+    el.suggestHint.style.display = "block";
+  } catch (e) {
+    console.error("Suggest failed:", e);
+  } finally {
+    el.suggestBtn.disabled = false;
+  }
 });
 
 /* ── Keyboard shortcuts ─────────────────────────────────────────────── */
