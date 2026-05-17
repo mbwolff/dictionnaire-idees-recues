@@ -370,16 +370,36 @@ class NounValidator:
     # French vowels incl. accented forms
     _VOWEL_RE = re.compile(r"[aeiouyàâæéèêëîïôœùûü]", re.IGNORECASE)
 
+    # Immediate blocklist — the most obvious cases caught before any API call
+    _BLOCKLIST = frozenset({
+        "MERDE", "PUTAIN", "CONNARD", "CONNASSE", "SALOPE", "PUTE", "PUTASSE",
+        "ENCULÉ", "ENCULER", "ENCULE", "NIQUER", "NIQUE", "BAISER",
+        "CHIER", "CHIASSE", "CON", "CONNE", "BITE", "COUILLE", "COUILLES",
+        "CHIOTTE", "CHIOTTES", "SALOPARD", "ORDURE", "PÉTASSE", "PETASSE",
+        "BRANLEUR", "BRANLER", "FOUTRE", "FOUTAISE", "SALAUD",
+    })
+
+    # Wiktionary category keywords that flag a word as profane
+    _PROFANE_CATS = frozenset({
+        "vulgaire", "grossièreté", "grossiereté", "obscène", "obscene", "juron",
+    })
+
+    _NEUTRAL_REFUSAL = "Ce mot ne peut pas être utilisé comme entrée."
+
     def validate(self, word: str) -> dict:
         word = word.strip()
         if not word:
             return {"valid": False, "pos": "", "lemma": word, "reason": "Empty input."}
+        # Blocklist — fast path, no API needed
+        core = re.sub(r"[\s\-']", "", word).upper()
+        if core in self._BLOCKLIST:
+            return {"valid": False, "pos": "", "lemma": word.upper(),
+                    "reason": self._NEUTRAL_REFUSAL}
         if not self._VOWEL_RE.search(word):
             return {"valid": False, "pos": "", "lemma": word.upper(),
                     "reason": f"'{word}' does not look like a word."}
         # Reject repetitive patterns (ABABA, ABABABA…): real words longer than
         # 4 letters always use more than 2 distinct characters.
-        core = re.sub(r"[\s\-']", "", word.upper())
         if len(core) > 4 and len(set(core)) <= 2:
             return {"valid": False, "pos": "", "lemma": word.upper(),
                     "reason": f"'{word}' does not look like a word."}
@@ -398,7 +418,7 @@ class NounValidator:
             pages = r.json().get("query", {}).get("pages", {})
             return "-1" not in pages
         except Exception:
-            return True  # network error → fail open so the app keeps working
+            return True  # network error → fail open
 
     def _validate_spacy(self, word: str) -> dict:
         doc   = self._nlp(word)
