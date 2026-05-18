@@ -18,6 +18,7 @@ const state = {
   clusters:           [],
   highlightedCluster: null,
   showSecondary:      false,
+  showGenerated:      false,
 };
 
 const i18n = {
@@ -51,6 +52,8 @@ const i18n = {
     generateBtn:     "Générer l'entrée",
     suggestBtn:      "Suggérer un thème",
     suggestHint:     (label, members) => `Le thème <strong>${label}</strong> est peu représenté — entrées voisines : ${members}.`,
+    copyDone:        "Copié !",
+    didYouMean:      "Peut-être :",
   },
   en: {
     flaubert:        "Flaubert",
@@ -82,6 +85,8 @@ const i18n = {
     generateBtn:     "Generate entry",
     suggestBtn:      "Suggest a topic",
     suggestHint:     (label, members) => `The theme <strong>${label}</strong> is underrepresented — related entries: ${members}.`,
+    copyDone:        "Copied!",
+    didYouMean:      "Did you mean:",
   },
 };
 
@@ -115,10 +120,14 @@ const el = {
   tsneSvg:        $("tsne-svg"),
   tsneLegend:     $("tsne-legend"),
   tsneTooltip:    $("tsne-tooltip"),
-  tsneSearch:     $("tsne-search"),
-  tagList:        $("tag-list"),
-  statsView:      $("stats-view"),
-  statsContent:   $("stats-content"),
+  tsneSearch:       $("tsne-search"),
+  tsneGeneratedBtn: $("tsne-generated-btn"),
+  tagList:          $("tag-list"),
+  statsView:        $("stats-view"),
+  statsContent:     $("stats-content"),
+  copyEntryBtn:     $("copy-entry-btn"),
+  hamburgerBtn:     $("hamburger-btn"),
+  sidebarBackdrop:  $("sidebar-backdrop"),
 };
 
 /* ── API ───────────────────────────────────────────────────────────── */
@@ -279,6 +288,24 @@ function renderSearchResults(q, results) {
         doSearch(state.searchQuery);
       });
     }
+    if (state.searchMode === "text" && q) {
+      api(`/api/fuzzy?q=${encodeURIComponent(q)}`).then(suggestions => {
+        if (!suggestions.length) return;
+        const row = document.createElement("p");
+        row.className = "empty-hint fuzzy-hint";
+        row.innerHTML = `${t.didYouMean} ` + suggestions
+          .map(hw => `<button class="empty-switch-btn fuzzy-suggestion" data-hw="${hw}">${hw}</button>`)
+          .join(" · ");
+        list.appendChild(row);
+        list.querySelectorAll(".fuzzy-suggestion").forEach(btn => {
+          btn.addEventListener("click", () => {
+            el.searchInput.value = btn.dataset.hw;
+            state.searchQuery = btn.dataset.hw;
+            doSearch(btn.dataset.hw);
+          });
+        });
+      }).catch(() => {});
+    }
     return;
   }
 
@@ -357,6 +384,17 @@ function renderEntryDetail(entry) {
     mapBtn.style.display = entry.cluster_id >= 0 ? "" : "none";
   }
 
+  const copyBtn = $("copy-entry-btn");
+  if (copyBtn) {
+    copyBtn.onclick = async () => {
+      const text = `${entry.headword}. ${entry.text}`;
+      await navigator.clipboard.writeText(text);
+      const orig = copyBtn.textContent;
+      copyBtn.textContent = i18n[state.lang].copyDone;
+      setTimeout(() => { copyBtn.textContent = orig; }, 1500);
+    };
+  }
+
   const secBadge = $("detail-secondary-cluster");
   if (entry.show_secondary_cluster && entry.secondary_cluster_label) {
     const secMult = ` ${(entry.secondary_cluster_score * 12).toFixed(1)}×`;
@@ -379,11 +417,17 @@ function renderEntryDetail(entry) {
     enEl.style.display = "none";
   }
 
-  // Tags
+  // Tags — clickable, navigate to rhetoric view filtered by tag
   const tagsEl = $("detail-tags");
   tagsEl.innerHTML = (entry.tag_labels || [])
-    .map(t => `<span class="entry-tag">${t}</span>`)
+    .map((lbl, i) => `<span class="entry-tag" data-tag="${entry.tags[i]}" data-label="${lbl}">${lbl}</span>`)
     .join("");
+  tagsEl.querySelectorAll(".entry-tag").forEach(span => {
+    span.addEventListener("click", () => {
+      switchView("rhetoric");
+      filterByTag(span.dataset.tag, span.dataset.label);
+    });
+  });
 
   // Cross-references
   const xrefsWrap = $("detail-xrefs-wrap");
@@ -608,7 +652,8 @@ let tsneCircles = new Map();   // headword → { cx, cy, color }
 let tsneTransform = { tx: 0, ty: 0, k: 1 };  // current pan/zoom state
 
 async function loadTsne() {
-  if (tsneCache && tsneCache.lang === state.lang) {
+  const cacheKey = `${state.lang}:${state.showGenerated}`;
+  if (tsneCache && tsneCache.key === cacheKey) {
     renderTsne(tsneCache.points);
     return;
   }
@@ -618,8 +663,9 @@ async function loadTsne() {
     fill="var(--ink-muted)">Computing semantic map…</text>`;
   el.tsneLegend.innerHTML = "";
   try {
-    const points = await api(`/api/tsne?lang=${state.lang}`);
-    tsneCache = { points, lang: state.lang };
+    const genParam = state.showGenerated ? "&show_generated=1" : "";
+    const points = await api(`/api/tsne?lang=${state.lang}${genParam}`);
+    tsneCache = { points, key: cacheKey };
     renderTsne(points);
   } catch (e) {
     el.tsneSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
@@ -660,27 +706,30 @@ function renderTsne(points) {
   const centroids = {};
 
   points.forEach(p => {
-    const color = CLUSTER_PALETTE[p.cluster_id % CLUSTER_PALETTE.length] ?? "#888";
+    const isGen = !!p.is_generated;
+    const color = isGen ? "#c49a35" : (CLUSTER_PALETTE[p.cluster_id % CLUSTER_PALETTE.length] ?? "#888");
     const cx = sx(p.x).toFixed(1), cy = sy(p.y).toFixed(1);
 
     // Radius proportional to membership strength (2.5 baseline → ~6 max)
-    const r0 = p.primary_cluster_score
+    const r0 = isGen ? "5" : (p.primary_cluster_score
       ? (2.5 + Math.max(0, (p.primary_cluster_score * 12 - 1) * 8)).toFixed(1)
-      : "4";
+      : "4");
 
     const c = document.createElementNS(ns, "circle");
     c.setAttribute("cx", cx);
     c.setAttribute("cy", cy);
     c.setAttribute("r", r0);
-    c.setAttribute("fill", color);
-    c.setAttribute("opacity", "0.72");
+    c.setAttribute("fill", isGen ? "none" : color);
+    c.setAttribute("stroke", isGen ? color : "none");
+    c.setAttribute("stroke-width", isGen ? "1.5" : "0");
+    c.setAttribute("opacity", "0.85");
     c.dataset.cluster = p.cluster_id;
     c.dataset.secondary = p.show_secondary_cluster ? "1" : "0";
     c.dataset.secondaryCluster = p.secondary_cluster_id ?? -1;
     c.style.cursor = "pointer";
     c.style.transition = "r 80ms, opacity 80ms";
 
-    if (state.showSecondary && p.show_secondary_cluster) {
+    if (!isGen && state.showSecondary && p.show_secondary_cluster) {
       const secColor = CLUSTER_PALETTE[(p.secondary_cluster_id ?? 0) % CLUSTER_PALETTE.length];
       c.setAttribute("stroke", secColor);
       c.setAttribute("stroke-width", "1.5");
@@ -692,7 +741,8 @@ function renderTsne(points) {
     c.addEventListener("mouseenter", () => {
       c.setAttribute("r", (+r0 + 2.5).toFixed(1));
       c.setAttribute("opacity", "1");
-      el.tsneTooltip.textContent = `${p.headword_display}\n${p.cluster_label}${mult}`;
+      const snippet = p.text_snippet ? `\n${p.text_snippet}` : "";
+      el.tsneTooltip.textContent = `${p.headword_display}\n${p.cluster_label}${mult}${snippet}`;
       el.tsneTooltip.style.display = "block";
     });
     c.addEventListener("mousemove", e => {
@@ -800,6 +850,13 @@ function toggleSecondary() {
       ? CLUSTER_PALETTE[sid % CLUSTER_PALETTE.length] : "none");
     c.setAttribute("stroke-width", state.showSecondary ? "1.5" : "0");
   });
+}
+
+function toggleGenerated() {
+  state.showGenerated = !state.showGenerated;
+  el.tsneGeneratedBtn.classList.toggle("active", state.showGenerated);
+  tsneCache = null; // force reload with/without generated entries
+  loadTsne();
 }
 
 async function showOnMap(headword) {
@@ -1215,6 +1272,18 @@ el.suggestBtn.addEventListener("click", async () => {
   } finally {
     el.suggestBtn.disabled = false;
   }
+});
+
+el.tsneGeneratedBtn.addEventListener("click", toggleGenerated);
+
+el.hamburgerBtn.addEventListener("click", () => {
+  document.body.classList.toggle("sidebar-open");
+});
+el.sidebarBackdrop.addEventListener("click", () => {
+  document.body.classList.remove("sidebar-open");
+});
+document.querySelectorAll(".nav-item").forEach(btn => {
+  btn.addEventListener("click", () => document.body.classList.remove("sidebar-open"));
 });
 
 /* ── Keyboard shortcuts ─────────────────────────────────────────────── */

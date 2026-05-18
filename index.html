@@ -15,6 +15,7 @@
   <!-- ── Header ─────────────────────────────────────────────────────────── -->
   <header id="site-header">
     <div class="header-inner">
+      <button class="hamburger-btn" id="hamburger-btn" aria-label="Menu">☰</button>
       <button class="header-title" id="home-btn" title="Retour à l'accueil">
         <div class="title-ornament">✦</div>
         <div>
@@ -61,6 +62,8 @@
       </div>
     </div>
   </header>
+
+  <div id="sidebar-backdrop"></div>
 
   <!-- ── Layout ─────────────────────────────────────────────────────────── -->
   <div class="layout">
@@ -208,6 +211,7 @@
             <span class="cluster-badge secondary" id="detail-secondary-cluster" style="display:none"></span>
             <span class="source-badge" id="detail-source"></span>
             <button class="show-on-map-btn" id="show-on-map-btn" style="display:none" data-fr="carte" data-en="map">carte</button>
+            <button class="copy-entry-btn" id="copy-entry-btn" title="Copier l'entrée">⎘</button>
           </div>
         </div>
 
@@ -240,6 +244,7 @@
               data-placeholder-fr="Localiser…" data-placeholder-en="Locate…"
               placeholder="Localiser…" autocomplete="off" spellcheck="false"/>
             <button class="tsne-secondary-btn" id="tsne-secondary-btn" onclick="toggleSecondary()" data-fr="Ambiguïtés" data-en="Ambiguous">Ambiguïtés</button>
+            <button class="tsne-secondary-btn" id="tsne-generated-btn" data-fr="Générées" data-en="Generated">Générées</button>
           </div>
         </div>
         <div class="tsne-container">

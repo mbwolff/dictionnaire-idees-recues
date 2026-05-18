@@ -111,8 +111,17 @@ def tags():
 
 @app.route("/api/tsne")
 def tsne():
-    lang = request.args.get("lang", "fr")
-    return jsonify(pipeline.tsne_data(lang))
+    lang           = request.args.get("lang", "fr")
+    show_generated = request.args.get("show_generated", "0") == "1"
+    return jsonify(pipeline.tsne_data(lang, show_generated=show_generated))
+
+
+@app.route("/api/fuzzy")
+def fuzzy():
+    q = request.args.get("q", "").strip()
+    if not q:
+        return jsonify([])
+    return jsonify(pipeline.fuzzy_suggest(q))
 
 
 @app.route("/api/clusters")

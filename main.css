@@ -610,6 +610,16 @@ body {
 }
 .show-on-map-btn:hover { color: var(--rust); border-color: var(--rust-light); }
 
+.copy-entry-btn {
+  font-family: var(--font-ui);
+  font-size: 11px; color: var(--ink-faint); background: transparent;
+  border: 1px solid var(--rule); border-radius: 2px;
+  padding: 2px 6px; cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+  margin-left: auto;
+}
+.copy-entry-btn:hover { color: var(--rust); border-color: var(--rust-light); }
+
 /* ── Random button ─────────────────────────────────────────────────── */
 .random-btn {
   font-family: var(--font-ui);
@@ -719,7 +729,9 @@ body {
   color: var(--ink-muted); background: var(--cream-dark);
   border: 1px solid var(--rule-heavy); border-radius: 2px;
   padding: 3px 8px;
+  cursor: pointer; transition: background var(--transition), color var(--transition);
 }
+.entry-tag:hover { background: var(--rust-pale); color: var(--rust); border-color: var(--rust); }
 
 .entry-xrefs { margin-bottom: 20px; }
 
@@ -974,9 +986,41 @@ mark {
   box-shadow: 0 2px 8px rgba(0,0,0,.25);
 }
 
+.hamburger-btn {
+  display: none;
+  font-size: 18px; background: transparent; border: none;
+  color: var(--ink); padding: 4px 10px; cursor: pointer;
+  line-height: 1;
+}
+
+#sidebar-backdrop {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 199;
+}
+
 /* ── Responsive ──────────────────────────────────────────────────────── */
 @media (max-width: 700px) {
-  :root { --sidebar-w: 220px; }
-  #main-content { padding: 24px 20px; }
-  .entry-headword { font-size: 24px; }
+  .hamburger-btn { display: block; }
+
+  #sidebar {
+    position: fixed;
+    top: 0; left: 0;
+    width: min(var(--sidebar-w), 85vw);
+    height: 100dvh;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.22s ease;
+    box-shadow: 2px 0 16px rgba(0,0,0,0.18);
+  }
+  body.sidebar-open #sidebar { transform: translateX(0); }
+  body.sidebar-open #sidebar-backdrop { display: block; }
+
+  .layout { overflow: hidden; }
+  #main-content { padding: 20px 18px; width: 100%; }
+  .entry-headword { font-size: 22px; }
+  .welcome-quote { font-size: 1rem; }
+  .tsne-hint { display: none; }
+  #main-content { padding: 20px 16px; }
 }

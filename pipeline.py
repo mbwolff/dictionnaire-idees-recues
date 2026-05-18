@@ -571,7 +571,7 @@ class DictionairePipeline:
             "generator":         self.generator.name(),
         }
 
-    def tsne_data(self, lang: str) -> list[dict]:
+    def tsne_data(self, lang: str, show_generated: bool = False) -> list[dict]:
         if self._embeddings is None:
             return []
         if self._tsne_cache is None:
@@ -609,6 +609,8 @@ class DictionairePipeline:
                 ))
                 sec_score_e = float(scores[sec_cid_e])
                 show_sec = pri_score >= 0.10 and (sec_score_e / pri_score >= 0.90 if pri_score > 0 else False)
+            text = e.get("text", "")
+            snippet = text[:70].rsplit(" ", 1)[0] + "…" if len(text) > 70 else text
             result.append({
                 "headword":              hw,
                 "headword_display":      e.get("headword_en", hw) if lang == "en" else hw,
@@ -619,8 +621,40 @@ class DictionairePipeline:
                 "primary_cluster_score": round(pri_score, 4),
                 "secondary_cluster_id":  sec_cid_e,
                 "show_secondary_cluster": show_sec,
+                "text_snippet":          snippet,
             })
+        if show_generated and self._new_entries:
+            for gen in self._new_entries:
+                hw  = gen.get("headword", "")
+                text = gen.get("text", "")
+                if not hw or not text:
+                    continue
+                vec = self._approximate_vector(text)
+                if vec is None:
+                    continue
+                sims    = self._embeddings @ vec
+                near_i  = int(np.argmax(sims))
+                near_xy = coords[near_i]
+                snippet = text[:70].rsplit(" ", 1)[0] + "…" if len(text) > 70 else text
+                result.append({
+                    "headword":              hw,
+                    "headword_display":      gen.get("headword_en", hw) if lang == "en" else hw,
+                    "x":                     float(near_xy[0]) + 0.18,
+                    "y":                     float(near_xy[1]) + 0.18,
+                    "cluster_id":            -1,
+                    "cluster_label":         CLUSTER_LABELS[lang][0] if labels else "",
+                    "primary_cluster_score": 0.0,
+                    "secondary_cluster_id":  -1,
+                    "show_secondary_cluster": False,
+                    "text_snippet":          snippet,
+                    "is_generated":          True,
+                })
         return result
+
+    def fuzzy_suggest(self, query: str, n: int = 5) -> list[str]:
+        import difflib
+        all_hw = [e["headword"] for e in self._entries]
+        return difflib.get_close_matches(query.upper(), all_hw, n=n, cutoff=0.6)
 
     def random_entry(self, lang: str) -> dict:
         import random as _rnd
