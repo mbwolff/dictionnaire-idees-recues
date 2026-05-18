@@ -958,7 +958,7 @@ class DictionairePipeline:
             "headword":     fr_word,
             "text":         generated_fr,
             "tags":         [],
-            "xrefs":        [],
+            "xrefs":        self._detect_xrefs(generated_fr, fr_word),
             "cluster_id":   neighbours[0].get("cluster_id", -1) if neighbours else -1,
             "is_generated": True,
             "generator":    self.generator.name(),
@@ -972,6 +972,26 @@ class DictionairePipeline:
         result["neighbours"] = neighbours
         result["generated"]  = True
         return result
+
+    def _detect_xrefs(self, text: str, own_headword: str) -> list[str]:
+        """Return original-corpus headwords that appear verbatim in generated text."""
+        upper_text = text.upper()
+        own_upper  = own_headword.upper()
+        found: list[str] = []
+        # Longest headwords first so multi-word phrases match before their components
+        for e in sorted(self._entries, key=lambda e: -len(e["headword"])):
+            hw = e["headword"].upper()
+            if hw == own_upper or len(hw) < 4:
+                continue
+            idx = upper_text.find(hw)
+            while idx != -1:
+                before_ok = idx == 0 or not upper_text[idx - 1].isalpha()
+                after_ok  = idx + len(hw) >= len(upper_text) or not upper_text[idx + len(hw)].isalpha()
+                if before_ok and after_ok:
+                    found.append(e["headword"])
+                    break
+                idx = upper_text.find(hw, idx + 1)
+        return found
 
     def _persist_new_entries(self) -> None:
         NEW_ENTRIES_FILE.parent.mkdir(parents=True, exist_ok=True)
