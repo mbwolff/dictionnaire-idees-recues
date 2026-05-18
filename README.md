@@ -45,21 +45,22 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Feature | Description |
 |---|---|
 | Browse | Alphabetical index + paginated entry list; ⚂ random-entry button |
-| Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type |
+| Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type; fuzzy suggestions (Levenshtein) appear when text search returns nothing |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
-| Themes | 12 semantic clusters with labels; t-SNE map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
-| Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; tooltip shows cluster and score; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
+| Themes | 12 semantic clusters with labels; UMAP map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
+| Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; tooltip shows cluster, score, and first line of entry text; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "Générées" toggle overlays user-generated entries as gold outlined circles; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
-| Entry detail | French text, English translation, rhetorical tags, cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; "carte" link to semantic map |
+| Entry detail | French text, English translation, clickable rhetorical tags (navigate to rhetoric view); cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
 | Add entry | Propose a French noun → validate → generate in Flaubert's style → persist; × button removes a generated entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
 | Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
-| No-results hint | Empty text-search results offer a one-click switch to semantic mode |
+| No-results hint | Empty text-search results offer a one-click switch to semantic mode and fuzzy-matched headword suggestions |
 | URL routing | `#entry/HEADWORD`, `#themes`, `#stats`, `#rhetoric` — browser back/forward works; links are shareable |
 | Home button | Clicking the title returns to the welcome state and clears the search |
+| Mobile layout | Sidebar opens as a slide-in drawer via hamburger button; backdrop closes it |
 
 ## Pipeline
 
