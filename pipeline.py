@@ -372,11 +372,22 @@ class NounValidator:
 
     # Immediate blocklist — the most obvious cases caught before any API call
     _BLOCKLIST = frozenset({
-        "MERDE", "PUTAIN", "CONNARD", "CONNASSE", "SALOPE", "PUTE", "PUTASSE",
-        "ENCULÉ", "ENCULER", "ENCULE", "NIQUER", "NIQUE", "BAISER",
-        "CHIER", "CHIASSE", "CON", "CONNE", "BITE", "COUILLE", "COUILLES",
-        "CHIOTTE", "CHIOTTES", "SALOPARD", "ORDURE", "PÉTASSE", "PETASSE",
-        "BRANLEUR", "BRANLER", "FOUTRE", "FOUTAISE", "SALAUD"
+        # Excréments & corps vulgaires
+        "MERDE", "CHIASSE", "CHIURE", "CHIER", "CHIOTTE", "CHIOTTES",
+        "CUL", "CULS",
+        # Insultes directes
+        "PUTAIN", "PUTE", "PUTASSE", "SALOPE", "POUFFIASSE", "TRAÎNÉE", "TRAINEE",
+        "CONNARD", "CONNASSE", "CON", "CONNE", "SALOPARD", "SALAUD", "ORDURE",
+        "ENFOIRÉ", "ENFOIRE", "BÂTARD", "BATARD",
+        # Actes sexuels (argot vulgaire)
+        "BAISER", "NIQUER", "NIQUE", "ENCULÉ", "ENCULER", "ENCULE",
+        "BRANLER", "BRANLEUR", "FOUTRE", "FOUTAISE",
+        # Organes sexuels (argot)
+        "BITE", "TEUB", "COUILLE", "COUILLES", "PÉTASSE", "PETASSE",
+        # Anatomie explicite
+        "PÉNIS", "PENIS", "VAGIN", "VULVE",
+        # Injures
+        "PÉDÉ", "PEDE",
     })
 
     # Wiktionary category keywords that flag a word as profane
