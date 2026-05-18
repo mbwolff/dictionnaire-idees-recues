@@ -113,7 +113,7 @@ JALOUSIE (daily life + society).
 
 Proposed headwords pass four successive checks:
 
-1. **Profanity blocklist** — a frozenset of ~30 words is checked before any API call; blocked words receive a neutral refusal message
+1. **Profanity blocklist** — a frozenset of ~50 words (vulgar insults, crude anatomical slang, explicit terms) is checked before any API call; blocked words receive a neutral refusal message
 2. **Heuristic pre-filters** — rejects strings with no French vowel, and strings longer than 4 characters that use only 2 distinct characters (e.g. ABABA)
 3. **spaCy POS check** — `fr_core_news_sm` must tag the word as `NOUN` or `PROPN`
 4. **French Wiktionary lookup** — single words are verified against the French Wiktionary API; invented words that pass the POS check are rejected here. Multi-word headwords (e.g. ACADÉMIE FRANÇAISE) skip this step. The check fails open on network errors.
