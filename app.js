@@ -719,7 +719,7 @@ function renderTsne(points) {
     c.setAttribute("cx", cx);
     c.setAttribute("cy", cy);
     c.setAttribute("r", r0);
-    c.setAttribute("fill", isGen ? "none" : color);
+    c.setAttribute("fill", isGen ? "transparent" : color);
     c.setAttribute("stroke", isGen ? color : "none");
     c.setAttribute("stroke-width", isGen ? "1.5" : "0");
     c.setAttribute("opacity", "0.85");
