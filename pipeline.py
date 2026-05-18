@@ -635,14 +635,19 @@ class DictionairePipeline:
                 sims    = self._embeddings @ vec
                 near_i  = int(np.argmax(sims))
                 near_xy = coords[near_i]
+                near_hw = self._headwords[near_i]
+                near_entry = next((e for e in self._entries if e["headword"].upper() == near_hw), None)
+                near_cid = near_entry.get("cluster_id", -1) if near_entry else -1
+                if not isinstance(near_cid, int):
+                    near_cid = -1
                 snippet = text[:70].rsplit(" ", 1)[0] + "…" if len(text) > 70 else text
                 result.append({
                     "headword":              hw,
                     "headword_display":      gen.get("headword_en", hw) if lang == "en" else hw,
                     "x":                     float(near_xy[0]) + 0.18,
                     "y":                     float(near_xy[1]) + 0.18,
-                    "cluster_id":            -1,
-                    "cluster_label":         CLUSTER_LABELS[lang][0] if labels else "",
+                    "cluster_id":            near_cid,
+                    "cluster_label":         labels[near_cid] if 0 <= near_cid < len(labels) else "",
                     "primary_cluster_score": 0.0,
                     "secondary_cluster_id":  -1,
                     "show_secondary_cluster": False,
