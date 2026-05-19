@@ -162,4 +162,6 @@ Uses `deep-translator` (Google Translate, free tier, no API key required).
 Pre-computed English translations are stored in `dictionnaire_entries.json` and
 served directly. User-generated entries are stored in browser `sessionStorage` (not server-side);
 they include `umap_x`/`umap_y` coordinates returned by `/api/generate` so the
-map overlay requires no additional server round-trip.
+map overlay requires no additional server round-trip. `/api/generate` always
+returns both `text_en` and `headword_en` regardless of the UI language at
+generation time, so entries display correctly if the user switches languages.
