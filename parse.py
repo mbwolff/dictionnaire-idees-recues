@@ -403,6 +403,14 @@ def main():
     section = extract_dictionary_section(text)
     entries = parse_entries(section)
 
+    # Headword corrections vs Gutenberg source
+    # (Ferrère 1913 and Pléiade 1952 editions agree on these readings)
+    headword_corrections = {
+        "PLIQUE POLONAISE": "PEIGNE (?) POLONAISE",  # Gutenberg OCR error; both Ferrère and Pléiade read PEIGNE
+    }
+    for e in entries:
+        e["headword"] = headword_corrections.get(e["headword"], e["headword"])
+
     # Deduplicate on headword
     seen, unique = set(), []
     for e in entries:

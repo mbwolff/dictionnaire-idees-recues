@@ -135,6 +135,7 @@ source. Artifacts fixed in `parse.py` (and patched directly in the JSON):
 - **Capitalisation** — LYCÉE uppercased; DARTRE body text capitalised
 - **Missing entries** — GARDE-COTE, GARES DE CHEMIN DE FER, GYMNASE (LE), JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE, and USUM (AD). recovered by direct comparison with the Gutenberg source
 - **Source typos** — HALLEBARDE "na pas manquer" → "ne pas manquer"; FEMME "Na dites pas" → "Ne dites pas"; HIPPOCRATE "Galien dis non" → "Galien dit non" (OCR errors in the Gutenberg transcription)
+- **Misread headword** — PLIQUE POLONAISE corrected to PEIGNE (?) POLONAISE per the Ferrère (1913) and Pléiade (1952) editions; the Gutenberg transcription misread the manuscript
 - **Guillemet artifacts** — HENRI III/IV trailing stray `"` (parse.py conversion of source's spurious closing `«`) replaced with proper `«…»`; JOCKEY-CLUB straight quotes replaced with guillemets
 - **Cross-references** — 24 entries had empty `xrefs` because the parser matched `(Voir X)` instead of Flaubert's actual `(v. X)` format; corrected in `parse.py` and back-populated in JSON
 - **Entry ordering** — 5 entries (GARDE-COTE, GARES DE CHEMIN DE FER, JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE) were appended after YVETOT instead of inserted at their correct alphabetical positions; GYMNASE (LE) duplicate removed
