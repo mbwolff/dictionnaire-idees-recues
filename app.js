@@ -1233,7 +1233,7 @@ async function loadStats() {
         <span class="stat-label">${t.statsFlaubert}</span>
       </div>
       <div class="stat-item">
-        <span class="stat-value">${stats.generated_entries}</span>
+        <span class="stat-value">${sessionEntries.length}</span>
         <span class="stat-label">${t.statsGenerated}</span>
       </div>
       <div class="stat-item">
