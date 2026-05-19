@@ -43,7 +43,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 
 | Feature | Description |
 |---|---|
-| Browse | Alphabetical index + paginated entry list; ⚂ random-entry button |
+| Browse | Alphabetical index + paginated entry list; ⚂ random-entry button (shows full entry detail with neighbours) |
 | Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type; fuzzy suggestions (Levenshtein) appear when text search returns nothing |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Themes | 12 semantic clusters with labels; UMAP map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
