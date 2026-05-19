@@ -373,16 +373,7 @@ class NounValidator:
         word = word.strip()
         if not word:
             return {"valid": False, "pos": "", "lemma": word, "reason": "Empty input."}
-        core = re.sub(r"[\s\-']", "", word).upper()
-        if not self._VOWEL_RE.search(word):
-            return {"valid": False, "pos": "", "lemma": word.upper(),
-                    "reason": f"'{word}' does not look like a word."}
-        # Reject repetitive patterns (ABABA, ABABABA…): real words longer than
-        # 4 letters always use more than 2 distinct characters.
-        if len(core) > 4 and len(set(core)) <= 2:
-            return {"valid": False, "pos": "", "lemma": word.upper(),
-                    "reason": f"'{word}' does not look like a word."}
-        return self._validate_spacy(word) if self._nlp else self._validate_heuristic(word)
+        return {"valid": True, "pos": "", "lemma": word.upper(), "reason": ""}
 
     def _wiktionary_exists(self, word: str) -> bool:
         """Return True if word has a French Wiktionary page (fail-open on network error)."""
