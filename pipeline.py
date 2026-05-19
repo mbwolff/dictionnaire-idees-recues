@@ -465,6 +465,10 @@ class DictionairePipeline:
         else:
             print("[Pipeline] No embeddings — semantic search will fall back to text search.")
 
+        if UMAP_FILE.exists():
+            self._umap_cache = np.load(UMAP_FILE).astype(np.float32)
+            print(f"[Pipeline] UMAP coords loaded: {self._umap_cache.shape}")
+
     def _format_entry(self, entry: dict, lang: str) -> dict:
         text = entry.get("text", "")
         hw   = entry.get("headword", "")
@@ -771,6 +775,9 @@ class DictionairePipeline:
                 idx = self._entry_index.get(hw, -1)
                 fe["prev_headword"] = self._entries[idx - 1]["headword"] if idx > 0 else None
                 fe["next_headword"] = self._entries[idx + 1]["headword"] if idx < len(self._entries) - 1 else None
+                if self._umap_cache is not None and 0 <= idx < len(self._umap_cache):
+                    fe["umap_x"] = float(self._umap_cache[idx][0])
+                    fe["umap_y"] = float(self._umap_cache[idx][1])
                 return fe
         return None
 

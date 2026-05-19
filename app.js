@@ -462,21 +462,43 @@ function renderEntryDetail(entry) {
   // Neighbours
   const nbSection = $("neighbours-section");
   const nbGrid    = $("neighbours-grid");
-  if (entry.neighbours && entry.neighbours.length) {
-    $("neighbours-title").textContent = t.neighbours;
-    nbGrid.innerHTML = entry.neighbours.map((n, i) => `
-      <div class="neighbour-card" data-idx="${i}">
-        <div class="neighbour-hw">${n.headword}</div>
-        <div class="neighbour-text">${n.text_translated || n.text || ""}</div>
-        <div class="neighbour-sim">${t.similarity}: ${(n.similarity * 100).toFixed(0)}%</div>
-      </div>`).join("");
-    nbGrid.querySelectorAll(".neighbour-card").forEach((card, i) => {
-      card.addEventListener("click", () => loadEntry(entry.neighbours[i].headword));
-    });
-    nbSection.style.display = "block";
-  } else {
-    nbSection.style.display = "none";
+  const corpusNeighbours = entry.neighbours || [];
+  nbGrid.innerHTML = corpusNeighbours.map((n, i) => `
+    <div class="neighbour-card" data-idx="${i}">
+      <div class="neighbour-hw">${n.headword}</div>
+      <div class="neighbour-text">${n.text_translated || n.text || ""}</div>
+      <div class="neighbour-sim">${t.similarity}: ${(n.similarity * 100).toFixed(0)}%</div>
+    </div>`).join("");
+  nbGrid.querySelectorAll(".neighbour-card").forEach((card, i) => {
+    card.addEventListener("click", () => loadEntry(corpusNeighbours[i].headword));
+  });
+
+  // Session-entry neighbours by UMAP proximity
+  const ex = entry.umap_x, ey = entry.umap_y;
+  if (ex != null && ey != null && sessionEntries.length) {
+    const THRESHOLD = 2.0;
+    sessionEntries
+      .filter(s => s.umap_x != null && s.umap_y != null
+                && s.headword !== entry.headword
+                && Math.hypot(s.umap_x - ex, s.umap_y - ey) < THRESHOLD)
+      .sort((a, b) => Math.hypot(a.umap_x - ex, a.umap_y - ey)
+                    - Math.hypot(b.umap_x - ex, b.umap_y - ey))
+      .forEach(s => {
+        const adapted = adaptSessionEntry(s);
+        const card = document.createElement("div");
+        card.className = "neighbour-card";
+        card.innerHTML = `
+          <div class="neighbour-hw">${adapted.headword}</div>
+          <div class="neighbour-text">${adapted.text_translated || adapted.text || ""}</div>
+          <div class="neighbour-sim">${t.generated}</div>`;
+        card.addEventListener("click", () => loadEntry(adapted.headword));
+        nbGrid.appendChild(card);
+      });
   }
+
+  const hasNeighbours = nbGrid.children.length > 0;
+  if (hasNeighbours) $("neighbours-title").textContent = t.neighbours;
+  nbSection.style.display = hasNeighbours ? "block" : "none";
 }
 
 /* ── Views switch ──────────────────────────────────────────────────── */
