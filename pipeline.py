@@ -600,7 +600,17 @@ class DictionairePipeline:
 
     def random_entry(self, lang: str) -> dict:
         import random as _rnd
-        return self._format_entry(_rnd.choice(self._entries), lang)
+        e   = _rnd.choice(self._entries)
+        fe  = self._format_entry(e, lang)
+        hw  = e["headword"].upper()
+        fe["neighbours"] = self._get_neighbours(hw, lang)
+        idx = self._entry_index.get(hw, -1)
+        fe["prev_headword"] = self._entries[idx - 1]["headword"] if idx > 0 else None
+        fe["next_headword"] = self._entries[idx + 1]["headword"] if idx < len(self._entries) - 1 else None
+        if self._umap_cache is not None and 0 <= idx < len(self._umap_cache):
+            fe["umap_x"] = float(self._umap_cache[idx][0])
+            fe["umap_y"] = float(self._umap_cache[idx][1])
+        return fe
 
     def detailed_stats(self, lang: str) -> dict:
         from collections import Counter
