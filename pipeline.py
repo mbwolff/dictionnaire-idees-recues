@@ -884,6 +884,15 @@ class DictionairePipeline:
         result["neighbours"] = neighbours
         result["generated"]  = True
         result.update(umap_pt)
+
+        # Always include both-language fields so the client can switch UI language
+        # without losing the translation.
+        if lang == "en":
+            result["text_en"]     = result.get("text_translated", "")
+        else:
+            result["text_en"]     = self.translator.to_english(generated_fr)
+            result["headword_en"] = self.translator.to_english(fr_word)
+
         return result
 
     def _detect_xrefs(self, text: str, own_headword: str) -> list[str]:
