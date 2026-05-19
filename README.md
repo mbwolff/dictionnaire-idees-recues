@@ -53,7 +53,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | FR/EN toggle | Switches UI language and entry translations throughout; the currently displayed entry is re-fetched in the new language so its translation updates immediately; the welcome-screen Flaubert quote is translated via `data-fr`/`data-en` attributes |
 | Light/dark mode | Follows system preference; toggle in header |
 | Entry detail | French text, English translation, clickable rhetorical tags (navigate to rhetoric view); cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
-| Add entry | Propose a French noun → validate → generate in Flaubert's style; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
+| Add entry | Propose any word or phrase → generate in Flaubert's style; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
 | Duplicate detection | Checks against both French headwords and stored English headwords (corpus + session entries) to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
 | No-results hint | Empty text-search results offer a one-click switch to semantic mode and fuzzy-matched headword suggestions |
@@ -108,15 +108,9 @@ About 166 entries (~17% of corpus) meet this criterion — entries that sit at t
 between two themes, e.g. CHEMINS DE FER (economy + politics), HIPPOCRATE (history + arts),
 JALOUSIE (daily life + society).
 
-## Noun validation
+## Headword input
 
-Proposed headwords pass three successive checks:
-
-1. **Heuristic pre-filters** — rejects strings with no French vowel, and strings longer than 4 characters that use only 2 distinct characters (e.g. ABABA)
-2. **spaCy POS check** — `fr_core_news_sm` must tag the word as `NOUN` or `PROPN`
-3. **French Wiktionary lookup** — single words are verified against the French Wiktionary API; invented words that pass the POS check are rejected here. Multi-word headwords (e.g. ACADÉMIE FRANÇAISE) skip this step. The check fails open on network errors.
-
-Input is capped at 80 characters server-side.
+Any non-empty string is accepted as a headword (no POS check, no Wiktionary lookup). Input is capped at 80 characters server-side. Duplicate detection still runs: a proposed headword that matches an existing French or English headword (corpus or session) is rejected with an "already exists" message.
 
 ## Corpus curation
 
