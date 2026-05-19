@@ -35,7 +35,6 @@ Port 5050 is used because macOS AirPlay Receiver occupies port 5000 and returns 
 | `data/embeddings.npz` | `embed.py` | CamemBERT sentence embeddings (963 × 768) |
 | `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) + soft membership scores (12-vector per entry) |
 | `data/umap_coords.npy` | `cluster.py` | Pre-computed UMAP coordinates (963 × 2, n_neighbors=15, min_dist=0.1); loaded at startup in <1ms |
-| `data/new_entries.json` | app (runtime) | User-generated entries, persisted across sessions |
 | `data/gap_candidates.json` | `cluster.py` | Semantic gap analysis: one record per cluster, ranked by distance from centroid to nearest entry |
 
 The app runs without `embeddings.npz`; semantic search falls back to text search.
@@ -48,14 +47,14 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Text search | Substring match on headword and entry text; typeahead dropdown shows prefix matches as you type; fuzzy suggestions (Levenshtein) appear when text search returns nothing |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings |
 | Themes | 12 semantic clusters with labels; UMAP map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
-| Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; tooltip shows cluster, score, and first line of entry text; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "Générées" toggle overlays user-generated entries as gold outlined circles; search input locates entries by headword; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
+| Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; dots foreground only on click, not hover; tooltip shows cluster, score, and first line of entry text; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "Générées" toggle overlays session-generated entries as gold outlined circles (client-side, no re-fetch); search input locates entries by headword and dims non-matching dots; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
 | Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
 | Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree |
 | FR/EN toggle | Switches UI language and entry translations throughout |
 | Light/dark mode | Follows system preference; toggle in header |
 | Entry detail | French text, English translation, clickable rhetorical tags (navigate to rhetoric view); cross-references, six nearest neighbours; primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
-| Add entry | Propose a French noun → validate → generate in Flaubert's style → persist; × button removes a generated entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
-| Duplicate detection | Checks against both French headwords and stored English headwords to prevent cross-language duplicates |
+| Add entry | Propose a French noun → validate → generate in Flaubert's style; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
+| Duplicate detection | Checks against both French headwords and stored English headwords (corpus + session entries) to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
 | No-results hint | Empty text-search results offer a one-click switch to semantic mode and fuzzy-matched headword suggestions |
 | URL routing | `#entry/HEADWORD`, `#themes`, `#stats`, `#rhetoric` — browser back/forward works; links are shareable |
@@ -71,8 +70,8 @@ embed.py      Encode entries with dangvantuan/sentence-camembert-base
 cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
               pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/umap_coords.npy ·
               batch-translate headwords and entry texts to English via deep-translator
-pipeline.py   Runtime: search · validation · translation · generation · UMAP ·
-              random entry · detailed stats · xref graph
+pipeline.py   Runtime: search · validation · translation · generation · UMAP point
+              computation for generated entries · random entry · detailed stats · xref graph
 app.py        Flask routes (+ /api/random, /api/stats/detailed, /api/xrefs)
 ```
 
@@ -161,5 +160,6 @@ Guards added to `parse.py` prevent recurrence on a fresh parse.
 
 Uses `deep-translator` (Google Translate, free tier, no API key required).
 Pre-computed English translations are stored in `dictionnaire_entries.json` and
-served directly. User-generated entries in English mode store `headword_en` to
-prevent cross-language duplicates.
+served directly. User-generated entries are stored in browser `sessionStorage` (not server-side);
+they include `umap_x`/`umap_y` coordinates returned by `/api/generate` so the
+map overlay requires no additional server round-trip.
