@@ -749,7 +749,9 @@ function renderUmap(points) {
       el.umapTooltip.style.top  = (e.clientY - rect.top  - 10) + "px";
     });
     c.addEventListener("mouseleave", () => {
-      if (el.umapSvg.classList.contains("highlight-active")) {
+      if (el.umapSvg.classList.contains("search-active")) {
+        c.style.opacity = c.dataset.searchOpacity || "0.72";
+      } else if (el.umapSvg.classList.contains("highlight-active")) {
         const isPri = c.dataset.cluster == state.highlightedCluster;
         const isSec = state.showSecondary && c.dataset.secondary === "1"
           && c.dataset.secondaryCluster == state.highlightedCluster;
@@ -1314,19 +1316,26 @@ if (el.umapSearch) {
   el.umapSearch.addEventListener("input", e => {
     const q = e.target.value.trim().toUpperCase();
     if (!q) {
-      el.umapSvg.querySelectorAll("circle").forEach(c => c.style.opacity = "0.72");
+      el.umapSvg.classList.remove("search-active");
+      el.umapSvg.querySelectorAll("circle").forEach(c => { c.style.opacity = "0.72"; delete c.dataset.searchOpacity; });
       return;
     }
+    el.umapSvg.classList.add("search-active");
     let match = null;
     umapCircles.forEach((data, hw) => {
-      const hit = hw.includes(q);
-      data.el.style.opacity = hit ? "1" : "0.08";
-      if (hit && !match) match = data;
+      const op = hw.includes(q) ? "1" : "0.08";
+      data.el.style.opacity = op;
+      data.el.dataset.searchOpacity = op;
+      if (op === "1" && !match) match = data;
     });
     if (match) pulseAt(match.cx, match.cy, match.color);
   });
   el.umapSearch.addEventListener("keydown", e => {
-    if (e.key === "Escape") { el.umapSearch.value = ""; el.umapSvg.querySelectorAll("circle").forEach(c => c.style.opacity = "0.72"); }
+    if (e.key === "Escape") {
+      el.umapSearch.value = "";
+      el.umapSvg.classList.remove("search-active");
+      el.umapSvg.querySelectorAll("circle").forEach(c => { c.style.opacity = "0.72"; delete c.dataset.searchOpacity; });
+    }
   });
 }
 
