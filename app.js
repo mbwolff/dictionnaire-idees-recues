@@ -249,6 +249,22 @@ async function loadBrowsePage(append = false) {
 }
 
 /* ── Search ────────────────────────────────────────────────────────── */
+function sessionTextMatches(q) {
+  const qLow = q.toLowerCase();
+  return sessionEntries
+    .filter(s => {
+      const adapted = adaptSessionEntry(s);
+      return [s.headword, s.headword_en, adapted.text_translated, s.text]
+        .filter(Boolean)
+        .some(f => f.toLowerCase().includes(qLow));
+    })
+    .map(s => {
+      const adapted = adaptSessionEntry(s);
+      const hw = state.lang === "en" ? (s.headword_en || s.headword) : s.headword;
+      return { ...adapted, headword: hw, is_generated: true };
+    });
+}
+
 function doSearch(q) {
   if (!q) {
     showView("welcome");
@@ -257,10 +273,10 @@ function doSearch(q) {
   }
   const url = `/api/search?q=${encodeURIComponent(q)}&mode=${state.searchMode}&lang=${state.lang}&limit=30`;
   api(url).then(data => {
+    const combined = [...sessionTextMatches(q), ...data.results];
     showView("results");
-    renderSearchResults(q, data.results);
-    // Also filter sidebar
-    renderEntryList(data.results.slice(0, 60));
+    renderSearchResults(q, combined);
+    renderEntryList(combined.slice(0, 60));
   }).catch(err => {
     console.error(err);
   });
@@ -1354,18 +1370,25 @@ function updateTypeaheadActive(items) {
 
 async function updateTypeahead(q) {
   const results = await api(`/api/search?q=${encodeURIComponent(q)}&mode=prefix&lang=${state.lang}&limit=8`);
-  if (!results.results || !results.results.length || el.searchInput.value.trim() !== q) {
-    hideTypeahead(); return;
-  }
+  if (el.searchInput.value.trim() !== q) { hideTypeahead(); return; }
+  const qLow = q.toLowerCase();
+  const sessionPrefix = sessionEntries
+    .filter(s => {
+      const hw = (state.lang === "en" ? (s.headword_en || s.headword) : s.headword);
+      return hw.toLowerCase().startsWith(qLow);
+    })
+    .map(s => ({ headword: state.lang === "en" ? (s.headword_en || s.headword) : s.headword }));
+  const combined = [...sessionPrefix, ...(results.results || [])].slice(0, 8);
+  if (!combined.length) { hideTypeahead(); return; }
   state.typeaheadIdx = -1;
-  el.typeahead.innerHTML = results.results.map((r, i) =>
+  el.typeahead.innerHTML = combined.map((r, i) =>
     `<div class="typeahead-item" data-idx="${i}">${r.headword}</div>`
   ).join("");
   el.typeahead.querySelectorAll(".typeahead-item").forEach((item, i) => {
     item.addEventListener("mousedown", () => {
       el.searchInput.value = "";
       hideTypeahead();
-      loadEntry(results.results[i].headword);
+      loadEntry(combined[i].headword);
     });
   });
   el.typeahead.style.display = "block";
