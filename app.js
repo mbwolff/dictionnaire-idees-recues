@@ -341,6 +341,20 @@ async function loadEntry(headword, skipHistory = false) {
   document.querySelectorAll(".list-entry").forEach(b => {
     b.classList.toggle("active", b.dataset.headword === headword);
   });
+  const hwUp = headword.toUpperCase();
+  const sessionEntry = sessionEntries.find(e =>
+    e.headword === hwUp || e.headword === headword ||
+    (e.headword_en && (e.headword_en === hwUp || e.headword_en === headword))
+  );
+  if (sessionEntry) {
+    const entry = adaptSessionEntry(sessionEntry);
+    state.currentEntry = entry;
+    renderEntryDetail(entry);
+    showView("entry");
+    if (!skipHistory)
+      history.pushState({ type: "entry", headword }, "", "#entry/" + encodeURIComponent(headword));
+    return;
+  }
   try {
     const entry = await api(`/api/entry/${encodeURIComponent(headword)}?lang=${state.lang}`);
     state.currentEntry = entry;
@@ -525,6 +539,15 @@ async function generateEntry() {
   const word = el.addInput.value.trim();
   if (!word) return;
   const t = i18n[state.lang];
+  const hwUp = word.trim().toUpperCase();
+
+  // Client-side duplicate check against session entries
+  if (sessionEntries.some(e => e.headword === hwUp || (e.headword_en && e.headword_en === hwUp))) {
+    el.addStatus.style.display = "block";
+    el.addStatus.className = "add-status";
+    el.addStatus.textContent = t.addExists;
+    return;
+  }
 
   el.addBtn.disabled = true;
   el.addStatus.style.display = "block";
@@ -542,13 +565,14 @@ async function generateEntry() {
       el.addStatus.textContent = t.addExists;
       loadEntry(result.headword);
     } else {
+      sessionEntries.push(result);
+      saveSessionEntries();
+      renderSessionGroup();
       el.addStatus.className = "add-status success";
       el.addStatus.textContent = t.addSuccess;
       el.addInput.value = "";
       loadGeneratedList();
       loadEntry(result.headword);
-      switchView("browse");
-      loadBrowsePage();
     }
   } catch (e) {
     el.addStatus.className = "add-status error";
@@ -558,39 +582,38 @@ async function generateEntry() {
   }
 }
 
-async function loadGeneratedList() {
-  try {
-    const generated = await api(`/api/generated?lang=${state.lang}&limit=10`);
-    const t = i18n[state.lang];
-    if (!generated.length) {
-      el.generatedList.innerHTML = `<p class="empty-state">${t.noGenerated}</p>`;
-      return;
-    }
-    el.generatedList.innerHTML = "";
-    generated.forEach(entry => {
-      const row = document.createElement("div");
-      row.className = "generated-row";
+function loadGeneratedList() {
+  const t = i18n[state.lang];
+  if (!sessionEntries.length) {
+    el.generatedList.innerHTML = `<p class="empty-state">${t.noGenerated}</p>`;
+    return;
+  }
+  el.generatedList.innerHTML = "";
+  [...sessionEntries].reverse().slice(0, 10).forEach(entry => {
+    const row = document.createElement("div");
+    row.className = "generated-row";
 
-      const btn = document.createElement("button");
-      btn.className = "list-entry generated";
-      btn.dataset.headword = entry.headword;
-      btn.textContent = entry.headword;
-      btn.addEventListener("click", () => loadEntry(entry.headword));
+    const btn = document.createElement("button");
+    btn.className = "list-entry generated";
+    btn.dataset.headword = entry.headword;
+    btn.textContent = state.lang === "en" ? (entry.headword_en || entry.headword) : entry.headword;
+    btn.addEventListener("click", () => loadEntry(entry.headword));
 
-      const del = document.createElement("button");
-      del.className = "delete-generated-btn";
-      del.title = "Supprimer";
-      del.textContent = "×";
-      del.addEventListener("click", async () => {
-        await fetch(`/api/generated/${encodeURIComponent(entry.headword)}`, { method: "DELETE" });
-        loadGeneratedList();
-      });
-
-      row.appendChild(btn);
-      row.appendChild(del);
-      el.generatedList.appendChild(row);
+    const del = document.createElement("button");
+    del.className = "delete-generated-btn";
+    del.title = "Supprimer";
+    del.textContent = "×";
+    del.addEventListener("click", () => {
+      sessionEntries = sessionEntries.filter(e => e.headword !== entry.headword);
+      saveSessionEntries();
+      loadGeneratedList();
+      renderSessionGroup();
     });
-  } catch (e) { console.error(e); }
+
+    row.appendChild(btn);
+    row.appendChild(del);
+    el.generatedList.appendChild(row);
+  });
 }
 
 /* ── Rhetorical tags ───────────────────────────────────────────────── */
@@ -647,13 +670,39 @@ const CLUSTER_PALETTE = [
   "#0d47a1","#6d4c41",
 ];
 
-let umapCache   = null;
-let umapCircles = new Map();   // headword → { cx, cy, color }
-let umapTransform = { tx: 0, ty: 0, k: 1 };  // current pan/zoom state
+let umapCache      = null;
+let umapCircles    = new Map();   // headword → { cx, cy, color }
+let umapTransform  = { tx: 0, ty: 0, k: 1 };
+let umapScaleParams = null;  // { xMin, xMax, yMin, yMax, W, H, PAD }
+
+let sessionEntries = JSON.parse(sessionStorage.getItem('dictionnaire_generated') || '[]');
+
+function saveSessionEntries() {
+  sessionStorage.setItem('dictionnaire_generated', JSON.stringify(sessionEntries));
+}
+
+function getUmapScale() {
+  if (!umapScaleParams) return null;
+  const { xMin, xMax, yMin, yMax, W, H, PAD } = umapScaleParams;
+  return {
+    sx: x => PAD + (x - xMin) / (xMax - xMin) * (W - 2 * PAD),
+    sy: y => PAD + (y - yMin) / (yMax - yMin) * (H - 2 * PAD),
+  };
+}
+
+function adaptSessionEntry(entry) {
+  if (entry.lang === state.lang) return entry;
+  return {
+    ...entry,
+    text_translated:      state.lang === "en" ? (entry.text_en || entry.text) : entry.text,
+    headword_translated:  state.lang === "en" ? (entry.headword_en || entry.headword) : entry.headword,
+    cluster_label:        entry.umap_cluster_label || entry.cluster_label,
+    tag_labels:           [],
+  };
+}
 
 async function loadUmap() {
-  const cacheKey = `${state.lang}:${state.showGenerated}`;
-  if (umapCache && umapCache.key === cacheKey) {
+  if (umapCache && umapCache.key === state.lang) {
     renderUmap(umapCache.points);
     return;
   }
@@ -663,9 +712,8 @@ async function loadUmap() {
     fill="var(--ink-muted)">Computing semantic map…</text>`;
   el.umapLegend.innerHTML = "";
   try {
-    const genParam = state.showGenerated ? "&show_generated=1" : "";
-    const points = await api(`/api/umap?lang=${state.lang}${genParam}`);
-    umapCache = { points, key: cacheKey };
+    const points = await api(`/api/umap?lang=${state.lang}`);
+    umapCache = { points, key: state.lang };
     renderUmap(points);
   } catch (e) {
     el.umapSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
@@ -687,6 +735,7 @@ function renderUmap(points) {
   const yMin = Math.min(...ys), yMax = Math.max(...ys);
   const sx = x => PAD + (x - xMin) / (xMax - xMin) * (W - 2 * PAD);
   const sy = y => PAD + (y - yMin) / (yMax - yMin) * (H - 2 * PAD);
+  umapScaleParams = { xMin, xMax, yMin, yMax, W, H, PAD };
 
   el.umapSvg.setAttribute("viewBox", `0 0 ${W} ${H}`);
   el.umapSvg.innerHTML = "";
@@ -706,22 +755,21 @@ function renderUmap(points) {
   const centroids = {};
 
   points.forEach(p => {
-    const isGen = !!p.is_generated;
-    const color = isGen ? "#c49a35" : (CLUSTER_PALETTE[p.cluster_id % CLUSTER_PALETTE.length] ?? "#888");
+    const color = CLUSTER_PALETTE[p.cluster_id % CLUSTER_PALETTE.length] ?? "#888";
     const cx = sx(p.x).toFixed(1), cy = sy(p.y).toFixed(1);
 
     // Radius proportional to membership strength (2.5 baseline → ~6 max)
-    const r0 = isGen ? "5" : (p.primary_cluster_score
+    const r0 = p.primary_cluster_score
       ? (2.5 + Math.max(0, (p.primary_cluster_score * 12 - 1) * 8)).toFixed(1)
-      : "4");
+      : "4";
 
     const c = document.createElementNS(ns, "circle");
     c.setAttribute("cx", cx);
     c.setAttribute("cy", cy);
     c.setAttribute("r", r0);
-    c.setAttribute("fill", isGen ? "transparent" : color);
-    c.setAttribute("stroke", isGen ? color : "none");
-    c.setAttribute("stroke-width", isGen ? "1.5" : "0");
+    c.setAttribute("fill", color);
+    c.setAttribute("stroke", "none");
+    c.setAttribute("stroke-width", "0");
     c.style.opacity = "0.85";
     c.dataset.cluster = p.cluster_id;
     c.dataset.secondary = p.show_secondary_cluster ? "1" : "0";
@@ -729,7 +777,7 @@ function renderUmap(points) {
     c.style.cursor = "pointer";
     c.style.transition = "r 80ms, opacity 80ms";
 
-    if (!isGen && state.showSecondary && p.show_secondary_cluster) {
+    if (state.showSecondary && p.show_secondary_cluster) {
       const secColor = CLUSTER_PALETTE[(p.secondary_cluster_id ?? 0) % CLUSTER_PALETTE.length];
       c.setAttribute("stroke", secColor);
       c.setAttribute("stroke-width", "1.5");
@@ -812,11 +860,73 @@ function renderUmap(points) {
         <span class="umap-legend-label">${label}</span>
       </div>`).join("");
 
+  // Session-generated entries overlay (client-side, separate group)
+  const sessionG = document.createElementNS(ns, "g");
+  sessionG.id = "umap-session-g";
+  sessionG.style.display = state.showGenerated ? "" : "none";
+  g.appendChild(sessionG);
+  renderSessionDots(sx, sy, sessionG);
+
   // Restore secondary toggle button state
   const secBtn = $("umap-secondary-btn");
   if (secBtn) secBtn.classList.toggle("active", state.showSecondary);
 
   applyTranslations();
+}
+
+function renderSessionDots(sx, sy, container) {
+  const ns = "http://www.w3.org/2000/svg";
+  const gold = "#c49a35";
+  const umapContainer = el.umapSvg.closest(".umap-container");
+  sessionEntries.forEach(entry => {
+    if (!entry.umap_x || !entry.umap_y) return;
+    const cx = sx(entry.umap_x).toFixed(1);
+    const cy = sy(entry.umap_y).toFixed(1);
+    const c = document.createElementNS(ns, "circle");
+    c.setAttribute("cx", cx);
+    c.setAttribute("cy", cy);
+    c.setAttribute("r", "5");
+    c.setAttribute("fill", "transparent");
+    c.setAttribute("stroke", gold);
+    c.setAttribute("stroke-width", "1.5");
+    c.style.opacity = "0.85";
+    c.style.cursor = "pointer";
+    c.style.transition = "r 80ms, opacity 80ms";
+    const label = entry.umap_cluster_label || entry.cluster_label || "";
+    const snippet = entry.text_snippet ? `\n${entry.text_snippet}` : "";
+    const display = state.lang === "en" ? (entry.headword_en || entry.headword) : entry.headword;
+    c.addEventListener("mouseenter", () => {
+      el.umapTooltip.textContent = `${display}\n${label}${snippet}`;
+      el.umapTooltip.style.display = "block";
+    });
+    c.addEventListener("mousemove", e => {
+      const rect = umapContainer.getBoundingClientRect();
+      el.umapTooltip.style.left = (e.clientX - rect.left + 14) + "px";
+      el.umapTooltip.style.top  = (e.clientY - rect.top  - 10) + "px";
+    });
+    c.addEventListener("mouseleave", () => {
+      c.style.opacity = "0.72";
+      el.umapTooltip.style.display = "none";
+    });
+    c.addEventListener("click", () => {
+      c.setAttribute("r", "7.5");
+      c.style.opacity = "1";
+      c.parentNode.appendChild(c);
+      loadEntry(entry.headword);
+      showView("entry");
+    });
+    container.appendChild(c);
+    umapCircles.set(entry.headword, { cx: +cx, cy: +cy, color: gold, el: c });
+  });
+}
+
+function renderSessionGroup() {
+  const sessionG = document.getElementById("umap-session-g");
+  if (!sessionG || !umapScaleParams) return;
+  sessionG.innerHTML = "";
+  umapCircles.forEach((v, hw) => { if (sessionEntries.some(e => e.headword === hw)) umapCircles.delete(hw); });
+  const scale = getUmapScale();
+  if (scale) renderSessionDots(scale.sx, scale.sy, sessionG);
 }
 
 function highlightCluster(id) {
@@ -859,8 +969,8 @@ function toggleSecondary() {
 function toggleGenerated() {
   state.showGenerated = !state.showGenerated;
   el.umapGeneratedBtn.classList.toggle("active", state.showGenerated);
-  umapCache = null; // force reload with/without generated entries
-  loadUmap();
+  const sessionG = document.getElementById("umap-session-g");
+  if (sessionG) sessionG.style.display = state.showGenerated ? "" : "none";
 }
 
 async function showOnMap(headword) {

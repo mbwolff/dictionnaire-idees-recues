@@ -6,9 +6,8 @@ Routes
 GET  /                      → main page
 GET  /api/search?q=&lang=   → search existing entries
 GET  /api/entry/<headword>  → single entry detail + neighbours
-POST /api/generate          → validate noun + generate new entry
-GET  /api/generated         → last 10 generated entries (most recent first)
-GET  /api/umap              → 2-D UMAP coordinates for all entries
+POST /api/generate          → validate noun + generate new entry (returns UMAP coords)
+GET  /api/umap              → 2-D UMAP coordinates for corpus entries
 GET  /api/clusters          → cluster summary for sidebar
 GET  /api/suggest?lang=     → random underrepresented theme suggestion
 """
@@ -90,18 +89,6 @@ def generate():
     return jsonify(result)
 
 
-@app.route("/api/generated")
-def generated():
-    lang  = request.args.get("lang", "fr")
-    limit = min(int(request.args.get("limit", 10)), 50)
-    return jsonify(pipeline.recent_generated(limit, lang))
-
-
-@app.route("/api/generated/<path:headword>", methods=["DELETE"])
-def delete_generated(headword):
-    ok = pipeline.delete_generated(headword.upper())
-    return jsonify({"ok": ok}), (200 if ok else 404)
-
 
 @app.route("/api/tags")
 def tags():
@@ -111,9 +98,8 @@ def tags():
 
 @app.route("/api/umap")
 def umap():
-    lang           = request.args.get("lang", "fr")
-    show_generated = request.args.get("show_generated", "0") == "1"
-    return jsonify(pipeline.umap_data(lang, show_generated=show_generated))
+    lang = request.args.get("lang", "fr")
+    return jsonify(pipeline.umap_data(lang))
 
 
 @app.route("/api/fuzzy")

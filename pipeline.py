@@ -29,7 +29,6 @@ BASE_DIR        = Path(__file__).parent
 ENTRIES_FILE    = BASE_DIR / "data" / "clusters.json"
 EMBEDDINGS_FILE = BASE_DIR / "data" / "embeddings.npz"
 UMAP_FILE       = BASE_DIR / "data" / "umap_coords.npy"
-NEW_ENTRIES_FILE= BASE_DIR / "data" / "new_entries.json"
 
 # ── Generator config ──────────────────────────────────────────────────────────
 GENERATOR_BACKEND = os.environ.get("GENERATOR", "ollama").lower()
@@ -479,7 +478,6 @@ class DictionairePipeline:
         self.validator  = NounValidator()
         self.generator  = make_generator()
         self._entries: list[dict]      = []
-        self._new_entries: list[dict]  = []
         self._embeddings: Optional[np.ndarray] = None
         self._headwords: list[str]     = []
         self._hw_index: dict[str, int] = {}
@@ -497,10 +495,6 @@ class DictionairePipeline:
         else:
             print(f"[Pipeline] WARNING: {ENTRIES_FILE} not found. Run 01_parse.py first.")
             self._entry_index = {}
-
-        if NEW_ENTRIES_FILE.exists():
-            self._new_entries = json.loads(NEW_ENTRIES_FILE.read_text("utf-8"))
-            print(f"[Pipeline] {len(self._new_entries)} generated entries loaded.")
 
         if EMBEDDINGS_FILE.exists():
             npz = np.load(EMBEDDINGS_FILE, allow_pickle=True)
@@ -571,18 +565,17 @@ class DictionairePipeline:
         return result
 
     def total_entries(self) -> int:
-        return len(self._entries) + len(self._new_entries)
+        return len(self._entries)
 
     def stats(self) -> dict:
         return {
             "flaubert_entries":  len(self._entries),
-            "generated_entries": len(self._new_entries),
             "embeddings_loaded": self._embeddings is not None,
             "clusters":          len(CLUSTER_LABELS["fr"]),
             "generator":         self.generator.name(),
         }
 
-    def umap_data(self, lang: str, show_generated: bool = False) -> list[dict]:
+    def umap_data(self, lang: str) -> list[dict]:
         if self._embeddings is None:
             return []
         if self._umap_cache is None:
@@ -634,37 +627,6 @@ class DictionairePipeline:
                 "show_secondary_cluster": show_sec,
                 "text_snippet":          snippet,
             })
-        if show_generated and self._new_entries:
-            for gen in self._new_entries:
-                hw  = gen.get("headword", "")
-                text = gen.get("text", "")
-                if not hw or not text:
-                    continue
-                vec = self._approximate_vector(text)
-                if vec is None:
-                    continue
-                sims    = self._embeddings @ vec
-                near_i  = int(np.argmax(sims))
-                near_xy = coords[near_i]
-                near_hw = self._headwords[near_i]
-                near_entry = next((e for e in self._entries if e["headword"].upper() == near_hw), None)
-                near_cid = near_entry.get("cluster_id", -1) if near_entry else -1
-                if not isinstance(near_cid, int):
-                    near_cid = -1
-                snippet = text[:70].rsplit(" ", 1)[0] + "…" if len(text) > 70 else text
-                result.append({
-                    "headword":              hw,
-                    "headword_display":      gen.get("headword_en", hw) if lang == "en" else hw,
-                    "x":                     float(near_xy[0]) + 0.18,
-                    "y":                     float(near_xy[1]) + 0.18,
-                    "cluster_id":            near_cid,
-                    "cluster_label":         labels[near_cid] if 0 <= near_cid < len(labels) else "",
-                    "primary_cluster_score": 0.0,
-                    "secondary_cluster_id":  -1,
-                    "show_secondary_cluster": False,
-                    "text_snippet":          snippet,
-                    "is_generated":          True,
-                })
         return result
 
     def fuzzy_suggest(self, query: str, n: int = 5) -> list[str]:
@@ -703,7 +665,7 @@ class DictionairePipeline:
         )
         return {
             "flaubert_entries":  len(entries),
-            "generated_entries": len(self._new_entries),
+            "generated_entries": 0,
             "dual_theme":        dual,
             "tags":              tags,
             "clusters":          clusters,
@@ -746,16 +708,8 @@ class DictionairePipeline:
                     edges.append({"source": src, "target": tgt})
         return {"nodes": list(nodes.values()), "edges": edges}
 
-    def recent_generated(self, limit: int, lang: str) -> list[dict]:
-        recent = list(reversed(self._new_entries[-limit:]))
-        return [self._format_entry({**e, "is_generated": True}, lang) for e in recent if "headword" in e]
-
     def all_entries(self, start: int, limit: int, lang: str) -> list[dict]:
-        all_e = self._entries + [
-            {**e, "is_generated": True} for e in self._new_entries if "headword" in e
-        ]
-        all_e.sort(key=lambda x: x.get("headword", ""))
-        return [self._format_entry(e, lang) for e in all_e[start:start + limit]]
+        return [self._format_entry(e, lang) for e in self._entries[start:start + limit]]
 
     def tag_summary(self, lang: str) -> list[dict]:
         from collections import Counter
@@ -778,23 +732,20 @@ class DictionairePipeline:
         return results[:limit]
 
     def cluster_search(self, cluster_id: int, limit: int, lang: str) -> list[dict]:
-        all_e = self._entries + [{**e, "is_generated": True} for e in self._new_entries if "headword" in e]
-        results = [self._format_entry(e, lang) for e in all_e if e.get("cluster_id") == cluster_id]
+        results = [self._format_entry(e, lang) for e in self._entries if e.get("cluster_id") == cluster_id]
         results.sort(key=lambda x: x["headword"])
         return results[:limit]
 
     def prefix_search(self, prefix: str, limit: int, lang: str) -> list[dict]:
         p = prefix.upper()
-        all_e = self._entries + [{**e, "is_generated": True} for e in self._new_entries if "headword" in e]
-        results = [self._format_entry(e, lang) for e in all_e if e.get("headword", "").upper().startswith(p)]
+        results = [self._format_entry(e, lang) for e in self._entries if e.get("headword", "").upper().startswith(p)]
         results.sort(key=lambda x: x["headword"])
         return results[:limit]
 
     def text_search(self, query: str, limit: int, lang: str) -> list[dict]:
         q = query.upper()
-        all_e = self._entries + [{**e, "is_generated": True} for e in self._new_entries if "headword" in e]
         results = []
-        for e in all_e:
+        for e in self._entries:
             if q in e.get("headword", "").upper() or q in e.get("text", "").upper():
                 results.append(self._format_entry(e, lang))
                 if len(results) >= limit:
@@ -861,13 +812,6 @@ class DictionairePipeline:
                 fe["prev_headword"] = self._entries[idx - 1]["headword"] if idx > 0 else None
                 fe["next_headword"] = self._entries[idx + 1]["headword"] if idx < len(self._entries) - 1 else None
                 return fe
-        for e in self._new_entries:
-            if e.get("headword", "").upper() == hw:
-                fe = self._format_entry({**e, "is_generated": True}, lang)
-                fe["neighbours"] = self._get_neighbours(hw, lang)
-                fe["prev_headword"] = None
-                fe["next_headword"] = None
-                return fe
         return None
 
     def _get_neighbours(self, headword: str, lang: str, n: int = 6) -> list[dict]:
@@ -924,7 +868,7 @@ class DictionairePipeline:
         # because someone can type an English word ("ALGORITHM") in FR mode
         # and bypass translation entirely.
         word_upper = word.strip().upper()
-        for e in self._entries + list(self._new_entries):
+        for e in self._entries:
             if e.get("headword_en", "").upper() == word_upper:
                 fe = self._format_entry(e, lang)
                 fe["already_exists"] = True
@@ -954,23 +898,23 @@ class DictionairePipeline:
         if not generated_fr:
             return {"error": "Generator returned empty text."}
 
+        umap_pt = self._umap_point(generated_fr, lang)
         new_entry = {
             "headword":     fr_word,
             "text":         generated_fr,
             "tags":         [],
             "xrefs":        self._detect_xrefs(generated_fr, fr_word),
-            "cluster_id":   neighbours[0].get("cluster_id", -1) if neighbours else -1,
+            "cluster_id":   umap_pt.get("umap_cluster_id", neighbours[0].get("cluster_id", -1) if neighbours else -1),
             "is_generated": True,
             "generator":    self.generator.name(),
         }
         if lang == "en":
             new_entry["headword_en"] = word.strip().upper()
-        self._new_entries.append(new_entry)
-        self._persist_new_entries()
 
         result = self._format_entry(new_entry, lang)
         result["neighbours"] = neighbours
         result["generated"]  = True
+        result.update(umap_pt)
         return result
 
     def _detect_xrefs(self, text: str, own_headword: str) -> list[str]:
@@ -993,17 +937,33 @@ class DictionairePipeline:
                 idx = upper_text.find(hw, idx + 1)
         return found
 
-    def _persist_new_entries(self) -> None:
-        NEW_ENTRIES_FILE.parent.mkdir(parents=True, exist_ok=True)
-        NEW_ENTRIES_FILE.write_text(
-            json.dumps(self._new_entries, ensure_ascii=False, indent=2), "utf-8"
-        )
-
-    def delete_generated(self, headword: str) -> bool:
-        hw = headword.upper()
-        before = len(self._new_entries)
-        self._new_entries = [e for e in self._new_entries if e.get("headword", "").upper() != hw]
-        if len(self._new_entries) == before:
-            return False
-        self._persist_new_entries()
-        return True
+    def _umap_point(self, text: str, lang: str) -> dict:
+        """Return approximate UMAP coordinates for generated text, used to place it on the map."""
+        if self._embeddings is None:
+            return {}
+        if self._umap_cache is None:
+            if UMAP_FILE.exists():
+                self._umap_cache = np.load(UMAP_FILE).astype(np.float32)
+            else:
+                return {}
+        coords = self._umap_cache
+        vec = self._approximate_vector(text)
+        if vec is None:
+            return {}
+        sims = self._embeddings @ vec
+        near_i = int(np.argmax(sims))
+        near_xy = coords[near_i]
+        near_hw = self._headwords[near_i]
+        near_entry = next((e for e in self._entries if e["headword"].upper() == near_hw), None)
+        near_cid = near_entry.get("cluster_id", -1) if near_entry else -1
+        if not isinstance(near_cid, int):
+            near_cid = -1
+        labels = CLUSTER_LABELS[lang]
+        snippet = text[:70].rsplit(" ", 1)[0] + "…" if len(text) > 70 else text
+        return {
+            "umap_x":           float(near_xy[0]) + 0.18,
+            "umap_y":           float(near_xy[1]) + 0.18,
+            "umap_cluster_id":  near_cid,
+            "umap_cluster_label": labels[near_cid] if 0 <= near_cid < len(labels) else "",
+            "text_snippet":     snippet,
+        }
