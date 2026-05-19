@@ -8,7 +8,7 @@ GET  /api/search?q=&lang=   → search existing entries
 GET  /api/entry/<headword>  → single entry detail + neighbours
 POST /api/generate          → validate noun + generate new entry
 GET  /api/generated         → last 10 generated entries (most recent first)
-GET  /api/tsne              → 2-D t-SNE coordinates for all entries
+GET  /api/umap              → 2-D UMAP coordinates for all entries
 GET  /api/clusters          → cluster summary for sidebar
 GET  /api/suggest?lang=     → random underrepresented theme suggestion
 """
@@ -109,11 +109,11 @@ def tags():
     return jsonify(pipeline.tag_summary(lang))
 
 
-@app.route("/api/tsne")
-def tsne():
+@app.route("/api/umap")
+def umap():
     lang           = request.args.get("lang", "fr")
     show_generated = request.args.get("show_generated", "0") == "1"
-    return jsonify(pipeline.tsne_data(lang, show_generated=show_generated))
+    return jsonify(pipeline.umap_data(lang, show_generated=show_generated))
 
 
 @app.route("/api/fuzzy")

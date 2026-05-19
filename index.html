@@ -234,23 +234,23 @@
         </div>
       </article>
 
-      <!-- t-SNE semantic map -->
-      <section class="tsne-view" id="tsne-view" style="display:none">
-        <div class="tsne-header">
-          <h2 class="tsne-title" id="tsne-title" data-fr="Carte sémantique" data-en="Semantic map">Carte sémantique</h2>
-          <div class="tsne-hint-row">
-            <p class="tsne-hint" data-fr="Molette pour zoomer · Glisser pour déplacer · Double-clic pour réinitialiser · Cliquer sur un point pour ouvrir l'entrée" data-en="Scroll to zoom · Drag to pan · Double-click to reset · Click a dot to open the entry">Molette pour zoomer · Glisser pour déplacer · Double-clic pour réinitialiser · Cliquer sur un point pour ouvrir l'entrée</p>
-            <input type="search" id="tsne-search" class="tsne-search"
+      <!-- UMAP semantic map -->
+      <section class="umap-view" id="umap-view" style="display:none">
+        <div class="umap-header">
+          <h2 class="umap-title" id="umap-title" data-fr="Carte sémantique" data-en="Semantic map">Carte sémantique</h2>
+          <div class="umap-hint-row">
+            <p class="umap-hint" data-fr="Molette pour zoomer · Glisser pour déplacer · Double-clic pour réinitialiser · Cliquer sur un point pour ouvrir l'entrée" data-en="Scroll to zoom · Drag to pan · Double-click to reset · Click a dot to open the entry">Molette pour zoomer · Glisser pour déplacer · Double-clic pour réinitialiser · Cliquer sur un point pour ouvrir l'entrée</p>
+            <input type="search" id="umap-search" class="umap-search"
               data-placeholder-fr="Localiser…" data-placeholder-en="Locate…"
               placeholder="Localiser…" autocomplete="off" spellcheck="false"/>
-            <button class="tsne-secondary-btn" id="tsne-secondary-btn" onclick="toggleSecondary()" data-fr="Ambiguïtés" data-en="Ambiguous">Ambiguïtés</button>
-            <button class="tsne-secondary-btn" id="tsne-generated-btn" data-fr="Générées" data-en="Generated">Générées</button>
+            <button class="umap-secondary-btn" id="umap-secondary-btn" onclick="toggleSecondary()" data-fr="Ambiguïtés" data-en="Ambiguous">Ambiguïtés</button>
+            <button class="umap-secondary-btn" id="umap-generated-btn" data-fr="Générées" data-en="Generated">Générées</button>
           </div>
         </div>
-        <div class="tsne-container">
-          <svg id="tsne-svg" class="tsne-svg" preserveAspectRatio="xMidYMid meet"></svg>
-          <div class="tsne-legend" id="tsne-legend"></div>
-          <div class="tsne-tooltip" id="tsne-tooltip"></div>
+        <div class="umap-container">
+          <svg id="umap-svg" class="umap-svg" preserveAspectRatio="xMidYMid meet"></svg>
+          <div class="umap-legend" id="umap-legend"></div>
+          <div class="umap-tooltip" id="umap-tooltip"></div>
         </div>
       </section>
 

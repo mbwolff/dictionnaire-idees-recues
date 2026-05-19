@@ -34,7 +34,7 @@ Port 5050 is used because macOS AirPlay Receiver occupies port 5000 and returns 
 | `data/dictionnaire_entries.json` | `parse.py` | 963 parsed and tagged Flaubert entries |
 | `data/embeddings.npz` | `embed.py` | CamemBERT sentence embeddings (963 × 768) |
 | `data/clusters.json` | `cluster.py` | k-means cluster assignments (k = 12) + soft membership scores (12-vector per entry) |
-| `data/tsne_coords.npy` | `cluster.py` | Pre-computed UMAP coordinates (963 × 2, n_neighbors=15, min_dist=0.1); loaded at startup in <1ms |
+| `data/umap_coords.npy` | `cluster.py` | Pre-computed UMAP coordinates (963 × 2, n_neighbors=15, min_dist=0.1); loaded at startup in <1ms |
 | `data/new_entries.json` | app (runtime) | User-generated entries, persisted across sessions |
 | `data/gap_candidates.json` | `cluster.py` | Semantic gap analysis: one record per cluster, ranked by distance from centroid to nearest entry |
 
@@ -69,7 +69,7 @@ parse.py      Fetch text from Project Gutenberg · extract entries · tag with
               Herschberg-Pierrot's enunciative categories (spaCy morphology)
 embed.py      Encode entries with dangvantuan/sentence-camembert-base
 cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
-              pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/tsne_coords.npy ·
+              pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/umap_coords.npy ·
               batch-translate headwords and entry texts to English via deep-translator
 pipeline.py   Runtime: search · validation · translation · generation · UMAP ·
               random entry · detailed stats · xref graph
@@ -79,13 +79,13 @@ app.py        Flask routes (+ /api/random, /api/stats/detailed, /api/xrefs)
 ## Architecture
 
 ```
-app.py          Flask routes (search, entry detail, generate, tags, clusters, t-SNE)
+app.py          Flask routes (search, entry detail, generate, tags, clusters, UMAP)
 pipeline.py     DictionairePipeline: search, validation, translation, generation
 parse.py        One-off: fetch, parse, and enunciatively tag all entries
 embed.py        One-off: generate sentence embeddings
 cluster.py      One-off: cluster, label, and translate entries
 index.html      Single-page app shell
-app.js          Vanilla JS: browse, search, entry detail, t-SNE rendering (centroid labels,
+app.js          Vanilla JS: browse, search, entry detail, UMAP rendering (centroid labels,
                 score-sized dots, secondary toggle, map search, ripple pulse, show-on-map),
                 statistics view, force-directed xref network, keyboard shortcuts, URL routing
 main.css        19th-century editorial typographic stylesheet

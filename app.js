@@ -116,12 +116,12 @@ const el = {
   langBtn:        $("lang-btn"),
   langLabel:      $("lang-label"),
   themeBtn:       $("theme-btn"),
-  tsneView:       $("tsne-view"),
-  tsneSvg:        $("tsne-svg"),
-  tsneLegend:     $("tsne-legend"),
-  tsneTooltip:    $("tsne-tooltip"),
-  tsneSearch:       $("tsne-search"),
-  tsneGeneratedBtn: $("tsne-generated-btn"),
+  umapView:       $("umap-view"),
+  umapSvg:        $("umap-svg"),
+  umapLegend:     $("umap-legend"),
+  umapTooltip:    $("umap-tooltip"),
+  umapSearch:       $("umap-search"),
+  umapGeneratedBtn: $("umap-generated-btn"),
   tagList:          $("tag-list"),
   statsView:        $("stats-view"),
   statsContent:     $("stats-content"),
@@ -470,9 +470,9 @@ function showView(view) {
   el.welcomeState.style.display  = view === "welcome" ? "block" : "none";
   el.entryDetail.style.display   = view === "entry"   ? "block" : "none";
   el.searchResults.style.display = view === "results" ? "block" : "none";
-  el.tsneView.style.display      = view === "tsne"    ? "flex"  : "none";
+  el.umapView.style.display      = view === "umap"    ? "flex"  : "none";
   el.statsView.style.display     = view === "stats"   ? "block" : "none";
-  if (view !== "tsne" && el.tsneSearch) el.tsneSearch.value = "";
+  if (view !== "umap" && el.umapSearch) el.umapSearch.value = "";
 }
 
 /* ── Clusters ──────────────────────────────────────────────────────── */
@@ -640,47 +640,47 @@ function filterByTag(tag, label) {
   }).catch(err => console.error(err));
 }
 
-/* ── t-SNE ─────────────────────────────────────────────────────────── */
+/* ── UMAP ─────────────────────────────────────────────────────────── */
 const CLUSTER_PALETTE = [
   "#8b3a1a","#b8860b","#2e7d32","#1565c0","#6a1b9a",
   "#c0392b","#00695c","#1a5276","#7b241c","#4a7c59",
   "#0d47a1","#6d4c41",
 ];
 
-let tsneCache   = null;
-let tsneCircles = new Map();   // headword → { cx, cy, color }
-let tsneTransform = { tx: 0, ty: 0, k: 1 };  // current pan/zoom state
+let umapCache   = null;
+let umapCircles = new Map();   // headword → { cx, cy, color }
+let umapTransform = { tx: 0, ty: 0, k: 1 };  // current pan/zoom state
 
-async function loadTsne() {
+async function loadUmap() {
   const cacheKey = `${state.lang}:${state.showGenerated}`;
-  if (tsneCache && tsneCache.key === cacheKey) {
-    renderTsne(tsneCache.points);
+  if (umapCache && umapCache.key === cacheKey) {
+    renderUmap(umapCache.points);
     return;
   }
-  el.tsneSvg.setAttribute("viewBox", "0 0 900 560");
-  el.tsneSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
+  el.umapSvg.setAttribute("viewBox", "0 0 900 560");
+  el.umapSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
     font-family="'IM Fell English SC',Georgia,serif" font-size="14"
     fill="var(--ink-muted)">Computing semantic map…</text>`;
-  el.tsneLegend.innerHTML = "";
+  el.umapLegend.innerHTML = "";
   try {
     const genParam = state.showGenerated ? "&show_generated=1" : "";
-    const points = await api(`/api/tsne?lang=${state.lang}${genParam}`);
-    tsneCache = { points, key: cacheKey };
-    renderTsne(points);
+    const points = await api(`/api/umap?lang=${state.lang}${genParam}`);
+    umapCache = { points, key: cacheKey };
+    renderUmap(points);
   } catch (e) {
-    el.tsneSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
+    el.umapSvg.innerHTML = `<text x="450" y="280" text-anchor="middle"
       font-family="'IM Fell English SC',Georgia,serif" font-size="14"
       fill="var(--ink-muted)">Error loading visualization.</text>`;
   }
 }
 
-function applyTsneTransform() {
-  const g = document.getElementById("tsne-g");
+function applyUmapTransform() {
+  const g = document.getElementById("umap-g");
   if (g) g.setAttribute("transform",
-    `translate(${tsneTransform.tx.toFixed(2)},${tsneTransform.ty.toFixed(2)}) scale(${tsneTransform.k.toFixed(4)})`);
+    `translate(${umapTransform.tx.toFixed(2)},${umapTransform.ty.toFixed(2)}) scale(${umapTransform.k.toFixed(4)})`);
 }
 
-function renderTsne(points) {
+function renderUmap(points) {
   const W = 900, H = 560, PAD = 28;
   const xs = points.map(p => p.x), ys = points.map(p => p.y);
   const xMin = Math.min(...xs), xMax = Math.max(...xs);
@@ -688,19 +688,19 @@ function renderTsne(points) {
   const sx = x => PAD + (x - xMin) / (xMax - xMin) * (W - 2 * PAD);
   const sy = y => PAD + (y - yMin) / (yMax - yMin) * (H - 2 * PAD);
 
-  el.tsneSvg.setAttribute("viewBox", `0 0 ${W} ${H}`);
-  el.tsneSvg.innerHTML = "";
-  el.tsneSvg.classList.remove("highlight-active");
-  tsneCircles.clear();
-  tsneTransform = { tx: 0, ty: 0, k: 1 };
+  el.umapSvg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  el.umapSvg.innerHTML = "";
+  el.umapSvg.classList.remove("highlight-active");
+  umapCircles.clear();
+  umapTransform = { tx: 0, ty: 0, k: 1 };
 
   const ns = "http://www.w3.org/2000/svg";
-  const container = el.tsneSvg.closest(".tsne-container");
+  const container = el.umapSvg.closest(".umap-container");
 
   // All drawn content lives in this group so pan/zoom only transforms it
   const g = document.createElementNS(ns, "g");
-  g.id = "tsne-g";
-  el.tsneSvg.appendChild(g);
+  g.id = "umap-g";
+  el.umapSvg.appendChild(g);
 
   // Centroid accumulator
   const centroids = {};
@@ -742,17 +742,17 @@ function renderTsne(points) {
       c.setAttribute("r", (+r0 + 2.5).toFixed(1));
       c.setAttribute("opacity", "1");
       const snippet = p.text_snippet ? `\n${p.text_snippet}` : "";
-      el.tsneTooltip.textContent = `${p.headword_display}\n${p.cluster_label}${mult}${snippet}`;
-      el.tsneTooltip.style.display = "block";
+      el.umapTooltip.textContent = `${p.headword_display}\n${p.cluster_label}${mult}${snippet}`;
+      el.umapTooltip.style.display = "block";
     });
     c.addEventListener("mousemove", e => {
       const rect = container.getBoundingClientRect();
-      el.tsneTooltip.style.left = (e.clientX - rect.left + 14) + "px";
-      el.tsneTooltip.style.top  = (e.clientY - rect.top  - 10) + "px";
+      el.umapTooltip.style.left = (e.clientX - rect.left + 14) + "px";
+      el.umapTooltip.style.top  = (e.clientY - rect.top  - 10) + "px";
     });
     c.addEventListener("mouseleave", () => {
       c.setAttribute("r", r0);
-      if (el.tsneSvg.classList.contains("highlight-active")) {
+      if (el.umapSvg.classList.contains("highlight-active")) {
         const isPri = c.dataset.cluster == state.highlightedCluster;
         const isSec = state.showSecondary && c.dataset.secondary === "1"
           && c.dataset.secondaryCluster == state.highlightedCluster;
@@ -760,12 +760,12 @@ function renderTsne(points) {
       } else {
         c.setAttribute("opacity", "0.72");
       }
-      el.tsneTooltip.style.display = "none";
+      el.umapTooltip.style.display = "none";
     });
     c.addEventListener("click", () => { loadEntry(p.headword); showView("entry"); });
 
     g.appendChild(c);
-    tsneCircles.set(p.headword, { cx: +cx, cy: +cy, color, el: c });
+    umapCircles.set(p.headword, { cx: +cx, cy: +cy, color, el: c });
 
     // Accumulate centroid
     if (p.cluster_id >= 0) {
@@ -800,29 +800,29 @@ function renderTsne(points) {
   // Legend
   const clusters = {};
   points.forEach(p => { clusters[p.cluster_id] ??= p.cluster_label; });
-  el.tsneLegend.innerHTML = Object.entries(clusters)
+  el.umapLegend.innerHTML = Object.entries(clusters)
     .sort((a, b) => +a[0] - +b[0])
     .map(([id, label]) => `
-      <div class="tsne-legend-item" data-cluster="${id}" onclick="highlightCluster(${id}); filterByClusterSorted(${id})">
-        <span class="tsne-legend-dot" style="background:${CLUSTER_PALETTE[+id % CLUSTER_PALETTE.length]}"></span>
-        <span class="tsne-legend-label">${label}</span>
+      <div class="umap-legend-item" data-cluster="${id}" onclick="highlightCluster(${id}); filterByClusterSorted(${id})">
+        <span class="umap-legend-dot" style="background:${CLUSTER_PALETTE[+id % CLUSTER_PALETTE.length]}"></span>
+        <span class="umap-legend-label">${label}</span>
       </div>`).join("");
 
   // Restore secondary toggle button state
-  const secBtn = $("tsne-secondary-btn");
+  const secBtn = $("umap-secondary-btn");
   if (secBtn) secBtn.classList.toggle("active", state.showSecondary);
 
   applyTranslations();
 }
 
 function highlightCluster(id) {
-  const svg = el.tsneSvg;
+  const svg = el.umapSvg;
   if (state.highlightedCluster === id) {
     state.highlightedCluster = null;
     svg.classList.remove("highlight-active");
     svg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
     svg.querySelectorAll("text[data-centroid]").forEach(t => t.setAttribute("opacity", "0.40"));
-    document.querySelectorAll(".tsne-legend-item").forEach(i => i.classList.remove("active"));
+    document.querySelectorAll(".umap-legend-item").forEach(i => i.classList.remove("active"));
   } else {
     state.highlightedCluster = id;
     svg.classList.add("highlight-active");
@@ -835,7 +835,7 @@ function highlightCluster(id) {
     svg.querySelectorAll("text[data-centroid]").forEach(t => {
       t.setAttribute("opacity", t.getAttribute("data-centroid") == id ? "0.90" : "0.08");
     });
-    document.querySelectorAll(".tsne-legend-item").forEach(i => {
+    document.querySelectorAll(".umap-legend-item").forEach(i => {
       i.classList.toggle("active", i.dataset.cluster == id);
     });
   }
@@ -843,8 +843,8 @@ function highlightCluster(id) {
 
 function toggleSecondary() {
   state.showSecondary = !state.showSecondary;
-  $("tsne-secondary-btn").classList.toggle("active", state.showSecondary);
-  el.tsneSvg.querySelectorAll("circle[data-secondary='1']").forEach(c => {
+  $("umap-secondary-btn").classList.toggle("active", state.showSecondary);
+  el.umapSvg.querySelectorAll("circle[data-secondary='1']").forEach(c => {
     const sid = +c.dataset.secondaryCluster;
     c.setAttribute("stroke", state.showSecondary
       ? CLUSTER_PALETTE[sid % CLUSTER_PALETTE.length] : "none");
@@ -854,17 +854,17 @@ function toggleSecondary() {
 
 function toggleGenerated() {
   state.showGenerated = !state.showGenerated;
-  el.tsneGeneratedBtn.classList.toggle("active", state.showGenerated);
-  tsneCache = null; // force reload with/without generated entries
-  loadTsne();
+  el.umapGeneratedBtn.classList.toggle("active", state.showGenerated);
+  umapCache = null; // force reload with/without generated entries
+  loadUmap();
 }
 
 async function showOnMap(headword) {
   switchView("clusters");
-  showView("tsne");
-  await loadTsne();
-  el.tsneSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
-  const data = tsneCircles.get(headword);
+  showView("umap");
+  await loadUmap();
+  el.umapSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
+  const data = umapCircles.get(headword);
   if (!data) return;
   pulseAt(data.cx, data.cy, data.color);
 }
@@ -883,7 +883,7 @@ function pulseAt(cx, cy, color) {
       ring.setAttribute("opacity", "0.9");
       ring.style.pointerEvents = "none";
       ring.style.transition = "r 700ms ease-out, opacity 700ms ease-out";
-      (document.getElementById("tsne-g") || el.tsneSvg).appendChild(ring);
+      (document.getElementById("umap-g") || el.umapSvg).appendChild(ring);
       requestAnimationFrame(() => requestAnimationFrame(() => {
         ring.setAttribute("r", "24");
         ring.setAttribute("opacity", "0");
@@ -1240,7 +1240,7 @@ document.querySelectorAll(".nav-item").forEach(btn => {
     const view = btn.dataset.view;
     switchView(view);
     if (view === "add")      { loadGeneratedList(); history.pushState({ type: "view", view }, "", "#add"); }
-    if (view === "clusters") { showView("tsne"); loadTsne(); history.pushState({ type: "view", view }, "", "#themes"); }
+    if (view === "clusters") { showView("umap"); loadUmap(); history.pushState({ type: "view", view }, "", "#themes"); }
     if (view === "rhetoric") { loadTags(); history.pushState({ type: "view", view }, "", "#rhetoric"); }
     if (view === "stats")    { showView("stats"); loadDetailedStats(); history.pushState({ type: "view", view }, "", "#stats"); }
     if (view === "browse")   { history.pushState({ type: "view", view }, "", "#"); }
@@ -1274,7 +1274,7 @@ el.suggestBtn.addEventListener("click", async () => {
   }
 });
 
-el.tsneGeneratedBtn.addEventListener("click", toggleGenerated);
+el.umapGeneratedBtn.addEventListener("click", toggleGenerated);
 
 el.hamburgerBtn.addEventListener("click", () => {
   document.body.classList.toggle("sidebar-open");
@@ -1307,24 +1307,24 @@ document.addEventListener("keydown", e => {
   }
 });
 
-/* ── t-SNE map search ───────────────────────────────────────────────── */
-if (el.tsneSearch) {
-  el.tsneSearch.addEventListener("input", e => {
+/* ── UMAP map search ───────────────────────────────────────────────── */
+if (el.umapSearch) {
+  el.umapSearch.addEventListener("input", e => {
     const q = e.target.value.trim().toUpperCase();
     if (!q) {
-      el.tsneSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
+      el.umapSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72"));
       return;
     }
     let match = null;
-    tsneCircles.forEach((data, hw) => {
+    umapCircles.forEach((data, hw) => {
       const hit = hw.includes(q);
       data.el.setAttribute("opacity", hit ? "1" : "0.08");
       if (hit && !match) match = data;
     });
     if (match) pulseAt(match.cx, match.cy, match.color);
   });
-  el.tsneSearch.addEventListener("keydown", e => {
-    if (e.key === "Escape") { el.tsneSearch.value = ""; el.tsneSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72")); }
+  el.umapSearch.addEventListener("keydown", e => {
+    if (e.key === "Escape") { el.umapSearch.value = ""; el.umapSvg.querySelectorAll("circle").forEach(c => c.setAttribute("opacity", "0.72")); }
   });
 }
 
@@ -1336,7 +1336,7 @@ window.addEventListener("popstate", e => {
   else if (s.type === "view") {
     const v = s.view;
     switchView(v);
-    if (v === "clusters") { showView("tsne"); loadTsne(); }
+    if (v === "clusters") { showView("umap"); loadUmap(); }
     else if (v === "stats") { showView("stats"); loadDetailedStats(); }
     else if (v === "rhetoric") loadTags();
     else if (v === "add") loadGeneratedList();
@@ -1349,7 +1349,7 @@ function handleInitialHash() {
   if (hash.startsWith("entry/")) {
     loadEntry(decodeURIComponent(hash.slice(6)), true);
   } else if (hash === "themes") {
-    switchView("clusters"); showView("tsne"); loadTsne();
+    switchView("clusters"); showView("umap"); loadUmap();
   } else if (hash === "stats") {
     switchView("stats"); showView("stats"); loadDetailedStats();
   } else if (hash === "rhetoric") {
@@ -1358,23 +1358,23 @@ function handleInitialHash() {
 }
 
 /* ── Init ───────────────────────────────────────────────────────────── */
-// ── t-SNE pan/zoom (registered once; reads/writes tsneTransform) ────────────
-(function wireTsnePanZoom() {
-  const svgEl = el.tsneSvg;
-  const TSNE_W = 900, TSNE_H = 560;
+// ── UMAP pan/zoom (registered once; reads/writes umapTransform) ────────────
+(function wireUmapPanZoom() {
+  const svgEl = el.umapSvg;
+  const UMAP_W = 900, UMAP_H = 560;
   svgEl.style.cursor = "grab";
 
   svgEl.addEventListener("wheel", e => {
     e.preventDefault();
     const rect = svgEl.getBoundingClientRect();
-    const mx = (e.clientX - rect.left) / rect.width  * TSNE_W;
-    const my = (e.clientY - rect.top)  / rect.height * TSNE_H;
+    const mx = (e.clientX - rect.left) / rect.width  * UMAP_W;
+    const my = (e.clientY - rect.top)  / rect.height * UMAP_H;
     const factor = e.deltaY < 0 ? 1.12 : 1 / 1.12;
-    const newK = Math.max(0.5, Math.min(8, tsneTransform.k * factor));
-    tsneTransform.tx = mx - (mx - tsneTransform.tx) * (newK / tsneTransform.k);
-    tsneTransform.ty = my - (my - tsneTransform.ty) * (newK / tsneTransform.k);
-    tsneTransform.k  = newK;
-    applyTsneTransform();
+    const newK = Math.max(0.5, Math.min(8, umapTransform.k * factor));
+    umapTransform.tx = mx - (mx - umapTransform.tx) * (newK / umapTransform.k);
+    umapTransform.ty = my - (my - umapTransform.ty) * (newK / umapTransform.k);
+    umapTransform.k  = newK;
+    applyUmapTransform();
   }, { passive: false });
 
   // Pan: use window listeners so drag survives leaving the SVG; no setPointerCapture,
@@ -1383,7 +1383,7 @@ function handleInitialHash() {
   let didDrag = false;
   svgEl.addEventListener("pointerdown", e => {
     if (e.button !== 0) return;
-    drag = { startX: e.clientX, startY: e.clientY, tx0: tsneTransform.tx, ty0: tsneTransform.ty };
+    drag = { startX: e.clientX, startY: e.clientY, tx0: umapTransform.tx, ty0: umapTransform.ty };
     didDrag = false;
     svgEl.style.cursor = "grabbing";
   });
@@ -1393,9 +1393,9 @@ function handleInitialHash() {
     if (!didDrag && Math.hypot(dx, dy) < 4) return;
     didDrag = true;
     const rect = svgEl.getBoundingClientRect();
-    tsneTransform.tx = drag.tx0 + dx * TSNE_W / rect.width;
-    tsneTransform.ty = drag.ty0 + dy * TSNE_H / rect.height;
-    applyTsneTransform();
+    umapTransform.tx = drag.tx0 + dx * UMAP_W / rect.width;
+    umapTransform.ty = drag.ty0 + dy * UMAP_H / rect.height;
+    applyUmapTransform();
   });
   window.addEventListener("pointerup", () => {
     if (!drag) return;
@@ -1405,8 +1405,8 @@ function handleInitialHash() {
   // Suppress click that fires immediately after a drag-release
   svgEl.addEventListener("click", e => { if (didDrag) { e.stopPropagation(); } }, true);
   svgEl.addEventListener("dblclick", () => {
-    tsneTransform = { tx: 0, ty: 0, k: 1 };
-    applyTsneTransform();
+    umapTransform = { tx: 0, ty: 0, k: 1 };
+    applyUmapTransform();
   });
 }());
 

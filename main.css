@@ -630,8 +630,8 @@ body {
 }
 .random-btn:hover { color: var(--gold); }
 
-/* ── t-SNE map search ──────────────────────────────────────────────── */
-.tsne-search {
+/* ── UMAP map search ──────────────────────────────────────────────── */
+.umap-search {
   font-family: var(--font-ui);
   font-size: 0.68rem; color: var(--ink);
   background: var(--cream-dark); border: 1px solid var(--rule-heavy);
@@ -639,7 +639,7 @@ body {
   width: 110px; outline: none;
   transition: border-color var(--transition);
 }
-.tsne-search:focus { border-color: var(--gold); }
+.umap-search:focus { border-color: var(--gold); }
 
 /* ── Statistics view ───────────────────────────────────────────────── */
 .stats-view {
@@ -865,21 +865,21 @@ mark {
   border-radius: 1px; padding: 0 1px;
 }
 
-/* ── t-SNE semantic map ──────────────────────────────────────────────── */
-.tsne-view {
+/* ── UMAP semantic map ──────────────────────────────────────────────── */
+.umap-view {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - var(--header-h) - 80px);
   animation: fadeIn 220ms ease;
 }
 
-.tsne-header {
+.umap-header {
   margin-bottom: 1rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--rule-heavy);
 }
 
-.tsne-title {
+.umap-title {
   font-family: var(--font-display);
   font-size: 1rem;
   letter-spacing: .08em;
@@ -888,12 +888,12 @@ mark {
   margin: 0 0 0.3rem;
 }
 
-.tsne-hint-row {
+.umap-hint-row {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
-.tsne-hint {
+.umap-hint {
   font-family: var(--font-ui);
   font-size: 0.68rem;
   color: var(--ink-faint);
@@ -901,7 +901,7 @@ mark {
   font-style: italic;
   flex: 1;
 }
-.tsne-secondary-btn {
+.umap-secondary-btn {
   font-family: var(--font-ui);
   font-size: 9px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--ink-soft); background: transparent;
@@ -909,10 +909,10 @@ mark {
   padding: 2px 7px; cursor: pointer; white-space: nowrap;
   transition: color var(--transition), border-color var(--transition), background var(--transition);
 }
-.tsne-secondary-btn:hover { color: var(--ink); border-color: var(--gold); }
-.tsne-secondary-btn.active { color: var(--gold); border-color: var(--gold); background: var(--cream-dark); }
+.umap-secondary-btn:hover { color: var(--ink); border-color: var(--gold); }
+.umap-secondary-btn.active { color: var(--gold); border-color: var(--gold); background: var(--cream-dark); }
 
-.tsne-container {
+.umap-container {
   position: relative;
   display: flex;
   flex: 1;
@@ -920,7 +920,7 @@ mark {
   min-height: 420px;
 }
 
-.tsne-svg {
+.umap-svg {
   flex: 1;
   min-width: 0;
   border: 1px solid var(--rule);
@@ -931,7 +931,7 @@ mark {
   touch-action: none;
 }
 
-.tsne-legend {
+.umap-legend {
   width: 180px;
   flex-shrink: 0;
   overflow-y: auto;
@@ -940,7 +940,7 @@ mark {
   gap: 2px;
 }
 
-.tsne-legend-item {
+.umap-legend-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -954,23 +954,23 @@ mark {
   transition: background var(--transition), color var(--transition);
 }
 
-.tsne-legend-item:hover { background: var(--cream-dark); color: var(--ink); }
-.tsne-legend-item.active {
+.umap-legend-item:hover { background: var(--cream-dark); color: var(--ink); }
+.umap-legend-item.active {
   background: var(--cream-dark);
   color: var(--ink);
   border-left-color: var(--rust);
 }
 
-.tsne-legend-dot {
+.umap-legend-dot {
   width: 9px;
   height: 9px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-.tsne-legend-label { line-height: 1.3; }
+.umap-legend-label { line-height: 1.3; }
 
-.tsne-tooltip {
+.umap-tooltip {
   position: absolute;
   display: none;
   background: var(--ink);
@@ -1021,6 +1021,6 @@ mark {
   #main-content { padding: 20px 18px; width: 100%; }
   .entry-headword { font-size: 22px; }
   .welcome-quote { font-size: 1rem; }
-  .tsne-hint { display: none; }
+  .umap-hint { display: none; }
   #main-content { padding: 20px 16px; }
 }

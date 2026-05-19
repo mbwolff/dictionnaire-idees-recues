@@ -28,7 +28,7 @@ import numpy as np
 BASE_DIR        = Path(__file__).parent
 ENTRIES_FILE    = BASE_DIR / "data" / "clusters.json"
 EMBEDDINGS_FILE = BASE_DIR / "data" / "embeddings.npz"
-TSNE_FILE       = BASE_DIR / "data" / "tsne_coords.npy"
+UMAP_FILE       = BASE_DIR / "data" / "umap_coords.npy"
 NEW_ENTRIES_FILE= BASE_DIR / "data" / "new_entries.json"
 
 # ── Generator config ──────────────────────────────────────────────────────────
@@ -484,7 +484,7 @@ class DictionairePipeline:
         self._headwords: list[str]     = []
         self._hw_index: dict[str, int] = {}
         self._sentence_model           = None
-        self._tsne_cache: Optional[np.ndarray] = None
+        self._umap_cache: Optional[np.ndarray] = None
         self._load_data()
 
     def _load_data(self):
@@ -582,13 +582,13 @@ class DictionairePipeline:
             "generator":         self.generator.name(),
         }
 
-    def tsne_data(self, lang: str, show_generated: bool = False) -> list[dict]:
+    def umap_data(self, lang: str, show_generated: bool = False) -> list[dict]:
         if self._embeddings is None:
             return []
-        if self._tsne_cache is None:
-            if TSNE_FILE.exists():
+        if self._umap_cache is None:
+            if UMAP_FILE.exists():
                 print("[Pipeline] Loading UMAP from disk…")
-                self._tsne_cache = np.load(TSNE_FILE).astype(np.float32)
+                self._umap_cache = np.load(UMAP_FILE).astype(np.float32)
             else:
                 from sklearn.preprocessing import normalize
                 import umap
@@ -596,10 +596,10 @@ class DictionairePipeline:
                 coords = umap.UMAP(
                     n_components=2, random_state=42, n_neighbors=15, min_dist=0.1,
                 ).fit_transform(normalize(self._embeddings))
-                self._tsne_cache = coords.astype(np.float32)
-                np.save(TSNE_FILE, self._tsne_cache)
+                self._umap_cache = coords.astype(np.float32)
+                np.save(UMAP_FILE, self._umap_cache)
                 print("[Pipeline] UMAP done.")
-        coords = self._tsne_cache
+        coords = self._umap_cache
         labels = CLUSTER_LABELS[lang]
         result = []
         for i, e in enumerate(self._entries):

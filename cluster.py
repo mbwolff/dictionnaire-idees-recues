@@ -17,7 +17,7 @@ ENTRIES_FILE    = Path(__file__).parent / "data" / "dictionnaire_entries.json"
 EMBEDDINGS_FILE = Path(__file__).parent / "data" / "embeddings.npz"
 CLUSTERS_FILE   = Path(__file__).parent / "data" / "clusters.json"
 GAPS_FILE       = Path(__file__).parent / "data" / "gap_candidates.json"
-TSNE_FILE       = Path(__file__).parent / "data" / "tsne_coords.npy"
+UMAP_FILE       = Path(__file__).parent / "data" / "umap_coords.npy"
 REPORTS_DIR     = Path(__file__).parent / "reports"
 
 N_CLUSTERS = 12   # tunable — roughly one per major thematic zone
@@ -258,8 +258,8 @@ def main():
     umap_pipeline = _umap.UMAP(
         n_components=2, random_state=42, n_neighbors=15, min_dist=0.1,
     ).fit_transform(_norm(embeddings))
-    np.save(TSNE_FILE, umap_pipeline.astype(np.float32))
-    print(f"  Saved → {TSNE_FILE}")
+    np.save(UMAP_FILE, umap_pipeline.astype(np.float32))
+    print(f"  Saved → {UMAP_FILE}")
 
 
 if __name__ == "__main__":
