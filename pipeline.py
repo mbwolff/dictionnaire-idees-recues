@@ -369,42 +369,11 @@ class NounValidator:
     # French vowels incl. accented forms
     _VOWEL_RE = re.compile(r"[aeiouyàâæéèêëîïôœùûü]", re.IGNORECASE)
 
-    # Immediate blocklist — the most obvious cases caught before any API call
-    _BLOCKLIST = frozenset({
-        # Excréments & corps vulgaires
-        "MERDE", "CHIASSE", "CHIURE", "CHIER", "CHIOTTE", "CHIOTTES",
-        "CUL", "CULS",
-        # Insultes directes
-        "PUTAIN", "PUTE", "PUTASSE", "SALOPE", "POUFFIASSE", "TRAÎNÉE", "TRAINEE",
-        "CONNARD", "CONNASSE", "CON", "CONNE", "SALOPARD", "SALAUD", "ORDURE",
-        "ENFOIRÉ", "ENFOIRE", "BÂTARD", "BATARD",
-        # Actes sexuels (argot vulgaire)
-        "BAISER", "NIQUER", "NIQUE", "ENCULÉ", "ENCULER", "ENCULE",
-        "BRANLER", "BRANLEUR", "FOUTRE", "FOUTAISE",
-        # Organes sexuels (argot)
-        "BITE", "TEUB", "COUILLE", "COUILLES", "PÉTASSE", "PETASSE",
-        # Anatomie explicite
-        "PÉNIS", "PENIS", "VAGIN", "VULVE",
-        # Injures
-        "PÉDÉ", "PEDE",
-    })
-
-    # Wiktionary category keywords that flag a word as profane
-    _PROFANE_CATS = frozenset({
-        "vulgaire", "grossièreté", "grossiereté", "obscène", "obscene", "juron",
-    })
-
-    _NEUTRAL_REFUSAL = "Ce mot ne peut pas être utilisé comme entrée."
-
     def validate(self, word: str) -> dict:
         word = word.strip()
         if not word:
             return {"valid": False, "pos": "", "lemma": word, "reason": "Empty input."}
-        # Blocklist — fast path, no API needed
         core = re.sub(r"[\s\-']", "", word).upper()
-        if core in self._BLOCKLIST:
-            return {"valid": False, "pos": "", "lemma": word.upper(),
-                    "reason": self._NEUTRAL_REFUSAL, "blocked": True}
         if not self._VOWEL_RE.search(word):
             return {"valid": False, "pos": "", "lemma": word.upper(),
                     "reason": f"'{word}' does not look like a word."}
@@ -878,7 +847,7 @@ class DictionairePipeline:
         validation = self.validator.validate(fr_word)
         if not validation["valid"]:
             reason = validation["reason"]
-            error = reason if validation.get("blocked") else f"'{word}' does not appear to be a noun: {reason}"
+            error = f"'{word}' does not appear to be a noun: {reason}"
             return {"error": error, "validation": validation}
 
         existing = self.get_entry(fr_word, lang)
