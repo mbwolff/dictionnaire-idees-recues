@@ -1060,7 +1060,7 @@ function renderStatsView(data, xdata) {
 <div class="stats-page">
   <div class="stats-headline">
     <div class="stat-big"><span>${data.flaubert_entries}</span><br>${t.statsFlaubert}</div>
-    <div class="stat-big"><span>${data.generated_entries}</span><br>${t.statsGenerated}</div>
+    <div class="stat-big"><span>${sessionEntries.length}</span><br>${t.statsGenerated}</div>
     <div class="stat-big"><span>${data.dual_theme}</span><br>${state.lang === "fr" ? "thèmes ambigus" : "dual-theme"}</div>
     <div class="stat-big"><span>${data.xrefs.entries_with_xrefs}</span><br>${state.lang === "fr" ? "entrées avec renvois" : "entries with xrefs"}</div>
     <div class="stat-big"><span>${data.text_length.avg}</span><br>${state.lang === "fr" ? "car. moy. par entrée" : "avg chars / entry"}</div>
@@ -1086,7 +1086,7 @@ function renderStatsView(data, xdata) {
   const sum = $("stats-nav-summary");
   if (sum) sum.innerHTML = `
 <div class="stats-nav-item"><span>${data.flaubert_entries}</span> ${t.statsFlaubert}</div>
-<div class="stats-nav-item"><span>${data.generated_entries}</span> ${t.statsGenerated}</div>
+<div class="stats-nav-item"><span>${sessionEntries.length}</span> ${t.statsGenerated}</div>
 <div class="stats-nav-item"><span>${data.xrefs.entries_with_xrefs}</span> ${state.lang === "fr" ? "avec renvois" : "with xrefs"}</div>`;
 
   if (xdata) renderXrefNetwork($("xref-svg"), xdata.nodes, xdata.edges);
