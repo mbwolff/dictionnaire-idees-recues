@@ -1253,7 +1253,7 @@ function refreshAll() {
   statsCache = null;
   if (state.currentView === "rhetoric") loadTags();
   if (state.currentView === "stats")    { loadDetailedStats(); }
-  if (state.currentEntry) renderEntryDetail(state.currentEntry);
+  if (state.currentEntry) loadEntry(state.currentEntry.headword, true);
   if (state.searchQuery) doSearch(state.searchQuery);
 }
 
