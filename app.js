@@ -476,7 +476,7 @@ function renderEntryDetail(entry) {
   // Session-entry neighbours by UMAP proximity
   const ex = entry.umap_x, ey = entry.umap_y;
   if (ex != null && ey != null && sessionEntries.length) {
-    const THRESHOLD = 2.0;
+    const THRESHOLD = 1.0;
     sessionEntries
       .filter(s => s.umap_x != null && s.umap_y != null
                 && s.headword !== entry.headword
