@@ -47,7 +47,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Text search | Accent-normalised substring match on headword and entry text across the full corpus (no result cap); session-generated entries included via client-side text match; typeahead dropdown shows accent-normalised prefix matches (corpus + session) as you type; fuzzy suggestions (Levenshtein) appear when text search returns nothing |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings; session-generated entries included via client-side text match (no embeddings available client-side) |
 | Themes | 12 semantic clusters with labels; UMAP map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
-| Rhetoric | 10 rhetorical categories (irony, prescription, tautology, definition, social performative, etc.) detected by `parse.py` at corpus build time; sidebar panel lists categories with entry counts; clicking a category filters the corpus; category chips appear in entry detail and link back to the filtered list |
+| Rhetoric | 10 enunciative categories (general truth, prescriptive imperative, social performance, self-undermining, mythification, circular definition, superlative assertion, danger assertion, nominal assertion, cross-reference) detected by `parse.py` at corpus build time; sidebar panel lists categories with entry counts; clicking a category filters the corpus; category chips appear in entry detail and link back to the filtered list |
 | Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; dots foreground only on click, not hover; tooltip shows cluster, score, and first line of entry text; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "Générées" toggle overlays session-generated entries as gold outlined circles (client-side, no re-fetch); search input locates entries by headword and dims non-matching dots; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
 | Statistics | Bar charts of thematic and rhetorical distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree; session-generated entry count from `sessionEntries` (client-side) |
 | FR/EN toggle | Switches UI language and entry translations throughout; the currently displayed entry is re-fetched in the new language so its translation updates immediately; the welcome-screen Flaubert quote is translated via `data-fr`/`data-en` attributes |
@@ -111,18 +111,18 @@ JALOUSIE (daily life + society).
 
 Each entry is tagged at parse time by `parse.py`'s `EnunciativeTagger`. Ten categories are detected by rule-based pattern matching on verb forms, syntactic structures, and lexical markers:
 
-| Category | Example pattern | Intellectual source |
+| Tag (FR / EN) | Detection | Intellectual source |
 |---|---|---|
-| Irony | praise-phrase + negation; mock-serious imperative | Classical rhetoric; Barthes, *Mythologies* (1957) |
-| Prescription | imperative or normative modal (*il faut*, *on doit*, *toujours*) | Austin's social performatives (*How to Do Things with Words*, 1962) |
-| Tautology | `X, c'est X`; circular definition | Barthes, *Mythologies* — tautology as ideological refuge |
-| Definition | copular structure providing a genus-differentia | Classical rhetoric |
-| Social performative | fixed formula of congratulation, condolence, or obligation | Austin/Searle speech-act theory |
-| Reported speech | embedded quotation with attribution verb | Ducrot, polyphony theory (*Le Dire et le dit*, 1984) |
-| Assertion | plain declarative claim stated as fact | Benveniste/Maingueneau, French enunciative linguistics |
-| Negation | explicit denial (`ne … pas`, `jamais`) as rhetorical move | Ducrot's argumentative polyphony |
-| Comparison | simile or metaphor (`comme`, `tel`) | Classical rhetoric |
-| Enumeration | list structure (two or more items) | Classical rhetoric |
+| Vérité générale / General truth | Impersonal or zero-subject present-tense assertion; *il faut* + infinitive; ROOT adjective with no overt subject | Benveniste, theory of the impersonal utterance; Maingueneau, enunciative linguistics |
+| Impératif prescriptif / Prescriptive imperative | ROOT infinitive verb or conjugated imperative mood | Austin, speech-act theory (*How to Do Things with Words*, 1962) |
+| Performance sociale / Social performance | Prescriptive imperative whose verb names a social behaviour (*rire*, *admirer*, *mépriser*…) | Austin/Searle, social performatives |
+| Auto-contradiction / Self-undermining | Concessive conjunction (*mais*, *cependant*, *pourtant*…) linking two contradictory verbal propositions | Ducrot, polyphony theory (*Le Dire et le dit*, 1984) |
+| Mythification / Mythification | Negation + past participle of an existence verb (*naître*, *vivre*, *exister*…), or negated present of *exister/vivre* | Barthes, *Mythologies* (1957) — myth as the denial of history |
+| Définition circulaire / Circular definition | Headword lemma reappears in the entry body | Classical rhetoric (petitio principii) |
+| Assertion superlative / Superlative assertion | *plus* or *moins* as adverbial modifier of an adjective; morphological superlative | Classical rhetoric |
+| Assertion de danger / Danger assertion | Lemma match against a danger/death lexicon (*dangereux*, *mortel*, *fatal*…) | Barthes, *Mythologies* — naturalization of fear |
+| Assertion nominale / Nominal assertion | Entry has no finite verb; noun or adjective phrase is the syntactic root — Flaubert's most compressed form | Barthes, *Mythologies* — the nominal style as ideological naturalization |
+| Renvoi / Cross-reference | Explicit *(v. X)* link to another entry | Structural/formal |
 
 The categories are not mutually exclusive; an entry may carry several tags. They capture the *enunciative posture* of each entry — the rhetorical stance Flaubert mimics and satirises — rather than its semantic theme (which is handled by the k-means clusters).
 
