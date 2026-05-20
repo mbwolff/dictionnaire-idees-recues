@@ -94,7 +94,10 @@
     "headword": "AFFAIRES (LES)",
     "text": "Passent avant tout. Une femme doit éviter de parler des siennes. Sont dans la vie ce qu'il y a de plus important. Tout est là.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "superlative_assertion",
+      "verite_generale"
+    ],
     "cluster_id": 1,
     "text_en": "Come first. A woman should avoid talking about her own. Are the most important things in life. It's all there.",
     "headword_en": "BUSINESS (THE)"
@@ -333,7 +336,9 @@
     "headword": "ANTIQUITÉ ET TOUT CE QUI S'Y RAPPORTE",
     "text": "Poncif, embêtant.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 10,
     "text_en": "Puncitive, annoying.",
     "headword_en": "ANTIQUE _AND EVERYTHING RELATED TO IT_"
@@ -342,7 +347,9 @@
     "headword": "ANTIQUITÉS (LES)",
     "text": "Sont toujours de fabrication moderne.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 5,
     "text_en": "Are still modernly manufactured.",
     "headword_en": "ANTIQUES (THE)"
@@ -362,7 +369,9 @@
     "headword": "APPARTEMENT DE GARÇON",
     "text": "Toujours en désordre, avec des colifichets de femme traînant ça et là. Odeur de cigarettes. On doit y trouver des choses extraordinaires.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 5,
     "text_en": "Always messy, with women's trinkets lying here and there. Smell of cigarettes. We must find extraordinary things there.",
     "headword_en": "BOY’S APARTMENT"
@@ -580,7 +589,10 @@
     "headword": "BADIGEON DANS LES ÉGLISES",
     "text": "Tonner contre. Cette colère artistique est extrêmement bien portée.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "cluster_id": 7,
     "text_en": "Thunder against. This artistic anger is extremely well carried.",
     "headword_en": "WHITE IN CHURCHES"
@@ -728,7 +740,10 @@
     "headword": "BASES DE LA SOCIÉTÉ",
     "text": "Id est, la propriété, la famille, la religion, le respect des autorités. En parler avec colère si on les attaque.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "cluster_id": 1,
     "text_en": "Id est, property, family, religion, respect for authorities. Talk about it angrily if attacked.",
     "headword_en": "BASICS OF COMPANY"
@@ -986,7 +1001,9 @@
     "headword": "BOUDDHISME",
     "text": "« Fausse religion de l'Inde » (Définition du Dictionnaire Bouillet, 1re édition).",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 3,
     "text_en": "“False religion of India” (Definition from the Bouillet Dictionary, 1st edition).",
     "headword_en": "BUDDHISM"
@@ -995,7 +1012,9 @@
     "headword": "BOUILLI (LE)",
     "text": "C'est sain. Inséparable du mot soupe: la soupe et le bouilli.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition"
+    ],
     "cluster_id": 2,
     "text_en": "It's healthy. Inseparable from the word soup: soup and porridge.",
     "headword_en": "BOILED (THE)"
@@ -1026,7 +1045,9 @@
     "headword": "BOURSE (LA)",
     "text": "Thermomètre de l'opinion publique.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 4,
     "text_en": "Public opinion thermometer.",
     "headword_en": "STOCK EXCHANGE (THE)"
@@ -1690,7 +1711,9 @@
     "headword": "CLOCHER DE VILLAGE",
     "text": "Fait battre le coeur.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 8,
     "text_en": "Makes the heart beat.",
     "headword_en": "VILLAGE BELL TOWER"
@@ -1808,7 +1831,11 @@
     "headword": "COLLEGE",
     "text": "Plus noble qu'une pension.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion",
+      "superlative_assertion",
+      "verite_generale"
+    ],
     "cluster_id": 11,
     "text_en": "Nobler than a pension.",
     "headword_en": "COLLEGE"
@@ -1817,7 +1844,9 @@
     "headword": "COLONIES (NOS)",
     "text": "S'attrister quand on en parle.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 10,
     "text_en": "Get sad when we talk about it.",
     "headword_en": "COLONIES (OUR)"
@@ -2055,7 +2084,9 @@
     "headword": "COR AUX PIEDS",
     "text": "Indique le changement de temps mieux qu'un baromètre. Très dangereux quand il est mal coupé: citer des exemples d'accidents terribles.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "danger_assertion"
+    ],
     "cluster_id": 2,
     "text_en": "Indicates the change in weather better than a barometer. Very dangerous when cut incorrectly: cite examples of terrible accidents.",
     "headword_en": "HORN ON FEET"
@@ -2439,7 +2470,9 @@
     "headword": "DÉCOR DE THÉÂTRE",
     "text": "N'est pas de la peinture: il suffit de jeter en vrac sur la toile un seau de couleurs; puis on l'étend avec un balai; et l'éloignement avec la lumière fait l'illusion.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 6,
     "text_en": "Is not paint: just throw a bucket of colors loose on the canvas; then we spread it with a broom; and the distance from the light creates the illusion.",
     "headword_en": "THEATER DECOR"
@@ -2448,7 +2481,9 @@
     "headword": "DÉCORATION DE LA LÉGION D'HONNEUR",
     "text": "La blaguer mais la convoiter. Quand on l'obtient, toujours dire qu'on ne l'a pas demandée.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 10,
     "text_en": "Joke her but covet her. When you get it, always say you didn't ask for it.",
     "headword_en": "DECORATION OF THE LEGION OF HONOR"
@@ -2500,7 +2535,9 @@
     "headword": "DÉJEUNER DES GARÇONS",
     "text": "Exige des huîtres, du vin blanc et des gaudrioles.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 11,
     "text_en": "Calls for oysters, white wine and gaudrioles.",
     "headword_en": "BOYS’ LUNCH"
@@ -2629,7 +2666,9 @@
     "headword": "DESSIN (L'ART DU)",
     "text": "Se compose de trois choses: le ligne, le grain, et le grainé fin; de plus, le trait de force. Mais le trait de force, il n'y a que le maître seul qui le donne. (Christophe.)",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 2,
     "text_en": "Consists of three things: line, grain, and fine grain; and also the bold stroke. But the bold stroke — only the master can achieve it. (Christophe.)",
     "headword_en": "Drawing (the Art of)"
@@ -2693,7 +2732,9 @@
     "headword": "DICTIONNAIRE DE RIMES",
     "text": "S’en servir ? Honteux !",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 3,
     "text_en": "To use one? Shameful!",
     "headword_en": "RHYMING DICTIONARY"
@@ -2789,7 +2830,9 @@
     "headword": "DIRECTOIRE (LE)",
     "text": "Les hontes du Directoire. « Dans ce temps-là l'honneur s'était réfugié aux armées. » Les femmes, à Paris, se promenaient toutes nues.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 6,
     "text_en": "The shames of the Directory. “At that time, honor took refuge in the armies.\" Women in Paris walked around naked.",
     "headword_en": "DIRECTORY (THE)"
@@ -2831,7 +2874,11 @@
     "headword": "DIX (CONSEIL DES)",
     "text": "On ne sait pas ce que c'est, mais c'est formidable! Délibérait masqué. En trembler encore.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "self_undermining",
+      "verite_generale"
+    ],
     "cluster_id": 4,
     "text_en": "We don't know what it is, but it's great! Deliberated masked. Shaking again.",
     "headword_en": "TEN (COUNCIL OF)"
@@ -2956,7 +3003,9 @@
     "headword": "DOMPTEURS DE BÊTES FÉROCES",
     "text": "Emploient des pratiques obscènes.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 0,
     "text_en": "Employ obscene practices.",
     "headword_en": "TAMERS OF FEROCIOUS BEASTS"
@@ -3067,7 +3116,9 @@
     "headword": "DROIT (LE)",
     "text": "On ne sait pas ce que c'est.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 3,
     "text_en": "We don't know what it is.",
     "headword_en": "RIGHT (THE)"
@@ -3182,7 +3233,10 @@
     "headword": "ÉCHECS (JEU DES)",
     "text": "Image de la tactique militaire. Tous les grands capitaines y étaient forts. Trop sérieux pour un jeu, trop futile pour une science.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "verite_generale"
+    ],
     "cluster_id": 6,
     "text_en": "Image of military tactics. All the great captains were strong there. Too serious for a game, too futile for a science.",
     "headword_en": "CHESS (GAME)"
@@ -3497,7 +3551,9 @@
     "headword": "ÉPACTE",
     "text": "Sur les calendriers, on ne sait pas ce que c'est.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 3,
     "text_en": "On the calendars, we don't know what it is.",
     "headword_en": "EPACT"
@@ -3506,7 +3562,9 @@
     "headword": "ÉPARGNE (CAISSE D')",
     "text": "Occasion de vol pour les domestiques.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 5,
     "text_en": "Theft opportunity for servants.",
     "headword_en": "SAVINGS (CASH)"
@@ -3515,7 +3573,9 @@
     "headword": "NOMBRE D'OR",
     "text": "Sur les calendriers, on ne sait pas ce que c'est.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 3,
     "text_en": "On the calendars, we don't know what it is.",
     "headword_en": "GOLDEN NUMBER"
@@ -3524,7 +3584,9 @@
     "headword": "LETTRE DOMINICALE",
     "text": "Sur les calendriers, on ne sait pas ce que c'est.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 3,
     "text_en": "On the calendars, we don't know what it is.",
     "headword_en": "SUNDAY LETTER"
@@ -3581,7 +3643,11 @@
     "headword": "ÉPOQUE (LA NÔTRE)",
     "text": "Tonner contre elle. Se plaindre de ce qu'elle n'est pas poétique. L'appeler époque de transition, de décadence.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "cluster_id": 6,
     "text_en": "Thunder at her. Complaining that it's not poetic. Call it a time of transition, of decadence.",
     "headword_en": "TIME (OURS)"
@@ -4184,7 +4250,11 @@
     "headword": "FERME (SUBST.)",
     "text": "Lorsqu'on visite une ferme, on ne doit y manger que du pain bis et ne boire que du lait. Si on ajoute des oeufs, s'écrier: « Dieu! comme ils sont frais! Il n'y a pas de danger pour qu'on en trouve de comme ça à la ville. »",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "prescriptive_imperative",
+      "verite_generale"
+    ],
     "cluster_id": 2,
     "text_en": "When visiting a farm, one must eat nothing but brown bread and drink nothing but milk. If eggs are added, exclaim: 'Good God, how fresh they are! You'd never find the like in town.'",
     "headword_en": "FARM (NOUN)"
@@ -4215,7 +4285,10 @@
     "headword": "FEU (SUBST.)",
     "text": "Purifie tout. Quand on entend crier « au feu! » on doit commencer par perdre la tête.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "verite_generale"
+    ],
     "cluster_id": 2,
     "text_en": "Purifies everything. When you hear someone cry 'Fire!', the first thing to do is lose your head.",
     "headword_en": "FIRE (NOUN)"
@@ -4235,7 +4308,9 @@
     "headword": "FEU (ADJ.)",
     "text": "Feu mon père, et on soulève son chapeau.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition"
+    ],
     "cluster_id": 2,
     "text_en": "My late father — and one raises one's hat.",
     "headword_en": "LATE (ADJ.)"
@@ -4479,7 +4554,11 @@
     "headword": "FOUDRES DU VATICAN",
     "text": "En rire.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion",
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "cluster_id": 10,
     "text_en": "Laugh about it.",
     "headword_en": "VATICAN LIGHTNING"
@@ -4627,7 +4706,9 @@
     "headword": "FRISER",
     "text": "Ne convient pas à un homme.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 7,
     "text_en": "Not suitable for a man.",
     "headword_en": "CURL"
@@ -4636,7 +4717,9 @@
     "headword": "FRISURE",
     "text": "Ne convient pas à un homme.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 7,
     "text_en": "Not suitable for a man.",
     "headword_en": "CRIMP"
@@ -4783,7 +4866,9 @@
     "headword": "FUSION DES BRANCHES ROYALES",
     "text": "L'espérer toujours.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 1,
     "text_en": "Always hope so.",
     "headword_en": "MERGER OF THE ROYAL BRANCHES"
@@ -4890,7 +4975,10 @@
     "headword": "GARDE-COTE",
     "text": "Ne jamais employer cette expression au pluriel en parlant des seins d'une femme.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "headword_en": "COASTGUARD",
     "text_en": "Never use this word in the plural when speaking of a woman's breasts.",
     "cluster_id": 2
@@ -4899,7 +4987,9 @@
     "headword": "GARES DE CHEMIN DE FER",
     "text": "S'extasier devant elles et les donner comme modèles d'architecture.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "headword_en": "RAILWAY STATIONS",
     "text_en": "Go into raptures over them and hold them up as models of architecture.",
     "cluster_id": 8
@@ -4978,7 +5068,9 @@
     "headword": "GÉNIE (LE)",
     "text": "Inutile de l'admirer, c'est une « névrose » .",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 0,
     "text_en": "No need to admire it, it’s a “neurosis”.",
     "headword_en": "GENIUS (THE)"
@@ -5118,7 +5210,10 @@
     "headword": "GLÈBE (LA)",
     "text": "S'apitoyer sur la glèbe.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "prescriptive_imperative"
+    ],
     "cluster_id": 10,
     "text_en": "Feel sorry for the soil.",
     "headword_en": "GLÈBE (THE)"
@@ -5161,7 +5256,9 @@
     "headword": "GOBELINS (TAPISSERIE DES)",
     "text": "Est une oeuvre inouïe et qui demande cinquante ans à finir. S'écrier devant: « C'est plus beau que la peinture! » L'ouvrier en sait pas ce qu'il fait.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 11,
     "text_en": "Is an incredible work that takes fifty years to finish. Exclaiming in front of you: “It’s more beautiful than painting!”\" The worker doesn't know what he's doing.",
     "headword_en": "GOBELINS (TAPESTRY OF)"
@@ -5386,7 +5483,9 @@
     "headword": "GYMNASE (LE)",
     "text": "Succursale de la Comédie-Française.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 6,
     "text_en": "Branch of the Comédie-Française.",
     "headword_en": "GYMNASIUM (THE)"
@@ -5620,7 +5719,11 @@
     "headword": "HENRI III",
     "text": "A propos de ces deux rois ne pas manquer de dire: « Tous les Henri ont été malheureux. »",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "mythification",
+      "verite_generale"
+    ],
     "cluster_id": 9,
     "text_en": "About these two kings do not fail to say: All Henrys were unhappy. \"",
     "headword_en": "HENRY III"
@@ -5629,7 +5732,11 @@
     "headword": "HENRI IV",
     "text": "A propos de ces deux rois ne pas manquer de dire: « Tous les Henri ont été malheureux. »",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "mythification",
+      "verite_generale"
+    ],
     "cluster_id": 9,
     "text_en": "About these two kings do not fail to say: All Henrys were unhappy. \"",
     "headword_en": "HENRY IV"
@@ -5787,7 +5894,10 @@
     "headword": "HOBEREAUX DE CAMPAGNE",
     "text": "Avoir pour eux le plus souverain mépris.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "superlative_assertion"
+    ],
     "cluster_id": 1,
     "text_en": "Have the most sovereign contempt for them.",
     "headword_en": "COUNTRY HOLES"
@@ -5992,7 +6102,9 @@
     "headword": "HYDRE DE L'ANARCHIE",
     "text": "Tâcher de la vaincre.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 0,
     "text_en": "Try to defeat it.",
     "headword_en": "HYDRA OF ANARCHY"
@@ -6210,7 +6322,10 @@
     "headword": "IMPERMÉABLE (UN)",
     "text": "Très avantageux comme vêtement. Très nuisible à cause de la transpiration empêchée.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion",
+      "verite_generale"
+    ],
     "cluster_id": 0,
     "text_en": "Very advantageous as clothing. Very harmful because of prevented perspiration.",
     "headword_en": "WATERPROOF (ONE)"
@@ -6432,7 +6547,9 @@
     "headword": "INNÉES (IDÉES)",
     "text": "Les blaguer.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 10,
     "text_en": "Joke them.",
     "headword_en": "INNATURAL (IDEAS)"
@@ -6514,7 +6631,9 @@
     "headword": "INSTITUT (L')",
     "text": "Les membres de l'Institut sont tous des vieillards et portent des abat-jour en taffetas vert.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition"
+    ],
     "cluster_id": 9,
     "text_en": "The members of the Institute are all old men and wear green taffeta lampshades.",
     "headword_en": "INSTITUTE (THE)"
@@ -6677,7 +6796,10 @@
     "headword": "JAMBAGE (DROIT DE)",
     "text": "Ne pas y croire.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "cluster_id": 1,
     "text_en": "Don't believe it.",
     "headword_en": "JAMB (RIGHT OF)"
@@ -6731,7 +6853,10 @@
     "headword": "JARNAC (COUP DE)",
     "text": "S'indigner contre ce coup, qui, du reste était fort loyal.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "prescriptive_imperative"
+    ],
     "cluster_id": 7,
     "text_en": "To be indignant at this blow, which, moreover, was very fair.",
     "headword_en": "JARNAC (SHOT)"
@@ -6847,7 +6972,10 @@
     "headword": "JOCKEY-CLUB",
     "text": "Ses membres sont tous des jeunes gens farceurs et très riches. Dire simplement « le Jockey » : très chic, donne à croire qu'on en fait partie.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "prescriptive_imperative"
+    ],
     "headword_en": "JOCKEY CLUB",
     "text_en": "Its members are all young pranksters and very wealthy. Say simply 'the Jockey': very chic, suggests you belong to it.",
     "cluster_id": 5
@@ -7088,7 +7216,9 @@
     "headword": "LACUSTRES (LES VILLES)",
     "text": "Nier leur existence, parce qu'on ne peut pas vivre sous l'eau.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "mythification"
+    ],
     "cluster_id": 11,
     "text_en": "Deny their existence, because we cannot live underwater.",
     "headword_en": "LACUSTRES (THE CITIES)"
@@ -7580,7 +7710,9 @@
     "headword": "MAIRE DE VILLAGE",
     "text": "Toujours ridicule. Se croit insulté quand on l'appelle échevin.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 2,
     "text_en": "Still ridiculous. Thinks he is insulted when he is called alderman.",
     "headword_en": "VILLAGE MAYOR"
@@ -7930,7 +8062,9 @@
     "headword": "MÉRIDIONAUX (LES)",
     "text": "Tous poètes.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 9,
     "text_en": "All poets.",
     "headword_en": "SOUTHERN (THE)"
@@ -8014,7 +8148,11 @@
     "headword": "MIDI (CUISINE DU)",
     "text": "Toujours à l'ail. Tonner contre.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion",
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "headword_en": "SOUTHERN COOKING",
     "text_en": "Always with garlic. Inveigh against it.",
     "cluster_id": 11
@@ -8274,7 +8412,9 @@
     "headword": "NACELLE",
     "text": "Tout batelet qui porte une femme. « Viens dans ma nacelle! »",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition"
+    ],
     "cluster_id": 5,
     "text_en": "Any boat that carries a woman. “Come into my pod!”\"",
     "headword_en": "NACELLE"
@@ -8588,7 +8728,9 @@
     "headword": "ODEUR DES PIEDS",
     "text": "Signe de santé.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 8,
     "text_en": "Health sign.",
     "headword_en": "FEET ODOR"
@@ -8652,7 +8794,9 @@
     "headword": "OPÉRA (COULISSES DE L')",
     "text": "Paradis de Mahomet sur la terre.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 5,
     "text_en": "Mohammed's paradise on earth.",
     "headword_en": "OPERA (BEHIND THE SCENES)"
@@ -8692,7 +8836,9 @@
     "headword": "ORCHITE",
     "text": "Maladie de Monsieur.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 0,
     "text_en": "Sir's illness.",
     "headword_en": "ORCHITIS"
@@ -8957,7 +9103,9 @@
     "headword": "PAYSAGES DE PEINTRES",
     "text": "Toujours des plats d'épinards.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 9,
     "text_en": "Always spinach dishes.",
     "headword_en": "PAINTER LANDSCAPES"
@@ -9077,7 +9225,10 @@
     "headword": "PHILIPPE D'ORLÉANS-ÉGALITÉ",
     "text": "Tonner contre. Encore une des causes de la Révolution. A commis tous les crimes de cette époque néfaste.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
     "cluster_id": 7,
     "text_en": "TIE: Thunder vs. Another of the causes of the Revolution. Committed all the crimes of this evil era.",
     "headword_en": "PHILIPPE D’ORLEANS"
@@ -9199,7 +9350,9 @@
     "headword": "POÉSIE (LA)",
     "text": "Est tout à fait inutile: passée de mode.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 0,
     "text_en": "Is completely useless: out of fashion.",
     "headword_en": "POETRY (THE)"
@@ -9606,7 +9759,10 @@
     "headword": "RELIGION (LA)",
     "text": "Fait partie des bases de la société. Est nécessaire pour le peuple, cependant pas trop n'en faut. « La religion de nos pères » , doit se dire avec onction.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "circular_definition",
+      "verite_generale"
+    ],
     "cluster_id": 11,
     "text_en": "Part of the foundations of society. Is necessary for the people, however not too much is needed. “The religion of our fathers” must be said with anointing.",
     "headword_en": "RELIGION (THE)"
@@ -9860,7 +10016,9 @@
     "headword": "SAINTE-HÉLÈNE",
     "text": "Ile connue par son rocher.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "headword_en": "SAINT HELENA",
     "text_en": "Island known for its rock.",
     "cluster_id": 4
@@ -9907,7 +10065,9 @@
     "headword": "SAPHIQUE ET ADONIQUE (VERS)",
     "text": "Produit un excellent effet dans un article de littérature.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 6,
     "text_en": "Produces an excellent effect in a literature article.",
     "headword_en": "SAPHIC AND ADONIC (VERSE)"
@@ -10058,7 +10218,9 @@
     "headword": "SOMBREUIL (MLLE DE)",
     "text": "Rappeler le verre de sang.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 8,
     "text_en": "Recall the glass of blood.",
     "headword_en": "SOMBREUIL (MISS OF)"
@@ -10220,7 +10382,9 @@
     "headword": "TALLEYRAND (PRINCE DE)",
     "text": "S'indigner contre.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "prescriptive_imperative"
+    ],
     "cluster_id": 10,
     "text_en": "To be indignant against.",
     "headword_en": "TALLEYRAND (PRINCE OF)"
@@ -10311,7 +10475,10 @@
     "headword": "TOILETTE (DES DAMES)",
     "text": "Trouble l'imagination.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion",
+      "verite_generale"
+    ],
     "cluster_id": 6,
     "text_en": "Disturbs the imagination.",
     "headword_en": "TOILET (LADIES)"
@@ -10320,7 +10487,9 @@
     "headword": "TOLÉRANCE (MAISON DE)",
     "text": "N'est pas celle où l'on a des opinions tolérantes.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "verite_generale"
+    ],
     "cluster_id": 10,
     "text_en": "Is not the one where we have tolerant opinions.",
     "headword_en": "TOLERANCE (HOUSE OF)"
@@ -10341,7 +10510,9 @@
     "headword": "TRANSPIRATION DES PIEDS",
     "text": "Signe de santé.",
     "xrefs": [],
-    "tags": [],
+    "tags": [
+      "nominal_assertion"
+    ],
     "cluster_id": 8,
     "text_en": "Health sign.",
     "headword_en": "FEET SWEATING"
