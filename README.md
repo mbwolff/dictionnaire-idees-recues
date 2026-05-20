@@ -48,24 +48,22 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings; session-generated entries included via client-side text match (no embeddings available client-side) |
 | Themes | 12 semantic clusters with labels; UMAP map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
 | Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; dots foreground only on click, not hover; tooltip shows cluster, score, and first line of entry text; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "Générées" toggle overlays session-generated entries as gold outlined circles (client-side, no re-fetch); search input locates entries by headword and dims non-matching dots; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
-| Rhetoric | Browse entries by Herschberg-Pierrot enunciative category |
-| Statistics | Bar charts for rhetorical-tag and thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree; welcome-screen stat row shows session-generated entry count from `sessionEntries` (client-side) |
+| Statistics | Bar chart of thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree; session-generated entry count from `sessionEntries` (client-side) |
 | FR/EN toggle | Switches UI language and entry translations throughout; the currently displayed entry is re-fetched in the new language so its translation updates immediately; the welcome-screen Flaubert quote is translated via `data-fr`/`data-en` attributes |
 | Light/dark mode | Follows system preference; toggle in header |
-| Entry detail | French text, English translation, clickable rhetorical tags (navigate to rhetoric view); cross-references, six nearest neighbours (corpus entries by embedding cosine similarity; session-generated entries by UMAP 2D proximity); primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
+| Entry detail | French text, English translation, cross-references, six nearest neighbours (corpus entries by embedding cosine similarity; session-generated entries by UMAP 2D proximity); primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
 | Add entry | Propose any word or phrase → generate in Flaubert's style; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
 | Duplicate detection | Checks against both French headwords and stored English headwords (corpus + session entries) to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
 | No-results hint | Empty text-search results offer a one-click switch to semantic mode and fuzzy-matched headword suggestions |
-| URL routing | `#entry/HEADWORD`, `#themes`, `#stats`, `#rhetoric` — browser back/forward works; links are shareable |
+| URL routing | `#entry/HEADWORD`, `#themes`, `#stats` — browser back/forward works; links are shareable |
 | Home button | Clicking the title returns to the welcome state and clears the search |
 | Mobile layout | Sidebar opens as a slide-in drawer via hamburger button; backdrop closes it |
 
 ## Pipeline
 
 ```
-parse.py      Fetch text from Project Gutenberg · extract entries · tag with
-              Herschberg-Pierrot's enunciative categories (spaCy morphology)
+parse.py      Fetch text from Project Gutenberg · extract entries
 embed.py      Encode entries with dangvantuan/sentence-camembert-base
 cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
               pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/umap_coords.npy ·
@@ -78,9 +76,9 @@ app.py        Flask routes (+ /api/random, /api/stats/detailed, /api/xrefs)
 ## Architecture
 
 ```
-app.py          Flask routes (search, entry detail, generate, tags, clusters, UMAP)
+app.py          Flask routes (search, entry detail, generate, clusters, UMAP)
 pipeline.py     DictionairePipeline: search, validation, translation, generation
-parse.py        One-off: fetch, parse, and enunciatively tag all entries
+parse.py        One-off: fetch and parse all entries
 embed.py        One-off: generate sentence embeddings
 cluster.py      One-off: cluster, label, and translate entries
 index.html      Single-page app shell
@@ -134,21 +132,6 @@ source. Artifacts fixed in `parse.py` (and patched directly in the JSON):
 - **Merged sub-entry** — DICTIONNAIRE DE RIMES was embedded in the body of DICTIONNAIRE instead of being its own entry; restored as entry 245
 
 Guards added to `parse.py` prevent recurrence on a fresh parse.
-
-## Enunciative categories (Herschberg-Pierrot)
-
-| Tag | Label |
-|---|---|
-| `verite_generale` | Vérité générale |
-| `nominal_assertion` | Assertion nominale |
-| `prescriptive_imperative` | Impératif prescriptif |
-| `circular_definition` | Définition circulaire |
-| `social_performance` | Performance sociale |
-| `superlative_assertion` | Assertion superlative |
-| `danger_assertion` | Assertion de danger |
-| `self_undermining` | Auto-contradiction |
-| `mythification` | Mythification |
-| `cross_reference` | Renvoi |
 
 ## Translation
 
