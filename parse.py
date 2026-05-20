@@ -1,7 +1,12 @@
 """
 parse.py — Fetch and parse the Dictionnaire des idées reçues from Project
-Gutenberg, then tag each entry with Herschberg-Pierrot's enunciative
-categories using spaCy morphological and dependency analysis.
+Gutenberg, then tag each entry with rhetorical and enunciative categories
+using spaCy morphological and dependency analysis.
+
+The categories draw on speech act theory (Austin, Searle), French enunciative
+linguistics (Benveniste, Maingueneau), Ducrot's theory of polyphony and
+concession, Barthes' analysis of myth, and direct structural observation of
+Flaubert's entries.
 
 Requirements:
     pip install spacy
@@ -23,7 +28,7 @@ OUTPUT_FILE   = Path(__file__).parent / "data" / "dictionnaire_entries.json"
 
 # ── Social-performance verbs ──────────────────────────────────────────────────
 # Infinitives that, as ROOT of an entry, instruct how to *behave toward*
-# the headword concept — Herschberg-Pierrot's "impératif social".
+# the headword concept (Austin's social performatives).
 SOCIAL_PERFORMANCE_VERBS = {
     "rire", "tonner", "mépriser", "admirer", "s'extasier", "affecter",
     "railler", "vanter", "déplorer", "éviter", "consulter", "parler",
@@ -54,7 +59,10 @@ DANGER_LEXICON = {
 
 class EnunciativeTagger:
     """
-    Tags DIR entries with Herschberg-Pierrot's enunciative categories.
+    Tags DIR entries with rhetorical and enunciative categories drawn from
+    speech act theory (Austin, Searle), French enunciative linguistics
+    (Benveniste, Maingueneau), Ducrot's polyphony, Barthes' analysis of myth,
+    and direct structural observation of the text.
 
     Tags (not mutually exclusive):
 

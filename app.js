@@ -122,6 +122,7 @@ const el = {
   umapTooltip:    $("umap-tooltip"),
   umapSearch:       $("umap-search"),
   umapGeneratedBtn: $("umap-generated-btn"),
+  tagList:          $("tag-list"),
   statsView:        $("stats-view"),
   statsContent:     $("stats-content"),
   copyEntryBtn:     $("copy-entry-btn"),
@@ -446,6 +447,18 @@ function renderEntryDetail(entry) {
     enEl.style.display = "none";
   }
 
+  // Tags — clickable, navigate to rhetoric view filtered by tag
+  const tagsEl = $("detail-tags");
+  tagsEl.innerHTML = (entry.tag_labels || [])
+    .map((lbl, i) => `<span class="entry-tag" data-tag="${(entry.tags || [])[i]}" data-label="${lbl}">${lbl}</span>`)
+    .join("");
+  tagsEl.querySelectorAll(".entry-tag").forEach(span => {
+    span.addEventListener("click", () => {
+      switchView("rhetoric");
+      filterByTag(span.dataset.tag, span.dataset.label);
+    });
+  });
+
   // Cross-references
   const xrefsWrap = $("detail-xrefs-wrap");
   const xrefsEl = $("detail-xrefs");
@@ -529,6 +542,7 @@ function renderClusters() {
         <span class="cluster-label">${c.label}</span>
         <span class="cluster-count">${c.count}</span>
       </div>
+      <div class="cluster-tags">${(c.top_tags || []).map(t => `<span class="cluster-tag">${t}</span>`).join("")}</div>
       <div class="cluster-samples">${(c.sample_headwords || []).join(" · ")}</div>
     </div>`).join("");
 }
@@ -638,6 +652,53 @@ function loadGeneratedList() {
     row.appendChild(del);
     el.generatedList.appendChild(row);
   });
+}
+
+/* ── Rhetorical tags ───────────────────────────────────────────────── */
+async function loadTags() {
+  try {
+    const tags = await api(`/api/tags?lang=${state.lang}`);
+    renderTags(tags);
+  } catch (e) { el.tagList.innerHTML = `<p class="empty-state">Error.</p>`; }
+}
+
+function renderTags(tags) {
+  el.tagList.innerHTML = tags.map((t, i) => `
+    <div class="tag-item" data-idx="${i}">
+      <span class="tag-label">${t.label}</span>
+      <span class="tag-count">${t.count}</span>
+    </div>`).join("");
+  el.tagList.querySelectorAll(".tag-item").forEach((item, i) => {
+    item.addEventListener("click", () => filterByTag(tags[i].tag, tags[i].label));
+  });
+}
+
+function filterByTag(tag, label) {
+  el.searchInput.value = "";
+  state.searchQuery = "";
+  const url = `/api/search?mode=tag&tag=${encodeURIComponent(tag)}&lang=${state.lang}&limit=1000`;
+  api(url).then(data => {
+    showView("results");
+    $("results-title").textContent = label;
+    $("results-count").textContent = `${data.total} ${state.lang === "fr" ? "entrées" : "entries"}`;
+    const list = $("results-list");
+    list.innerHTML = data.results.map((entry, i) => {
+      const hw = entry.headword;
+      const text = entry.text_translated || entry.text || "";
+      const preview = text.length > 120 ? text.slice(0, 120) + "…" : text;
+      return `
+        <div class="result-card" data-idx="${i}">
+          <div class="result-headword">${hw}</div>
+          <div class="result-text">${preview}</div>
+          <div class="result-meta">
+            <span class="cluster-badge">${entry.cluster_label || ""}</span>
+          </div>
+        </div>`;
+    }).join("");
+    list.querySelectorAll(".result-card").forEach((card, i) => {
+      card.addEventListener("click", () => loadEntry(data.results[i].headword));
+    });
+  }).catch(err => console.error(err));
 }
 
 /* ── UMAP ─────────────────────────────────────────────────────────── */
@@ -1026,8 +1087,11 @@ function barChart(items, colorFn, labelKey = "label", valueKey = "count") {
   return `<svg width="${LABEL_W + BAR_MAX + 40}" height="${h}" overflow="visible">${rows}</svg>`;
 }
 
+const TAG_COLORS = ["#8b3a1a","#b8860b","#2e7d32","#1565c0","#6a1b9a","#c0392b","#00695c","#1a5276","#7b241c","#4a7c59","#0d47a1"];
+
 function renderStatsView(data, xdata) {
   const t = i18n[state.lang];
+  const tagSvg = barChart(data.tags, (_, i) => TAG_COLORS[i % TAG_COLORS.length]);
   const clsSvg = barChart(data.clusters, (d) => CLUSTER_PALETTE[d.cluster_id % CLUSTER_PALETTE.length]);
 
   el.statsContent.innerHTML = `
@@ -1040,6 +1104,10 @@ function renderStatsView(data, xdata) {
     <div class="stat-big"><span>${data.text_length.avg}</span><br>${state.lang === "fr" ? "car. moy. par entrée" : "avg chars / entry"}</div>
   </div>
   <div class="stats-charts">
+    <div class="chart-block">
+      <h3 class="chart-title">${state.lang === "fr" ? "Catégories rhétoriques" : "Rhetorical categories"}</h3>
+      ${tagSvg}
+    </div>
     <div class="chart-block">
       <h3 class="chart-title">${state.lang === "fr" ? "Répartition thématique" : "Thematic distribution"}</h3>
       ${clsSvg}
@@ -1221,6 +1289,7 @@ function refreshAll() {
   loadStats();
   loadGeneratedList();
   statsCache = null;
+  if (state.currentView === "rhetoric") loadTags();
   if (state.currentView === "stats")    { loadDetailedStats(); }
   if (state.currentEntry) loadEntry(state.currentEntry.headword, true);
   if (state.searchQuery) doSearch(state.searchQuery);
@@ -1331,6 +1400,7 @@ document.querySelectorAll(".nav-item").forEach(btn => {
     switchView(view);
     if (view === "add")      { loadGeneratedList(); history.pushState({ type: "view", view }, "", "#add"); }
     if (view === "clusters") { showView("umap"); loadUmap(); history.pushState({ type: "view", view }, "", "#themes"); }
+    if (view === "rhetoric") { loadTags(); history.pushState({ type: "view", view }, "", "#rhetoric"); }
     if (view === "stats")    { showView("stats"); loadDetailedStats(); history.pushState({ type: "view", view }, "", "#stats"); }
     if (view === "browse")   { history.pushState({ type: "view", view }, "", "#"); }
   });
@@ -1434,6 +1504,7 @@ window.addEventListener("popstate", e => {
     switchView(v);
     if (v === "clusters") { showView("umap"); loadUmap(); }
     else if (v === "stats") { showView("stats"); loadDetailedStats(); }
+    else if (v === "rhetoric") loadTags();
     else if (v === "add") loadGeneratedList();
   }
 });
@@ -1447,6 +1518,8 @@ function handleInitialHash() {
     switchView("clusters"); showView("umap"); loadUmap();
   } else if (hash === "stats") {
     switchView("stats"); showView("stats"); loadDetailedStats();
+  } else if (hash === "rhetoric") {
+    switchView("rhetoric"); loadTags();
   }
 }
 
