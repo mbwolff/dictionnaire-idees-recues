@@ -44,11 +44,6 @@ def search():
         results = pipeline.cluster_search(cluster_id, limit, lang)
         return jsonify({"results": results, "total": len(results)})
 
-    if mode == "tag":
-        tag = request.args.get("tag", "")
-        results = pipeline.tag_search(tag, limit, lang)
-        return jsonify({"results": results, "total": len(results)})
-
     if not q:
         page  = int(request.args.get("page", 1))
         start = (page - 1) * limit
@@ -89,11 +84,6 @@ def generate():
     return jsonify(result)
 
 
-
-@app.route("/api/tags")
-def tags():
-    lang = request.args.get("lang", "fr")
-    return jsonify(pipeline.tag_summary(lang))
 
 
 @app.route("/api/umap")

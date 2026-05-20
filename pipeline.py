@@ -54,32 +54,6 @@ CLUSTER_LABELS = {
     ],
 }
 
-RHETORICAL_TAG_LABELS = {
-    "fr": {
-        "verite_generale":        "Vérité générale",
-        "nominal_assertion":      "Assertion nominale",
-        "prescriptive_imperative":"Impératif prescriptif",
-        "circular_definition":    "Définition circulaire",
-        "social_performance":     "Performance sociale",
-        "superlative_assertion":  "Assertion superlative",
-        "danger_assertion":       "Assertion de danger",
-        "self_undermining":       "Auto-contradiction",
-        "mythification":          "Mythification",
-        "cross_reference":        "Renvoi",
-    },
-    "en": {
-        "verite_generale":        "General truth",
-        "nominal_assertion":      "Nominal assertion",
-        "prescriptive_imperative":"Prescriptive imperative",
-        "circular_definition":    "Circular definition",
-        "social_performance":     "Social performance",
-        "superlative_assertion":  "Superlative assertion",
-        "danger_assertion":       "Danger assertion",
-        "self_undermining":       "Self-undermining",
-        "mythification":          "Mythification",
-        "cross_reference":        "Cross-reference",
-    },
-}
 
 # ── Shared prompt components ──────────────────────────────────────────────────
 
@@ -495,7 +469,6 @@ class DictionairePipeline:
         result = {
             "headword":               hw,
             "text":                   text,
-            "tags":                   entry.get("tags", []),
             "xrefs":                  entry.get("xrefs", []),
             "cluster_id":             cid,
             "cluster_label":          (
@@ -521,11 +494,9 @@ class DictionairePipeline:
             tr = re.sub(r'\s*»', '”', tr)   # » → "
             result["text_translated"] = tr
             result["headword_translated"] = entry.get("headword_en") or self.translator.to_english(hw)
-            result["tag_labels"] = [RHETORICAL_TAG_LABELS["en"].get(t, t) for t in entry.get("tags", [])]
         else:
             result["text_translated"]     = text
             result["headword_translated"] = hw
-            result["tag_labels"] = [RHETORICAL_TAG_LABELS["fr"].get(t, t) for t in entry.get("tags", [])]
         return result
 
     def total_entries(self) -> int:
@@ -615,10 +586,6 @@ class DictionairePipeline:
     def detailed_stats(self, lang: str) -> dict:
         from collections import Counter
         entries = self._entries
-        tag_counts = Counter(tag for e in entries for tag in e.get("tags", []))
-        tag_labels_map = RHETORICAL_TAG_LABELS[lang]
-        tags = [{"tag": t, "label": tag_labels_map.get(t, t), "count": c}
-                for t, c in sorted(tag_counts.items(), key=lambda x: -x[1])]
         cluster_counts = Counter(
             e.get("cluster_id") for e in entries
             if isinstance(e.get("cluster_id"), int) and e.get("cluster_id", -1) >= 0
@@ -641,7 +608,6 @@ class DictionairePipeline:
             "flaubert_entries":  len(entries),
             "generated_entries": 0,
             "dual_theme":        dual,
-            "tags":              tags,
             "clusters":          clusters,
             "text_length":       {
                 "avg":    avg_len,
@@ -685,25 +651,6 @@ class DictionairePipeline:
     def all_entries(self, start: int, limit: int, lang: str) -> list[dict]:
         return [self._format_entry(e, lang) for e in self._entries[start:start + limit]]
 
-    def tag_summary(self, lang: str) -> list[dict]:
-        from collections import Counter
-        counts: Counter = Counter(
-            tag for e in self._entries for tag in e.get("tags", [])
-        )
-        labels = RHETORICAL_TAG_LABELS[lang]
-        return [
-            {"tag": tag, "label": labels.get(tag, tag), "count": count}
-            for tag, count in sorted(counts.items(), key=lambda x: -x[1])
-        ]
-
-    def tag_search(self, tag: str, limit: int, lang: str) -> list[dict]:
-        results = [
-            self._format_entry(e, lang)
-            for e in self._entries
-            if tag in e.get("tags", [])
-        ]
-        results.sort(key=lambda x: x["headword"])
-        return results[:limit]
 
     def cluster_search(self, cluster_id: int, limit: int, lang: str) -> list[dict]:
         results = [self._format_entry(e, lang) for e in self._entries if e.get("cluster_id") == cluster_id]
@@ -812,7 +759,7 @@ class DictionairePipeline:
         return results
 
     def cluster_summary(self, lang: str) -> list[dict]:
-        from collections import Counter, defaultdict
+        from collections import defaultdict
         by_cluster: dict[int, list] = defaultdict(list)
         for e in self._entries:
             cid = e.get("cluster_id", -1)
@@ -821,17 +768,11 @@ class DictionairePipeline:
         labels = CLUSTER_LABELS[lang]
         result = []
         for cid in sorted(by_cluster):
-            members     = by_cluster[cid]
-            tag_counter = Counter(t for e in members for t in e.get("tags", []))
-            top_tags    = [
-                RHETORICAL_TAG_LABELS[lang].get(t, t)
-                for t, _ in tag_counter.most_common(3)
-            ]
+            members = by_cluster[cid]
             result.append({
                 "cluster_id":       cid,
                 "label":            labels[cid] if cid < len(labels) else f"Cluster {cid}",
                 "count":            len(members),
-                "top_tags":         top_tags,
                 "sample_headwords": [e["headword"] for e in members[:5]],
             })
         return result
