@@ -47,23 +47,24 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | Text search | Accent-normalised substring match on headword and entry text across the full corpus (no result cap); session-generated entries included via client-side text match; typeahead dropdown shows accent-normalised prefix matches (corpus + session) as you type; fuzzy suggestions (Levenshtein) appear when text search returns nothing |
 | Semantic search | Nearest-neighbour search on CamemBERT embeddings; session-generated entries included via client-side text match (no embeddings available client-side) |
 | Themes | 12 semantic clusters with labels; UMAP map with score-sized dots, centroid labels, and cluster highlighting; clicking a legend item navigates to that cluster's entries sorted by membership score |
+| Rhetoric | 10 rhetorical categories (irony, prescription, tautology, definition, social performative, etc.) detected by `parse.py` at corpus build time; sidebar panel lists categories with entry counts; clicking a category filters the corpus; category chips appear in entry detail and link back to the filtered list |
 | Semantic map | UMAP projection (n_neighbors=15, min_dist=0.1) — cluster proximity reflects genuine thematic affinity; dot size encodes primary membership strength; dots foreground only on click, not hover; tooltip shows cluster, score, and first line of entry text; "Ambiguïtés" toggle rings the 166 dual-theme entries in their secondary colour; "Générées" toggle overlays session-generated entries as gold outlined circles (client-side, no re-fetch); search input locates entries by headword and dims non-matching dots; "carte" button in entry detail pulses that entry's dot; scroll to zoom · drag to pan · double-click to reset |
-| Statistics | Bar chart of thematic distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree; session-generated entry count from `sessionEntries` (client-side) |
+| Statistics | Bar charts of thematic and rhetorical distribution; headline figures; force-directed cross-reference network (29 edges, 30 nodes) with node size proportional to degree; session-generated entry count from `sessionEntries` (client-side) |
 | FR/EN toggle | Switches UI language and entry translations throughout; the currently displayed entry is re-fetched in the new language so its translation updates immediately; the welcome-screen Flaubert quote is translated via `data-fr`/`data-en` attributes |
 | Light/dark mode | Follows system preference; toggle in header |
-| Entry detail | French text, English translation, cross-references, six nearest neighbours (corpus entries by embedding cosine similarity; session-generated entries by UMAP 2D proximity); primary theme badge with baseline-multiple score; secondary theme badge (where applicable); ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
+| Entry detail | French text, English translation, cross-references, six nearest neighbours (corpus entries by embedding cosine similarity; session-generated entries by UMAP 2D proximity); primary theme badge with baseline-multiple score; secondary theme badge (where applicable); clickable rhetorical category chips; ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
 | Add entry | Propose any word or phrase → generate in Flaubert's style; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
 | Duplicate detection | Checks against both French headwords and stored English headwords (corpus + session entries) to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
 | No-results hint | Empty text-search results offer a one-click switch to semantic mode and fuzzy-matched headword suggestions |
-| URL routing | `#entry/HEADWORD`, `#themes`, `#stats` — browser back/forward works; links are shareable |
+| URL routing | `#entry/HEADWORD`, `#themes`, `#rhetoric`, `#stats` — browser back/forward works; links are shareable |
 | Home button | Clicking the title returns to the welcome state and clears the search |
 | Mobile layout | Sidebar opens as a slide-in drawer via hamburger button; backdrop closes it |
 
 ## Pipeline
 
 ```
-parse.py      Fetch text from Project Gutenberg · extract entries
+parse.py      Fetch text from Project Gutenberg · extract entries · tag with rhetorical categories
 embed.py      Encode entries with dangvantuan/sentence-camembert-base
 cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
               pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/umap_coords.npy ·
@@ -105,6 +106,25 @@ A **secondary theme badge** is shown in entry detail when two conditions both ho
 About 166 entries (~17% of corpus) meet this criterion — entries that sit at the boundary
 between two themes, e.g. CHEMINS DE FER (economy + politics), HIPPOCRATE (history + arts),
 JALOUSIE (daily life + society).
+
+## Rhetorical categories
+
+Each entry is tagged at parse time by `parse.py`'s `EnunciativeTagger`. Ten categories are detected by rule-based pattern matching on verb forms, syntactic structures, and lexical markers:
+
+| Category | Example pattern | Intellectual source |
+|---|---|---|
+| Irony | praise-phrase + negation; mock-serious imperative | Classical rhetoric; Barthes, *Mythologies* (1957) |
+| Prescription | imperative or normative modal (*il faut*, *on doit*, *toujours*) | Austin's social performatives (*How to Do Things with Words*, 1962) |
+| Tautology | `X, c'est X`; circular definition | Barthes, *Mythologies* — tautology as ideological refuge |
+| Definition | copular structure providing a genus-differentia | Classical rhetoric |
+| Social performative | fixed formula of congratulation, condolence, or obligation | Austin/Searle speech-act theory |
+| Reported speech | embedded quotation with attribution verb | Ducrot, polyphony theory (*Le Dire et le dit*, 1984) |
+| Assertion | plain declarative claim stated as fact | Benveniste/Maingueneau, French enunciative linguistics |
+| Negation | explicit denial (`ne … pas`, `jamais`) as rhetorical move | Ducrot's argumentative polyphony |
+| Comparison | simile or metaphor (`comme`, `tel`) | Classical rhetoric |
+| Enumeration | list structure (two or more items) | Classical rhetoric |
+
+The categories are not mutually exclusive; an entry may carry several tags. They capture the *enunciative posture* of each entry — the rhetorical stance Flaubert mimics and satirises — rather than its semantic theme (which is handled by the k-means clusters).
 
 ## Headword input
 
