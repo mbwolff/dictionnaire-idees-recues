@@ -658,8 +658,14 @@ class DictionairePipeline:
         return results[:limit]
 
     def prefix_search(self, prefix: str, limit: int, lang: str) -> list[dict]:
-        p = prefix.upper()
-        results = [self._format_entry(e, lang) for e in self._entries if e.get("headword", "").upper().startswith(p)]
+        import unicodedata
+        def _strip(s: str) -> str:
+            return unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode()
+        p = _strip(prefix.upper())
+        results = [
+            self._format_entry(e, lang) for e in self._entries
+            if _strip(e.get("headword", "").upper()).startswith(p)
+        ]
         results.sort(key=lambda x: x["headword"])
         return results[:limit]
 
