@@ -670,11 +670,14 @@ class DictionairePipeline:
         return results[:limit]
 
     def text_search(self, query: str, limit: int, lang: str) -> list[dict]:
-        q = query.upper()
+        import unicodedata
+        def _strip(s: str) -> str:
+            return unicodedata.normalize("NFD", s).encode("ascii", "ignore").decode()
+        q = _strip(query.upper())
         results = [
             self._format_entry(e, lang)
             for e in self._entries
-            if q in e.get("headword", "").upper() or q in e.get("text", "").upper()
+            if q in _strip(e.get("headword", "").upper()) or q in _strip(e.get("text", "").upper())
         ]
         return results[:limit]
 
