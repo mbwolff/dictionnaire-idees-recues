@@ -270,7 +270,7 @@ function doSearch(q) {
     loadBrowsePage();
     return;
   }
-  const url = `/api/search?q=${encodeURIComponent(q)}&mode=${state.searchMode}&lang=${state.lang}&limit=30`;
+  const url = `/api/search?q=${encodeURIComponent(q)}&mode=${state.searchMode}&lang=${state.lang}&limit=1000`;
   api(url).then(data => {
     const combined = [...sessionTextMatches(q), ...data.results];
     showView("results");

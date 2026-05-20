@@ -665,13 +665,12 @@ class DictionairePipeline:
 
     def text_search(self, query: str, limit: int, lang: str) -> list[dict]:
         q = query.upper()
-        results = []
-        for e in self._entries:
-            if q in e.get("headword", "").upper() or q in e.get("text", "").upper():
-                results.append(self._format_entry(e, lang))
-                if len(results) >= limit:
-                    break
-        return results
+        results = [
+            self._format_entry(e, lang)
+            for e in self._entries
+            if q in e.get("headword", "").upper() or q in e.get("text", "").upper()
+        ]
+        return results[:limit]
 
     def semantic_search(self, query: str, limit: int, lang: str) -> list[dict]:
         if self._embeddings is None:

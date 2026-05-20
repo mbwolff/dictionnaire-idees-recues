@@ -37,7 +37,7 @@ def search():
     q    = request.args.get("q", "").strip()
     lang = request.args.get("lang", "fr")
     mode = request.args.get("mode", "text")
-    limit = min(int(request.args.get("limit", 20)), 200)
+    limit = min(int(request.args.get("limit", 20)), 1000)
 
     if mode == "cluster":
         cluster_id = int(request.args.get("cluster_id", -1))
