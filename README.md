@@ -132,27 +132,40 @@ Any non-empty string is accepted as a headword (no POS check, no Wiktionary look
 
 ## Corpus curation
 
-The 962 entries were cleaned through a systematic audit of the Gutenberg plain-text
-source. Artifacts fixed in `parse.py` (and patched directly in the JSON):
+The 966 entries were produced by a systematic audit of the Gutenberg plain-text
+source (`pg14156.txt`). All corrections are encoded in `parse.py`; running
+`python3 parse.py` reproduces the corpus from scratch.
+
+**Parsing fixes (headword extraction)**
 
 - **Gutenberg italic markup** — `_text_` underscores stripped from headwords
 - **Roman numeral splits** — "Louis XI." and "Louis XIV." split at line breaks were merged back into BARBIER and OMNIBUS
-- **Duplicate sub-entries** — consecutive entries with identical body text caused by article variants (LYCÉE/COLLEGE, ÉCRIT/BIEN ÉCRIT, ORDRE/L'ORDRE) reduced to the canonical form
-- **Line-break hyphens** — `word- word` rejoined to `word-word` in body text
-- **Embedded guillemet spacing** — Gutenberg double-space before `»` normalised to single space across 15 entries
-- **MEXIQUE body** — trailing MIDI (cuisine du) sub-entry removed after that entry was recovered separately
-- **Swallowed entries** — DESSIN (L'ART DU) recovered from DESSERT's body; FERME (SUBST.), FEU (SUBST.), and FEU (ADJ.) recovered from FERME (ADJECTIF) and FERMIER
-- **Capitalisation** — LYCÉE uppercased; DARTRE body text capitalised
-- **Missing entries** — GARDE-COTE, GARES DE CHEMIN DE FER, GYMNASE (LE), JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE, and USUM (AD). recovered by direct comparison with the Gutenberg source
+- **Mixed-case headwords** — entries like `AFFAIRES (Les)` and `APPARTEMENT de garçon` were silently dropped by the old all-caps-only regex; new regex accepts lower-case continuation characters while still requiring the first word to be ALL-CAPS (filters sub-entries such as `Viande de cheval:`)
+- **Terminator fix** — old regex used `[.—–:]` as terminator, incorrectly splitting `FERME (subst.)` at the inner period; new regex uses `[:—–]` only
+- **Compound headwords** — `COIT, COPULATION:`, `FRISER, FRISURE:`, `HENRI III, HENRI IV:`, `ÉPACTE, NOMBRE D'OR, LETTRE DOMINICALE:` split into individual entries; bare forms ORDRE and ÉCRIT (residue of `ORDRE, L'ORDRE:` and `ÉCRIT, BIEN ÉCRIT:`) dropped
+- **Two-pass body boundaries** — body end is computed from the next *valid* headword match, so invalid mid-body lines (e.g. `Viande de cheval:`) no longer truncate the preceding entry
+- **Trailing section letters** — single uppercase letters appended to bodies at the end of each alphabetical section stripped
+- **Missing entries (start anchor)** — ABÉLARD, ABRICOTS, and ABSALON were absent because `extract_dictionary_section` anchored on `ABSINTHE`; fixed to anchor on `ABELARD`
+- **Missing entries (source comparison)** — GARDE-COTE, GARES DE CHEMIN DE FER, GYMNASE (LE), JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE, and USUM (AD). recovered by direct comparison with the Gutenberg source
+- **HYDRE DE L'ANARCHIE** — headword spans two wrapped lines in the source and cannot be matched by the regex; injected manually
+- **DICTIONNAIRE DE RIMES** — embedded as lowercase body text inside DICTIONNAIRE; extracted as a standalone entry
+
+**Body-text fixes**
+
+- **Line-break hyphens** — `word- word` rejoined to `word-word`
+- **Guillemet normalisation** — OCR closing guillemet errors (`«text«` → `«text»`) corrected; typographic spaces added inside `«…»`; AVOCATS reversed opening guillemet (`:»Oui` → `:« Oui`); HENRI III/IV missing opening guillemet and stray trailing `«` restored to `«…»`; FERME (ADJECTIF) spurious space between closing guillemet and sentence-final period removed; JOCKEY-CLUB straight quotes replaced with guillemets
+- **Swallowed entries** — DESSIN (L'ART DU) recovered from DESSERT's body; FERME (SUBST.), FEU (SUBST.), and FEU (ADJ.) recovered from FERME (ADJECTIF) and FERMIER via embedded `(subst.)`/`(adj.)` splitting
+- **HUSSARD body** — body boundary extended into HYDRE DE L'ANARCHIE paragraph (whose multi-line headword produces no regex match); truncated at correct entry boundary
+- **DICTIONNAIRE body** — inline `Dictionnaire de rimes:` sub-entry stripped (extracted separately above)
+- **Capitalisation** — LYCÉE uppercased; DARTRE and SOMBREUIL (MLLE DE) body text capitalised
 - **Source typos** — HALLEBARDE "na pas manquer" → "ne pas manquer"; FEMME "Na dites pas" → "Ne dites pas"; HIPPOCRATE "Galien dis non" → "Galien dit non" (OCR errors in the Gutenberg transcription)
 - **Misread headword** — PLIQUE POLONAISE corrected to PEIGNE (?) POLONAISE per the Ferrère (1913) and Pléiade (1952) editions; the Gutenberg transcription misread the manuscript
-- **Guillemet artifacts** — HENRI III/IV trailing stray `"` (parse.py conversion of source's spurious closing `«`) replaced with proper `«…»`; JOCKEY-CLUB straight quotes replaced with guillemets
-- **Cross-references** — 24 entries had empty `xrefs` because the parser matched `(Voir X)` instead of Flaubert's actual `(v. X)` format; corrected in `parse.py` and back-populated in JSON
-- **Entry ordering** — 5 entries (GARDE-COTE, GARES DE CHEMIN DE FER, JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE) were appended after YVETOT instead of inserted at their correct alphabetical positions; GYMNASE (LE) duplicate removed
-- **Missing entries** — ABÉLARD, ABRICOTS, and ABSALON were absent because `extract_dictionary_section` anchored on `ABSINTHE` as its start marker, silently dropping the three entries that precede it alphabetically; fixed to anchor on `ABELARD` instead
-- **Merged sub-entry** — DICTIONNAIRE DE RIMES was embedded in the body of DICTIONNAIRE instead of being its own entry; restored as entry 245
+- **Normalised headwords** — GULF-STREAM → GULF STREAM; PHILIPPE D'ORLÉANS - ÉGALITÉ → PHILIPPE D'ORLÉANS-ÉGALITÉ
+- **PALLADIUM** — missing trailing period restored
+- **Cross-references** — entries had empty `xrefs` because the old parser matched `(Voir X)` instead of Flaubert's actual `(v. X)` format; corrected in `parse.py`
+- **Entry ordering** — output sorted alphabetically; 5 entries (GARDE-COTE, GARES DE CHEMIN DE FER, JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE) previously appended after YVETOT now placed correctly
 
-Guards added to `parse.py` prevent recurrence on a fresh parse.
+**Known discrepancy**: UNIVERSITÉ body in the curated JSON retains the USUM (AD). sub-entry text as a legacy artifact; `parse.py` correctly separates them into two entries. A fresh `parse.py` run will produce the correct split.
 
 ## Translation
 
