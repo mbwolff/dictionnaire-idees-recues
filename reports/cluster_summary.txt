@@ -1,35 +1,35 @@
-Cluster  0 ( 75 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
-    ACCOUCHEMENT, ADOLESCENT, BASILIQUE, BOUDDHISME, CLAIR-OBSCUR, CLASSIQUES (LES), CONCUPISCENCE, CONTRALTO
+Cluster  0 (119 entries)  tags=['nominal_assertion', 'verite_generale', 'circular_definition']
+    ACCOUCHEMENT, ALLEMAGNE, AMBITION, BERGERS, BOUCHERS, BOURSE (LA), BROCHE, BUDGET
 
-Cluster  1 (112 entries)  tags=['verite_generale', 'nominal_assertion', 'prescriptive_imperative']
-    ART, ASTRONOMIE, BAGUE, BARBE, BARBIER, BIÈRE, BONNES, BOUDIN
+Cluster  1 ( 71 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
+    ANTÉCHRIST, APLOMB, ARCHIMÈDE, ARMÉE, BACCALAURÉAT, BADIGEON DANS LES ÉGLISES, BATAILLE, BRAS
 
-Cluster  2 ( 42 entries)  tags=['prescriptive_imperative', 'social_performance', 'verite_generale']
-    ACADÉMIE FRANCAISE, AMÉRIQUE, ANTÉCHRIST, BACCALAURÉAT, BADIGEON DANS LES ÉGLISES, CHOLÉRA, CONCILIATION, DAGUERRÉOTYPE
+Cluster  2 ( 76 entries)  tags=['verite_generale', 'circular_definition', 'nominal_assertion']
+    ABSINTHE, ACTRICES, ALLEMANDS, ANGLAIS, ARGENT, ARTISTES, AVOCATS, BADAUD
 
-Cluster  3 ( 70 entries)  tags=['prescriptive_imperative', 'verite_generale', 'social_performance']
-    ACCIDENT, ANGLAISES, ANTIQUITÉ ET TOUT CE QUI S'Y RAPPORTE, BANQUET, BARAGOUIN, BAS-BLEU, BEETHOVEN, CAMARILLA
+Cluster  3 ( 75 entries)  tags=['verite_generale', 'prescriptive_imperative', 'nominal_assertion']
+    AGRICULTURE, AMÉRIQUE, ART, ASTRONOMIE, BAGUE, BARBIER, BOURREAU, BOUTONS
 
-Cluster  4 ( 77 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
-    ABÉLARD, AMBITIEUX, AMIRAL, ARCHIMÈDE, ASSASSIN, AUTEUR, AVOCATS, BONNET GREC
+Cluster  4 ( 67 entries)  tags=['prescriptive_imperative', 'verite_generale', 'social_performance']
+    ACADÉMIE FRANCAISE, ACCIDENT, ANTIQUITÉ ET TOUT CE QUI S'Y RAPPORTE, BANQUET, BARAGOUIN, BEETHOVEN, CAMARILLA, CHACAL
 
-Cluster  5 ( 92 entries)  tags=['verite_generale', 'nominal_assertion', 'prescriptive_imperative']
-    ABSALON, ACHILLE, AIR, ALCOOLISME, ALLEMAGNE, AMBITION, ANDROCLÈS, BALLONS
+Cluster  5 ( 72 entries)  tags=['prescriptive_imperative', 'verite_generale', 'circular_definition']
+    ABÉLARD, AFFAIRES (LES), ALBION, ALBÂTRE, AMBITIEUX, ANGLAISES, AUTEUR, BAISER
 
-Cluster  6 ( 90 entries)  tags=['verite_generale', 'nominal_assertion', 'circular_definition']
-    ABRICOTS, ARSENIC, ASPIC, BAGNOLET, BÂILLEMENT, BANQUIERS, BOUILLI (LE), BOULET
+Cluster  6 ( 87 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
+    ABRICOTS, ANTIQUITÉS (LES), APPARTEMENT DE GARÇON, ARCHITECTES, AUTRUCHE, BANDITS, BAUDRUCHE, BLONDES
 
-Cluster  7 ( 49 entries)  tags=['verite_generale', 'prescriptive_imperative', 'circular_definition']
-    ALBÂTRE, APPARTEMENT DE GARÇON, BAYADÈRE, BIBLIOTHÈQUE, BILLARD, BOIS, BOTTE, CAFÉ
+Cluster  7 ( 53 entries)  tags=['verite_generale', 'nominal_assertion', 'circular_definition']
+    AIRAIN, ARCHITECTURE, ARSENIC, ASPIC, ATHÉE, BAGNOLET, BOUDDHISME, CHAMPIGNONS
 
-Cluster  8 ( 97 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
-    ABSINTHE, ACTRICES, AFFAIRES (LES), AGRICULTURE, AIL, ALLEMANDS, ARCHITECTES, ARGENT
+Cluster  8 (118 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
+    ADIEUX, AGENT, AMIRAL, ANGE, ARBALÈTE, BASES DE LA SOCIÉTÉ, BASQUES, BIBLE
 
-Cluster  9 ( 81 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
-    ANGE, ANGLAIS, ARBALÈTE, BASES DE LA SOCIÉTÉ, BIBLE, CATHOLICISME, CERTIFICAT, COLLEGE
+Cluster  9 ( 72 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
+    ACHILLE, ADOLESCENT, ANDROCLÈS, BASILIQUE, COMÉDIE, COUTEAU, DICTIONNAIRE, DÉMOSTHÈNE
 
-Cluster 10 ( 67 entries)  tags=['nominal_assertion', 'verite_generale', 'circular_definition']
-    AIRAIN, ALBION, ARCHITECTURE, ARMÉE, ATHÉE, BATAILLE, BÂTON, BRAS
+Cluster 10 ( 82 entries)  tags=['verite_generale', 'nominal_assertion', 'circular_definition']
+    ABSALON, AIR, ALCOOLISME, ASSASSIN, BIÈRE, CHALEUR, CHARTREUX, COCU
 
-Cluster 11 (114 entries)  tags=['nominal_assertion', 'verite_generale', 'prescriptive_imperative']
-    ADIEUX, AGENT, ALCIBIADE, ANTIQUITÉS (LES), APLOMB, AUTRUCHE, BANDITS, BASQUES
+Cluster 11 ( 74 entries)  tags=['verite_generale', 'circular_definition', 'prescriptive_imperative']
+    AIL, ALCIBIADE, BARBE, BILLARD, BOUDIN, BOUILLI (LE), BOULET, BÂILLEMENT
