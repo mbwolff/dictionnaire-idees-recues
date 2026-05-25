@@ -23,7 +23,7 @@ import json
 import urllib.request
 from pathlib import Path
 
-GUTENBERG_URL = "https://www.gutenberg.org/files/14156/14156-0.txt"
+GUTENBERG_URL = "https://www.gutenberg.org/cache/epub/14156/pg14156.txt"
 OUTPUT_FILE   = Path(__file__).parent / "data" / "dictionnaire_entries.json"
 
 # ── Social-performance verbs ──────────────────────────────────────────────────
@@ -308,6 +308,22 @@ class EnunciativeTagger:
 
 
 # ═════════════════════════════════════════════════════════════════════════════
+# Guillemet normalisation
+# ═════════════════════════════════════════════════════════════════════════════
+
+def _normalize_guillemets(text: str) -> str:
+    """Fix OCR closing-guillemet errors and add typographic spaces."""
+    # OCR sometimes prints closing » as «: «text« → «text»
+    prev = None
+    while prev != text:
+        prev = text
+        text = re.sub(r'«([^«»]*)«', r'«\1»', text)
+    text = re.sub(r'«(\S)', r'« \1', text)
+    text = re.sub(r'(\S)»', r'\1 »', text)
+    return text
+
+
+# ═════════════════════════════════════════════════════════════════════════════
 # Fetch & parse
 # ═════════════════════════════════════════════════════════════════════════════
 
@@ -332,72 +348,76 @@ def extract_dictionary_section(text: str) -> str:
 
 def parse_entries(section: str) -> list[dict]:
     section = section.replace("\r\n", "\n").replace("\r", "\n")
-    section = section.replace("\u2018", "'").replace("\u2019", "'")
-    section = section.replace("\u00ab", '"').replace("\u00bb", '"')
+    section = section.replace("‘", "'").replace("’", "'")
+    # Preserve «/» guillemets — normalised per-entry by _normalize_guillemets
 
     headword_re = re.compile(
-        r"^([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ \(\)'\-]{1,60}?)"
-        r"[\.—–:]\s*(.*)$",
+        r"^([A-ZÀÂÆÇÉÈÊË"
+        r"ÎÏÔŒÙÛÜ]"
+        r"[A-ZÀÂÆÇÉÈÊË"
+        r"ÎÏÔŒÙÛÜ"
+        r"a-zàâæçéèêë"
+        r"îïôœùûüÿ"
+        r" \(\)'.\-_,]{0,90}?)"
+        r"[:—–]\s*(.*)$",
         re.MULTILINE,
     )
-    entries  = []
-    matches = list(headword_re.finditer(section))
 
-    for i, m in enumerate(matches):
-        headword = m.group(1).strip().rstrip(".").replace("_", "").strip().upper()
-        if len(headword) > 50:
-            continue
-        # Skip Roman numerals (e.g. "XI." split from "Louis XI." at a line break)
-        if re.fullmatch(r"[IVXLCDM]+", headword):
-            continue
+    def _is_valid_hw(hw_raw: str) -> bool:
+        hw_raw = hw_raw.strip().replace("_", "").strip()
+        if not hw_raw or len(hw_raw) > 90:
+            return False
+        # First word must be ALL-CAPS (filters sub-entries like "Viande de cheval:")
+        first_word = re.match(
+            r"[A-ZÀÂÆÇÉÈÊË"
+            r"ÎÏÔŒÙÛÜ"
+            r"a-zàâæçéèêë"
+            r"îïôœùûüÿ]+",
+            hw_raw,
+        )
+        if not first_word or first_word.group(0) != first_word.group(0).upper():
+            return False
+        if re.fullmatch(r"[IVXLCDM]+", hw_raw.upper().replace(" ", "")):
+            return False
+        return True
 
-        body_start = m.end()
-        body_end   = matches[i + 1].start() if i + 1 < len(matches) else len(section)
-        body       = m.group(2) + " " + section[body_start:body_end]
-        body       = re.sub(r"\s+", " ", body).strip()
-        # Rejoin words split across lines with a hyphen in the Gutenberg source
-        body       = re.sub(r"(\w)- (\w)", r"\1-\2", body)
+    all_matches   = list(headword_re.finditer(section))
+    valid_matches = [m for m in all_matches if _is_valid_hw(m.group(1))]
+
+    entries = []
+    for i, m in enumerate(valid_matches):
+        hw_raw = m.group(1).strip().replace("_", "").strip()
+
+        # Use valid_matches for body boundary so invalid matches don't truncate bodies
+        body_end = valid_matches[i + 1].start() if i + 1 < len(valid_matches) else len(section)
+        body = m.group(2) + " " + section[m.end():body_end]
+        body = re.sub(r"\s+", " ", body).strip()
+        body = re.sub(r"(\w)- (\w)", r"\1-\2", body)
+        body = re.sub(r"\s+[A-Z]$", "", body).strip()  # strip trailing section letter
 
         if not body:
             continue
 
-        # Skip headwords whose body is identical to the immediately preceding entry
-        # (signals a sub-entry or article variant parsed as a duplicate)
-        if entries and body == entries[-1]["text"] and len(body) < 120:
+        body = _normalize_guillemets(body)
+
+        # Compound headwords "A, B:" → split on comma, keep uppercase-starting parts
+        raw_parts = [p.strip() for p in hw_raw.split(",")]
+        hw_parts  = [p.replace("_", "").upper() for p in raw_parts
+                     if p.strip() and p.strip()[0].isupper()]
+        if not hw_parts:
             continue
 
-        # Split sub-entries embedded as "WORD (subst.): …" or "WORD (adj.): …"
-        sub_re = re.compile(
-            r"\s+([A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ][A-ZÀÂÆÇÉÈÊËÎÏÔŒÙÛÜ \(\)'\-]{1,50}?)"
-            r"\s*\((subst|adj|adv|verb)\.\):\s*",
-            re.IGNORECASE,
-        )
-        sub_bodies = [body]
-        sub_heads  = [headword]
-        for sm in sub_re.finditer(body):
-            sub_heads.append(sm.group(1).strip().upper()
-                             + " (" + sm.group(2).upper() + ".)")
-        if len(sub_heads) > 1:
-            parts = sub_re.split(body)
-            # parts alternates: text, head, qualifier, text, head, qualifier, text …
-            sub_bodies = [parts[0]]
-            for k in range(1, len(parts) - 2, 3):
-                sub_bodies.append(parts[k + 2])
+        xref_raw = re.findall(r"\(v\.\s*([^)]+)\)", body, re.IGNORECASE)
+        sm2 = re.match(r"^V\.\s+(.+?)\.?\s*$", body, re.IGNORECASE)
+        if sm2:
+            xref_raw.append(sm2.group(1))
+        xrefs = []
+        for raw in xref_raw:
+            for part in re.split(r",\s*|\s+et\s+", raw.strip()):
+                xrefs.append(part.strip().rstrip(".").upper())
 
-        for sh, sb in zip(sub_heads, sub_bodies):
-            sb = sb.strip()
-            if not sb:
-                continue
-            # Collect "(v. X)" inline xrefs and standalone "V. X." entries
-            xref_raw = re.findall(r"\(v\.\s*([^)]+)\)", sb, re.IGNORECASE)
-            sm2 = re.match(r"^V\.\s+(.+?)\.?\s*$", sb, re.IGNORECASE)
-            if sm2:
-                xref_raw.append(sm2.group(1))
-            xrefs = []
-            for raw in xref_raw:
-                for part in re.split(r",\s*|\s+et\s+", raw.strip()):
-                    xrefs.append(part.strip().rstrip(".").upper())
-            entries.append({"headword": sh, "text": sb, "xrefs": xrefs})
+        for hw in hw_parts:
+            entries.append({"headword": hw, "text": body, "xrefs": xrefs})
 
     return entries
 
@@ -411,21 +431,105 @@ def main():
     section = extract_dictionary_section(text)
     entries = parse_entries(section)
 
-    # Headword corrections vs Gutenberg source
-    # (Ferrère 1913 and Pléiade 1952 editions agree on these readings)
+    # Headword renames (Ferrère 1913 and Pléiade 1952 editions vs Gutenberg OCR)
     headword_corrections = {
-        "PLIQUE POLONAISE": "PEIGNE (?) POLONAISE",  # Gutenberg OCR error; both Ferrère and Pléiade read PEIGNE
+        "PLIQUE POLONAISE":             "PEIGNE (?) POLONAISE",
+        "ABELARD":                      "ABÉLARD",
+        "GULF-STREAM":                  "GULF STREAM",
+        "PHILIPPE D'ORLÉANS - ÉGALITÉ": "PHILIPPE D'ORLÉANS-ÉGALITÉ",
     }
-    for e in entries:
-        e["headword"] = headword_corrections.get(e["headword"], e["headword"])
+    # Bare forms created by compound-headword splitting that should be dropped
+    drop_headwords = {"ORDRE", "ÉCRIT"}
 
-    # Deduplicate on headword
+    corrected = []
+    for e in entries:
+        if e["headword"] in drop_headwords:
+            continue
+        e["headword"] = headword_corrections.get(e["headword"], e["headword"])
+        corrected.append(e)
+    entries = corrected
+
+    # Split sub-entries embedded as "WORD (subst.): …" or "WORD (adj.): …"
+    sub_re = re.compile(
+        r"\s+([A-ZÀÂÆÇÉÈÊË"
+        r"ÎÏÔŒÙÛÜ"
+        r"A-Z \(\)'\-]{1,50}?)"
+        r"\s*\((subst|adj|adv|verb)\.\):\s*",
+        re.IGNORECASE,
+    )
+    expanded = []
+    for e in entries:
+        sub_heads = [e["headword"]]
+        for sm in sub_re.finditer(e["text"]):
+            sub_heads.append(sm.group(1).strip().upper()
+                             + " (" + sm.group(2).upper() + ".)")
+        if len(sub_heads) > 1:
+            parts = sub_re.split(e["text"])
+            sub_bodies = [parts[0]]
+            for k in range(1, len(parts) - 2, 3):
+                sub_bodies.append(parts[k + 2])
+            for sh, sb in zip(sub_heads, sub_bodies):
+                if sb.strip():
+                    expanded.append({"headword": sh, "text": sb.strip(), "xrefs": e["xrefs"]})
+        else:
+            expanded.append(e)
+    entries = expanded
+
+    # Deduplicate on headword (keep first occurrence)
     seen, unique = set(), []
     for e in entries:
         key = e["headword"].upper()
         if key not in seen:
             seen.add(key)
             unique.append(e)
+
+    # Body-text patches: OCR typos confirmed against Ferrère/Pléiade editions
+    body_patches = {
+        "FEMME":               lambda t: t.replace("Na dites pas", "Ne dites pas"),
+        "HALLEBARDE":          lambda t: t.replace("na pas manquer", "ne pas manquer"),
+        "HIPPOCRATE":          lambda t: t.replace("Galien dis non", "Galien dit non"),
+        "DARTRE":              lambda t: t[0].upper() + t[1:] if t else t,
+        "PALLADIUM":           lambda t: t if t.endswith(".") else t + ".",
+        "SOMBREUIL (MLLE DE)": lambda t: t[0].upper() + t[1:] if t else t,
+        "DICTIONNAIRE":        lambda t: re.sub(
+            r"\s*Dictionnaire de rimes.*$", "", t, flags=re.IGNORECASE
+        ).strip(),
+        # HUSSARD: body extends into HYDRE paragraph (multi-line headword not parsed)
+        "HUSSARD":             lambda t: re.sub(
+            r"\s+HYDRE de\b.*$", "", t, flags=re.DOTALL | re.IGNORECASE
+        ).strip(),
+        # AVOCATS: source has :»Oui (backwards opening guillemet — OCR error)
+        # After _normalize_guillemets, :» becomes : » (space added), so match that
+        "AVOCATS":             lambda t: t.replace(": »Oui", ":« Oui"),
+        # FERME (ADJECTIF): source has «roc» . but curated has «roc».
+        "FERME (ADJECTIF)":   lambda t: t.replace("roc » .", "roc »."  ),
+        # HENRI III / IV: source has no opening «, and trailing « instead of »
+        "HENRI III":           lambda t: re.sub(
+            r"\s*«\s*$", " »", t.replace("dire: Tous", "dire: « Tous")
+        ),
+        "HENRI IV":            lambda t: re.sub(
+            r"\s*«\s*$", " »", t.replace("dire: Tous", "dire: « Tous")
+        ),
+    }
+    for e in unique:
+        patch = body_patches.get(e["headword"])
+        if patch:
+            e["text"] = patch(e["text"])
+
+    # Manual injections: entries whose headwords cannot be parsed from the source
+    hw_set = {e["headword"] for e in unique}
+    injections = [
+        # HYDRE: headword spans two wrapped lines — unparseable by the regex
+        {"headword": "HYDRE DE L'ANARCHIE",  "text": "Tâcher de la vaincre.",   "xrefs": []},
+        # DICTIONNAIRE DE RIMES: embedded as lowercase body text in DICTIONNAIRE
+        {"headword": "DICTIONNAIRE DE RIMES", "text": "S'en servir? Honteux!", "xrefs": []},
+    ]
+    for inj in injections:
+        if inj["headword"] not in hw_set:
+            unique.append(inj)
+
+    # Sort alphabetically by headword
+    unique.sort(key=lambda e: e["headword"])
 
     print(f"Parsed {len(unique)} entries. Running spaCy enunciative tagger…")
 
