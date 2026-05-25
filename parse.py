@@ -437,6 +437,7 @@ def main():
         "ABELARD":                      "ABÉLARD",
         "GULF-STREAM":                  "GULF STREAM",
         "PHILIPPE D'ORLÉANS - ÉGALITÉ": "PHILIPPE D'ORLÉANS-ÉGALITÉ",
+        "NÈGRESSES":                    "NÉGRESSES",
     }
     # Bare forms created by compound-headword splitting that should be dropped
     drop_headwords = {"ORDRE", "ÉCRIT"}
