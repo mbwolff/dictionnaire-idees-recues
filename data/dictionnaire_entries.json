@@ -1,5 +1,40 @@
 [
   {
+    "headword": "ABÉLARD",
+    "text": "Inutile d’avoir la moindre idée de sa philosophie, ni même de connaître le titre de ses ouvrages. Faire une allusion discrète à la mutilation opérée sur lui par Fulbert. Tombeau d’Eloïse et d’Abélard : si l’on vous prouve qu’il est faux, s’écrier : «Vous m’ôtez mes illusions.»",
+    "xrefs": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
+    "cluster_id": null,
+    "text_en": "No need to have the slightest idea of his philosophy, nor even to know the title of his works. Make a discreet allusion to the mutilation performed on him by Fulbert. Tomb of Héloïse and Abélard: if someone proves it is false, exclaim: “You’re taking away my illusions.”",
+    "headword_en": "ABELARD"
+  },
+  {
+    "headword": "ABRICOTS",
+    "text": "Nous n’en aurons pas encore cette année.",
+    "xrefs": [],
+    "tags": [
+      "verite_generale"
+    ],
+    "cluster_id": null,
+    "text_en": "We won’t have any again this year.",
+    "headword_en": "APRICOTS"
+  },
+  {
+    "headword": "ABSALON",
+    "text": "S’il eût porté perruque, Joab n’aurait pu le tuer. Nom facétieux à donner à un ami chauve.",
+    "xrefs": [],
+    "tags": [
+      "prescriptive_imperative",
+      "social_performance"
+    ],
+    "cluster_id": null,
+    "text_en": "If he had worn a wig, Joab couldn’t have killed him. A facetious name to give to a bald friend.",
+    "headword_en": "ABSALOM"
+  },
+  {
     "headword": "ABSINTHE",
     "text": "Poison extra-violent: un verre et vous êtes mort. Les journalistes en boivent pendant qu'ils écrivent leurs articles. A tué plus de soldats que les Bédouins.",
     "xrefs": [],

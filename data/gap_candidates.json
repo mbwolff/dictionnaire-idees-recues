@@ -1,338 +1,338 @@
 [
   {
     "cluster_id": 10,
-    "nearest_headword": "ENTERREMENT",
-    "nearest_similarity": 0.5479,
+    "nearest_headword": "CAVALERIE",
+    "nearest_similarity": 0.5773,
     "top_5_members": [
       [
-        "ENTERREMENT",
-        0.5478937029838562
+        "CAVALERIE",
+        0.5772519111633301
       ],
       [
-        "MÉDAILLE",
-        0.5369477272033691
-      ],
-      [
-        "ÉPUISEMENT",
-        0.5153378248214722
+        "DISSECTION",
+        0.5681936740875244
       ],
       [
         "ARMÉE",
-        0.4995255172252655
+        0.5606590509414673
       ],
       [
-        "COLLEGE",
-        0.48971372842788696
+        "GENDARMERIE",
+        0.5406103134155273
+      ],
+      [
+        "FORCE",
+        0.5306891798973083
       ]
     ],
-    "gap_score": 0.4521
-  },
-  {
-    "cluster_id": 5,
-    "nearest_headword": "HIÉROGLYPHES",
-    "nearest_similarity": 0.5786,
-    "top_5_members": [
-      [
-        "HIÉROGLYPHES",
-        0.5785543322563171
-      ],
-      [
-        "CRITIQUE",
-        0.5692084431648254
-      ],
-      [
-        "PARALLÈLE",
-        0.5123117566108704
-      ],
-      [
-        "HENRI IV",
-        0.5081731677055359
-      ],
-      [
-        "DENTISTES",
-        0.5059488415718079
-      ]
-    ],
-    "gap_score": 0.4214
-  },
-  {
-    "cluster_id": 7,
-    "nearest_headword": "MOULES",
-    "nearest_similarity": 0.6155,
-    "top_5_members": [
-      [
-        "MOULES",
-        0.6154981255531311
-      ],
-      [
-        "INHUMATION",
-        0.5591453313827515
-      ],
-      [
-        "ACTRICES",
-        0.5564790964126587
-      ],
-      [
-        "ÉPINARDS",
-        0.5398706197738647
-      ],
-      [
-        "CUISINE",
-        0.5305396318435669
-      ]
-    ],
-    "gap_score": 0.3845
-  },
-  {
-    "cluster_id": 0,
-    "nearest_headword": "ALBÂTRE",
-    "nearest_similarity": 0.621,
-    "top_5_members": [
-      [
-        "ALBÂTRE",
-        0.6209571361541748
-      ],
-      [
-        "MAGNÉTISME",
-        0.6185262799263
-      ],
-      [
-        "ÉTAGÈRE",
-        0.6046526432037354
-      ],
-      [
-        "AFFAIRES (LES)",
-        0.5980374217033386
-      ],
-      [
-        "EXÉCUTIONS CAPITALES",
-        0.592257559299469
-      ]
-    ],
-    "gap_score": 0.379
-  },
-  {
-    "cluster_id": 9,
-    "nearest_headword": "SALUTATIONS",
-    "nearest_similarity": 0.6256,
-    "top_5_members": [
-      [
-        "SALUTATIONS",
-        0.6255677938461304
-      ],
-      [
-        "FOURRURE",
-        0.6059884428977966
-      ],
-      [
-        "PORT-ROYAL",
-        0.5931687951087952
-      ],
-      [
-        "INAUGURATION",
-        0.582118034362793
-      ],
-      [
-        "CONFORTABLE",
-        0.5809646844863892
-      ]
-    ],
-    "gap_score": 0.3744
-  },
-  {
-    "cluster_id": 3,
-    "nearest_headword": "JOUISSANCE",
-    "nearest_similarity": 0.6416,
-    "top_5_members": [
-      [
-        "JOUISSANCE",
-        0.6416307687759399
-      ],
-      [
-        "INTRODUCTION",
-        0.6341830492019653
-      ],
-      [
-        "EXASPÉRATION",
-        0.6143845319747925
-      ],
-      [
-        "CHASSE",
-        0.6121014356613159
-      ],
-      [
-        "EXPOSITION",
-        0.6073620319366455
-      ]
-    ],
-    "gap_score": 0.3584
-  },
-  {
-    "cluster_id": 4,
-    "nearest_headword": "BOUCHERS",
-    "nearest_similarity": 0.6563,
-    "top_5_members": [
-      [
-        "BOUCHERS",
-        0.6562613844871521
-      ],
-      [
-        "FAUBOURGS",
-        0.6342850923538208
-      ],
-      [
-        "BANDITS",
-        0.6179147362709045
-      ],
-      [
-        "BRACONNIERS",
-        0.574406623840332
-      ],
-      [
-        "FRANCS-TIREURS",
-        0.554210364818573
-      ]
-    ],
-    "gap_score": 0.3437
+    "gap_score": 0.4227
   },
   {
     "cluster_id": 6,
-    "nearest_headword": "SOUFFLET",
-    "nearest_similarity": 0.6716,
+    "nearest_headword": "CACHOT",
+    "nearest_similarity": 0.5843,
     "top_5_members": [
       [
-        "SOUFFLET",
-        0.671596884727478
+        "CACHOT",
+        0.5843247175216675
       ],
       [
-        "EXERCICE",
-        0.6489592790603638
+        "MOULES",
+        0.5434120297431946
       ],
       [
-        "OREILLER",
-        0.6213850975036621
-      ],
-      [
-        "PAUVRES",
-        0.5594701766967773
-      ],
-      [
-        "COPAHU",
-        0.5590043067932129
-      ]
-    ],
-    "gap_score": 0.3284
-  },
-  {
-    "cluster_id": 1,
-    "nearest_headword": "HAMEAU",
-    "nearest_similarity": 0.6792,
-    "top_5_members": [
-      [
-        "HAMEAU",
-        0.6792420148849487
-      ],
-      [
-        "FOSSILES",
-        0.6229729652404785
-      ],
-      [
-        "OISEAU",
-        0.603853702545166
-      ],
-      [
-        "DÉCORUM",
-        0.6003564596176147
-      ],
-      [
-        "HARPE",
-        0.5985305309295654
-      ]
-    ],
-    "gap_score": 0.3208
-  },
-  {
-    "cluster_id": 8,
-    "nearest_headword": "INCRUSTATION",
-    "nearest_similarity": 0.7486,
-    "top_5_members": [
-      [
-        "INCRUSTATION",
-        0.7486046552658081
-      ],
-      [
-        "MATÉRIALISME",
-        0.6745561361312866
-      ],
-      [
-        "ENVERGURE",
-        0.6714251041412354
-      ],
-      [
-        "EXTINCTION",
-        0.6700936555862427
-      ],
-      [
-        "ÉTERNUER",
-        0.6589755415916443
-      ]
-    ],
-    "gap_score": 0.2514
-  },
-  {
-    "cluster_id": 11,
-    "nearest_headword": "GENOVEFAIN",
-    "nearest_similarity": 0.7539,
-    "top_5_members": [
-      [
-        "GENOVEFAIN",
-        0.7538745999336243
-      ],
-      [
-        "DROIT (LE)",
-        0.7404096126556396
-      ],
-      [
-        "CONTRALTO",
-        0.7385625243186951
+        "ARSENIC",
+        0.5364552140235901
       ],
       [
         "CLAIR-OBSCUR",
-        0.7334684729576111
+        0.5346934795379639
       ],
       [
-        "JANSÉNISME",
-        0.6554880738258362
+        "PAIN",
+        0.5194879770278931
       ]
     ],
-    "gap_score": 0.2461
+    "gap_score": 0.4157
+  },
+  {
+    "cluster_id": 11,
+    "nearest_headword": "SALUTATIONS",
+    "nearest_similarity": 0.6142,
+    "top_5_members": [
+      [
+        "SALUTATIONS",
+        0.6142388582229614
+      ],
+      [
+        "MAILLOT",
+        0.5939421653747559
+      ],
+      [
+        "JOUISSANCE",
+        0.5892267227172852
+      ],
+      [
+        "ENTRACTE",
+        0.5859481692314148
+      ],
+      [
+        "CHASSE",
+        0.5780457854270935
+      ]
+    ],
+    "gap_score": 0.3858
+  },
+  {
+    "cluster_id": 5,
+    "nearest_headword": "FOUTRE",
+    "nearest_similarity": 0.6282,
+    "top_5_members": [
+      [
+        "FOUTRE",
+        0.6281955242156982
+      ],
+      [
+        "JOUISSANCE",
+        0.6262964606285095
+      ],
+      [
+        "IVRESSE",
+        0.6216638684272766
+      ],
+      [
+        "INTRODUCTION",
+        0.6112241744995117
+      ],
+      [
+        "DOMPTEURS DE BÊTES FÉROCES",
+        0.5752956867218018
+      ]
+    ],
+    "gap_score": 0.3718
+  },
+  {
+    "cluster_id": 9,
+    "nearest_headword": "MÉNAGE",
+    "nearest_similarity": 0.6298,
+    "top_5_members": [
+      [
+        "MÉNAGE",
+        0.6297647356987
+      ],
+      [
+        "MESSAGE",
+        0.6282672882080078
+      ],
+      [
+        "RICHESSE",
+        0.6152291893959045
+      ],
+      [
+        "NUMISMATIQUE",
+        0.5982483625411987
+      ],
+      [
+        "ROBE",
+        0.593863844871521
+      ]
+    ],
+    "gap_score": 0.3702
+  },
+  {
+    "cluster_id": 7,
+    "nearest_headword": "NATURE",
+    "nearest_similarity": 0.6358,
+    "top_5_members": [
+      [
+        "NATURE",
+        0.6358311176300049
+      ],
+      [
+        "FRICASSÉE",
+        0.5815373659133911
+      ],
+      [
+        "HIRONDELLE",
+        0.5713952779769897
+      ],
+      [
+        "BOTTE",
+        0.5565133094787598
+      ],
+      [
+        "FARCE",
+        0.5388410091400146
+      ]
+    ],
+    "gap_score": 0.3642
+  },
+  {
+    "cluster_id": 4,
+    "nearest_headword": "CRITIQUE",
+    "nearest_similarity": 0.6457,
+    "top_5_members": [
+      [
+        "CRITIQUE",
+        0.6456906199455261
+      ],
+      [
+        "IMPRÉSARIO",
+        0.5686255693435669
+      ],
+      [
+        "ABÉLARD",
+        0.5661696791648865
+      ],
+      [
+        "LATIN",
+        0.539365291595459
+      ],
+      [
+        "AMBITIEUX",
+        0.5311148762702942
+      ]
+    ],
+    "gap_score": 0.3543
+  },
+  {
+    "cluster_id": 8,
+    "nearest_headword": "ARTISTES",
+    "nearest_similarity": 0.665,
+    "top_5_members": [
+      [
+        "ARTISTES",
+        0.6650096774101257
+      ],
+      [
+        "FLATTEUR",
+        0.5934696793556213
+      ],
+      [
+        "FEMMES DE CHAMBRE",
+        0.5857549905776978
+      ],
+      [
+        "DENTISTES",
+        0.5827486515045166
+      ],
+      [
+        "PARENTS",
+        0.5763324499130249
+      ]
+    ],
+    "gap_score": 0.335
   },
   {
     "cluster_id": 2,
+    "nearest_headword": "BADIGEON DANS LES ÉGLISES",
+    "nearest_similarity": 0.6957,
+    "top_5_members": [
+      [
+        "BADIGEON DANS LES ÉGLISES",
+        0.6957316398620605
+      ],
+      [
+        "BACCALAURÉAT",
+        0.6921553611755371
+      ],
+      [
+        "SYBARITES",
+        0.6568842530250549
+      ],
+      [
+        "MONOPOLE",
+        0.6543997526168823
+      ],
+      [
+        "IMPIE",
+        0.6391677260398865
+      ]
+    ],
+    "gap_score": 0.3043
+  },
+  {
+    "cluster_id": 1,
+    "nearest_headword": "SOUFFLET",
+    "nearest_similarity": 0.7027,
+    "top_5_members": [
+      [
+        "SOUFFLET",
+        0.702706515789032
+      ],
+      [
+        "OREILLER",
+        0.6385729312896729
+      ],
+      [
+        "EXERCICE",
+        0.6369059681892395
+      ],
+      [
+        "PAUVRES",
+        0.5780653357505798
+      ],
+      [
+        "CENSURE",
+        0.5616388320922852
+      ]
+    ],
+    "gap_score": 0.2973
+  },
+  {
+    "cluster_id": 3,
     "nearest_headword": "MÉPHISTOPHÉLIQUE",
-    "nearest_similarity": 0.7569,
+    "nearest_similarity": 0.7553,
     "top_5_members": [
       [
         "MÉPHISTOPHÉLIQUE",
-        0.7569275498390198
-      ],
-      [
-        "INNÉES (IDÉES)",
-        0.7316627502441406
+        0.7552900314331055
       ],
       [
         "MÉTAPHYSIQUE",
-        0.7261794805526733
+        0.7094483971595764
       ],
       [
-        "HOMÈRE",
-        0.7076191306114197
+        "INNÉES (IDÉES)",
+        0.6979387998580933
+      ],
+      [
+        "DRÔLE",
+        0.6956920623779297
       ],
       [
         "VOLTAIRE",
-        0.6899327635765076
+        0.6778917908668518
       ]
     ],
-    "gap_score": 0.2431
+    "gap_score": 0.2447
+  },
+  {
+    "cluster_id": 0,
+    "nearest_headword": "INCRUSTATION",
+    "nearest_similarity": 0.7661,
+    "top_5_members": [
+      [
+        "INCRUSTATION",
+        0.7661066651344299
+      ],
+      [
+        "JANSÉNISME",
+        0.6935197114944458
+      ],
+      [
+        "LACONISME",
+        0.6765952110290527
+      ],
+      [
+        "IVOIRE",
+        0.6763179302215576
+      ],
+      [
+        "EXTINCTION",
+        0.6615216732025146
+      ]
+    ],
+    "gap_score": 0.2339
   }
 ]
