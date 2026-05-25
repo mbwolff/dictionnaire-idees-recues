@@ -323,7 +323,7 @@ def fetch_text(url: str) -> str:
 
 
 def extract_dictionary_section(text: str) -> str:
-    start_match = re.search(r"ABSURDE|ACADÉMICIEN|ABSINTHE", text)
+    start_match = re.search(r"ABELARD|ABSURDE|ACADÉMICIEN|ABSINTHE", text)
     end_match   = re.search(r"End of (the )?Project Gutenberg", text, re.IGNORECASE)
     start = start_match.start() if start_match else 0
     end   = end_match.start()   if end_match   else len(text)

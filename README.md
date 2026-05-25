@@ -149,7 +149,7 @@ source. Artifacts fixed in `parse.py` (and patched directly in the JSON):
 - **Guillemet artifacts** — HENRI III/IV trailing stray `"` (parse.py conversion of source's spurious closing `«`) replaced with proper `«…»`; JOCKEY-CLUB straight quotes replaced with guillemets
 - **Cross-references** — 24 entries had empty `xrefs` because the parser matched `(Voir X)` instead of Flaubert's actual `(v. X)` format; corrected in `parse.py` and back-populated in JSON
 - **Entry ordering** — 5 entries (GARDE-COTE, GARES DE CHEMIN DE FER, JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE) were appended after YVETOT instead of inserted at their correct alphabetical positions; GYMNASE (LE) duplicate removed
-- **Missing entries** — ABÉLARD, ABRICOTS, and ABSALON absent from the JSON were restored by direct comparison with the Gutenberg source and inserted at their correct alphabetical positions (before ABSINTHE); embeddings and clusters recomputed
+- **Missing entries** — ABÉLARD, ABRICOTS, and ABSALON were absent because `extract_dictionary_section` anchored on `ABSINTHE` as its start marker, silently dropping the three entries that precede it alphabetically; fixed to anchor on `ABELARD` instead
 - **Merged sub-entry** — DICTIONNAIRE DE RIMES was embedded in the body of DICTIONNAIRE instead of being its own entry; restored as entry 245
 
 Guards added to `parse.py` prevent recurrence on a fresh parse.
