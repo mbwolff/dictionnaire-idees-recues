@@ -528,6 +528,16 @@ def main():
         if inj["headword"] not in hw_set:
             unique.append(inj)
 
+    # Singularise xrefs whose plural form has no headword but the singular does
+    # e.g. ODALISQUES "(v. bayadères)" → uppercased BAYADÈRES → resolve to BAYADÈRE
+    hw_set = {e["headword"] for e in unique}
+    for e in unique:
+        e["xrefs"] = [
+            xr[:-1] if (xr.endswith("S") and xr not in hw_set and xr[:-1] in hw_set)
+            else xr
+            for xr in e["xrefs"]
+        ]
+
     # Sort alphabetically by headword
     unique.sort(key=lambda e: e["headword"])
 
