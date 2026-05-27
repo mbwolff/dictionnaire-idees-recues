@@ -49,7 +49,21 @@
       "Bash(curl -k -s \"https://www.gutenberg.org/files/14156/14156-0.txt\" -o /tmp/gutenberg_flaubert.txt)",
       "Bash(curl -s http://localhost:5050/api/tsne)",
       "Bash(curl *)",
-      "Bash(python cluster.py)"
+      "Bash(python cluster.py)",
+      "Bash(python -c \"from pipeline import DictionairePipeline; p = DictionairePipeline\\(\\); e = p.get_entry\\('ACADÉMIE', 'fr'\\); print\\(e.get\\('prev_headword'\\), '|', e.get\\('next_headword'\\)\\)\")",
+      "Bash(python -c \"from pipeline import DictionairePipeline; p = DictionairePipeline\\(\\); print\\('delete test:', p.delete_generated\\('NONEXISTENT'\\)\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python *)",
+      "Bash(git restore *)",
+      "Bash(pip install *)",
+      "Bash(git mv *)",
+      "WebFetch(domain:www.gutenberg.org)",
+      "Bash(make run *)",
+      "Bash(pkill -f \"python3 app.py\")",
+      "Bash(lsof -ti:5050)",
+      "Bash(xargs kill -9)",
+      "Bash(git config *)",
+      "WebFetch(domain:www.gnu.org)"
     ]
   }
 }

@@ -1,4 +1,4 @@
-// Copyright (C) 2026  Mark Wolff <wolff.mark.b@gmail.com>
+/* Copyright (C) 2026  Mark Wolff <wolff.mark.b@gmail.com>
 // SPDX-License-Identifier: AGPL-3.0-or-later
 //
 // This program is free software: you can redistribute it and/or modify
@@ -12,7 +12,7 @@
 // GNU Affero General Public License for more details.
 //
 // You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+// along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
 /* ══════════════════════════════════════════════════════════════════
    app.js — Dictionnaire des idées reçues
