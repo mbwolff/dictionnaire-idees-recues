@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f5f0e8"/>
+  <rect x="0" y="0" width="12" height="630" fill="#8b3a1a"/>
+  <rect x="1188" y="0" width="12" height="630" fill="#8b3a1a"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#8b3a1a"/>
+  <rect x="0" y="622" width="1200" height="8" fill="#8b3a1a"/>
+  <text x="600" y="230" text-anchor="middle"
+        font-family="Georgia, serif" font-size="96" font-weight="bold"
+        fill="#8b3a1a">Dictionnaire</text>
+  <text x="600" y="330" text-anchor="middle"
+        font-family="Georgia, serif" font-size="56" font-style="italic"
+        fill="#3d3228">des idées reçues</text>
+  <line x1="200" y1="380" x2="1000" y2="380" stroke="#8b3a1a" stroke-width="1.5"/>
+  <text x="600" y="440" text-anchor="middle"
+        font-family="Georgia, serif" font-size="28"
+        fill="#7a6e62">Gustave Flaubert · 966 entrées · FR / EN</text>
+  <text x="600" y="500" text-anchor="middle"
+        font-family="Georgia, serif" font-size="22" font-style="italic"
+        fill="#7a6e62">dictionnaire.hartwick.edu</text>
+</svg>
