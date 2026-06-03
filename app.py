@@ -101,7 +101,10 @@ def generate():
     if len(word) > 80:
         return jsonify({"error": "Input too long (max 80 characters)."}), 400
 
-    result = pipeline.generate_entry(word, lang)
+    try:
+        result = pipeline.generate_entry(word, lang)
+    except Exception as exc:
+        return jsonify({"error": f"Generation failed: {exc}"}), 500
     return jsonify(result)
 
 
