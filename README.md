@@ -53,7 +53,7 @@ The app runs without `embeddings.npz`; semantic search falls back to text search
 | FR/EN toggle | Switches UI language and entry translations throughout; the currently displayed entry is re-fetched in the new language so its translation updates immediately; the welcome-screen Flaubert quote is translated via `data-fr`/`data-en` attributes |
 | Light/dark mode | Follows system preference; toggle in header |
 | Entry detail | French text, English translation, cross-references, six nearest neighbours (corpus entries by embedding cosine similarity; session-generated entries by UMAP 2D proximity); primary theme badge with baseline-multiple score; secondary theme badge (where applicable); clickable rhetorical category chips; ‹ › buttons for alphabetical prev/next navigation; ⎘ copy button; "carte" link to semantic map |
-| Add entry | Propose any word or phrase → generate in Flaubert's style; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
+| Add entry | Propose any word or phrase → generate in Flaubert's style; five authentic entries are sampled at random from the 966-entry corpus on each call to seed the generation prompt; generated entries persist for the browser session (sessionStorage) and are cleared when the tab closes; × button removes an entry; "Suggest a topic" button offers a randomly-weighted underrepresented theme drawn from semantic gap analysis |
 | Duplicate detection | Checks against both French headwords and stored English headwords (corpus + session entries) to prevent cross-language duplicates |
 | Keyboard shortcuts | `/` focuses search · `r` random entry · `Escape` dismisses detail · ← / → navigate prev/next entry |
 | No-results hint | Empty text-search results offer a one-click switch to semantic mode and fuzzy-matched headword suggestions |
@@ -69,7 +69,8 @@ embed.py      Encode entries with dangvantuan/sentence-camembert-base
 cluster.py    k-means (k=12) on L2-normalised embeddings · soft membership scores ·
               pre-computes UMAP (n_neighbors=15, min_dist=0.1) to data/umap_coords.npy ·
               batch-translate headwords and entry texts to English via deep-translator
-pipeline.py   Runtime: search · validation · translation · generation · UMAP point
+pipeline.py   Runtime: search · validation · translation · generation (five random
+              authentic entries sampled per call as few-shot examples) · UMAP point
               computation for generated entries · random entry · detailed stats · xref graph
 app.py        Flask routes (+ /api/random, /api/stats/detailed, /api/xrefs)
 ```
