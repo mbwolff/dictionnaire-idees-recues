@@ -119,12 +119,24 @@ FEW_SHOT = (
 )
 
 
-def build_user_prompt(headword: str, neighbours: list[dict]) -> str:
+def build_user_prompt(
+    headword: str,
+    neighbours: list[dict],
+    examples: list[dict] | None = None,
+) -> str:
+    if examples:
+        import random as _rnd
+        sample = _rnd.sample(examples, min(5, len(examples)))
+        few_shot = "Exemples authentiques :\n" + "\n".join(
+            f"  {e['headword'].upper()}. {e['text']}" for e in sample
+        )
+    else:
+        few_shot = FEW_SHOT
     neighbour_block = "\n".join(
         f"  {n['headword'].upper()}. {n['text']}" for n in neighbours[:5]
     )
     return (
-        f"{FEW_SHOT}\n\n"
+        f"{few_shot}\n\n"
         f"Entrées voisines :\n{neighbour_block}\n\n"
         f"Nouvelle entrée pour : {headword.upper()}"
     )
@@ -150,7 +162,7 @@ def clean_output(text: str) -> str:
 
 class BaseGenerator(ABC):
     @abstractmethod
-    def generate(self, headword: str, neighbours: list[dict]) -> str: ...
+    def generate(self, headword: str, neighbours: list[dict], examples: list[dict] | None = None) -> str: ...
 
     def name(self) -> str:
         return self.__class__.__name__
@@ -200,7 +212,7 @@ class OllamaGenerator(BaseGenerator):
                 f"  Make sure Ollama is running: ollama serve"
             )
 
-    def generate(self, headword: str, neighbours: list[dict]) -> str:
+    def generate(self, headword: str, neighbours: list[dict], examples: list[dict] | None = None) -> str:
         payload = json.dumps({
             "model":  self.model,
             "stream": False,
@@ -212,7 +224,7 @@ class OllamaGenerator(BaseGenerator):
             },
             "messages": [
                 {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user",   "content": build_user_prompt(headword, neighbours)},
+                {"role": "user",   "content": build_user_prompt(headword, neighbours, examples)},
             ],
         }).encode()
 
@@ -263,12 +275,12 @@ class TransformersGenerator(BaseGenerator):
         )
         print(f"[Transformers] Ready on device {device}.")
 
-    def generate(self, headword: str, neighbours: list[dict]) -> str:
+    def generate(self, headword: str, neighbours: list[dict], examples: list[dict] | None = None) -> str:
         self._load()
         # Mistral-style instruction format; works for most instruct-tuned models
         prompt = (
             f"<s>[INST] {SYSTEM_PROMPT}\n\n"
-            f"{build_user_prompt(headword, neighbours)} [/INST]"
+            f"{build_user_prompt(headword, neighbours, examples)} [/INST]"
         )
         outputs = self._pipeline(
             prompt,
@@ -292,7 +304,7 @@ class ClaudeGenerator(BaseGenerator):
         if not ANTHROPIC_API_KEY:
             print("[Claude] WARNING: ANTHROPIC_API_KEY not set.")
 
-    def generate(self, headword: str, neighbours: list[dict]) -> str:
+    def generate(self, headword: str, neighbours: list[dict], examples: list[dict] | None = None) -> str:
         if not ANTHROPIC_API_KEY:
             raise EnvironmentError("ANTHROPIC_API_KEY is not set.")
 
@@ -300,7 +312,7 @@ class ClaudeGenerator(BaseGenerator):
             "model":      CLAUDE_MODEL,
             "max_tokens": 200,
             "system":     SYSTEM_PROMPT,
-            "messages":   [{"role": "user", "content": build_user_prompt(headword, neighbours)}],
+            "messages":   [{"role": "user", "content": build_user_prompt(headword, neighbours, examples)}],
         }).encode()
 
         req = urllib.request.Request(
@@ -892,8 +904,9 @@ class DictionairePipeline:
         if not neighbours:
             neighbours = [self._format_entry(e, "fr") for e in self._entries[:5]]
 
+        flaubert_entries = [e for e in self._entries if not e.get("is_generated")]
         try:
-            generated_fr = self.generator.generate(fr_word, neighbours)
+            generated_fr = self.generator.generate(fr_word, neighbours, examples=flaubert_entries)
         except Exception as exc:
             return {"error": f"Generation failed ({self.generator.name()}): {exc}"}
 
