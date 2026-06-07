@@ -163,6 +163,7 @@ source (`pg14156.txt`). All corrections are encoded in `parse.py`; running
 - **Misread headword** — PLIQUE POLONAISE corrected to PEIGNE (?) POLONAISE per the Ferrère (1913) and Pléiade (1952) editions; the Gutenberg transcription misread the manuscript
 - **Normalised headwords** — GULF-STREAM → GULF STREAM; PHILIPPE D'ORLÉANS - ÉGALITÉ → PHILIPPE D'ORLÉANS-ÉGALITÉ
 - **PALLADIUM** — missing trailing period restored
+- **ROUSSES** — cross-reference text corrected to "blondes, brunes, blanches et négresses" per Ferrère; BLANCHES added to `xrefs`
 - **Cross-references** — entries had empty `xrefs` because the old parser matched `(Voir X)` instead of Flaubert's actual `(v. X)` format; corrected in `parse.py`
 - **Entry ordering** — output sorted alphabetically; 5 entries (GARDE-COTE, GARES DE CHEMIN DE FER, JOCKEY-CLUB, MIDI (CUISINE DU), SAINTE-HÉLÈNE) previously appended after YVETOT now placed correctly
 
