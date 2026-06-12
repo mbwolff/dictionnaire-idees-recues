@@ -939,20 +939,21 @@ function renderUmap(points) {
 
 function renderSessionDots(sx, sy, container) {
   const ns = "http://www.w3.org/2000/svg";
-  const gold = "#c49a35";
   const umapContainer = el.umapSvg.closest(".umap-container");
   sessionEntries.forEach(entry => {
     if (!entry.umap_x || !entry.umap_y) return;
+    const cid = typeof entry.cluster_id === "number" ? entry.cluster_id : -1;
+    const color = cid >= 0 ? (CLUSTER_PALETTE[cid % CLUSTER_PALETTE.length] ?? "#888") : "#888";
     const cx = sx(entry.umap_x).toFixed(1);
     const cy = sy(entry.umap_y).toFixed(1);
     const c = document.createElementNS(ns, "circle");
     c.setAttribute("cx", cx);
     c.setAttribute("cy", cy);
     c.setAttribute("r", "5");
-    c.setAttribute("fill", "transparent");
-    c.setAttribute("stroke", gold);
+    c.setAttribute("fill", color);
+    c.setAttribute("stroke", "white");
     c.setAttribute("stroke-width", "1.5");
-    c.style.opacity = "0.85";
+    c.style.opacity = "0.9";
     c.style.cursor = "pointer";
     c.style.transition = "r 80ms, opacity 80ms";
     const label = entry.umap_cluster_label || entry.cluster_label || "";
@@ -979,7 +980,7 @@ function renderSessionDots(sx, sy, container) {
       showView("entry");
     });
     container.appendChild(c);
-    umapCircles.set(entry.headword, { cx: +cx, cy: +cy, color: gold, el: c });
+    umapCircles.set(entry.headword, { cx: +cx, cy: +cy, color, el: c });
   });
 }
 
