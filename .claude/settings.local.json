@@ -69,7 +69,8 @@
       "Skill(run)",
       "Bash(python app.py)",
       "Bash(echo \"PID: $!\")",
-      "Bash(echo \"status: $?\")"
+      "Bash(echo \"status: $?\")",
+      "Bash(grep -n 'function \\\\$\\\\b\\\\|const \\\\$ ' \"/Users/mark/Research/2026 Dictionnaire/DIR/app.js\")"
     ]
   }
 }
