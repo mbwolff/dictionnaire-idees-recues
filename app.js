@@ -403,10 +403,8 @@ async function loadEntry(headword, skipHistory = false) {
 function renderEntryDetail(entry) {
   const t = i18n[state.lang];
 
-  $("detail-headword").textContent = entry.headword + ".";
-  const tr = entry.headword_translated && entry.headword_translated !== entry.headword
-    ? `(${entry.headword_translated})` : "";
-  $("detail-headword-tr").textContent = tr;
+  $("detail-headword").textContent = "";
+  $("detail-headword-tr").textContent = "";
 
   const prevBtn = $("entry-prev-btn");
   const nextBtn = $("entry-next-btn");
@@ -453,11 +451,22 @@ function renderEntryDetail(entry) {
   srcBadge.textContent = entry.is_generated ? t.generated : t.flaubert;
   srcBadge.className = `source-badge ${entry.is_generated ? "generated" : "flaubert"}`;
 
-  // Text
-  $("detail-text-fr").textContent = entry.text || "";
+  // Text — headword inline, text lowercased per Ferrère typesetting
+  function buildInlineText(el, hw, rawText) {
+    el.innerHTML = "";
+    const span = document.createElement("span");
+    span.className = "entry-headword-inline";
+    span.textContent = hw + ". ";
+    el.appendChild(span);
+    const body = rawText.charAt(0).toLowerCase() + rawText.slice(1);
+    el.appendChild(document.createTextNode(body));
+  }
+  buildInlineText($("detail-text-fr"), entry.headword, entry.text || "");
   const enEl = $("detail-text-en");
   if (state.lang === "en" && entry.text_translated && entry.text_translated !== entry.text) {
-    enEl.textContent = entry.text_translated;
+    const hwEn = (entry.headword_translated && entry.headword_translated !== entry.headword)
+      ? entry.headword_translated : entry.headword;
+    buildInlineText(enEl, hwEn, entry.text_translated);
     enEl.style.display = "block";
   } else {
     enEl.style.display = "none";

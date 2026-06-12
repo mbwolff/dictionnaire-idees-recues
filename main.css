@@ -333,7 +333,7 @@ body {
 .list-entry {
   display: block; width: 100%;
   font-family: var(--font-entry);
-  font-size: 13px; font-weight: 400;
+  font-size: 13px; font-weight: 400; text-transform: uppercase;
   color: var(--ink-soft);
   background: transparent; border: none;
   padding: 6px 16px;
@@ -580,7 +580,12 @@ body {
   padding-bottom: 18px; margin-bottom: 24px;
 }
 
-.entry-headword-wrap { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.entry-headword-wrap { display: none; }
+
+.entry-headword-inline {
+  font-family: var(--font-display);
+  font-size: inherit;
+}
 
 .entry-nav-row { display: flex; gap: 4px; margin-top: 6px; }
 .entry-nav-btn {
