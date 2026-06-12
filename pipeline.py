@@ -625,7 +625,9 @@ class DictionairePipeline:
     def fuzzy_suggest(self, query: str, n: int = 5) -> list[str]:
         import difflib
         all_hw = [e["headword"] for e in self._entries]
-        return difflib.get_close_matches(query.upper(), all_hw, n=n, cutoff=0.6)
+        upper_map = {h.upper(): h for h in all_hw}
+        matches = difflib.get_close_matches(query.upper(), list(upper_map), n=n, cutoff=0.6)
+        return [upper_map[m] for m in matches]
 
     def random_entry(self, lang: str) -> dict:
         import random as _rnd

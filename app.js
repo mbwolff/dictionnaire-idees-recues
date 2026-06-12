@@ -1,18 +1,18 @@
 /* Copyright (C) 2026  Mark Wolff <wolff.mark.b@gmail.com>
-// SPDX-License-Identifier: AGPL-3.0-or-later
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Affero General Public License as published
-// by the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU Affero General Public License for more details.
-//
-// You should have received a copy of the GNU Affero General Public License
-// along with this program.  If not, see <https://www.gnu.org/licenses/>. */
+   SPDX-License-Identifier: AGPL-3.0-or-later
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU Affero General Public License as published
+   by the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU Affero General Public License for more details.
+
+   You should have received a copy of the GNU Affero General Public License
+   along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
 /* ══════════════════════════════════════════════════════════════════
    app.js — Dictionnaire des idées reçues
@@ -375,8 +375,8 @@ async function loadEntry(headword, skipHistory = false) {
   });
   const hwUp = headword.toUpperCase();
   const sessionEntry = sessionEntries.find(e =>
-    e.headword === hwUp || e.headword === headword ||
-    (e.headword_en && (e.headword_en === hwUp || e.headword_en === headword))
+    e.headword.toUpperCase() === hwUp ||
+    (e.headword_en && e.headword_en.toUpperCase() === hwUp)
   );
   if (sessionEntry) {
     const entry = adaptSessionEntry(sessionEntry);
@@ -403,7 +403,7 @@ async function loadEntry(headword, skipHistory = false) {
 function renderEntryDetail(entry) {
   const t = i18n[state.lang];
 
-  $("detail-headword").textContent = entry.headword;
+  $("detail-headword").textContent = entry.headword + ".";
   const tr = entry.headword_translated && entry.headword_translated !== entry.headword
     ? `(${entry.headword_translated})` : "";
   $("detail-headword-tr").textContent = tr;
@@ -596,7 +596,7 @@ async function generateEntry() {
   const hwUp = word.trim().toUpperCase();
 
   // Client-side duplicate check against session entries
-  if (sessionEntries.some(e => e.headword === hwUp || (e.headword_en && e.headword_en === hwUp))) {
+  if (sessionEntries.some(e => e.headword.toUpperCase() === hwUp || (e.headword_en && e.headword_en.toUpperCase() === hwUp))) {
     el.addStatus.style.display = "block";
     el.addStatus.className = "add-status";
     el.addStatus.textContent = t.addExists;
