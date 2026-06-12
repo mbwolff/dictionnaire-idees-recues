@@ -575,9 +575,6 @@ body {
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; } }
 
-.entry-detail-header {
-  margin-bottom: 16px;
-}
 
 .entry-headword-wrap { display: none; }
 
@@ -586,7 +583,7 @@ body {
   font-size: inherit;
 }
 
-.entry-nav-row { display: flex; gap: 4px; margin-top: 6px; }
+.entry-nav-row { display: flex; gap: 4px; margin-bottom: 6px; }
 .entry-nav-btn {
   font-family: var(--font-body);
   font-size: 20px; line-height: 1;

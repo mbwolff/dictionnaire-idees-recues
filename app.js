@@ -458,7 +458,7 @@ function renderEntryDetail(entry) {
     span.className = "entry-headword-inline";
     span.textContent = hw + ". ";
     el.appendChild(span);
-    const body = rawText.charAt(0).toLowerCase() + rawText.slice(1);
+    const body = rawText;
     el.appendChild(document.createTextNode(body));
   }
   buildInlineText($("detail-text-fr"), entry.headword, entry.text || "");
