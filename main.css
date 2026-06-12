@@ -580,7 +580,7 @@ body {
 
 .entry-headword-inline {
   font-family: var(--font-display);
-  font-size: inherit;
+  font-size: 24px;
 }
 
 .entry-nav-row { display: flex; gap: 4px; margin-bottom: 6px; }
